@@ -51,3 +51,6 @@ class SupervisedModel(
 
 }
 
+class UnsupervisedModel
+
+
