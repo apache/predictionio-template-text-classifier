@@ -16,7 +16,7 @@ class CountVectorizer (
                         val pd : PreparedData,
                         nMin: Int,
                         nMax: Int
-                        ) extends Serializable {
+                        ) {
 
 
   // This private method will tokenize our text entries.
@@ -36,7 +36,7 @@ class CountVectorizer (
     val hashMap = new mutable.HashMap[String, Double]()
     val iter = model.iterator
     while (iter.hasNext) {
-      var x = iter.next
+      val x = iter.next
       hashMap.put(x.toString, model.getCount(x).toDouble)
     }
     hashMap
@@ -46,7 +46,7 @@ class CountVectorizer (
   private val universe = new mutable.LinkedHashSet[String]()
   pd.data.map(
     e => hashData(e.text)
-  ).foreach(
+  ).toLocalIterator.foreach(
       e => e.keySet.foreach(universe.add)
     )
 
