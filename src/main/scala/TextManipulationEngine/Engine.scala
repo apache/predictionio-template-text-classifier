@@ -2,7 +2,7 @@ package TextManipulationEngine
 
 import io.prediction.controller._
 
-import scala.collection.immutable.HashMap
+import scala.collection.immutable
 
 class Query(
              val text: String
@@ -12,7 +12,7 @@ class PredictedResult (
                       label : Double,
                       val confidence : Double
                         ) extends Serializable {
-  private val categories: HashMap[Double, String] = HashMap(
+  private val categories: immutable.HashMap[Double, String] = immutable.HashMap(
     0.0 -> "alt.atheism",
     1.0 -> "comp.graphics",
     2.0 -> "comp.os.ms-windows.misc",
