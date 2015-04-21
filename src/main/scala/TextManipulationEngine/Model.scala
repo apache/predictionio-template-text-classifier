@@ -4,9 +4,17 @@ package TextManipulationEngine
 import org.apache.spark.mllib.classification.{NaiveBayes, NaiveBayesModel}
 import org.apache.spark.mllib.linalg.Vectors
 import org.apache.spark.mllib.regression.LabeledPoint
+
 import scala.math.exp
 
-class SupervisedModel (private val pd : PreparedData, val lambda : Double) {
+
+abstract class Model {
+  abstract def predict(doc: String): PredictedResult
+}
+
+class SupervisedModel(
+                       private val pd: PreparedData, val lambda: Double
+                       ) extends Model {
 
   private val dataModel = new CountVectorizer(pd)
 
@@ -21,9 +29,7 @@ class SupervisedModel (private val pd : PreparedData, val lambda : Double) {
 
    (0 until x.length).toArray.map(
         i => x(i) * y(i)
-   ).reduceLeft(
-       (a, b) => a + b
-     )
+   ).sum
   }
 
   private def getScores(doc : String) : Array[(Double, Double)] = {
@@ -44,3 +50,4 @@ class SupervisedModel (private val pd : PreparedData, val lambda : Double) {
   }
 
 }
+
