@@ -1,4 +1,4 @@
-[info] Updating {file:/Users/Marco/TextManipulationEngineRepo/TextManipulationEngine/project/}textmanipulationengine-build...
+[info] Updating {file:/Users/Marco/TextManipulationEngine/project/}textmanipulationengine-build...
 [debug] :: resolving dependencies :: default#textmanipulationengine-build;0.1-SNAPSHOT
 [debug] 	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool]
 [debug] 	validate = true
@@ -1455,19 +1455,19 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.5!apply-macro.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-[debug] :: resolution report :: resolve 1369ms :: artifacts dl 34ms
-[debug] 	report for default#textmanipulationengine-build;0.1-SNAPSHOT compile produced in /Users/Marco/TextManipulationEngineRepo/TextManipulationEngine/project/target/resolution-cache/reports/default-textmanipulationengine-build-compile.xml
-[debug] 	report for default#textmanipulationengine-build;0.1-SNAPSHOT runtime produced in /Users/Marco/TextManipulationEngineRepo/TextManipulationEngine/project/target/resolution-cache/reports/default-textmanipulationengine-build-runtime.xml
-[debug] 	report for default#textmanipulationengine-build;0.1-SNAPSHOT test produced in /Users/Marco/TextManipulationEngineRepo/TextManipulationEngine/project/target/resolution-cache/reports/default-textmanipulationengine-build-test.xml
-[debug] 	report for default#textmanipulationengine-build;0.1-SNAPSHOT provided produced in /Users/Marco/TextManipulationEngineRepo/TextManipulationEngine/project/target/resolution-cache/reports/default-textmanipulationengine-build-provided.xml
-[debug] 	report for default#textmanipulationengine-build;0.1-SNAPSHOT optional produced in /Users/Marco/TextManipulationEngineRepo/TextManipulationEngine/project/target/resolution-cache/reports/default-textmanipulationengine-build-optional.xml
-[debug] 	report for default#textmanipulationengine-build;0.1-SNAPSHOT compile-internal produced in /Users/Marco/TextManipulationEngineRepo/TextManipulationEngine/project/target/resolution-cache/reports/default-textmanipulationengine-build-compile-internal.xml
-[debug] 	report for default#textmanipulationengine-build;0.1-SNAPSHOT runtime-internal produced in /Users/Marco/TextManipulationEngineRepo/TextManipulationEngine/project/target/resolution-cache/reports/default-textmanipulationengine-build-runtime-internal.xml
-[debug] 	report for default#textmanipulationengine-build;0.1-SNAPSHOT test-internal produced in /Users/Marco/TextManipulationEngineRepo/TextManipulationEngine/project/target/resolution-cache/reports/default-textmanipulationengine-build-test-internal.xml
-[debug] 	report for default#textmanipulationengine-build;0.1-SNAPSHOT plugin produced in /Users/Marco/TextManipulationEngineRepo/TextManipulationEngine/project/target/resolution-cache/reports/default-textmanipulationengine-build-plugin.xml
-[debug] 	report for default#textmanipulationengine-build;0.1-SNAPSHOT sources produced in /Users/Marco/TextManipulationEngineRepo/TextManipulationEngine/project/target/resolution-cache/reports/default-textmanipulationengine-build-sources.xml
-[debug] 	report for default#textmanipulationengine-build;0.1-SNAPSHOT docs produced in /Users/Marco/TextManipulationEngineRepo/TextManipulationEngine/project/target/resolution-cache/reports/default-textmanipulationengine-build-docs.xml
-[debug] 	report for default#textmanipulationengine-build;0.1-SNAPSHOT pom produced in /Users/Marco/TextManipulationEngineRepo/TextManipulationEngine/project/target/resolution-cache/reports/default-textmanipulationengine-build-pom.xml
-[debug] 	report for default#textmanipulationengine-build;0.1-SNAPSHOT scala-tool produced in /Users/Marco/TextManipulationEngineRepo/TextManipulationEngine/project/target/resolution-cache/reports/default-textmanipulationengine-build-scala-tool.xml
-[debug] 	resolve done (1369ms resolve - 34ms download)
+[debug] :: resolution report :: resolve 1528ms :: artifacts dl 31ms
+[debug] 	report for default#textmanipulationengine-build;0.1-SNAPSHOT compile produced in /Users/Marco/TextManipulationEngine/project/target/resolution-cache/reports/default-textmanipulationengine-build-compile.xml
+[debug] 	report for default#textmanipulationengine-build;0.1-SNAPSHOT runtime produced in /Users/Marco/TextManipulationEngine/project/target/resolution-cache/reports/default-textmanipulationengine-build-runtime.xml
+[debug] 	report for default#textmanipulationengine-build;0.1-SNAPSHOT test produced in /Users/Marco/TextManipulationEngine/project/target/resolution-cache/reports/default-textmanipulationengine-build-test.xml
+[debug] 	report for default#textmanipulationengine-build;0.1-SNAPSHOT provided produced in /Users/Marco/TextManipulationEngine/project/target/resolution-cache/reports/default-textmanipulationengine-build-provided.xml
+[debug] 	report for default#textmanipulationengine-build;0.1-SNAPSHOT optional produced in /Users/Marco/TextManipulationEngine/project/target/resolution-cache/reports/default-textmanipulationengine-build-optional.xml
+[debug] 	report for default#textmanipulationengine-build;0.1-SNAPSHOT compile-internal produced in /Users/Marco/TextManipulationEngine/project/target/resolution-cache/reports/default-textmanipulationengine-build-compile-internal.xml
+[debug] 	report for default#textmanipulationengine-build;0.1-SNAPSHOT runtime-internal produced in /Users/Marco/TextManipulationEngine/project/target/resolution-cache/reports/default-textmanipulationengine-build-runtime-internal.xml
+[debug] 	report for default#textmanipulationengine-build;0.1-SNAPSHOT test-internal produced in /Users/Marco/TextManipulationEngine/project/target/resolution-cache/reports/default-textmanipulationengine-build-test-internal.xml
+[debug] 	report for default#textmanipulationengine-build;0.1-SNAPSHOT plugin produced in /Users/Marco/TextManipulationEngine/project/target/resolution-cache/reports/default-textmanipulationengine-build-plugin.xml
+[debug] 	report for default#textmanipulationengine-build;0.1-SNAPSHOT sources produced in /Users/Marco/TextManipulationEngine/project/target/resolution-cache/reports/default-textmanipulationengine-build-sources.xml
+[debug] 	report for default#textmanipulationengine-build;0.1-SNAPSHOT docs produced in /Users/Marco/TextManipulationEngine/project/target/resolution-cache/reports/default-textmanipulationengine-build-docs.xml
+[debug] 	report for default#textmanipulationengine-build;0.1-SNAPSHOT pom produced in /Users/Marco/TextManipulationEngine/project/target/resolution-cache/reports/default-textmanipulationengine-build-pom.xml
+[debug] 	report for default#textmanipulationengine-build;0.1-SNAPSHOT scala-tool produced in /Users/Marco/TextManipulationEngine/project/target/resolution-cache/reports/default-textmanipulationengine-build-scala-tool.xml
+[debug] 	resolve done (1528ms resolve - 31ms download)
 [info] Done updating.

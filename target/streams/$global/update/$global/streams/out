@@ -1,4 +1,4 @@
-[info] Updating {file:/Users/Marco/TextManipulationEngineRepo/TextManipulationEngine/}textmanipulationengine...
+[info] Updating {file:/Users/Marco/TextManipulationEngine/}textmanipulationengine...
 [debug] :: resolving dependencies :: textmanipulationengine#textmanipulationengine_2.10;0.1-SNAPSHOT
 [debug] 	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool]
 [debug] 	validate = true
@@ -7,7 +7,7 @@
 [debug] == resolving dependencies for textmanipulationengine#textmanipulationengine_2.10;0.1-SNAPSHOT [compile]
 [debug] == resolving dependencies textmanipulationengine#textmanipulationengine_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.10.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6ee41360
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@35d22123
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.4
 [debug] 	local: revision in cache: org.scala-lang#scala-library;2.10.4
 [debug] 	found org.scala-lang#scala-library;2.10.4 in sbt-chain
@@ -3315,7 +3315,7 @@
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-common/2.2.0/hadoop-mapreduce-client-common-2.2.0.pom
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-common/2.2.0/hadoop-mapreduce-client-common-2.2.0.pom.sha1
 [debug] sha1 OK for http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-common/2.2.0/hadoop-mapreduce-client-common-2.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.hadoop#hadoop-mapreduce-client-common;2.2.0!hadoop-mapreduce-client-common.pom(pom.original) (384ms)
+[debug] 	[SUCCESSFUL ] org.apache.hadoop#hadoop-mapreduce-client-common;2.2.0!hadoop-mapreduce-client-common.pom(pom.original) (378ms)
 [info] Resolving org.apache.hadoop#hadoop-mapreduce-client;2.2.0 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.hadoop#hadoop-mapreduce-client;2.2.0 {}
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-mapreduce-client;2.2.0
@@ -3367,7 +3367,7 @@
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-common/2.2.0/hadoop-yarn-common-2.2.0.pom
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-common/2.2.0/hadoop-yarn-common-2.2.0.pom.sha1
 [debug] sha1 OK for http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-common/2.2.0/hadoop-yarn-common-2.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-common;2.2.0!hadoop-yarn-common.pom(pom.original) (352ms)
+[debug] 	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-common;2.2.0!hadoop-yarn-common.pom(pom.original) (315ms)
 [info] Resolving org.apache.hadoop#hadoop-yarn;2.2.0 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.hadoop#hadoop-yarn;2.2.0 {}
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-yarn;2.2.0
@@ -3435,7 +3435,7 @@
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-api/2.2.0/hadoop-yarn-api-2.2.0.pom
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-api/2.2.0/hadoop-yarn-api-2.2.0.pom.sha1
 [debug] sha1 OK for http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-api/2.2.0/hadoop-yarn-api-2.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-api;2.2.0!hadoop-yarn-api.pom(pom.original) (337ms)
+[debug] 	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-api;2.2.0!hadoop-yarn-api.pom(pom.original) (329ms)
 [info] Resolving org.apache.hadoop#hadoop-yarn;2.2.0 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.hadoop#hadoop-yarn;2.2.0 {}
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-yarn;2.2.0
@@ -4272,7 +4272,7 @@
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.2.0/hadoop-mapreduce-client-shuffle-2.2.0.pom
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.2.0/hadoop-mapreduce-client-shuffle-2.2.0.pom.sha1
 [debug] sha1 OK for http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.2.0/hadoop-mapreduce-client-shuffle-2.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.hadoop#hadoop-mapreduce-client-shuffle;2.2.0!hadoop-mapreduce-client-shuffle.pom(pom.original) (316ms)
+[debug] 	[SUCCESSFUL ] org.apache.hadoop#hadoop-mapreduce-client-shuffle;2.2.0!hadoop-mapreduce-client-shuffle.pom(pom.original) (300ms)
 [info] Resolving org.apache.hadoop#hadoop-mapreduce-client;2.2.0 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.hadoop#hadoop-mapreduce-client;2.2.0 {}
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-mapreduce-client;2.2.0
@@ -4645,7 +4645,7 @@
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-server-nodemanager/2.2.0/hadoop-yarn-server-nodemanager-2.2.0.pom
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-server-nodemanager/2.2.0/hadoop-yarn-server-nodemanager-2.2.0.pom.sha1
 [debug] sha1 OK for http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-server-nodemanager/2.2.0/hadoop-yarn-server-nodemanager-2.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-server-nodemanager;2.2.0!hadoop-yarn-server-nodemanager.pom(pom.original) (336ms)
+[debug] 	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-server-nodemanager;2.2.0!hadoop-yarn-server-nodemanager.pom(pom.original) (304ms)
 [info] Resolving org.apache.hadoop#hadoop-yarn-server;2.2.0 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.hadoop#hadoop-yarn-server;2.2.0 {}
 [debug] 		tried /Users/Marco/.ivy2/local/org.apache.hadoop/hadoop-yarn-server/2.2.0/ivys/ivy.xml
@@ -4657,7 +4657,7 @@
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-server/2.2.0/hadoop-yarn-server-2.2.0.pom
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-server/2.2.0/hadoop-yarn-server-2.2.0.pom.sha1
 [debug] sha1 OK for http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-server/2.2.0/hadoop-yarn-server-2.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-server;2.2.0!hadoop-yarn-server.pom(pom.original) (323ms)
+[debug] 	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-server;2.2.0!hadoop-yarn-server.pom(pom.original) (335ms)
 [info] Resolving org.apache.hadoop#hadoop-yarn;2.2.0 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.hadoop#hadoop-yarn;2.2.0 {}
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-yarn;2.2.0
@@ -16325,19 +16325,19 @@
 [debug] 	[NOT REQUIRED] com.esotericsoftware.minlog#minlog;1.2!minlog.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-[debug] :: resolution report :: resolve 25234ms :: artifacts dl 279ms
-[debug] 	report for textmanipulationengine#textmanipulationengine_2.10;0.1-SNAPSHOT compile produced in /Users/Marco/TextManipulationEngineRepo/TextManipulationEngine/target/resolution-cache/reports/textmanipulationengine-textmanipulationengine_2.10-compile.xml
-[debug] 	report for textmanipulationengine#textmanipulationengine_2.10;0.1-SNAPSHOT runtime produced in /Users/Marco/TextManipulationEngineRepo/TextManipulationEngine/target/resolution-cache/reports/textmanipulationengine-textmanipulationengine_2.10-runtime.xml
-[debug] 	report for textmanipulationengine#textmanipulationengine_2.10;0.1-SNAPSHOT test produced in /Users/Marco/TextManipulationEngineRepo/TextManipulationEngine/target/resolution-cache/reports/textmanipulationengine-textmanipulationengine_2.10-test.xml
-[debug] 	report for textmanipulationengine#textmanipulationengine_2.10;0.1-SNAPSHOT provided produced in /Users/Marco/TextManipulationEngineRepo/TextManipulationEngine/target/resolution-cache/reports/textmanipulationengine-textmanipulationengine_2.10-provided.xml
-[debug] 	report for textmanipulationengine#textmanipulationengine_2.10;0.1-SNAPSHOT optional produced in /Users/Marco/TextManipulationEngineRepo/TextManipulationEngine/target/resolution-cache/reports/textmanipulationengine-textmanipulationengine_2.10-optional.xml
-[debug] 	report for textmanipulationengine#textmanipulationengine_2.10;0.1-SNAPSHOT compile-internal produced in /Users/Marco/TextManipulationEngineRepo/TextManipulationEngine/target/resolution-cache/reports/textmanipulationengine-textmanipulationengine_2.10-compile-internal.xml
-[debug] 	report for textmanipulationengine#textmanipulationengine_2.10;0.1-SNAPSHOT runtime-internal produced in /Users/Marco/TextManipulationEngineRepo/TextManipulationEngine/target/resolution-cache/reports/textmanipulationengine-textmanipulationengine_2.10-runtime-internal.xml
-[debug] 	report for textmanipulationengine#textmanipulationengine_2.10;0.1-SNAPSHOT test-internal produced in /Users/Marco/TextManipulationEngineRepo/TextManipulationEngine/target/resolution-cache/reports/textmanipulationengine-textmanipulationengine_2.10-test-internal.xml
-[debug] 	report for textmanipulationengine#textmanipulationengine_2.10;0.1-SNAPSHOT plugin produced in /Users/Marco/TextManipulationEngineRepo/TextManipulationEngine/target/resolution-cache/reports/textmanipulationengine-textmanipulationengine_2.10-plugin.xml
-[debug] 	report for textmanipulationengine#textmanipulationengine_2.10;0.1-SNAPSHOT sources produced in /Users/Marco/TextManipulationEngineRepo/TextManipulationEngine/target/resolution-cache/reports/textmanipulationengine-textmanipulationengine_2.10-sources.xml
-[debug] 	report for textmanipulationengine#textmanipulationengine_2.10;0.1-SNAPSHOT docs produced in /Users/Marco/TextManipulationEngineRepo/TextManipulationEngine/target/resolution-cache/reports/textmanipulationengine-textmanipulationengine_2.10-docs.xml
-[debug] 	report for textmanipulationengine#textmanipulationengine_2.10;0.1-SNAPSHOT pom produced in /Users/Marco/TextManipulationEngineRepo/TextManipulationEngine/target/resolution-cache/reports/textmanipulationengine-textmanipulationengine_2.10-pom.xml
-[debug] 	report for textmanipulationengine#textmanipulationengine_2.10;0.1-SNAPSHOT scala-tool produced in /Users/Marco/TextManipulationEngineRepo/TextManipulationEngine/target/resolution-cache/reports/textmanipulationengine-textmanipulationengine_2.10-scala-tool.xml
-[debug] 	resolve done (25234ms resolve - 279ms download)
+[debug] :: resolution report :: resolve 43079ms :: artifacts dl 356ms
+[debug] 	report for textmanipulationengine#textmanipulationengine_2.10;0.1-SNAPSHOT compile produced in /Users/Marco/TextManipulationEngine/target/resolution-cache/reports/textmanipulationengine-textmanipulationengine_2.10-compile.xml
+[debug] 	report for textmanipulationengine#textmanipulationengine_2.10;0.1-SNAPSHOT runtime produced in /Users/Marco/TextManipulationEngine/target/resolution-cache/reports/textmanipulationengine-textmanipulationengine_2.10-runtime.xml
+[debug] 	report for textmanipulationengine#textmanipulationengine_2.10;0.1-SNAPSHOT test produced in /Users/Marco/TextManipulationEngine/target/resolution-cache/reports/textmanipulationengine-textmanipulationengine_2.10-test.xml
+[debug] 	report for textmanipulationengine#textmanipulationengine_2.10;0.1-SNAPSHOT provided produced in /Users/Marco/TextManipulationEngine/target/resolution-cache/reports/textmanipulationengine-textmanipulationengine_2.10-provided.xml
+[debug] 	report for textmanipulationengine#textmanipulationengine_2.10;0.1-SNAPSHOT optional produced in /Users/Marco/TextManipulationEngine/target/resolution-cache/reports/textmanipulationengine-textmanipulationengine_2.10-optional.xml
+[debug] 	report for textmanipulationengine#textmanipulationengine_2.10;0.1-SNAPSHOT compile-internal produced in /Users/Marco/TextManipulationEngine/target/resolution-cache/reports/textmanipulationengine-textmanipulationengine_2.10-compile-internal.xml
+[debug] 	report for textmanipulationengine#textmanipulationengine_2.10;0.1-SNAPSHOT runtime-internal produced in /Users/Marco/TextManipulationEngine/target/resolution-cache/reports/textmanipulationengine-textmanipulationengine_2.10-runtime-internal.xml
+[debug] 	report for textmanipulationengine#textmanipulationengine_2.10;0.1-SNAPSHOT test-internal produced in /Users/Marco/TextManipulationEngine/target/resolution-cache/reports/textmanipulationengine-textmanipulationengine_2.10-test-internal.xml
+[debug] 	report for textmanipulationengine#textmanipulationengine_2.10;0.1-SNAPSHOT plugin produced in /Users/Marco/TextManipulationEngine/target/resolution-cache/reports/textmanipulationengine-textmanipulationengine_2.10-plugin.xml
+[debug] 	report for textmanipulationengine#textmanipulationengine_2.10;0.1-SNAPSHOT sources produced in /Users/Marco/TextManipulationEngine/target/resolution-cache/reports/textmanipulationengine-textmanipulationengine_2.10-sources.xml
+[debug] 	report for textmanipulationengine#textmanipulationengine_2.10;0.1-SNAPSHOT docs produced in /Users/Marco/TextManipulationEngine/target/resolution-cache/reports/textmanipulationengine-textmanipulationengine_2.10-docs.xml
+[debug] 	report for textmanipulationengine#textmanipulationengine_2.10;0.1-SNAPSHOT pom produced in /Users/Marco/TextManipulationEngine/target/resolution-cache/reports/textmanipulationengine-textmanipulationengine_2.10-pom.xml
+[debug] 	report for textmanipulationengine#textmanipulationengine_2.10;0.1-SNAPSHOT scala-tool produced in /Users/Marco/TextManipulationEngine/target/resolution-cache/reports/textmanipulationengine-textmanipulationengine_2.10-scala-tool.xml
+[debug] 	resolve done (43079ms resolve - 356ms download)
 [info] Done updating.

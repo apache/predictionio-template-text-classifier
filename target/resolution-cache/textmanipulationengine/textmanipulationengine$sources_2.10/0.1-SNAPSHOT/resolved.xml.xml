@@ -4,7 +4,7 @@
 		module="textmanipulationengine$sources_2.10"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20150420202718"
+		publication="20150420211001"
 	/>
 	<configurations>
 		<conf name="default" visibility="public" description=""/>

@@ -4,7 +4,7 @@
 		module="textmanipulationengine_2.10"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20150420202651"
+		publication="20150420210915"
 	>
 		<description>
 		TextManipulationEngine
