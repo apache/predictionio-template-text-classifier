@@ -10,7 +10,7 @@ import scala.math.exp
 
 
 abstract class Model {
-  abstract def predict(doc: String): PredictedResult
+  def predict(doc: String): PredictedResult
 }
 
 
