@@ -8,15 +8,20 @@ import org.apache.spark.mllib.regression.LabeledPoint
 import scala.math.exp
 
 
+
 abstract class Model {
   abstract def predict(doc: String): PredictedResult
 }
 
+
 class SupervisedModel(
-                       val pd: PreparedData, val lambda: Double
+                       val pd: PreparedData,
+                       lambda: Double,
+                       nMin: Int,
+                       nMax: Int
                        ) extends Model {
 
-  private val dataModel = new CountVectorizer(pd)
+  private val dataModel = new CountVectorizer(pd, nMin, nMax)
 
   private val nb : NaiveBayesModel = NaiveBayes.train(
     dataModel.transformData.map(

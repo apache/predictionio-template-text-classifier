@@ -88,3 +88,7 @@ org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = 
 	at org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher.process(ZooKeeperWatcher.java:319)
 	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:522)
 	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:498)
+2015-04-20 23:58:42,439 INFO  io.prediction.tools.console.Console$ [main] - Using command '/Users/Marco/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-20 23:58:42,441 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-20 23:58:42,442 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.1.jar is absent.
+2015-04-20 23:58:42,443 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /Users/Marco/PredictionIO/sbt/sbt  package assemblyPackageDependency

@@ -44,7 +44,7 @@ object TextManipulationEngine extends IEngineFactory {
     new Engine(
       classOf[DataSource],
       classOf[Preparator],
-      Map("algo" -> classOf[Algorithm]),
+      Map("sup" -> classOf[SupervisedAlgorithm]),
       classOf[Serving])
   }
 }

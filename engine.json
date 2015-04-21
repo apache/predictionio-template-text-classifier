@@ -1,0 +1,20 @@
+{
+  "id": "default",
+  "description": "Default settings",
+  "engineFactory": "TextManipulationEngine.TextManipulationEngine",
+  "datasource": {
+    "params": {
+      "appId": 4
+    }
+  },
+  "algorithms": [
+    {
+      "name": "sup",
+      "params": {
+        "lambda": 1.0,
+        "nMin": 1,
+        "nMax": 2
+      }
+    }
+  ]
+}

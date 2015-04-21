@@ -3,9 +3,9 @@ package TextManipulationEngine
 import opennlp.tools.ngram.NGramModel
 import opennlp.tools.tokenize.SimpleTokenizer
 import opennlp.tools.util.StringList
-import org.apache.spark.mllib.linalg.{Vector, Vectors}
 import org.apache.spark.rdd.RDD
-import scala.collection.mutable.{HashMap, LinkedHashSet}
+
+import scala.collection.mutable
 
 
 // This class will take in as parameters an instance of type
@@ -14,8 +14,8 @@ import scala.collection.mutable.{HashMap, LinkedHashSet}
 // as an implementation of our data model.
 class CountVectorizer (
                         val pd : PreparedData,
-                        nMin : Int = 1,
-                        nMax : Int = 2
+                        nMin: Int,
+                        nMax: Int
                         ){
 
 
@@ -29,19 +29,17 @@ class CountVectorizer (
   // and return a HashMap in which every token that appears in the
   // document is associated to the number of times it appears in the
   // document.
-  private def hashData (doc : String) : HashMap[String, Double] = {
+  private def hashData(doc: String): mutable.HashMap[String, Double] = {
 
     val model = new NGramModel()
     model.add(new StringList(tokenize(doc): _*), nMin, nMax)
-    val hashMap = new HashMap[String, Double]()
+    val hashMap = new mutable.HashMap[String, Double]()
     for (x <- model.iterator)
       hashMap.put(x, model.getCount(x).toDouble)
-
-    return hashMap
   }
 
   // Create token-gram universe.
-  private val universe = new LinkedHashSet[String]()
+  private val universe = new mutable.LinkedHashSet[String]()
   pd.data.map(
     e => hashData(e.text)
   ).foreach(
