@@ -34,8 +34,12 @@ class CountVectorizer (
     val model = new NGramModel()
     model.add(new StringList(tokenize(doc): _*), nMin, nMax)
     val hashMap = new mutable.HashMap[String, Double]()
-    for (x <- model.iterator)
-      hashMap.put(x, model.getCount(x).toDouble)
+    val iter = model.iterator
+    while (iter.hasNext) {
+      var x = iter.next
+      hashMap.put(x.toString, model.getCount(x).toDouble)
+    }
+    hashMap
   }
 
   // Create token-gram universe.

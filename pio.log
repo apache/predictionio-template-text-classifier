@@ -92,3 +92,52 @@ org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = 
 2015-04-20 23:58:42,441 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
 2015-04-20 23:58:42,442 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.1.jar is absent.
 2015-04-20 23:58:42,443 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /Users/Marco/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-21 00:15:25,140 INFO  io.prediction.tools.console.Console$ [main] - Creating Event Server at 0.0.0.0:7070
+2015-04-21 00:15:26,667 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 00:15:35,273 INFO  spray.can.server.HttpListener [EventServerSystem-akka.actor.default-dispatcher-3] - Bound to /0.0.0.0:7070
+2015-04-21 00:15:35,274 INFO  io.prediction.data.api.EventServerActor [EventServerSystem-akka.actor.default-dispatcher-3] - Bound received. EventServer is ready.
+2015-04-21 00:15:36,546 INFO  io.prediction.tools.console.App$ [main] -                 Name |   ID |                                                       Access Key | Allowed Event(s)
+2015-04-21 00:15:36,663 INFO  io.prediction.tools.console.App$ [main] -      FinalDeployTest |    4 | 3p42NlUE6uqwOX39vGSd0djm6QvdgiriZ1lmQnzPinPjHiYnaimxr5KP89s9ue53 | (all)
+2015-04-21 00:15:36,673 INFO  io.prediction.tools.console.App$ [main] -               MyApp1 |    1 | ddu1ynBz4ONm9bxqPE73RvagJeQNNauZkHU5CsH3h5CFJU6rKM5Kc0uiezP7ZCLw | (all)
+2015-04-21 00:15:36,681 INFO  io.prediction.tools.console.App$ [main] -               MyApp2 |    2 | Ou8SV0FJoP84LfSyXy3cBLV2TgWSHV9q2BiNgQLy4Zuji0RiJ6nfNKMp8kUGdC9O | (all)
+2015-04-21 00:15:36,688 INFO  io.prediction.tools.console.App$ [main] -               PTest1 |    3 | TO4tXr8YDZHdzWo3EH0KMtE8JwOP0GEz8gqVEpVB31GzNHD6ILSJNLXNlNrZNTBn | (all)
+2015-04-21 00:15:36,697 INFO  io.prediction.tools.console.App$ [main] -             TextApp1 |    5 | IHeGYSNna0a1vNPnk9TNulOW1qzIhrI23JiMurUKK555ePCOzdCOFInZ0iS6cMdK | (all)
+2015-04-21 00:15:36,701 INFO  io.prediction.tools.console.App$ [main] - Finished listing 5 app(s).
+2015-04-21 00:15:50,523 ERROR io.prediction.tools.console.App$ [main] - App TextaPP1 does not exist. Aborting.
+2015-04-21 00:15:58,989 INFO  io.prediction.tools.console.App$ [main] - The data of the following app will be deleted. Are you sure?
+2015-04-21 00:15:58,991 INFO  io.prediction.tools.console.App$ [main] -     App Name: TextApp1
+2015-04-21 00:15:58,992 INFO  io.prediction.tools.console.App$ [main] -       App ID: 5
+2015-04-21 00:15:58,992 INFO  io.prediction.tools.console.App$ [main] -  Description: None
+2015-04-21 00:16:01,352 INFO  io.prediction.tools.console.App$ [main] - Aborted.
+2015-04-21 00:16:05,417 INFO  io.prediction.tools.console.App$ [main] - The data of the following app will be deleted. Are you sure?
+2015-04-21 00:16:05,419 INFO  io.prediction.tools.console.App$ [main] -     App Name: TextApp1
+2015-04-21 00:16:05,419 INFO  io.prediction.tools.console.App$ [main] -       App ID: 5
+2015-04-21 00:16:05,420 INFO  io.prediction.tools.console.App$ [main] -  Description: None
+2015-04-21 00:16:06,945 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 00:16:23,231 INFO  io.prediction.data.storage.hbase.HBLEvents [main] - Removing table predictionio_eventdata:events_5...
+2015-04-21 00:16:28,630 INFO  io.prediction.tools.console.App$ [main] - Removed Event Store for this app ID: 5
+2015-04-21 00:16:33,875 INFO  io.prediction.data.storage.hbase.HBLEvents [main] - The table predictionio_eventdata:events_5 doesn't exist yet. Creating now...
+2015-04-21 00:16:39,263 INFO  io.prediction.tools.console.App$ [main] - Initialized Event Store for this app ID: 5.
+2015-04-21 00:16:39,367 INFO  io.prediction.tools.console.App$ [main] - Done.
+2015-04-21 00:16:45,460 INFO  io.prediction.tools.console.App$ [main] -                 Name |   ID |                                                       Access Key | Allowed Event(s)
+2015-04-21 00:16:45,531 INFO  io.prediction.tools.console.App$ [main] -      FinalDeployTest |    4 | 3p42NlUE6uqwOX39vGSd0djm6QvdgiriZ1lmQnzPinPjHiYnaimxr5KP89s9ue53 | (all)
+2015-04-21 00:16:45,540 INFO  io.prediction.tools.console.App$ [main] -               MyApp1 |    1 | ddu1ynBz4ONm9bxqPE73RvagJeQNNauZkHU5CsH3h5CFJU6rKM5Kc0uiezP7ZCLw | (all)
+2015-04-21 00:16:45,548 INFO  io.prediction.tools.console.App$ [main] -               MyApp2 |    2 | Ou8SV0FJoP84LfSyXy3cBLV2TgWSHV9q2BiNgQLy4Zuji0RiJ6nfNKMp8kUGdC9O | (all)
+2015-04-21 00:16:45,554 INFO  io.prediction.tools.console.App$ [main] -               PTest1 |    3 | TO4tXr8YDZHdzWo3EH0KMtE8JwOP0GEz8gqVEpVB31GzNHD6ILSJNLXNlNrZNTBn | (all)
+2015-04-21 00:16:45,561 INFO  io.prediction.tools.console.App$ [main] -             TextApp1 |    5 | IHeGYSNna0a1vNPnk9TNulOW1qzIhrI23JiMurUKK555ePCOzdCOFInZ0iS6cMdK | (all)
+2015-04-21 00:16:45,561 INFO  io.prediction.tools.console.App$ [main] - Finished listing 5 app(s).
+2015-04-21 00:17:52,086 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /Users/Marco/TextManipulationEngine/manifest.json
+2015-04-21 00:17:52,121 INFO  io.prediction.tools.console.Console$ [main] - Using command '/Users/Marco/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-21 00:17:52,122 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-21 00:17:52,124 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.1.jar is absent.
+2015-04-21 00:17:52,124 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /Users/Marco/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-21 00:18:12,381 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m/Users/Marco/TextManipulationEngine/src/main/scala/TextManipulationEngine/CountVectorizer.scala:37: value foreach is not a member of java.util.Iterator[opennlp.tools.util.StringList][0m
+2015-04-21 00:18:12,382 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m    for (x <- model.iterator)[0m
+2015-04-21 00:18:12,382 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m                    ^[0m
+2015-04-21 00:18:12,926 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m/Users/Marco/TextManipulationEngine/src/main/scala/TextManipulationEngine/Model.scala:13: `abstract' modifier can be used only for classes; it should be omitted for abstract members[0m
+2015-04-21 00:18:12,928 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m  abstract def predict(doc: String): PredictedResult[0m
+2015-04-21 00:18:12,928 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m               ^[0m
+2015-04-21 00:18:13,174 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mtwo errors found[0m
+2015-04-21 00:18:13,199 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m(compile:[31mcompile[0m) Compilation failed[0m
+2015-04-21 00:18:13,203 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mTotal time: 10 s, completed Apr 21, 2015 12:18:13 AM[0m
+2015-04-21 00:18:13,374 ERROR io.prediction.tools.console.Console$ [main] - Return code of previous step is 1. Aborting.
