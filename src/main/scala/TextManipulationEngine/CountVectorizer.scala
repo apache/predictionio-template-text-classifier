@@ -16,7 +16,7 @@ class CountVectorizer (
                         val pd : PreparedData,
                         nMin: Int,
                         nMax: Int
-                        ){
+                        ) {
 
 
   // This private method will tokenize our text entries.
@@ -74,5 +74,5 @@ class CountVectorizer (
 // transformed under a given data model.
 case class TransformedData(
                           data : (Double, Array[Double])
-                            )
+                            ) extends Serializable
 
