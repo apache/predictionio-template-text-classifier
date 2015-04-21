@@ -1,0 +1,90 @@
+2015-04-17 15:44:50,961 INFO  io.prediction.tools.console.Console$ [main] - Creating Event Server at 0.0.0.0:7070
+2015-04-17 15:44:52,366 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-17 15:44:59,883 INFO  spray.can.server.HttpListener [EventServerSystem-akka.actor.default-dispatcher-3] - Bound to /0.0.0.0:7070
+2015-04-17 15:44:59,884 INFO  io.prediction.data.api.EventServerActor [EventServerSystem-akka.actor.default-dispatcher-3] - Bound received. EventServer is ready.
+2015-04-17 15:45:16,617 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-17 15:45:27,744 INFO  io.prediction.data.storage.hbase.HBLEvents [main] - The table predictionio_eventdata:events_5 doesn't exist yet. Creating now...
+2015-04-17 15:45:28,059 INFO  io.prediction.tools.console.App$ [main] - Initialized Event Store for this app ID: 5.
+2015-04-17 15:45:28,083 INFO  io.prediction.tools.console.App$ [main] - Created new app:
+2015-04-17 15:45:28,083 INFO  io.prediction.tools.console.App$ [main] -       Name: TextApp1
+2015-04-17 15:45:28,084 INFO  io.prediction.tools.console.App$ [main] -         ID: 5
+2015-04-17 15:45:28,084 INFO  io.prediction.tools.console.App$ [main] - Access Key: IHeGYSNna0a1vNPnk9TNulOW1qzIhrI23JiMurUKK555ePCOzdCOFInZ0iS6cMdK
+2015-04-17 16:00:13,198 INFO  io.prediction.tools.console.App$ [main] - The data of the following app will be deleted. Are you sure?
+2015-04-17 16:00:13,200 INFO  io.prediction.tools.console.App$ [main] -     App Name: TextApp1
+2015-04-17 16:00:13,201 INFO  io.prediction.tools.console.App$ [main] -       App ID: 5
+2015-04-17 16:00:13,201 INFO  io.prediction.tools.console.App$ [main] -  Description: None
+2015-04-17 16:00:15,699 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-17 16:00:26,782 INFO  io.prediction.data.storage.hbase.HBLEvents [main] - Removing table predictionio_eventdata:events_5...
+2015-04-17 16:00:32,086 INFO  io.prediction.tools.console.App$ [main] - Removed Event Store for this app ID: 5
+2015-04-17 16:00:32,227 INFO  io.prediction.data.storage.hbase.HBLEvents [main] - The table predictionio_eventdata:events_5 doesn't exist yet. Creating now...
+2015-04-17 16:00:37,570 INFO  io.prediction.tools.console.App$ [main] - Initialized Event Store for this app ID: 5.
+2015-04-17 16:00:37,672 INFO  io.prediction.tools.console.App$ [main] - Done.
+2015-04-17 22:24:39,857 WARN  org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation [main-EventThread] - This client just lost it's session with ZooKeeper, closing it. It will be recreated next time someone needs it
+org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired
+	at org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher.connectionEvent(ZooKeeperWatcher.java:401)
+	at org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher.process(ZooKeeperWatcher.java:319)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:522)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:498)
+2015-04-20 01:44:03,926 INFO  io.prediction.tools.console.Console$ [main] - Creating Event Server at 0.0.0.0:7070
+2015-04-20 01:44:05,592 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-20 01:44:06,430 ERROR io.prediction.data.storage.hbase.StorageClient [main] - HBase master is not running (ZooKeeper ensemble: localhost). Please make sure that HBase is running properly, and that the configuration is pointing at the correct ZooKeeper ensemble.
+2015-04-20 01:44:06,431 ERROR io.prediction.data.storage.Storage$ [main] - Error initializing storage client for source HBASE
+2015-04-20 01:44:06,431 ERROR io.prediction.data.storage.Storage$ [main] - com.google.protobuf.ServiceException: org.apache.hadoop.hbase.ipc.RemoteWithExtrasException(org.apache.hadoop.hbase.ipc.ServerNotRunningYetException): org.apache.hadoop.hbase.ipc.ServerNotRunningYetException: Server 192.168.1.56/192.168.1.56:55282 is not running yet
+	at org.apache.hadoop.hbase.ipc.CallRunner.run(CallRunner.java:98)
+	at org.apache.hadoop.hbase.ipc.FifoRpcScheduler$1.run(FifoRpcScheduler.java:74)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2015-04-20 01:44:10,443 INFO  io.prediction.tools.console.App$ [main] -                 Name |   ID |                                                       Access Key | Allowed Event(s)
+2015-04-20 01:44:10,584 INFO  io.prediction.tools.console.App$ [main] -      FinalDeployTest |    4 | 3p42NlUE6uqwOX39vGSd0djm6QvdgiriZ1lmQnzPinPjHiYnaimxr5KP89s9ue53 | (all)
+2015-04-20 01:44:10,593 INFO  io.prediction.tools.console.App$ [main] -               MyApp1 |    1 | ddu1ynBz4ONm9bxqPE73RvagJeQNNauZkHU5CsH3h5CFJU6rKM5Kc0uiezP7ZCLw | (all)
+2015-04-20 01:44:10,601 INFO  io.prediction.tools.console.App$ [main] -               MyApp2 |    2 | Ou8SV0FJoP84LfSyXy3cBLV2TgWSHV9q2BiNgQLy4Zuji0RiJ6nfNKMp8kUGdC9O | (all)
+2015-04-20 01:44:10,611 INFO  io.prediction.tools.console.App$ [main] -               PTest1 |    3 | TO4tXr8YDZHdzWo3EH0KMtE8JwOP0GEz8gqVEpVB31GzNHD6ILSJNLXNlNrZNTBn | (all)
+2015-04-20 01:44:10,622 INFO  io.prediction.tools.console.App$ [main] -             TextApp1 |    5 | IHeGYSNna0a1vNPnk9TNulOW1qzIhrI23JiMurUKK555ePCOzdCOFInZ0iS6cMdK | (all)
+2015-04-20 01:44:10,623 INFO  io.prediction.tools.console.App$ [main] - Finished listing 5 app(s).
+2015-04-20 01:45:35,019 INFO  io.prediction.tools.console.App$ [main] - The data of the following app will be deleted. Are you sure?
+2015-04-20 01:45:35,022 INFO  io.prediction.tools.console.App$ [main] -     App Name: TextApp1
+2015-04-20 01:45:35,023 INFO  io.prediction.tools.console.App$ [main] -       App ID: 5
+2015-04-20 01:45:35,023 INFO  io.prediction.tools.console.App$ [main] -  Description: None
+2015-04-20 01:45:37,369 INFO  io.prediction.tools.console.App$ [main] - Aborted.
+2015-04-20 01:45:41,896 INFO  io.prediction.tools.console.App$ [main] - The data of the following app will be deleted. Are you sure?
+2015-04-20 01:45:41,898 INFO  io.prediction.tools.console.App$ [main] -     App Name: TextApp1
+2015-04-20 01:45:41,898 INFO  io.prediction.tools.console.App$ [main] -       App ID: 5
+2015-04-20 01:45:41,899 INFO  io.prediction.tools.console.App$ [main] -  Description: None
+2015-04-20 01:45:43,735 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-20 01:45:49,759 INFO  io.prediction.data.storage.hbase.HBLEvents [main] - Removing table predictionio_eventdata:events_5...
+2015-04-20 01:45:56,243 INFO  io.prediction.tools.console.App$ [main] - Removed Event Store for this app ID: 5
+2015-04-20 01:46:01,473 INFO  io.prediction.data.storage.hbase.HBLEvents [main] - The table predictionio_eventdata:events_5 doesn't exist yet. Creating now...
+2015-04-20 01:46:01,756 INFO  io.prediction.tools.console.App$ [main] - Initialized Event Store for this app ID: 5.
+2015-04-20 01:46:01,860 INFO  io.prediction.tools.console.App$ [main] - Done.
+2015-04-20 01:46:33,030 INFO  io.prediction.tools.console.App$ [main] -                 Name |   ID |                                                       Access Key | Allowed Event(s)
+2015-04-20 01:46:33,083 INFO  io.prediction.tools.console.App$ [main] -      FinalDeployTest |    4 | 3p42NlUE6uqwOX39vGSd0djm6QvdgiriZ1lmQnzPinPjHiYnaimxr5KP89s9ue53 | (all)
+2015-04-20 01:46:33,102 INFO  io.prediction.tools.console.App$ [main] -               MyApp1 |    1 | ddu1ynBz4ONm9bxqPE73RvagJeQNNauZkHU5CsH3h5CFJU6rKM5Kc0uiezP7ZCLw | (all)
+2015-04-20 01:46:33,115 INFO  io.prediction.tools.console.App$ [main] -               MyApp2 |    2 | Ou8SV0FJoP84LfSyXy3cBLV2TgWSHV9q2BiNgQLy4Zuji0RiJ6nfNKMp8kUGdC9O | (all)
+2015-04-20 01:46:33,125 INFO  io.prediction.tools.console.App$ [main] -               PTest1 |    3 | TO4tXr8YDZHdzWo3EH0KMtE8JwOP0GEz8gqVEpVB31GzNHD6ILSJNLXNlNrZNTBn | (all)
+2015-04-20 01:46:33,136 INFO  io.prediction.tools.console.App$ [main] -             TextApp1 |    5 | IHeGYSNna0a1vNPnk9TNulOW1qzIhrI23JiMurUKK555ePCOzdCOFInZ0iS6cMdK | (all)
+2015-04-20 01:46:33,137 INFO  io.prediction.tools.console.App$ [main] - Finished listing 5 app(s).
+2015-04-20 02:00:19,046 INFO  io.prediction.tools.console.App$ [main] -                 Name |   ID |                                                       Access Key | Allowed Event(s)
+2015-04-20 02:00:19,097 INFO  io.prediction.tools.console.App$ [main] -      FinalDeployTest |    4 | 3p42NlUE6uqwOX39vGSd0djm6QvdgiriZ1lmQnzPinPjHiYnaimxr5KP89s9ue53 | (all)
+2015-04-20 02:00:19,114 INFO  io.prediction.tools.console.App$ [main] -               MyApp1 |    1 | ddu1ynBz4ONm9bxqPE73RvagJeQNNauZkHU5CsH3h5CFJU6rKM5Kc0uiezP7ZCLw | (all)
+2015-04-20 02:00:19,121 INFO  io.prediction.tools.console.App$ [main] -               MyApp2 |    2 | Ou8SV0FJoP84LfSyXy3cBLV2TgWSHV9q2BiNgQLy4Zuji0RiJ6nfNKMp8kUGdC9O | (all)
+2015-04-20 02:00:19,126 INFO  io.prediction.tools.console.App$ [main] -               PTest1 |    3 | TO4tXr8YDZHdzWo3EH0KMtE8JwOP0GEz8gqVEpVB31GzNHD6ILSJNLXNlNrZNTBn | (all)
+2015-04-20 02:00:19,134 INFO  io.prediction.tools.console.App$ [main] -             TextApp1 |    5 | IHeGYSNna0a1vNPnk9TNulOW1qzIhrI23JiMurUKK555ePCOzdCOFInZ0iS6cMdK | (all)
+2015-04-20 02:00:19,135 INFO  io.prediction.tools.console.App$ [main] - Finished listing 5 app(s).
+2015-04-20 02:01:53,889 INFO  io.prediction.tools.console.Console$ [main] - Creating Event Server at 0.0.0.0:7070
+2015-04-20 02:01:55,672 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-20 02:02:08,254 INFO  spray.can.server.HttpListener [EventServerSystem-akka.actor.default-dispatcher-3] - Bound to /0.0.0.0:7070
+2015-04-20 02:02:08,255 INFO  io.prediction.data.api.EventServerActor [EventServerSystem-akka.actor.default-dispatcher-3] - Bound received. EventServer is ready.
+2015-04-20 02:43:04,293 INFO  io.prediction.tools.console.Console$ [main] - Creating Event Server at 0.0.0.0:7070
+2015-04-20 02:43:06,376 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-20 02:43:10,491 INFO  spray.can.server.HttpListener [EventServerSystem-akka.actor.default-dispatcher-2] - Bound to /0.0.0.0:7070
+2015-04-20 02:43:10,492 INFO  io.prediction.data.api.EventServerActor [EventServerSystem-akka.actor.default-dispatcher-2] - Bound received. EventServer is ready.
+2015-04-20 06:45:43,606 WARN  org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation [main-EventThread] - This client just lost it's session with ZooKeeper, closing it. It will be recreated next time someone needs it
+org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired
+	at org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher.connectionEvent(ZooKeeperWatcher.java:401)
+	at org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher.process(ZooKeeperWatcher.java:319)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:522)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:498)
