@@ -13,7 +13,7 @@ abstract class Model {
 }
 
 class SupervisedModel(
-                       private val pd: PreparedData, val lambda: Double
+                       val pd: PreparedData, val lambda: Double
                        ) extends Model {
 
   private val dataModel = new CountVectorizer(pd)
@@ -51,6 +51,10 @@ class SupervisedModel(
 
 }
 
-class UnsupervisedModel
+class UnsupervisedModel(pd: PreparedData, nCluster: Int) extends Model {
+  def predict(doc: String): PredictedResult = {
+    new PredictedResult(1, 1)
+  }
+}
 
 

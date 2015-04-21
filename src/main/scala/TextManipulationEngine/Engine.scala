@@ -1,17 +1,18 @@
 package TextManipulationEngine
 
-import io.prediction.controller.{EmptyEvaluationInfo, EmptyActualResult ,Params, P2LAlgorithm}
-import scala.collection.mutable.HashMap
+import io.prediction.controller._
+
+import scala.collection.immutable.HashMap
 
 class Query(
-             val phrase: String
+             val text: String
              ) extends Serializable
 
 class PredictedResult (
                       label : Double,
                       val confidence : Double
                         ) extends Serializable {
-  private val categories = HashMap[Double, String](
+  private val categories: HashMap[Double, String] = HashMap(
     0.0 -> "alt.atheism",
     1.0 -> "comp.graphics",
     2.0 -> "comp.os.ms-windows.misc",
@@ -37,3 +38,13 @@ class PredictedResult (
   val category = categories.get(label)
 }
 
+object TextManipulationEngine extends IEngineFactory {
+  override
+  def apply() = {
+    new Engine(
+      classOf[DataSource],
+      classOf[Preparator],
+      Map("algo" -> classOf[Algorithm]),
+      classOf[Serving])
+  }
+}
