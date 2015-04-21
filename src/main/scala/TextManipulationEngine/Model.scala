@@ -8,8 +8,7 @@ import org.apache.spark.mllib.regression.LabeledPoint
 import scala.math.exp
 
 
-
-abstract class Model {
+abstract class Model extends Serializable {
   def predict(doc: String): PredictedResult
 }
 

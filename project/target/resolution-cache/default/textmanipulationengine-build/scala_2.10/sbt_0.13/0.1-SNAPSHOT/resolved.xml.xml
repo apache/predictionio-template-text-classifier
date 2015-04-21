@@ -4,7 +4,7 @@
 		module="textmanipulationengine-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20150421002805"
+		publication="20150421003502"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>

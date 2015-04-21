@@ -277,3 +277,132 @@ Caused by: java.lang.IllegalArgumentException: Can not set final scala.collectio
 	at java.lang.reflect.Field.set(Field.java:764)
 	at com.esotericsoftware.kryo.serializers.FieldSerializer$ObjectField.read(FieldSerializer.java:619)
 	... 31 more
+2015-04-21 00:31:04,944 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /Users/Marco/TextManipulationEngine/manifest.json
+2015-04-21 00:31:04,991 INFO  io.prediction.tools.console.Console$ [main] - Using command '/Users/Marco/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-21 00:31:04,991 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-21 00:31:04,992 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.1.jar is absent.
+2015-04-21 00:31:04,993 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /Users/Marco/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-21 00:31:21,235 INFO  io.prediction.tools.console.Console$ [main] - Build finished successfully.
+2015-04-21 00:31:21,235 INFO  io.prediction.tools.console.Console$ [main] - Looking for an engine...
+2015-04-21 00:31:21,244 INFO  io.prediction.tools.console.Console$ [main] - Found TextManipulationEngine-assembly-0.1-SNAPSHOT-deps.jar
+2015-04-21 00:31:21,244 INFO  io.prediction.tools.console.Console$ [main] - Found textmanipulationengine_2.10-0.1-SNAPSHOT.jar
+2015-04-21 00:31:21,256 INFO  io.prediction.tools.console.Console$ [main] - HADOOP_CONF_DIR is not set. Assuming HDFS is unavailable.
+2015-04-21 00:31:23,029 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 00:31:23,168 INFO  io.prediction.tools.RegisterEngine$ [main] - Copying file:/Users/Marco/TextManipulationEngine/target/scala-2.10/TextManipulationEngine-assembly-0.1-SNAPSHOT-deps.jar to file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/TextManipulationEngine-assembly-0.1-SNAPSHOT-deps.jar
+2015-04-21 00:31:23,254 INFO  io.prediction.tools.RegisterEngine$ [main] - Copying file:/Users/Marco/TextManipulationEngine/target/scala-2.10/textmanipulationengine_2.10-0.1-SNAPSHOT.jar to file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/textmanipulationengine_2.10-0.1-SNAPSHOT.jar
+2015-04-21 00:31:23,266 INFO  io.prediction.tools.RegisterEngine$ [main] - Registering engine 0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje f8de3b2e82df59a352b216bc539994f3f1bed16d
+2015-04-21 00:31:23,301 INFO  io.prediction.tools.console.Console$ [main] - Your engine is ready for training.
+2015-04-21 00:31:26,527 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /Users/Marco/TextManipulationEngine/manifest.json
+2015-04-21 00:31:28,244 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 00:31:28,379 INFO  io.prediction.tools.RunWorkflow$ [main] - Submission command: /Users/Marco/PredictionIO/vendors/spark-1.2.1/bin/spark-submit --class io.prediction.workflow.CreateWorkflow --name PredictionIO Training: 0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje f8de3b2e82df59a352b216bc539994f3f1bed16d () --jars file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/textmanipulationengine_2.10-0.1-SNAPSHOT.jar,file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/TextManipulationEngine-assembly-0.1-SNAPSHOT-deps.jar --files /Users/Marco/PredictionIO/conf/log4j.properties,/Users/Marco/PredictionIO/vendors/hbase-0.98.11/conf/hbase-site.xml --driver-class-path /Users/Marco/PredictionIO/conf:/Users/Marco/PredictionIO/vendors/hbase-0.98.11/conf /Users/Marco/PredictionIO/lib/pio-assembly-0.9.1.jar --env PIO_STORAGE_SOURCES_HBASE_TYPE=hbase,PIO_ENV_LOADED=1,PIO_STORAGE_SOURCES_HBASE_HOSTS=0,PIO_STORAGE_REPOSITORIES_METADATA_NAME=predictionio_metadata,PIO_FS_BASEDIR=/Users/Marco/.pio_store,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOSTS=localhost,PIO_STORAGE_SOURCES_HBASE_HOME=/Users/Marco/PredictionIO/vendors/hbase-0.98.11,PIO_HOME=/Users/Marco/PredictionIO,PIO_FS_ENGINESDIR=/Users/Marco/.pio_store/engines,PIO_STORAGE_SOURCES_HBASE_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_TYPE=elasticsearch,PIO_STORAGE_REPOSITORIES_METADATA_SOURCE=ELASTICSEARCH,PIO_STORAGE_REPOSITORIES_MODELDATA_SOURCE=LOCALFS,PIO_STORAGE_REPOSITORIES_EVENTDATA_NAME=predictionio_eventdata,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOME=/Users/Marco/PredictionIO/vendors/elasticsearch-1.4.4,PIO_FS_TMPDIR=/Users/Marco/.pio_store/tmp,PIO_STORAGE_REPOSITORIES_MODELDATA_NAME=pio_,PIO_STORAGE_SOURCES_LOCALFS_HOSTS=/Users/Marco/.pio_store/models,PIO_STORAGE_REPOSITORIES_EVENTDATA_SOURCE=HBASE,PIO_CONF_DIR=/Users/Marco/PredictionIO/conf,PIO_STORAGE_SOURCES_LOCALFS_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_PORTS=9300,PIO_STORAGE_SOURCES_LOCALFS_TYPE=localfs --engine-id 0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje --engine-version f8de3b2e82df59a352b216bc539994f3f1bed16d --engine-variant /Users/Marco/TextManipulationEngine/engine.json --verbosity 0
+2015-04-21 00:31:30,287 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 00:31:31,204 INFO  io.prediction.controller.Engine [main] - Extracting datasource params...
+2015-04-21 00:31:31,290 INFO  io.prediction.workflow.WorkflowUtils$ [main] - No 'name' is found. Default empty String will be used.
+2015-04-21 00:31:31,302 INFO  io.prediction.controller.Engine [main] - Datasource params: (,DataSourceParams(5))
+2015-04-21 00:31:31,303 INFO  io.prediction.controller.Engine [main] - Extracting preparator params...
+2015-04-21 00:31:31,304 INFO  io.prediction.controller.Engine [main] - Preparator params: (,Empty)
+2015-04-21 00:31:31,310 INFO  io.prediction.controller.Engine [main] - Extracting serving params...
+2015-04-21 00:31:31,310 INFO  io.prediction.controller.Engine [main] - Serving params: (,Empty)
+2015-04-21 00:31:33,037 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-2] - Starting remoting
+2015-04-21 00:31:33,280 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-2] - Remoting started; listening on addresses :[akka.tcp://sparkDriver@calvisitor-10-105-186-107.calvisitor.1918.berkeley.edu:60331]
+2015-04-21 00:31:34,693 INFO  io.prediction.controller.Engine$ [main] - EngineWorkflow.train
+2015-04-21 00:31:34,694 INFO  io.prediction.controller.Engine$ [main] - DataSource: TextManipulationEngine.DataSource@23ad71bf
+2015-04-21 00:31:34,695 INFO  io.prediction.controller.Engine$ [main] - Preparator: TextManipulationEngine.Preparator@b791a81
+2015-04-21 00:31:34,695 INFO  io.prediction.controller.Engine$ [main] - AlgorithmList: List(TextManipulationEngine.SupervisedAlgorithm@71e7adbb)
+2015-04-21 00:31:34,696 INFO  io.prediction.controller.Engine$ [main] - Data santiy check is on.
+2015-04-21 00:31:46,102 INFO  io.prediction.controller.Engine$ [main] - TextManipulationEngine.TrainingData does not support data sanity check. Skipping check.
+2015-04-21 00:31:46,103 INFO  io.prediction.controller.Engine$ [main] - TextManipulationEngine.PreparedData does not support data sanity check. Skipping check.
+2015-04-21 00:33:21,598 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /Users/Marco/TextManipulationEngine/manifest.json
+2015-04-21 00:33:21,704 INFO  io.prediction.tools.console.Console$ [main] - Using command '/Users/Marco/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-21 00:33:21,704 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-21 00:33:21,707 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.1.jar is absent.
+2015-04-21 00:33:21,709 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /Users/Marco/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-21 00:33:38,065 INFO  io.prediction.tools.console.Console$ [main] - Build finished successfully.
+2015-04-21 00:33:38,066 INFO  io.prediction.tools.console.Console$ [main] - Looking for an engine...
+2015-04-21 00:33:38,073 INFO  io.prediction.tools.console.Console$ [main] - Found TextManipulationEngine-assembly-0.1-SNAPSHOT-deps.jar
+2015-04-21 00:33:38,073 INFO  io.prediction.tools.console.Console$ [main] - Found textmanipulationengine_2.10-0.1-SNAPSHOT.jar
+2015-04-21 00:33:38,080 INFO  io.prediction.tools.console.Console$ [main] - HADOOP_CONF_DIR is not set. Assuming HDFS is unavailable.
+2015-04-21 00:33:39,725 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 00:33:39,837 INFO  io.prediction.tools.RegisterEngine$ [main] - Copying file:/Users/Marco/TextManipulationEngine/target/scala-2.10/TextManipulationEngine-assembly-0.1-SNAPSHOT-deps.jar to file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/TextManipulationEngine-assembly-0.1-SNAPSHOT-deps.jar
+2015-04-21 00:33:39,938 INFO  io.prediction.tools.RegisterEngine$ [main] - Copying file:/Users/Marco/TextManipulationEngine/target/scala-2.10/textmanipulationengine_2.10-0.1-SNAPSHOT.jar to file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/textmanipulationengine_2.10-0.1-SNAPSHOT.jar
+2015-04-21 00:33:39,949 INFO  io.prediction.tools.RegisterEngine$ [main] - Registering engine 0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje f8de3b2e82df59a352b216bc539994f3f1bed16d
+2015-04-21 00:33:39,971 INFO  io.prediction.tools.console.Console$ [main] - Your engine is ready for training.
+2015-04-21 00:33:43,721 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /Users/Marco/TextManipulationEngine/manifest.json
+2015-04-21 00:33:45,439 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 00:33:45,557 INFO  io.prediction.tools.RunWorkflow$ [main] - Submission command: /Users/Marco/PredictionIO/vendors/spark-1.2.1/bin/spark-submit --class io.prediction.workflow.CreateWorkflow --name PredictionIO Training: 0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje f8de3b2e82df59a352b216bc539994f3f1bed16d () --jars file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/textmanipulationengine_2.10-0.1-SNAPSHOT.jar,file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/TextManipulationEngine-assembly-0.1-SNAPSHOT-deps.jar --files /Users/Marco/PredictionIO/conf/log4j.properties,/Users/Marco/PredictionIO/vendors/hbase-0.98.11/conf/hbase-site.xml --driver-class-path /Users/Marco/PredictionIO/conf:/Users/Marco/PredictionIO/vendors/hbase-0.98.11/conf /Users/Marco/PredictionIO/lib/pio-assembly-0.9.1.jar --env PIO_STORAGE_SOURCES_HBASE_TYPE=hbase,PIO_ENV_LOADED=1,PIO_STORAGE_SOURCES_HBASE_HOSTS=0,PIO_STORAGE_REPOSITORIES_METADATA_NAME=predictionio_metadata,PIO_FS_BASEDIR=/Users/Marco/.pio_store,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOSTS=localhost,PIO_STORAGE_SOURCES_HBASE_HOME=/Users/Marco/PredictionIO/vendors/hbase-0.98.11,PIO_HOME=/Users/Marco/PredictionIO,PIO_FS_ENGINESDIR=/Users/Marco/.pio_store/engines,PIO_STORAGE_SOURCES_HBASE_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_TYPE=elasticsearch,PIO_STORAGE_REPOSITORIES_METADATA_SOURCE=ELASTICSEARCH,PIO_STORAGE_REPOSITORIES_MODELDATA_SOURCE=LOCALFS,PIO_STORAGE_REPOSITORIES_EVENTDATA_NAME=predictionio_eventdata,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOME=/Users/Marco/PredictionIO/vendors/elasticsearch-1.4.4,PIO_FS_TMPDIR=/Users/Marco/.pio_store/tmp,PIO_STORAGE_REPOSITORIES_MODELDATA_NAME=pio_,PIO_STORAGE_SOURCES_LOCALFS_HOSTS=/Users/Marco/.pio_store/models,PIO_STORAGE_REPOSITORIES_EVENTDATA_SOURCE=HBASE,PIO_CONF_DIR=/Users/Marco/PredictionIO/conf,PIO_STORAGE_SOURCES_LOCALFS_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_PORTS=9300,PIO_STORAGE_SOURCES_LOCALFS_TYPE=localfs --engine-id 0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje --engine-version f8de3b2e82df59a352b216bc539994f3f1bed16d --engine-variant /Users/Marco/TextManipulationEngine/engine.json --verbosity 0
+2015-04-21 00:33:47,602 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 00:33:48,637 INFO  io.prediction.controller.Engine [main] - Extracting datasource params...
+2015-04-21 00:33:48,745 INFO  io.prediction.workflow.WorkflowUtils$ [main] - No 'name' is found. Default empty String will be used.
+2015-04-21 00:33:48,759 INFO  io.prediction.controller.Engine [main] - Datasource params: (,DataSourceParams(5))
+2015-04-21 00:33:48,759 INFO  io.prediction.controller.Engine [main] - Extracting preparator params...
+2015-04-21 00:33:48,761 INFO  io.prediction.controller.Engine [main] - Preparator params: (,Empty)
+2015-04-21 00:33:48,766 INFO  io.prediction.controller.Engine [main] - Extracting serving params...
+2015-04-21 00:33:48,767 INFO  io.prediction.controller.Engine [main] - Serving params: (,Empty)
+2015-04-21 00:33:50,565 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-3] - Starting remoting
+2015-04-21 00:33:50,795 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-3] - Remoting started; listening on addresses :[akka.tcp://sparkDriver@calvisitor-10-105-186-107.calvisitor.1918.berkeley.edu:60397]
+2015-04-21 00:33:51,964 INFO  io.prediction.controller.Engine$ [main] - EngineWorkflow.train
+2015-04-21 00:33:51,964 INFO  io.prediction.controller.Engine$ [main] - DataSource: TextManipulationEngine.DataSource@23ad71bf
+2015-04-21 00:33:51,965 INFO  io.prediction.controller.Engine$ [main] - Preparator: TextManipulationEngine.Preparator@b791a81
+2015-04-21 00:33:51,966 INFO  io.prediction.controller.Engine$ [main] - AlgorithmList: List(TextManipulationEngine.SupervisedAlgorithm@71e7adbb)
+2015-04-21 00:33:51,966 INFO  io.prediction.controller.Engine$ [main] - Data santiy check is on.
+2015-04-21 00:33:58,379 INFO  io.prediction.controller.Engine$ [main] - TextManipulationEngine.TrainingData does not support data sanity check. Skipping check.
+2015-04-21 00:33:58,380 INFO  io.prediction.controller.Engine$ [main] - TextManipulationEngine.PreparedData does not support data sanity check. Skipping check.
+2015-04-21 00:34:19,633 INFO  io.prediction.controller.Engine$ [main] - TextManipulationEngine.SupervisedModel does not support data sanity check. Skipping check.
+2015-04-21 00:34:19,633 INFO  io.prediction.controller.Engine$ [main] - EngineWorkflow.train completed
+2015-04-21 00:34:19,634 INFO  io.prediction.controller.Engine [main] - engineInstanceId=AUza5baa9IE4ZnWr8eIN
+2015-04-21 00:34:19,648 INFO  io.prediction.workflow.CoreWorkflow$ [main] - Inserting persistent model
+2015-04-21 00:34:19,798 INFO  io.prediction.workflow.CoreWorkflow$ [main] - Updating engine instance
+2015-04-21 00:34:19,810 INFO  io.prediction.workflow.CoreWorkflow$ [main] - Training completed successfully.
+2015-04-21 00:34:29,005 INFO  io.prediction.tools.RunServer$ [main] - Submission command: /Users/Marco/PredictionIO/vendors/spark-1.2.1/bin/spark-submit --class io.prediction.workflow.CreateServer --name PredictionIO Engine Instance: AUza5baa9IE4ZnWr8eIN --jars file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/textmanipulationengine_2.10-0.1-SNAPSHOT.jar,file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/TextManipulationEngine-assembly-0.1-SNAPSHOT-deps.jar --files /Users/Marco/PredictionIO/conf/log4j.properties,/Users/Marco/PredictionIO/vendors/hbase-0.98.11/conf/hbase-site.xml --driver-class-path /Users/Marco/PredictionIO/conf:/Users/Marco/PredictionIO/vendors/hbase-0.98.11/conf /Users/Marco/PredictionIO/lib/pio-assembly-0.9.1.jar --engineInstanceId AUza5baa9IE4ZnWr8eIN --ip localhost --port 8000 --event-server-ip localhost --event-server-port 7070
+2015-04-21 00:34:32,815 WARN  io.prediction.workflow.WorkflowUtils$ [pio-server-akka.actor.default-dispatcher-4] - Non-empty parameters supplied to TextManipulationEngine.Preparator, but its constructor does not accept any arguments. Stubbing with empty parameters.
+2015-04-21 00:34:32,830 WARN  io.prediction.workflow.WorkflowUtils$ [pio-server-akka.actor.default-dispatcher-4] - Non-empty parameters supplied to TextManipulationEngine.Serving, but its constructor does not accept any arguments. Stubbing with empty parameters.
+2015-04-21 00:34:33,075 ERROR akka.actor.OneForOneStrategy [pio-server-akka.actor.default-dispatcher-4] - Failed to invert: [B@1c31f8e1
+com.twitter.bijection.InversionFailure: Failed to invert: [B@1c31f8e1
+	at com.twitter.bijection.InversionFailure$$anonfun$partialFailure$1.applyOrElse(InversionFailure.scala:43)
+	at com.twitter.bijection.InversionFailure$$anonfun$partialFailure$1.applyOrElse(InversionFailure.scala:42)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:33)
+	at scala.util.Failure.recoverWith(Try.scala:172)
+	at com.twitter.bijection.Inversion$.attempt(Inversion.scala:30)
+	at com.twitter.chill.KryoInjectionInstance.invert(KryoInjection.scala:65)
+	at com.twitter.chill.KryoInjectionInstance.invert(KryoInjection.scala:55)
+	at io.prediction.workflow.CreateServer$.createServerActorWithEngine(CreateServer.scala:197)
+	at io.prediction.workflow.MasterActor.createServerActor(CreateServer.scala:364)
+	at io.prediction.workflow.MasterActor$$anonfun$receive$2.applyOrElse(CreateServer.scala:287)
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:465)
+	at io.prediction.workflow.MasterActor.aroundReceive(CreateServer.scala:250)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:238)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:220)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: com.esotericsoftware.kryo.KryoException: java.lang.IllegalArgumentException: Can not set final scala.collection.mutable.LinkedHashSet field TextManipulationEngine.CountVectorizer.TextManipulationEngine$CountVectorizer$$universe to scala.collection.mutable.HashSet
+Serialization trace:
+TextManipulationEngine$CountVectorizer$$universe (TextManipulationEngine.CountVectorizer)
+dataModel (TextManipulationEngine.SupervisedModel)
+	at com.esotericsoftware.kryo.serializers.FieldSerializer$ObjectField.read(FieldSerializer.java:626)
+	at com.esotericsoftware.kryo.serializers.FieldSerializer.read(FieldSerializer.java:221)
+	at com.esotericsoftware.kryo.Kryo.readObject(Kryo.java:648)
+	at com.esotericsoftware.kryo.serializers.FieldSerializer$ObjectField.read(FieldSerializer.java:605)
+	at com.esotericsoftware.kryo.serializers.FieldSerializer.read(FieldSerializer.java:221)
+	at com.esotericsoftware.kryo.Kryo.readClassAndObject(Kryo.java:729)
+	at com.twitter.chill.TraversableSerializer.read(Traversable.scala:43)
+	at com.twitter.chill.TraversableSerializer.read(Traversable.scala:21)
+	at com.esotericsoftware.kryo.Kryo.readClassAndObject(Kryo.java:729)
+	at com.twitter.chill.SerDeState.readClassAndObject(SerDeState.java:61)
+	at com.twitter.chill.KryoPool.fromBytes(KryoPool.java:94)
+	at com.twitter.chill.KryoInjectionInstance$$anonfun$invert$2.apply(KryoInjection.scala:65)
+	at com.twitter.chill.KryoInjectionInstance$$anonfun$invert$2.apply(KryoInjection.scala:65)
+	at com.twitter.bijection.Inversion$$anonfun$attempt$1.apply(Inversion.scala:30)
+	at scala.util.Try$.apply(Try.scala:161)
+	... 17 more
+Caused by: java.lang.IllegalArgumentException: Can not set final scala.collection.mutable.LinkedHashSet field TextManipulationEngine.CountVectorizer.TextManipulationEngine$CountVectorizer$$universe to scala.collection.mutable.HashSet
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at sun.reflect.UnsafeQualifiedObjectFieldAccessorImpl.set(UnsafeQualifiedObjectFieldAccessorImpl.java:83)
+	at java.lang.reflect.Field.set(Field.java:764)
+	at com.esotericsoftware.kryo.serializers.FieldSerializer$ObjectField.read(FieldSerializer.java:619)
+	... 31 more
