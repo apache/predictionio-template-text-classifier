@@ -16,7 +16,7 @@ class CountVectorizer (
                         val pd : PreparedData,
                         nMin: Int,
                         nMax: Int
-                        ) {
+                        ) extends Serializable {
 
 
   // This private method will tokenize our text entries.
@@ -43,11 +43,13 @@ class CountVectorizer (
   }
 
   // Create token-gram universe.
-  private val universe = new mutable.LinkedHashSet[String]()
+  private val universe = new Universe()
   pd.data.map(
     e => hashData(e.text)
-  ).toLocalIterator.foreach(
-      e => e.keySet.foreach(universe.add)
+  ).foreach(
+      e => {
+        e.keySet.foreach(f => universe.add(f))
+      }
     )
 
   // Transforms a given string document into a data vector
@@ -55,7 +57,7 @@ class CountVectorizer (
   def transform(doc : String) : Array[Double] = {
 
     val hashedData = hashData(doc)
-    universe.toArray.map(
+    universe.universe.toArray.map(
       e => hashedData.getOrElse(e, 0.0)
     )
   }
@@ -76,3 +78,10 @@ case class TransformedData(
                           data : (Double, Array[Double])
                             ) extends Serializable
 
+class Universe extends Serializable {
+  val universe = new mutable.LinkedHashSet[String]()
+
+  def add(s: String) {
+    universe.add(s)
+  }
+}
