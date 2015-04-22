@@ -15,16 +15,13 @@ abstract class Model extends Serializable {
 
 class SupervisedModel(
                        val pd: PreparedData,
-                       lambda: Double,
-                       nMin: Int,
-                       nMax: Int
+                       lambda: Double
                        ) extends Model {
 
-  private val dataModel = new CountVectorizer(pd, nMin, nMax)
 
   private val nb : NaiveBayesModel = NaiveBayes.train(
-    dataModel.transformData.map(
-      e => LabeledPoint(e.data._1, Vectors.dense(e.data._2))
+    pd.dataModel.transformData.map(
+      e => LabeledPoint(e._1, Vectors.dense(e._2))
     ), lambda = lambda)
 
   private def innerProduct (x : Array[Double], y : Array[Double]) : Double = {
@@ -37,7 +34,7 @@ class SupervisedModel(
   }
 
   private def getScores(doc : String) : Array[(Double, Double)] = {
-    val x : Array[Double] = dataModel.transform(doc)
+    val x: Array[Double] = pd.dataModel.transform(doc)
     (0 until nb.theta.length).toArray.map(
       i => (i.toDouble, exp(
         innerProduct(nb.theta(i), x) + nb.pi(i)
