@@ -7,3 +7,5 @@ libraryDependencies ++= Seq(
 )
 
 libraryDependencies += "org.apache.opennlp" % "opennlp-tools" % "1.5.3"
+
+libraryDependencies += "org.scalanlp" % "breeze" % "0.11.2"

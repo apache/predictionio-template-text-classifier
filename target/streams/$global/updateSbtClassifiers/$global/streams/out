@@ -661,9 +661,9 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-agent;0.13.5!test-agent.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.5!apply-macro.jar
-[debug] :: resolution report :: resolve 1081ms :: artifacts dl 47ms
+[debug] :: resolution report :: resolve 662ms :: artifacts dl 91ms
 [debug] 	report for textmanipulationengine#textmanipulationengine$sbt_2.10;0.1-SNAPSHOT default produced in /Users/Marco/TextManipulationEngine/target/resolution-cache/reports/textmanipulationengine-textmanipulationengine$sbt_2.10-default.xml
-[debug] 	resolve done (1081ms resolve - 47ms download)
+[debug] 	resolve done (662ms resolve - 91ms download)
 [debug] Using inline dependencies specified in Scala.
 [debug] :: resolving dependencies :: textmanipulationengine#textmanipulationengine$sources_2.10;0.1-SNAPSHOT
 [debug] 	confs: [default]
@@ -1031,6 +1031,6 @@
 [debug] 	[NOT REQUIRED] com.eed3si9n#sbt-assembly;0.13.0!sbt-assembly.jar(src)
 [debug] 	[NOT REQUIRED] org.scalactic#scalactic_2.10;2.2.1!scalactic_2.10.jar(src)
 [debug] 	[NOT REQUIRED] io.prediction#pio-build;0.9.0!pio-build.jar(src)
-[debug] :: resolution report :: resolve 298ms :: artifacts dl 44ms
+[debug] :: resolution report :: resolve 270ms :: artifacts dl 25ms
 [debug] 	report for textmanipulationengine#textmanipulationengine$sources_2.10;0.1-SNAPSHOT default produced in /Users/Marco/TextManipulationEngine/target/resolution-cache/reports/textmanipulationengine-textmanipulationengine$sources_2.10-default.xml
-[debug] 	resolve done (298ms resolve - 44ms download)
+[debug] 	resolve done (270ms resolve - 25ms download)

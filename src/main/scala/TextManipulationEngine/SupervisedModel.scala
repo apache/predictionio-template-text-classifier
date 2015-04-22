@@ -7,16 +7,10 @@ import org.apache.spark.mllib.regression.LabeledPoint
 
 import scala.math.exp
 
-
-abstract class Model extends Serializable {
-  def predict(doc: String): PredictedResult
-}
-
-
 class SupervisedModel(
                        val pd: PreparedData,
                        lambda: Double
-                       ) extends Model {
+                       ) extends Serializable {
 
 
   private val nb : NaiveBayesModel = NaiveBayes.train(
@@ -35,7 +29,7 @@ class SupervisedModel(
 
   private def getScores(doc : String) : Array[(Double, Double)] = {
     val x: Array[Double] = pd.dataModel.transform(doc)
-    (0 until nb.theta.length).toArray.map(
+    (0 until nb.pi.length).toArray.map(
       i => (i.toDouble, exp(
         innerProduct(nb.theta(i), x) + nb.pi(i)
       )))
@@ -51,11 +45,3 @@ class SupervisedModel(
   }
 
 }
-
-class UnsupervisedModel(pd: PreparedData, nCluster: Int) extends Model {
-  def predict(doc: String): PredictedResult = {
-    new PredictedResult(1, 1)
-  }
-}
-
-

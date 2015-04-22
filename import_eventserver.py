@@ -35,8 +35,8 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     client = predictionio.EventClient(
-        access_key='IHeGYSNna0a1vNPnk9TNulOW1qzIhrI23JiMurUKK555ePCOzdCOFInZ0iS6cMdK',
-        url='http://localhost:7070',
+        access_key=args.access_key,
+        url=args.url,
         threads=5,
         qsize=500)
 

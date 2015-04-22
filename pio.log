@@ -1403,3 +1403,1385 @@ org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = 
 2015-04-21 17:55:47,090 INFO  io.prediction.tools.console.App$ [main] - Finished listing 5 app(s).
 2015-04-21 17:55:54,562 INFO  spray.can.server.HttpListener [EventServerSystem-akka.actor.default-dispatcher-4] - Bound to /0.0.0.0:7070
 2015-04-21 17:55:54,563 INFO  io.prediction.data.api.EventServerActor [EventServerSystem-akka.actor.default-dispatcher-4] - Bound received. EventServer is ready.
+2015-04-21 18:01:56,100 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /Users/Marco/TextManipulationEngine/manifest.json
+2015-04-21 18:01:56,149 INFO  io.prediction.tools.console.Console$ [main] - Using command '/Users/Marco/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-21 18:01:56,149 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-21 18:01:56,150 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.1.jar is absent.
+2015-04-21 18:01:56,151 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /Users/Marco/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-21 18:02:12,178 INFO  io.prediction.tools.console.Console$ [main] - Build finished successfully.
+2015-04-21 18:02:12,179 INFO  io.prediction.tools.console.Console$ [main] - Looking for an engine...
+2015-04-21 18:02:12,185 INFO  io.prediction.tools.console.Console$ [main] - Found TextManipulationEngine-assembly-0.1-SNAPSHOT-deps.jar
+2015-04-21 18:02:12,185 INFO  io.prediction.tools.console.Console$ [main] - Found textmanipulationengine_2.10-0.1-SNAPSHOT.jar
+2015-04-21 18:02:12,191 INFO  io.prediction.tools.console.Console$ [main] - HADOOP_CONF_DIR is not set. Assuming HDFS is unavailable.
+2015-04-21 18:02:13,842 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 18:02:13,954 INFO  io.prediction.tools.RegisterEngine$ [main] - Copying file:/Users/Marco/TextManipulationEngine/target/scala-2.10/TextManipulationEngine-assembly-0.1-SNAPSHOT-deps.jar to file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/TextManipulationEngine-assembly-0.1-SNAPSHOT-deps.jar
+2015-04-21 18:02:14,045 INFO  io.prediction.tools.RegisterEngine$ [main] - Copying file:/Users/Marco/TextManipulationEngine/target/scala-2.10/textmanipulationengine_2.10-0.1-SNAPSHOT.jar to file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/textmanipulationengine_2.10-0.1-SNAPSHOT.jar
+2015-04-21 18:02:14,069 INFO  io.prediction.tools.RegisterEngine$ [main] - Registering engine 0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje f8de3b2e82df59a352b216bc539994f3f1bed16d
+2015-04-21 18:02:14,165 INFO  io.prediction.tools.console.Console$ [main] - Your engine is ready for training.
+2015-04-21 18:02:18,632 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /Users/Marco/TextManipulationEngine/manifest.json
+2015-04-21 18:02:20,323 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 18:02:20,450 INFO  io.prediction.tools.RunWorkflow$ [main] - Submission command: /Users/Marco/PredictionIO/vendors/spark-1.2.1/bin/spark-submit --class io.prediction.workflow.CreateWorkflow --name PredictionIO Training: 0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje f8de3b2e82df59a352b216bc539994f3f1bed16d () --jars file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/textmanipulationengine_2.10-0.1-SNAPSHOT.jar,file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/TextManipulationEngine-assembly-0.1-SNAPSHOT-deps.jar --files /Users/Marco/PredictionIO/conf/log4j.properties,/Users/Marco/PredictionIO/vendors/hbase-0.98.11/conf/hbase-site.xml --driver-class-path /Users/Marco/PredictionIO/conf:/Users/Marco/PredictionIO/vendors/hbase-0.98.11/conf /Users/Marco/PredictionIO/lib/pio-assembly-0.9.1.jar --env PIO_STORAGE_SOURCES_HBASE_TYPE=hbase,PIO_ENV_LOADED=1,PIO_STORAGE_SOURCES_HBASE_HOSTS=0,PIO_STORAGE_REPOSITORIES_METADATA_NAME=predictionio_metadata,PIO_FS_BASEDIR=/Users/Marco/.pio_store,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOSTS=localhost,PIO_STORAGE_SOURCES_HBASE_HOME=/Users/Marco/PredictionIO/vendors/hbase-0.98.11,PIO_HOME=/Users/Marco/PredictionIO,PIO_FS_ENGINESDIR=/Users/Marco/.pio_store/engines,PIO_STORAGE_SOURCES_HBASE_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_TYPE=elasticsearch,PIO_STORAGE_REPOSITORIES_METADATA_SOURCE=ELASTICSEARCH,PIO_STORAGE_REPOSITORIES_MODELDATA_SOURCE=LOCALFS,PIO_STORAGE_REPOSITORIES_EVENTDATA_NAME=predictionio_eventdata,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOME=/Users/Marco/PredictionIO/vendors/elasticsearch-1.4.4,PIO_FS_TMPDIR=/Users/Marco/.pio_store/tmp,PIO_STORAGE_REPOSITORIES_MODELDATA_NAME=pio_,PIO_STORAGE_SOURCES_LOCALFS_HOSTS=/Users/Marco/.pio_store/models,PIO_STORAGE_REPOSITORIES_EVENTDATA_SOURCE=HBASE,PIO_CONF_DIR=/Users/Marco/PredictionIO/conf,PIO_STORAGE_SOURCES_LOCALFS_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_PORTS=9300,PIO_STORAGE_SOURCES_LOCALFS_TYPE=localfs --engine-id 0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje --engine-version f8de3b2e82df59a352b216bc539994f3f1bed16d --engine-variant /Users/Marco/TextManipulationEngine/engine.json --verbosity 0
+2015-04-21 18:02:22,458 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 18:02:23,453 INFO  io.prediction.controller.Engine [main] - Extracting datasource params...
+2015-04-21 18:02:23,561 INFO  io.prediction.workflow.WorkflowUtils$ [main] - No 'name' is found. Default empty String will be used.
+2015-04-21 18:02:23,576 INFO  io.prediction.controller.Engine [main] - Datasource params: (,DataSourceParams(5))
+2015-04-21 18:02:23,576 INFO  io.prediction.controller.Engine [main] - Extracting preparator params...
+2015-04-21 18:02:23,577 INFO  io.prediction.workflow.WorkflowUtils$ [main] - No 'name' is found. Default empty String will be used.
+2015-04-21 18:02:23,579 INFO  io.prediction.controller.Engine [main] - Preparator params: (,PreparatorParams(1,2))
+2015-04-21 18:02:23,585 INFO  io.prediction.controller.Engine [main] - Extracting serving params...
+2015-04-21 18:02:23,586 INFO  io.prediction.controller.Engine [main] - Serving params: (,Empty)
+2015-04-21 18:02:25,342 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-3] - Starting remoting
+2015-04-21 18:02:25,590 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-3] - Remoting started; listening on addresses :[akka.tcp://sparkDriver@192.168.1.56:63478]
+2015-04-21 18:02:27,209 INFO  io.prediction.controller.Engine$ [main] - EngineWorkflow.train
+2015-04-21 18:02:27,210 INFO  io.prediction.controller.Engine$ [main] - DataSource: TextManipulationEngine.DataSource@47b269c4
+2015-04-21 18:02:27,211 INFO  io.prediction.controller.Engine$ [main] - Preparator: TextManipulationEngine.Preparator@7c40ffef
+2015-04-21 18:02:27,211 INFO  io.prediction.controller.Engine$ [main] - AlgorithmList: List(TextManipulationEngine.SupervisedAlgorithm@1e3df614)
+2015-04-21 18:02:27,212 INFO  io.prediction.controller.Engine$ [main] - Data santiy check is on.
+2015-04-21 18:02:38,615 INFO  io.prediction.controller.Engine$ [main] - TextManipulationEngine.TrainingData does not support data sanity check. Skipping check.
+2015-04-21 18:02:43,820 WARN  org.apache.hadoop.hbase.mapreduce.TableInputFormatBase [main] - Cannot resolve the host name for /192.168.1.56 because of javax.naming.NameNotFoundException: DNS name not found [response code 3]; remaining name '56.1.168.192.in-addr.arpa'
+2015-04-21 18:03:36,257 ERROR org.apache.spark.executor.Executor [Executor task launch worker-0] - Exception in task 0.0 in stage 0.0 (TID 0)
+java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at opennlp.tools.ngram.NGramModel.add(NGramModel.java:166)
+	at TextManipulationEngine.DataModel.TextManipulationEngine$DataModel$$hashDoc(DataModel.scala:36)
+	at TextManipulationEngine.DataModel$$anonfun$1.apply(DataModel.scala:58)
+	at TextManipulationEngine.DataModel$$anonfun$1.apply(DataModel.scala:58)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at scala.collection.generic.Growable$class.$plus$plus$eq(Growable.scala:48)
+	at scala.collection.mutable.ArrayBuffer.$plus$plus$eq(ArrayBuffer.scala:103)
+	at scala.collection.mutable.ArrayBuffer.$plus$plus$eq(ArrayBuffer.scala:47)
+	at scala.collection.TraversableOnce$class.to(TraversableOnce.scala:273)
+	at scala.collection.AbstractIterator.to(Iterator.scala:1157)
+	at scala.collection.TraversableOnce$class.toBuffer(TraversableOnce.scala:265)
+	at scala.collection.AbstractIterator.toBuffer(Iterator.scala:1157)
+	at scala.collection.TraversableOnce$class.toArray(TraversableOnce.scala:252)
+	at scala.collection.AbstractIterator.toArray(Iterator.scala:1157)
+	at org.apache.spark.rdd.RDD$$anonfun$org$apache$spark$rdd$RDD$$collectPartition$1$1.apply(RDD.scala:808)
+	at org.apache.spark.rdd.RDD$$anonfun$org$apache$spark$rdd$RDD$$collectPartition$1$1.apply(RDD.scala:808)
+	at org.apache.spark.SparkContext$$anonfun$runJob$4.apply(SparkContext.scala:1353)
+	at org.apache.spark.SparkContext$$anonfun$runJob$4.apply(SparkContext.scala:1353)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:61)
+	at org.apache.spark.scheduler.Task.run(Task.scala:56)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:200)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2015-04-21 18:03:36,321 WARN  org.apache.spark.scheduler.TaskSetManager [task-result-getter-0] - Lost task 0.0 in stage 0.0 (TID 0, localhost): java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at opennlp.tools.ngram.NGramModel.add(NGramModel.java:166)
+	at TextManipulationEngine.DataModel.TextManipulationEngine$DataModel$$hashDoc(DataModel.scala:36)
+	at TextManipulationEngine.DataModel$$anonfun$1.apply(DataModel.scala:58)
+	at TextManipulationEngine.DataModel$$anonfun$1.apply(DataModel.scala:58)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at scala.collection.generic.Growable$class.$plus$plus$eq(Growable.scala:48)
+	at scala.collection.mutable.ArrayBuffer.$plus$plus$eq(ArrayBuffer.scala:103)
+	at scala.collection.mutable.ArrayBuffer.$plus$plus$eq(ArrayBuffer.scala:47)
+	at scala.collection.TraversableOnce$class.to(TraversableOnce.scala:273)
+	at scala.collection.AbstractIterator.to(Iterator.scala:1157)
+	at scala.collection.TraversableOnce$class.toBuffer(TraversableOnce.scala:265)
+	at scala.collection.AbstractIterator.toBuffer(Iterator.scala:1157)
+	at scala.collection.TraversableOnce$class.toArray(TraversableOnce.scala:252)
+	at scala.collection.AbstractIterator.toArray(Iterator.scala:1157)
+	at org.apache.spark.rdd.RDD$$anonfun$org$apache$spark$rdd$RDD$$collectPartition$1$1.apply(RDD.scala:808)
+	at org.apache.spark.rdd.RDD$$anonfun$org$apache$spark$rdd$RDD$$collectPartition$1$1.apply(RDD.scala:808)
+	at org.apache.spark.SparkContext$$anonfun$runJob$4.apply(SparkContext.scala:1353)
+	at org.apache.spark.SparkContext$$anonfun$runJob$4.apply(SparkContext.scala:1353)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:61)
+	at org.apache.spark.scheduler.Task.run(Task.scala:56)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:200)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2015-04-21 18:03:36,328 ERROR org.apache.spark.scheduler.TaskSetManager [task-result-getter-0] - Task 0 in stage 0.0 failed 1 times; aborting job
+2015-04-21 18:03:36,453 ERROR org.apache.spark.util.SparkUncaughtExceptionHandler [Executor task launch worker-0] - Uncaught exception in thread Thread[Executor task launch worker-0,5,main]
+java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at opennlp.tools.ngram.NGramModel.add(NGramModel.java:166)
+	at TextManipulationEngine.DataModel.TextManipulationEngine$DataModel$$hashDoc(DataModel.scala:36)
+	at TextManipulationEngine.DataModel$$anonfun$1.apply(DataModel.scala:58)
+	at TextManipulationEngine.DataModel$$anonfun$1.apply(DataModel.scala:58)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at scala.collection.generic.Growable$class.$plus$plus$eq(Growable.scala:48)
+	at scala.collection.mutable.ArrayBuffer.$plus$plus$eq(ArrayBuffer.scala:103)
+	at scala.collection.mutable.ArrayBuffer.$plus$plus$eq(ArrayBuffer.scala:47)
+	at scala.collection.TraversableOnce$class.to(TraversableOnce.scala:273)
+	at scala.collection.AbstractIterator.to(Iterator.scala:1157)
+	at scala.collection.TraversableOnce$class.toBuffer(TraversableOnce.scala:265)
+	at scala.collection.AbstractIterator.toBuffer(Iterator.scala:1157)
+	at scala.collection.TraversableOnce$class.toArray(TraversableOnce.scala:252)
+	at scala.collection.AbstractIterator.toArray(Iterator.scala:1157)
+	at org.apache.spark.rdd.RDD$$anonfun$org$apache$spark$rdd$RDD$$collectPartition$1$1.apply(RDD.scala:808)
+	at org.apache.spark.rdd.RDD$$anonfun$org$apache$spark$rdd$RDD$$collectPartition$1$1.apply(RDD.scala:808)
+	at org.apache.spark.SparkContext$$anonfun$runJob$4.apply(SparkContext.scala:1353)
+	at org.apache.spark.SparkContext$$anonfun$runJob$4.apply(SparkContext.scala:1353)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:61)
+	at org.apache.spark.scheduler.Task.run(Task.scala:56)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:200)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2015-04-21 18:16:56,532 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /Users/Marco/TextManipulationEngine/manifest.json
+2015-04-21 18:16:56,578 INFO  io.prediction.tools.console.Console$ [main] - Using command '/Users/Marco/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-21 18:16:56,578 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-21 18:16:56,580 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.1.jar is absent.
+2015-04-21 18:16:56,580 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /Users/Marco/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-21 18:17:08,659 INFO  io.prediction.tools.console.Console$ [main] - Build finished successfully.
+2015-04-21 18:17:08,659 INFO  io.prediction.tools.console.Console$ [main] - Looking for an engine...
+2015-04-21 18:17:08,666 INFO  io.prediction.tools.console.Console$ [main] - Found TextManipulationEngine-assembly-0.1-SNAPSHOT-deps.jar
+2015-04-21 18:17:08,667 INFO  io.prediction.tools.console.Console$ [main] - Found textmanipulationengine_2.10-0.1-SNAPSHOT.jar
+2015-04-21 18:17:08,674 INFO  io.prediction.tools.console.Console$ [main] - HADOOP_CONF_DIR is not set. Assuming HDFS is unavailable.
+2015-04-21 18:17:10,266 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 18:17:10,366 INFO  io.prediction.tools.RegisterEngine$ [main] - Copying file:/Users/Marco/TextManipulationEngine/target/scala-2.10/TextManipulationEngine-assembly-0.1-SNAPSHOT-deps.jar to file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/TextManipulationEngine-assembly-0.1-SNAPSHOT-deps.jar
+2015-04-21 18:17:10,444 INFO  io.prediction.tools.RegisterEngine$ [main] - Copying file:/Users/Marco/TextManipulationEngine/target/scala-2.10/textmanipulationengine_2.10-0.1-SNAPSHOT.jar to file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/textmanipulationengine_2.10-0.1-SNAPSHOT.jar
+2015-04-21 18:17:10,456 INFO  io.prediction.tools.RegisterEngine$ [main] - Registering engine 0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje f8de3b2e82df59a352b216bc539994f3f1bed16d
+2015-04-21 18:17:10,480 INFO  io.prediction.tools.console.Console$ [main] - Your engine is ready for training.
+2015-04-21 18:17:17,983 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /Users/Marco/TextManipulationEngine/manifest.json
+2015-04-21 18:17:19,649 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 18:17:19,768 INFO  io.prediction.tools.RunWorkflow$ [main] - Submission command: /Users/Marco/PredictionIO/vendors/spark-1.2.1/bin/spark-submit --class io.prediction.workflow.CreateWorkflow --name PredictionIO Training: 0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje f8de3b2e82df59a352b216bc539994f3f1bed16d () --jars file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/textmanipulationengine_2.10-0.1-SNAPSHOT.jar,file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/TextManipulationEngine-assembly-0.1-SNAPSHOT-deps.jar --files /Users/Marco/PredictionIO/conf/log4j.properties,/Users/Marco/PredictionIO/vendors/hbase-0.98.11/conf/hbase-site.xml --driver-class-path /Users/Marco/PredictionIO/conf:/Users/Marco/PredictionIO/vendors/hbase-0.98.11/conf /Users/Marco/PredictionIO/lib/pio-assembly-0.9.1.jar --env PIO_STORAGE_SOURCES_HBASE_TYPE=hbase,PIO_ENV_LOADED=1,PIO_STORAGE_SOURCES_HBASE_HOSTS=0,PIO_STORAGE_REPOSITORIES_METADATA_NAME=predictionio_metadata,PIO_FS_BASEDIR=/Users/Marco/.pio_store,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOSTS=localhost,PIO_STORAGE_SOURCES_HBASE_HOME=/Users/Marco/PredictionIO/vendors/hbase-0.98.11,PIO_HOME=/Users/Marco/PredictionIO,PIO_FS_ENGINESDIR=/Users/Marco/.pio_store/engines,PIO_STORAGE_SOURCES_HBASE_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_TYPE=elasticsearch,PIO_STORAGE_REPOSITORIES_METADATA_SOURCE=ELASTICSEARCH,PIO_STORAGE_REPOSITORIES_MODELDATA_SOURCE=LOCALFS,PIO_STORAGE_REPOSITORIES_EVENTDATA_NAME=predictionio_eventdata,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOME=/Users/Marco/PredictionIO/vendors/elasticsearch-1.4.4,PIO_FS_TMPDIR=/Users/Marco/.pio_store/tmp,PIO_STORAGE_REPOSITORIES_MODELDATA_NAME=pio_,PIO_STORAGE_SOURCES_LOCALFS_HOSTS=/Users/Marco/.pio_store/models,PIO_STORAGE_REPOSITORIES_EVENTDATA_SOURCE=HBASE,PIO_CONF_DIR=/Users/Marco/PredictionIO/conf,PIO_STORAGE_SOURCES_LOCALFS_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_PORTS=9300,PIO_STORAGE_SOURCES_LOCALFS_TYPE=localfs --engine-id 0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje --engine-version f8de3b2e82df59a352b216bc539994f3f1bed16d --engine-variant /Users/Marco/TextManipulationEngine/engine.json --verbosity 0
+2015-04-21 18:17:21,553 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 18:17:22,371 INFO  io.prediction.controller.Engine [main] - Extracting datasource params...
+2015-04-21 18:17:22,453 INFO  io.prediction.workflow.WorkflowUtils$ [main] - No 'name' is found. Default empty String will be used.
+2015-04-21 18:17:22,463 INFO  io.prediction.controller.Engine [main] - Datasource params: (,DataSourceParams(5))
+2015-04-21 18:17:22,464 INFO  io.prediction.controller.Engine [main] - Extracting preparator params...
+2015-04-21 18:17:22,465 INFO  io.prediction.workflow.WorkflowUtils$ [main] - No 'name' is found. Default empty String will be used.
+2015-04-21 18:17:22,467 INFO  io.prediction.controller.Engine [main] - Preparator params: (,PreparatorParams(1,2))
+2015-04-21 18:17:22,472 INFO  io.prediction.controller.Engine [main] - Extracting serving params...
+2015-04-21 18:17:22,474 INFO  io.prediction.controller.Engine [main] - Serving params: (,Empty)
+2015-04-21 18:17:24,126 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-2] - Starting remoting
+2015-04-21 18:17:24,316 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-2] - Remoting started; listening on addresses :[akka.tcp://sparkDriver@192.168.1.56:63712]
+2015-04-21 18:17:25,346 INFO  io.prediction.controller.Engine$ [main] - EngineWorkflow.train
+2015-04-21 18:17:25,346 INFO  io.prediction.controller.Engine$ [main] - DataSource: TextManipulationEngine.DataSource@59fc6d05
+2015-04-21 18:17:25,347 INFO  io.prediction.controller.Engine$ [main] - Preparator: TextManipulationEngine.Preparator@23ad71bf
+2015-04-21 18:17:25,348 INFO  io.prediction.controller.Engine$ [main] - AlgorithmList: List(TextManipulationEngine.SupervisedAlgorithm@b791a81)
+2015-04-21 18:17:25,348 INFO  io.prediction.controller.Engine$ [main] - Data santiy check is on.
+2015-04-21 18:17:36,791 INFO  io.prediction.controller.Engine$ [main] - TextManipulationEngine.TrainingData does not support data sanity check. Skipping check.
+2015-04-21 18:17:36,937 WARN  org.apache.hadoop.hbase.mapreduce.TableInputFormatBase [main] - Cannot resolve the host name for /192.168.1.56 because of javax.naming.NameNotFoundException: DNS name not found [response code 3]; remaining name '56.1.168.192.in-addr.arpa'
+2015-04-21 18:17:48,957 INFO  io.prediction.controller.Engine$ [main] - TextManipulationEngine.PreparedData does not support data sanity check. Skipping check.
+2015-04-21 18:17:58,182 INFO  io.prediction.controller.Engine$ [main] - TextManipulationEngine.SupervisedModel does not support data sanity check. Skipping check.
+2015-04-21 18:17:58,182 INFO  io.prediction.controller.Engine$ [main] - EngineWorkflow.train completed
+2015-04-21 18:17:58,183 INFO  io.prediction.controller.Engine [main] - engineInstanceId=AUzes27KZeO1jiHMEW-_
+2015-04-21 18:17:58,198 INFO  io.prediction.workflow.CoreWorkflow$ [main] - Inserting persistent model
+2015-04-21 18:17:58,350 INFO  io.prediction.workflow.CoreWorkflow$ [main] - Updating engine instance
+2015-04-21 18:17:58,371 INFO  io.prediction.workflow.CoreWorkflow$ [main] - Training completed successfully.
+2015-04-21 18:18:09,360 INFO  io.prediction.tools.RunServer$ [main] - Submission command: /Users/Marco/PredictionIO/vendors/spark-1.2.1/bin/spark-submit --class io.prediction.workflow.CreateServer --name PredictionIO Engine Instance: AUzes27KZeO1jiHMEW-_ --jars file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/textmanipulationengine_2.10-0.1-SNAPSHOT.jar,file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/TextManipulationEngine-assembly-0.1-SNAPSHOT-deps.jar --files /Users/Marco/PredictionIO/conf/log4j.properties,/Users/Marco/PredictionIO/vendors/hbase-0.98.11/conf/hbase-site.xml --driver-class-path /Users/Marco/PredictionIO/conf:/Users/Marco/PredictionIO/vendors/hbase-0.98.11/conf /Users/Marco/PredictionIO/lib/pio-assembly-0.9.1.jar --engineInstanceId AUzes27KZeO1jiHMEW-_ --ip localhost --port 8000 --event-server-ip localhost --event-server-port 7070
+2015-04-21 18:18:13,148 WARN  io.prediction.workflow.WorkflowUtils$ [pio-server-akka.actor.default-dispatcher-3] - Non-empty parameters supplied to TextManipulationEngine.Serving, but its constructor does not accept any arguments. Stubbing with empty parameters.
+2015-04-21 18:18:13,563 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-5] - Starting remoting
+2015-04-21 18:18:13,746 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-5] - Remoting started; listening on addresses :[akka.tcp://sparkDriver@192.168.1.56:63754]
+2015-04-21 18:18:15,069 WARN  org.apache.hadoop.util.NativeCodeLoader [pio-server-akka.actor.default-dispatcher-3] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 18:18:15,984 INFO  io.prediction.controller.Engine [pio-server-akka.actor.default-dispatcher-3] - Using persisted model
+2015-04-21 18:18:15,985 INFO  io.prediction.controller.Engine [pio-server-akka.actor.default-dispatcher-3] - Loaded model TextManipulationEngine.SupervisedModel for algorithm TextManipulationEngine.SupervisedAlgorithm
+2015-04-21 18:18:15,998 INFO  io.prediction.workflow.MasterActor [pio-server-akka.actor.default-dispatcher-4] - Undeploying any existing engine instance at http://localhost:8000
+2015-04-21 18:18:16,032 WARN  io.prediction.workflow.MasterActor [pio-server-akka.actor.default-dispatcher-4] - Nothing at http://localhost:8000
+2015-04-21 18:18:16,799 INFO  spray.can.server.HttpListener [pio-server-akka.actor.default-dispatcher-5] - Bound to localhost/127.0.0.1:8000
+2015-04-21 18:18:16,800 INFO  io.prediction.workflow.MasterActor [pio-server-akka.actor.default-dispatcher-7] - Bind successful. Ready to serve.
+2015-04-21 18:33:07,934 WARN  spray.can.server.HttpServerConnection [pio-server-akka.actor.default-dispatcher-17] - Illegal request, responding with status '413 Request Entity Too Large': Request Content-Length 14218200 exceeds the configured limit of 8388608
+2015-04-21 18:47:25,593 INFO  io.prediction.tools.console.Console$ [main] - Creating Event Server at 0.0.0.0:7070
+2015-04-21 18:47:26,841 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 18:47:29,301 INFO  spray.can.server.HttpListener [EventServerSystem-akka.actor.default-dispatcher-3] - Bound to /0.0.0.0:7070
+2015-04-21 18:47:29,303 INFO  io.prediction.data.api.EventServerActor [EventServerSystem-akka.actor.default-dispatcher-3] - Bound received. EventServer is ready.
+2015-04-21 18:48:21,361 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 18:48:22,340 INFO  io.prediction.data.storage.hbase.HBLEvents [main] - The table predictionio_eventdata:events_6 doesn't exist yet. Creating now...
+2015-04-21 18:48:22,667 INFO  io.prediction.tools.console.App$ [main] - Initialized Event Store for this app ID: 6.
+2015-04-21 18:48:22,690 INFO  io.prediction.tools.console.App$ [main] - Created new app:
+2015-04-21 18:48:22,690 INFO  io.prediction.tools.console.App$ [main] -       Name: TextApp
+2015-04-21 18:48:22,690 INFO  io.prediction.tools.console.App$ [main] -         ID: 6
+2015-04-21 18:48:22,691 INFO  io.prediction.tools.console.App$ [main] - Access Key: 4MM9gXNr3LkMCSCfCoZcVzaWPJi1Gbpn2Hm1PiIvsSRVONiaSqhSRemUSnkaUZng
+2015-04-21 18:50:38,465 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /Users/Marco/TextManipulationEngine/manifest.json
+2015-04-21 18:50:38,512 INFO  io.prediction.tools.console.Console$ [main] - Using command '/Users/Marco/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-21 18:50:38,512 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-21 18:50:38,513 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.1.jar is absent.
+2015-04-21 18:50:38,513 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /Users/Marco/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-21 18:50:53,841 INFO  io.prediction.tools.console.Console$ [main] - Build finished successfully.
+2015-04-21 18:50:53,842 INFO  io.prediction.tools.console.Console$ [main] - Looking for an engine...
+2015-04-21 18:50:53,852 INFO  io.prediction.tools.console.Console$ [main] - Found TextManipulationEngine-assembly-0.1-SNAPSHOT-deps.jar
+2015-04-21 18:50:53,852 INFO  io.prediction.tools.console.Console$ [main] - Found textmanipulationengine_2.10-0.1-SNAPSHOT.jar
+2015-04-21 18:50:53,863 INFO  io.prediction.tools.console.Console$ [main] - HADOOP_CONF_DIR is not set. Assuming HDFS is unavailable.
+2015-04-21 18:50:55,695 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 18:50:55,781 INFO  io.prediction.tools.RegisterEngine$ [main] - Copying file:/Users/Marco/TextManipulationEngine/target/scala-2.10/TextManipulationEngine-assembly-0.1-SNAPSHOT-deps.jar to file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/TextManipulationEngine-assembly-0.1-SNAPSHOT-deps.jar
+2015-04-21 18:50:55,871 INFO  io.prediction.tools.RegisterEngine$ [main] - Copying file:/Users/Marco/TextManipulationEngine/target/scala-2.10/textmanipulationengine_2.10-0.1-SNAPSHOT.jar to file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/textmanipulationengine_2.10-0.1-SNAPSHOT.jar
+2015-04-21 18:50:55,888 INFO  io.prediction.tools.RegisterEngine$ [main] - Registering engine 0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje f8de3b2e82df59a352b216bc539994f3f1bed16d
+2015-04-21 18:50:55,926 INFO  io.prediction.tools.console.Console$ [main] - Your engine is ready for training.
+2015-04-21 18:50:59,787 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /Users/Marco/TextManipulationEngine/manifest.json
+2015-04-21 18:51:01,451 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 18:51:01,565 INFO  io.prediction.tools.RunWorkflow$ [main] - Submission command: /Users/Marco/PredictionIO/vendors/spark-1.2.1/bin/spark-submit --class io.prediction.workflow.CreateWorkflow --name PredictionIO Training: 0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje f8de3b2e82df59a352b216bc539994f3f1bed16d () --jars file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/textmanipulationengine_2.10-0.1-SNAPSHOT.jar,file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/TextManipulationEngine-assembly-0.1-SNAPSHOT-deps.jar --files /Users/Marco/PredictionIO/conf/log4j.properties,/Users/Marco/PredictionIO/vendors/hbase-0.98.11/conf/hbase-site.xml --driver-class-path /Users/Marco/PredictionIO/conf:/Users/Marco/PredictionIO/vendors/hbase-0.98.11/conf /Users/Marco/PredictionIO/lib/pio-assembly-0.9.1.jar --env PIO_STORAGE_SOURCES_HBASE_TYPE=hbase,PIO_ENV_LOADED=1,PIO_STORAGE_SOURCES_HBASE_HOSTS=0,PIO_STORAGE_REPOSITORIES_METADATA_NAME=predictionio_metadata,PIO_FS_BASEDIR=/Users/Marco/.pio_store,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOSTS=localhost,PIO_STORAGE_SOURCES_HBASE_HOME=/Users/Marco/PredictionIO/vendors/hbase-0.98.11,PIO_HOME=/Users/Marco/PredictionIO,PIO_FS_ENGINESDIR=/Users/Marco/.pio_store/engines,PIO_STORAGE_SOURCES_HBASE_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_TYPE=elasticsearch,PIO_STORAGE_REPOSITORIES_METADATA_SOURCE=ELASTICSEARCH,PIO_STORAGE_REPOSITORIES_MODELDATA_SOURCE=LOCALFS,PIO_STORAGE_REPOSITORIES_EVENTDATA_NAME=predictionio_eventdata,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOME=/Users/Marco/PredictionIO/vendors/elasticsearch-1.4.4,PIO_FS_TMPDIR=/Users/Marco/.pio_store/tmp,PIO_STORAGE_REPOSITORIES_MODELDATA_NAME=pio_,PIO_STORAGE_SOURCES_LOCALFS_HOSTS=/Users/Marco/.pio_store/models,PIO_STORAGE_REPOSITORIES_EVENTDATA_SOURCE=HBASE,PIO_CONF_DIR=/Users/Marco/PredictionIO/conf,PIO_STORAGE_SOURCES_LOCALFS_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_PORTS=9300,PIO_STORAGE_SOURCES_LOCALFS_TYPE=localfs --engine-id 0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje --engine-version f8de3b2e82df59a352b216bc539994f3f1bed16d --engine-variant /Users/Marco/TextManipulationEngine/engine.json --verbosity 0
+2015-04-21 18:51:03,364 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 18:51:04,218 INFO  io.prediction.controller.Engine [main] - Extracting datasource params...
+2015-04-21 18:51:04,301 INFO  io.prediction.workflow.WorkflowUtils$ [main] - No 'name' is found. Default empty String will be used.
+2015-04-21 18:51:04,312 INFO  io.prediction.controller.Engine [main] - Datasource params: (,DataSourceParams(6))
+2015-04-21 18:51:04,312 INFO  io.prediction.controller.Engine [main] - Extracting preparator params...
+2015-04-21 18:51:04,313 INFO  io.prediction.workflow.WorkflowUtils$ [main] - No 'name' is found. Default empty String will be used.
+2015-04-21 18:51:04,315 INFO  io.prediction.controller.Engine [main] - Preparator params: (,PreparatorParams(1,2))
+2015-04-21 18:51:04,320 INFO  io.prediction.controller.Engine [main] - Extracting serving params...
+2015-04-21 18:51:04,321 INFO  io.prediction.controller.Engine [main] - Serving params: (,Empty)
+2015-04-21 18:51:06,031 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-3] - Starting remoting
+2015-04-21 18:51:06,220 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-3] - Remoting started; listening on addresses :[akka.tcp://sparkDriver@192.168.1.56:63948]
+2015-04-21 18:51:07,219 INFO  io.prediction.controller.Engine$ [main] - EngineWorkflow.train
+2015-04-21 18:51:07,220 INFO  io.prediction.controller.Engine$ [main] - DataSource: TextManipulationEngine.DataSource@47b269c4
+2015-04-21 18:51:07,220 INFO  io.prediction.controller.Engine$ [main] - Preparator: TextManipulationEngine.Preparator@7c40ffef
+2015-04-21 18:51:07,221 INFO  io.prediction.controller.Engine$ [main] - AlgorithmList: List(TextManipulationEngine.SupervisedAlgorithm@1e3df614)
+2015-04-21 18:51:07,221 INFO  io.prediction.controller.Engine$ [main] - Data santiy check is on.
+2015-04-21 18:51:13,507 INFO  io.prediction.controller.Engine$ [main] - TextManipulationEngine.TrainingData does not support data sanity check. Skipping check.
+2015-04-21 18:51:18,736 WARN  org.apache.hadoop.hbase.mapreduce.TableInputFormatBase [main] - Cannot resolve the host name for /192.168.1.56 because of javax.naming.NameNotFoundException: DNS name not found [response code 3]; remaining name '56.1.168.192.in-addr.arpa'
+2015-04-21 18:51:19,427 INFO  io.prediction.controller.Engine$ [main] - TextManipulationEngine.PreparedData does not support data sanity check. Skipping check.
+2015-04-21 18:53:20,413 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /Users/Marco/TextManipulationEngine/manifest.json
+2015-04-21 18:53:20,656 INFO  io.prediction.tools.console.Console$ [main] - Using command '/Users/Marco/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-21 18:53:20,660 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-21 18:53:20,663 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.1.jar is absent.
+2015-04-21 18:53:20,668 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /Users/Marco/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-21 18:54:00,559 INFO  io.prediction.tools.console.Console$ [main] - Build finished successfully.
+2015-04-21 18:54:00,559 INFO  io.prediction.tools.console.Console$ [main] - Looking for an engine...
+2015-04-21 18:54:00,565 INFO  io.prediction.tools.console.Console$ [main] - Found TextManipulationEngine-assembly-0.1-SNAPSHOT-deps.jar
+2015-04-21 18:54:00,565 INFO  io.prediction.tools.console.Console$ [main] - Found textmanipulationengine_2.10-0.1-SNAPSHOT.jar
+2015-04-21 18:54:00,572 INFO  io.prediction.tools.console.Console$ [main] - HADOOP_CONF_DIR is not set. Assuming HDFS is unavailable.
+2015-04-21 18:54:02,334 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 18:54:02,430 INFO  io.prediction.tools.RegisterEngine$ [main] - Copying file:/Users/Marco/TextManipulationEngine/target/scala-2.10/TextManipulationEngine-assembly-0.1-SNAPSHOT-deps.jar to file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/TextManipulationEngine-assembly-0.1-SNAPSHOT-deps.jar
+2015-04-21 18:54:02,500 INFO  io.prediction.tools.RegisterEngine$ [main] - Copying file:/Users/Marco/TextManipulationEngine/target/scala-2.10/textmanipulationengine_2.10-0.1-SNAPSHOT.jar to file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/textmanipulationengine_2.10-0.1-SNAPSHOT.jar
+2015-04-21 18:54:02,514 INFO  io.prediction.tools.RegisterEngine$ [main] - Registering engine 0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje f8de3b2e82df59a352b216bc539994f3f1bed16d
+2015-04-21 18:54:02,538 INFO  io.prediction.tools.console.Console$ [main] - Your engine is ready for training.
+2015-04-21 18:55:12,880 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /Users/Marco/TextManipulationEngine/manifest.json
+2015-04-21 18:55:12,950 INFO  io.prediction.tools.console.Console$ [main] - Using command '/Users/Marco/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-21 18:55:12,954 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-21 18:55:12,956 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.1.jar is absent.
+2015-04-21 18:55:12,959 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /Users/Marco/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-21 18:55:25,790 INFO  io.prediction.tools.console.Console$ [main] - Build finished successfully.
+2015-04-21 18:55:25,791 INFO  io.prediction.tools.console.Console$ [main] - Looking for an engine...
+2015-04-21 18:55:25,798 INFO  io.prediction.tools.console.Console$ [main] - Found TextManipulationEngine-assembly-0.1-SNAPSHOT-deps.jar
+2015-04-21 18:55:25,798 INFO  io.prediction.tools.console.Console$ [main] - Found textmanipulationengine_2.10-0.1-SNAPSHOT.jar
+2015-04-21 18:55:25,805 INFO  io.prediction.tools.console.Console$ [main] - HADOOP_CONF_DIR is not set. Assuming HDFS is unavailable.
+2015-04-21 18:55:27,466 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 18:55:27,573 INFO  io.prediction.tools.RegisterEngine$ [main] - Copying file:/Users/Marco/TextManipulationEngine/target/scala-2.10/TextManipulationEngine-assembly-0.1-SNAPSHOT-deps.jar to file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/TextManipulationEngine-assembly-0.1-SNAPSHOT-deps.jar
+2015-04-21 18:55:27,651 INFO  io.prediction.tools.RegisterEngine$ [main] - Copying file:/Users/Marco/TextManipulationEngine/target/scala-2.10/textmanipulationengine_2.10-0.1-SNAPSHOT.jar to file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/textmanipulationengine_2.10-0.1-SNAPSHOT.jar
+2015-04-21 18:55:27,664 INFO  io.prediction.tools.RegisterEngine$ [main] - Registering engine 0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje f8de3b2e82df59a352b216bc539994f3f1bed16d
+2015-04-21 18:55:27,690 INFO  io.prediction.tools.console.Console$ [main] - Your engine is ready for training.
+2015-04-21 18:55:37,015 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /Users/Marco/TextManipulationEngine/manifest.json
+2015-04-21 18:55:38,670 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 18:55:38,787 INFO  io.prediction.tools.RunWorkflow$ [main] - Submission command: /Users/Marco/PredictionIO/vendors/spark-1.2.1/bin/spark-submit --class io.prediction.workflow.CreateWorkflow --name PredictionIO Training: 0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje f8de3b2e82df59a352b216bc539994f3f1bed16d () --jars file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/textmanipulationengine_2.10-0.1-SNAPSHOT.jar,file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/TextManipulationEngine-assembly-0.1-SNAPSHOT-deps.jar --files /Users/Marco/PredictionIO/conf/log4j.properties,/Users/Marco/PredictionIO/vendors/hbase-0.98.11/conf/hbase-site.xml --driver-class-path /Users/Marco/PredictionIO/conf:/Users/Marco/PredictionIO/vendors/hbase-0.98.11/conf /Users/Marco/PredictionIO/lib/pio-assembly-0.9.1.jar --env PIO_STORAGE_SOURCES_HBASE_TYPE=hbase,PIO_ENV_LOADED=1,PIO_STORAGE_SOURCES_HBASE_HOSTS=0,PIO_STORAGE_REPOSITORIES_METADATA_NAME=predictionio_metadata,PIO_FS_BASEDIR=/Users/Marco/.pio_store,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOSTS=localhost,PIO_STORAGE_SOURCES_HBASE_HOME=/Users/Marco/PredictionIO/vendors/hbase-0.98.11,PIO_HOME=/Users/Marco/PredictionIO,PIO_FS_ENGINESDIR=/Users/Marco/.pio_store/engines,PIO_STORAGE_SOURCES_HBASE_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_TYPE=elasticsearch,PIO_STORAGE_REPOSITORIES_METADATA_SOURCE=ELASTICSEARCH,PIO_STORAGE_REPOSITORIES_MODELDATA_SOURCE=LOCALFS,PIO_STORAGE_REPOSITORIES_EVENTDATA_NAME=predictionio_eventdata,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOME=/Users/Marco/PredictionIO/vendors/elasticsearch-1.4.4,PIO_FS_TMPDIR=/Users/Marco/.pio_store/tmp,PIO_STORAGE_REPOSITORIES_MODELDATA_NAME=pio_,PIO_STORAGE_SOURCES_LOCALFS_HOSTS=/Users/Marco/.pio_store/models,PIO_STORAGE_REPOSITORIES_EVENTDATA_SOURCE=HBASE,PIO_CONF_DIR=/Users/Marco/PredictionIO/conf,PIO_STORAGE_SOURCES_LOCALFS_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_PORTS=9300,PIO_STORAGE_SOURCES_LOCALFS_TYPE=localfs --engine-id 0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje --engine-version f8de3b2e82df59a352b216bc539994f3f1bed16d --engine-variant /Users/Marco/TextManipulationEngine/engine.json --verbosity 0
+2015-04-21 18:55:40,587 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 18:55:41,407 INFO  io.prediction.controller.Engine [main] - Extracting datasource params...
+2015-04-21 18:55:41,479 INFO  io.prediction.workflow.WorkflowUtils$ [main] - No 'name' is found. Default empty String will be used.
+2015-04-21 18:55:41,492 INFO  io.prediction.controller.Engine [main] - Datasource params: (,DataSourceParams(6))
+2015-04-21 18:55:41,492 INFO  io.prediction.controller.Engine [main] - Extracting preparator params...
+2015-04-21 18:55:41,493 INFO  io.prediction.workflow.WorkflowUtils$ [main] - No 'name' is found. Default empty String will be used.
+2015-04-21 18:55:41,495 INFO  io.prediction.controller.Engine [main] - Preparator params: (,PreparatorParams(1,2))
+2015-04-21 18:55:41,499 INFO  io.prediction.controller.Engine [main] - Extracting serving params...
+2015-04-21 18:55:41,501 INFO  io.prediction.controller.Engine [main] - Serving params: (,Empty)
+2015-04-21 18:55:43,145 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-2] - Starting remoting
+2015-04-21 18:55:43,316 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-2] - Remoting started; listening on addresses :[akka.tcp://sparkDriver@192.168.1.56:64040]
+2015-04-21 18:55:44,358 INFO  io.prediction.controller.Engine$ [main] - EngineWorkflow.train
+2015-04-21 18:55:44,359 INFO  io.prediction.controller.Engine$ [main] - DataSource: TextManipulationEngine.DataSource@b791a81
+2015-04-21 18:55:44,359 INFO  io.prediction.controller.Engine$ [main] - Preparator: TextManipulationEngine.Preparator@71e7adbb
+2015-04-21 18:55:44,359 INFO  io.prediction.controller.Engine$ [main] - AlgorithmList: List(TextManipulationEngine.SupervisedAlgorithm@286855ea)
+2015-04-21 18:55:44,360 INFO  io.prediction.controller.Engine$ [main] - Data santiy check is on.
+2015-04-21 18:55:50,666 INFO  io.prediction.controller.Engine$ [main] - TextManipulationEngine.TrainingData does not support data sanity check. Skipping check.
+2015-04-21 18:55:50,809 WARN  org.apache.hadoop.hbase.mapreduce.TableInputFormatBase [main] - Cannot resolve the host name for /192.168.1.56 because of javax.naming.NameNotFoundException: DNS name not found [response code 3]; remaining name '56.1.168.192.in-addr.arpa'
+2015-04-21 18:55:51,508 INFO  io.prediction.controller.Engine$ [main] - TextManipulationEngine.PreparedData does not support data sanity check. Skipping check.
+2015-04-21 19:04:02,809 INFO  io.prediction.tools.console.App$ [main] -                 Name |   ID |                                                       Access Key | Allowed Event(s)
+2015-04-21 19:04:02,935 INFO  io.prediction.tools.console.App$ [main] -      FinalDeployTest |    4 | 3p42NlUE6uqwOX39vGSd0djm6QvdgiriZ1lmQnzPinPjHiYnaimxr5KP89s9ue53 | (all)
+2015-04-21 19:04:02,965 INFO  io.prediction.tools.console.App$ [main] -               MyApp1 |    1 | ddu1ynBz4ONm9bxqPE73RvagJeQNNauZkHU5CsH3h5CFJU6rKM5Kc0uiezP7ZCLw | (all)
+2015-04-21 19:04:03,013 INFO  io.prediction.tools.console.App$ [main] -               MyApp2 |    2 | Ou8SV0FJoP84LfSyXy3cBLV2TgWSHV9q2BiNgQLy4Zuji0RiJ6nfNKMp8kUGdC9O | (all)
+2015-04-21 19:04:03,043 INFO  io.prediction.tools.console.App$ [main] -               PTest1 |    3 | TO4tXr8YDZHdzWo3EH0KMtE8JwOP0GEz8gqVEpVB31GzNHD6ILSJNLXNlNrZNTBn | (all)
+2015-04-21 19:04:03,059 INFO  io.prediction.tools.console.App$ [main] -              TextApp |    6 | 4MM9gXNr3LkMCSCfCoZcVzaWPJi1Gbpn2Hm1PiIvsSRVONiaSqhSRemUSnkaUZng | (all)
+2015-04-21 19:04:03,070 INFO  io.prediction.tools.console.App$ [main] -             TextApp1 |    5 | IHeGYSNna0a1vNPnk9TNulOW1qzIhrI23JiMurUKK555ePCOzdCOFInZ0iS6cMdK | (all)
+2015-04-21 19:04:03,086 INFO  io.prediction.tools.console.App$ [main] - Finished listing 6 app(s).
+2015-04-21 19:04:13,968 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /Users/Marco/TextManipulationEngine/manifest.json
+2015-04-21 19:04:14,014 INFO  io.prediction.tools.console.Console$ [main] - Using command '/Users/Marco/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-21 19:04:14,017 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-21 19:04:14,018 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.1.jar is absent.
+2015-04-21 19:04:14,019 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /Users/Marco/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-21 19:04:25,753 INFO  io.prediction.tools.console.Console$ [main] - Build finished successfully.
+2015-04-21 19:04:25,754 INFO  io.prediction.tools.console.Console$ [main] - Looking for an engine...
+2015-04-21 19:04:25,762 INFO  io.prediction.tools.console.Console$ [main] - Found TextManipulationEngine-assembly-0.1-SNAPSHOT-deps.jar
+2015-04-21 19:04:25,763 INFO  io.prediction.tools.console.Console$ [main] - Found textmanipulationengine_2.10-0.1-SNAPSHOT.jar
+2015-04-21 19:04:25,771 INFO  io.prediction.tools.console.Console$ [main] - HADOOP_CONF_DIR is not set. Assuming HDFS is unavailable.
+2015-04-21 19:04:28,228 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 19:04:28,400 INFO  io.prediction.tools.RegisterEngine$ [main] - Copying file:/Users/Marco/TextManipulationEngine/target/scala-2.10/TextManipulationEngine-assembly-0.1-SNAPSHOT-deps.jar to file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/TextManipulationEngine-assembly-0.1-SNAPSHOT-deps.jar
+2015-04-21 19:04:28,549 INFO  io.prediction.tools.RegisterEngine$ [main] - Copying file:/Users/Marco/TextManipulationEngine/target/scala-2.10/textmanipulationengine_2.10-0.1-SNAPSHOT.jar to file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/textmanipulationengine_2.10-0.1-SNAPSHOT.jar
+2015-04-21 19:04:28,605 INFO  io.prediction.tools.RegisterEngine$ [main] - Registering engine 0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje f8de3b2e82df59a352b216bc539994f3f1bed16d
+2015-04-21 19:04:28,654 INFO  io.prediction.tools.console.Console$ [main] - Your engine is ready for training.
+2015-04-21 19:04:35,965 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /Users/Marco/TextManipulationEngine/manifest.json
+2015-04-21 19:04:38,777 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 19:04:38,953 INFO  io.prediction.tools.RunWorkflow$ [main] - Submission command: /Users/Marco/PredictionIO/vendors/spark-1.2.1/bin/spark-submit --class io.prediction.workflow.CreateWorkflow --name PredictionIO Training: 0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje f8de3b2e82df59a352b216bc539994f3f1bed16d () --jars file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/textmanipulationengine_2.10-0.1-SNAPSHOT.jar,file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/TextManipulationEngine-assembly-0.1-SNAPSHOT-deps.jar --files /Users/Marco/PredictionIO/conf/log4j.properties,/Users/Marco/PredictionIO/vendors/hbase-0.98.11/conf/hbase-site.xml --driver-class-path /Users/Marco/PredictionIO/conf:/Users/Marco/PredictionIO/vendors/hbase-0.98.11/conf /Users/Marco/PredictionIO/lib/pio-assembly-0.9.1.jar --env PIO_STORAGE_SOURCES_HBASE_TYPE=hbase,PIO_ENV_LOADED=1,PIO_STORAGE_SOURCES_HBASE_HOSTS=0,PIO_STORAGE_REPOSITORIES_METADATA_NAME=predictionio_metadata,PIO_FS_BASEDIR=/Users/Marco/.pio_store,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOSTS=localhost,PIO_STORAGE_SOURCES_HBASE_HOME=/Users/Marco/PredictionIO/vendors/hbase-0.98.11,PIO_HOME=/Users/Marco/PredictionIO,PIO_FS_ENGINESDIR=/Users/Marco/.pio_store/engines,PIO_STORAGE_SOURCES_HBASE_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_TYPE=elasticsearch,PIO_STORAGE_REPOSITORIES_METADATA_SOURCE=ELASTICSEARCH,PIO_STORAGE_REPOSITORIES_MODELDATA_SOURCE=LOCALFS,PIO_STORAGE_REPOSITORIES_EVENTDATA_NAME=predictionio_eventdata,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOME=/Users/Marco/PredictionIO/vendors/elasticsearch-1.4.4,PIO_FS_TMPDIR=/Users/Marco/.pio_store/tmp,PIO_STORAGE_REPOSITORIES_MODELDATA_NAME=pio_,PIO_STORAGE_SOURCES_LOCALFS_HOSTS=/Users/Marco/.pio_store/models,PIO_STORAGE_REPOSITORIES_EVENTDATA_SOURCE=HBASE,PIO_CONF_DIR=/Users/Marco/PredictionIO/conf,PIO_STORAGE_SOURCES_LOCALFS_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_PORTS=9300,PIO_STORAGE_SOURCES_LOCALFS_TYPE=localfs --engine-id 0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje --engine-version f8de3b2e82df59a352b216bc539994f3f1bed16d --engine-variant /Users/Marco/TextManipulationEngine/engine.json --verbosity 0
+2015-04-21 19:04:41,667 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 19:04:42,975 INFO  io.prediction.controller.Engine [main] - Extracting datasource params...
+2015-04-21 19:04:43,100 INFO  io.prediction.workflow.WorkflowUtils$ [main] - No 'name' is found. Default empty String will be used.
+2015-04-21 19:04:43,118 INFO  io.prediction.controller.Engine [main] - Datasource params: (,DataSourceParams(6))
+2015-04-21 19:04:43,118 INFO  io.prediction.controller.Engine [main] - Extracting preparator params...
+2015-04-21 19:04:43,119 INFO  io.prediction.workflow.WorkflowUtils$ [main] - No 'name' is found. Default empty String will be used.
+2015-04-21 19:04:43,122 INFO  io.prediction.controller.Engine [main] - Preparator params: (,PreparatorParams(1,2))
+2015-04-21 19:04:43,129 INFO  io.prediction.controller.Engine [main] - Extracting serving params...
+2015-04-21 19:04:43,132 INFO  io.prediction.controller.Engine [main] - Serving params: (,Empty)
+2015-04-21 19:04:46,028 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-2] - Starting remoting
+2015-04-21 19:04:46,329 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-2] - Remoting started; listening on addresses :[akka.tcp://sparkDriver@192.168.1.56:64198]
+2015-04-21 19:04:48,468 INFO  io.prediction.controller.Engine$ [main] - EngineWorkflow.train
+2015-04-21 19:04:48,469 INFO  io.prediction.controller.Engine$ [main] - DataSource: TextManipulationEngine.DataSource@47b269c4
+2015-04-21 19:04:48,470 INFO  io.prediction.controller.Engine$ [main] - Preparator: TextManipulationEngine.Preparator@7c40ffef
+2015-04-21 19:04:48,471 INFO  io.prediction.controller.Engine$ [main] - AlgorithmList: List(TextManipulationEngine.SupervisedAlgorithm@1e3df614)
+2015-04-21 19:04:48,474 INFO  io.prediction.controller.Engine$ [main] - Data santiy check is on.
+2015-04-21 19:04:55,154 INFO  io.prediction.controller.Engine$ [main] - TextManipulationEngine.TrainingData does not support data sanity check. Skipping check.
+2015-04-21 19:04:55,297 WARN  org.apache.hadoop.hbase.mapreduce.TableInputFormatBase [main] - Cannot resolve the host name for /192.168.1.56 because of javax.naming.NameNotFoundException: DNS name not found [response code 3]; remaining name '56.1.168.192.in-addr.arpa'
+2015-04-21 19:04:56,295 INFO  io.prediction.controller.Engine$ [main] - TextManipulationEngine.PreparedData does not support data sanity check. Skipping check.
+2015-04-21 20:20:25,637 WARN  org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation [main-EventThread] - This client just lost it's session with ZooKeeper, closing it. It will be recreated next time someone needs it
+org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired
+	at org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher.connectionEvent(ZooKeeperWatcher.java:401)
+	at org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher.process(ZooKeeperWatcher.java:319)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:522)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:498)
+2015-04-21 22:08:15,459 INFO  io.prediction.tools.console.Console$ [main] - Creating Event Server at 0.0.0.0:7070
+2015-04-21 22:08:16,646 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 22:08:24,742 INFO  io.prediction.tools.console.App$ [main] -                 Name |   ID |                                                       Access Key | Allowed Event(s)
+2015-04-21 22:08:24,843 INFO  io.prediction.tools.console.App$ [main] -      FinalDeployTest |    4 | 3p42NlUE6uqwOX39vGSd0djm6QvdgiriZ1lmQnzPinPjHiYnaimxr5KP89s9ue53 | (all)
+2015-04-21 22:08:24,862 INFO  io.prediction.tools.console.App$ [main] -               MyApp1 |    1 | ddu1ynBz4ONm9bxqPE73RvagJeQNNauZkHU5CsH3h5CFJU6rKM5Kc0uiezP7ZCLw | (all)
+2015-04-21 22:08:24,878 INFO  io.prediction.tools.console.App$ [main] -               MyApp2 |    2 | Ou8SV0FJoP84LfSyXy3cBLV2TgWSHV9q2BiNgQLy4Zuji0RiJ6nfNKMp8kUGdC9O | (all)
+2015-04-21 22:08:24,899 INFO  io.prediction.tools.console.App$ [main] -               PTest1 |    3 | TO4tXr8YDZHdzWo3EH0KMtE8JwOP0GEz8gqVEpVB31GzNHD6ILSJNLXNlNrZNTBn | (all)
+2015-04-21 22:08:24,914 INFO  io.prediction.tools.console.App$ [main] -              TextApp |    6 | 4MM9gXNr3LkMCSCfCoZcVzaWPJi1Gbpn2Hm1PiIvsSRVONiaSqhSRemUSnkaUZng | (all)
+2015-04-21 22:08:24,933 INFO  io.prediction.tools.console.App$ [main] -             TextApp1 |    5 | IHeGYSNna0a1vNPnk9TNulOW1qzIhrI23JiMurUKK555ePCOzdCOFInZ0iS6cMdK | (all)
+2015-04-21 22:08:24,934 INFO  io.prediction.tools.console.App$ [main] - Finished listing 6 app(s).
+2015-04-21 22:08:29,082 INFO  spray.can.server.HttpListener [EventServerSystem-akka.actor.default-dispatcher-2] - Bound to /0.0.0.0:7070
+2015-04-21 22:08:29,083 INFO  io.prediction.data.api.EventServerActor [EventServerSystem-akka.actor.default-dispatcher-2] - Bound received. EventServer is ready.
+2015-04-21 22:09:10,649 ERROR org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper [EventServerSystem-akka.actor.default-dispatcher-3] - ZooKeeper getData failed after 4 attempts
+2015-04-21 22:09:10,649 ERROR org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher [EventServerSystem-akka.actor.default-dispatcher-3] - hconnection-0x60c16548-0x14cdf86a6630006, quorum=localhost:2181, baseZNode=/hbase Received unexpected KeeperException, re-throwing exception
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /hbase/meta-region-server
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1155)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.getData(RecoverableZooKeeper.java:337)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.getData(ZKUtil.java:683)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.blockUntilAvailable(ZKUtil.java:1835)
+	at org.apache.hadoop.hbase.zookeeper.MetaRegionTracker.blockUntilAvailable(MetaRegionTracker.java:183)
+	at org.apache.hadoop.hbase.client.ZooKeeperRegistry.getMetaRegionLocation(ZooKeeperRegistry.java:58)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1102)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1196)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1105)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1062)
+	at org.apache.hadoop.hbase.client.AsyncProcess.findDestLocation(AsyncProcess.java:365)
+	at org.apache.hadoop.hbase.client.AsyncProcess.submit(AsyncProcess.java:310)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:964)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:108)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:105)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2015-04-21 22:09:13,478 ERROR org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper [EventServerSystem-akka.actor.default-dispatcher-7] - ZooKeeper getData failed after 4 attempts
+2015-04-21 22:09:13,479 ERROR org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher [EventServerSystem-akka.actor.default-dispatcher-7] - hconnection-0x60c16548-0x14cdf86a6630006, quorum=localhost:2181, baseZNode=/hbase Received unexpected KeeperException, re-throwing exception
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /hbase/meta-region-server
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1155)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.getData(RecoverableZooKeeper.java:337)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.getData(ZKUtil.java:683)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.blockUntilAvailable(ZKUtil.java:1835)
+	at org.apache.hadoop.hbase.zookeeper.MetaRegionTracker.blockUntilAvailable(MetaRegionTracker.java:183)
+	at org.apache.hadoop.hbase.client.ZooKeeperRegistry.getMetaRegionLocation(ZooKeeperRegistry.java:58)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1102)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1196)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1105)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1062)
+	at org.apache.hadoop.hbase.client.AsyncProcess.findDestLocation(AsyncProcess.java:365)
+	at org.apache.hadoop.hbase.client.AsyncProcess.submit(AsyncProcess.java:310)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:964)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:108)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:105)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2015-04-21 22:09:29,648 ERROR org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper [EventServerSystem-akka.actor.default-dispatcher-3] - ZooKeeper getData failed after 4 attempts
+2015-04-21 22:09:29,648 ERROR org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher [EventServerSystem-akka.actor.default-dispatcher-3] - hconnection-0x60c16548-0x14cdf86a6630006, quorum=localhost:2181, baseZNode=/hbase Received unexpected KeeperException, re-throwing exception
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /hbase/meta-region-server
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1155)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.getData(RecoverableZooKeeper.java:337)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.getData(ZKUtil.java:683)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.blockUntilAvailable(ZKUtil.java:1835)
+	at org.apache.hadoop.hbase.zookeeper.MetaRegionTracker.blockUntilAvailable(MetaRegionTracker.java:183)
+	at org.apache.hadoop.hbase.client.ZooKeeperRegistry.getMetaRegionLocation(ZooKeeperRegistry.java:58)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1102)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1196)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1105)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1062)
+	at org.apache.hadoop.hbase.client.AsyncProcess.findDestLocation(AsyncProcess.java:365)
+	at org.apache.hadoop.hbase.client.AsyncProcess.submit(AsyncProcess.java:310)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:964)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:108)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:105)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2015-04-21 22:09:31,786 ERROR org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper [EventServerSystem-akka.actor.default-dispatcher-7] - ZooKeeper getData failed after 4 attempts
+2015-04-21 22:09:31,787 ERROR org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher [EventServerSystem-akka.actor.default-dispatcher-7] - hconnection-0x60c16548-0x14cdf86a6630006, quorum=localhost:2181, baseZNode=/hbase Received unexpected KeeperException, re-throwing exception
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /hbase/meta-region-server
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1155)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.getData(RecoverableZooKeeper.java:337)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.getData(ZKUtil.java:683)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.blockUntilAvailable(ZKUtil.java:1835)
+	at org.apache.hadoop.hbase.zookeeper.MetaRegionTracker.blockUntilAvailable(MetaRegionTracker.java:183)
+	at org.apache.hadoop.hbase.client.ZooKeeperRegistry.getMetaRegionLocation(ZooKeeperRegistry.java:58)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1102)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1196)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1105)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1062)
+	at org.apache.hadoop.hbase.client.AsyncProcess.findDestLocation(AsyncProcess.java:365)
+	at org.apache.hadoop.hbase.client.AsyncProcess.submit(AsyncProcess.java:310)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:964)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:108)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:105)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2015-04-21 22:09:47,902 ERROR org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper [EventServerSystem-akka.actor.default-dispatcher-3] - ZooKeeper getData failed after 4 attempts
+2015-04-21 22:09:47,902 ERROR org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher [EventServerSystem-akka.actor.default-dispatcher-3] - hconnection-0x60c16548-0x14cdf86a6630006, quorum=localhost:2181, baseZNode=/hbase Received unexpected KeeperException, re-throwing exception
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /hbase/meta-region-server
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1155)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.getData(RecoverableZooKeeper.java:337)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.getData(ZKUtil.java:683)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.blockUntilAvailable(ZKUtil.java:1835)
+	at org.apache.hadoop.hbase.zookeeper.MetaRegionTracker.blockUntilAvailable(MetaRegionTracker.java:183)
+	at org.apache.hadoop.hbase.client.ZooKeeperRegistry.getMetaRegionLocation(ZooKeeperRegistry.java:58)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1102)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1196)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1105)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1062)
+	at org.apache.hadoop.hbase.client.AsyncProcess.findDestLocation(AsyncProcess.java:365)
+	at org.apache.hadoop.hbase.client.AsyncProcess.submit(AsyncProcess.java:310)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:964)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:108)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:105)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2015-04-21 22:09:50,727 ERROR org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper [EventServerSystem-akka.actor.default-dispatcher-7] - ZooKeeper getData failed after 4 attempts
+2015-04-21 22:09:50,727 ERROR org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher [EventServerSystem-akka.actor.default-dispatcher-7] - hconnection-0x60c16548-0x14cdf86a6630006, quorum=localhost:2181, baseZNode=/hbase Received unexpected KeeperException, re-throwing exception
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /hbase/meta-region-server
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1155)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.getData(RecoverableZooKeeper.java:337)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.getData(ZKUtil.java:683)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.blockUntilAvailable(ZKUtil.java:1835)
+	at org.apache.hadoop.hbase.zookeeper.MetaRegionTracker.blockUntilAvailable(MetaRegionTracker.java:183)
+	at org.apache.hadoop.hbase.client.ZooKeeperRegistry.getMetaRegionLocation(ZooKeeperRegistry.java:58)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1102)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1196)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1105)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1062)
+	at org.apache.hadoop.hbase.client.AsyncProcess.findDestLocation(AsyncProcess.java:365)
+	at org.apache.hadoop.hbase.client.AsyncProcess.submit(AsyncProcess.java:310)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:964)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:108)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:105)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2015-04-21 22:10:05,579 ERROR org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper [EventServerSystem-akka.actor.default-dispatcher-3] - ZooKeeper getData failed after 4 attempts
+2015-04-21 22:10:05,580 ERROR org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher [EventServerSystem-akka.actor.default-dispatcher-3] - hconnection-0x60c16548-0x14cdf86a6630006, quorum=localhost:2181, baseZNode=/hbase Received unexpected KeeperException, re-throwing exception
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /hbase/meta-region-server
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1155)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.getData(RecoverableZooKeeper.java:337)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.getData(ZKUtil.java:683)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.blockUntilAvailable(ZKUtil.java:1835)
+	at org.apache.hadoop.hbase.zookeeper.MetaRegionTracker.blockUntilAvailable(MetaRegionTracker.java:183)
+	at org.apache.hadoop.hbase.client.ZooKeeperRegistry.getMetaRegionLocation(ZooKeeperRegistry.java:58)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1102)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1196)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1105)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1062)
+	at org.apache.hadoop.hbase.client.AsyncProcess.findDestLocation(AsyncProcess.java:365)
+	at org.apache.hadoop.hbase.client.AsyncProcess.submit(AsyncProcess.java:310)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:964)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:108)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:105)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2015-04-21 22:10:09,977 ERROR org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper [EventServerSystem-akka.actor.default-dispatcher-7] - ZooKeeper getData failed after 4 attempts
+2015-04-21 22:10:09,977 ERROR org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher [EventServerSystem-akka.actor.default-dispatcher-7] - hconnection-0x60c16548-0x14cdf86a6630006, quorum=localhost:2181, baseZNode=/hbase Received unexpected KeeperException, re-throwing exception
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /hbase/meta-region-server
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1155)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.getData(RecoverableZooKeeper.java:337)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.getData(ZKUtil.java:683)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.blockUntilAvailable(ZKUtil.java:1835)
+	at org.apache.hadoop.hbase.zookeeper.MetaRegionTracker.blockUntilAvailable(MetaRegionTracker.java:183)
+	at org.apache.hadoop.hbase.client.ZooKeeperRegistry.getMetaRegionLocation(ZooKeeperRegistry.java:58)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1102)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1196)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1105)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1062)
+	at org.apache.hadoop.hbase.client.AsyncProcess.findDestLocation(AsyncProcess.java:365)
+	at org.apache.hadoop.hbase.client.AsyncProcess.submit(AsyncProcess.java:310)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:964)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:108)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:105)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2015-04-21 22:10:23,732 ERROR org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper [EventServerSystem-akka.actor.default-dispatcher-3] - ZooKeeper getData failed after 4 attempts
+2015-04-21 22:10:23,732 ERROR org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher [EventServerSystem-akka.actor.default-dispatcher-3] - hconnection-0x60c16548-0x14cdf86a6630006, quorum=localhost:2181, baseZNode=/hbase Received unexpected KeeperException, re-throwing exception
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /hbase/meta-region-server
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1155)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.getData(RecoverableZooKeeper.java:337)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.getData(ZKUtil.java:683)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.blockUntilAvailable(ZKUtil.java:1835)
+	at org.apache.hadoop.hbase.zookeeper.MetaRegionTracker.blockUntilAvailable(MetaRegionTracker.java:183)
+	at org.apache.hadoop.hbase.client.ZooKeeperRegistry.getMetaRegionLocation(ZooKeeperRegistry.java:58)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1102)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1196)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1105)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1062)
+	at org.apache.hadoop.hbase.client.AsyncProcess.findDestLocation(AsyncProcess.java:365)
+	at org.apache.hadoop.hbase.client.AsyncProcess.submit(AsyncProcess.java:310)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:964)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:108)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:105)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2015-04-21 22:10:28,516 ERROR org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper [EventServerSystem-akka.actor.default-dispatcher-7] - ZooKeeper getData failed after 4 attempts
+2015-04-21 22:10:28,516 ERROR org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher [EventServerSystem-akka.actor.default-dispatcher-7] - hconnection-0x60c16548-0x14cdf86a6630006, quorum=localhost:2181, baseZNode=/hbase Received unexpected KeeperException, re-throwing exception
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /hbase/meta-region-server
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1155)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.getData(RecoverableZooKeeper.java:337)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.getData(ZKUtil.java:683)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.blockUntilAvailable(ZKUtil.java:1835)
+	at org.apache.hadoop.hbase.zookeeper.MetaRegionTracker.blockUntilAvailable(MetaRegionTracker.java:183)
+	at org.apache.hadoop.hbase.client.ZooKeeperRegistry.getMetaRegionLocation(ZooKeeperRegistry.java:58)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1102)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1196)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1105)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1062)
+	at org.apache.hadoop.hbase.client.AsyncProcess.findDestLocation(AsyncProcess.java:365)
+	at org.apache.hadoop.hbase.client.AsyncProcess.submit(AsyncProcess.java:310)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:964)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:108)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:105)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2015-04-21 22:10:41,611 ERROR org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper [EventServerSystem-akka.actor.default-dispatcher-3] - ZooKeeper getData failed after 4 attempts
+2015-04-21 22:10:41,611 ERROR org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher [EventServerSystem-akka.actor.default-dispatcher-3] - hconnection-0x60c16548-0x14cdf86a6630006, quorum=localhost:2181, baseZNode=/hbase Received unexpected KeeperException, re-throwing exception
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /hbase/meta-region-server
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1155)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.getData(RecoverableZooKeeper.java:337)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.getData(ZKUtil.java:683)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.blockUntilAvailable(ZKUtil.java:1835)
+	at org.apache.hadoop.hbase.zookeeper.MetaRegionTracker.blockUntilAvailable(MetaRegionTracker.java:183)
+	at org.apache.hadoop.hbase.client.ZooKeeperRegistry.getMetaRegionLocation(ZooKeeperRegistry.java:58)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1102)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1196)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1105)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1062)
+	at org.apache.hadoop.hbase.client.AsyncProcess.findDestLocation(AsyncProcess.java:365)
+	at org.apache.hadoop.hbase.client.AsyncProcess.submit(AsyncProcess.java:310)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:964)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:108)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:105)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2015-04-21 22:10:48,020 ERROR org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper [EventServerSystem-akka.actor.default-dispatcher-7] - ZooKeeper getData failed after 4 attempts
+2015-04-21 22:10:48,020 ERROR org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher [EventServerSystem-akka.actor.default-dispatcher-7] - hconnection-0x60c16548-0x14cdf86a6630006, quorum=localhost:2181, baseZNode=/hbase Received unexpected KeeperException, re-throwing exception
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /hbase/meta-region-server
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1155)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.getData(RecoverableZooKeeper.java:337)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.getData(ZKUtil.java:683)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.blockUntilAvailable(ZKUtil.java:1835)
+	at org.apache.hadoop.hbase.zookeeper.MetaRegionTracker.blockUntilAvailable(MetaRegionTracker.java:183)
+	at org.apache.hadoop.hbase.client.ZooKeeperRegistry.getMetaRegionLocation(ZooKeeperRegistry.java:58)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1102)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1196)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1105)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1062)
+	at org.apache.hadoop.hbase.client.AsyncProcess.findDestLocation(AsyncProcess.java:365)
+	at org.apache.hadoop.hbase.client.AsyncProcess.submit(AsyncProcess.java:310)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:964)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:108)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:105)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2015-04-21 22:10:59,226 ERROR org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper [EventServerSystem-akka.actor.default-dispatcher-3] - ZooKeeper getData failed after 4 attempts
+2015-04-21 22:10:59,227 ERROR org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher [EventServerSystem-akka.actor.default-dispatcher-3] - hconnection-0x60c16548-0x14cdf86a6630006, quorum=localhost:2181, baseZNode=/hbase Received unexpected KeeperException, re-throwing exception
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /hbase/meta-region-server
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1155)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.getData(RecoverableZooKeeper.java:337)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.getData(ZKUtil.java:683)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.blockUntilAvailable(ZKUtil.java:1835)
+	at org.apache.hadoop.hbase.zookeeper.MetaRegionTracker.blockUntilAvailable(MetaRegionTracker.java:183)
+	at org.apache.hadoop.hbase.client.ZooKeeperRegistry.getMetaRegionLocation(ZooKeeperRegistry.java:58)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1102)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1196)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1105)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1062)
+	at org.apache.hadoop.hbase.client.AsyncProcess.findDestLocation(AsyncProcess.java:365)
+	at org.apache.hadoop.hbase.client.AsyncProcess.submit(AsyncProcess.java:310)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:964)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:108)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:105)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2015-04-21 22:11:05,570 ERROR org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper [EventServerSystem-akka.actor.default-dispatcher-7] - ZooKeeper getData failed after 4 attempts
+2015-04-21 22:11:05,571 ERROR org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher [EventServerSystem-akka.actor.default-dispatcher-7] - hconnection-0x60c16548-0x14cdf86a6630006, quorum=localhost:2181, baseZNode=/hbase Received unexpected KeeperException, re-throwing exception
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /hbase/meta-region-server
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1155)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.getData(RecoverableZooKeeper.java:337)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.getData(ZKUtil.java:683)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.blockUntilAvailable(ZKUtil.java:1835)
+	at org.apache.hadoop.hbase.zookeeper.MetaRegionTracker.blockUntilAvailable(MetaRegionTracker.java:183)
+	at org.apache.hadoop.hbase.client.ZooKeeperRegistry.getMetaRegionLocation(ZooKeeperRegistry.java:58)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1102)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1196)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1105)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1062)
+	at org.apache.hadoop.hbase.client.AsyncProcess.findDestLocation(AsyncProcess.java:365)
+	at org.apache.hadoop.hbase.client.AsyncProcess.submit(AsyncProcess.java:310)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:964)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:108)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:105)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2015-04-21 22:11:19,280 ERROR org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper [EventServerSystem-akka.actor.default-dispatcher-3] - ZooKeeper getData failed after 4 attempts
+2015-04-21 22:11:19,280 ERROR org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher [EventServerSystem-akka.actor.default-dispatcher-3] - hconnection-0x60c16548-0x14cdf86a6630006, quorum=localhost:2181, baseZNode=/hbase Received unexpected KeeperException, re-throwing exception
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /hbase/meta-region-server
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1155)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.getData(RecoverableZooKeeper.java:337)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.getData(ZKUtil.java:683)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.blockUntilAvailable(ZKUtil.java:1835)
+	at org.apache.hadoop.hbase.zookeeper.MetaRegionTracker.blockUntilAvailable(MetaRegionTracker.java:183)
+	at org.apache.hadoop.hbase.client.ZooKeeperRegistry.getMetaRegionLocation(ZooKeeperRegistry.java:58)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1102)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1196)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1105)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1062)
+	at org.apache.hadoop.hbase.client.AsyncProcess.findDestLocation(AsyncProcess.java:365)
+	at org.apache.hadoop.hbase.client.AsyncProcess.submit(AsyncProcess.java:310)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:964)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:108)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:105)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2015-04-21 22:11:25,950 ERROR org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper [EventServerSystem-akka.actor.default-dispatcher-7] - ZooKeeper getData failed after 4 attempts
+2015-04-21 22:11:25,950 ERROR org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher [EventServerSystem-akka.actor.default-dispatcher-7] - hconnection-0x60c16548-0x14cdf86a6630006, quorum=localhost:2181, baseZNode=/hbase Received unexpected KeeperException, re-throwing exception
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /hbase/meta-region-server
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1155)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.getData(RecoverableZooKeeper.java:337)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.getData(ZKUtil.java:683)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.blockUntilAvailable(ZKUtil.java:1835)
+	at org.apache.hadoop.hbase.zookeeper.MetaRegionTracker.blockUntilAvailable(MetaRegionTracker.java:183)
+	at org.apache.hadoop.hbase.client.ZooKeeperRegistry.getMetaRegionLocation(ZooKeeperRegistry.java:58)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1102)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1196)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1105)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1062)
+	at org.apache.hadoop.hbase.client.AsyncProcess.findDestLocation(AsyncProcess.java:365)
+	at org.apache.hadoop.hbase.client.AsyncProcess.submit(AsyncProcess.java:310)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:964)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:108)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:105)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2015-04-21 22:11:40,768 ERROR org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper [EventServerSystem-akka.actor.default-dispatcher-3] - ZooKeeper getData failed after 4 attempts
+2015-04-21 22:11:40,769 ERROR org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher [EventServerSystem-akka.actor.default-dispatcher-3] - hconnection-0x60c16548-0x14cdf86a6630006, quorum=localhost:2181, baseZNode=/hbase Received unexpected KeeperException, re-throwing exception
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /hbase/meta-region-server
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1155)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.getData(RecoverableZooKeeper.java:337)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.getData(ZKUtil.java:683)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.blockUntilAvailable(ZKUtil.java:1835)
+	at org.apache.hadoop.hbase.zookeeper.MetaRegionTracker.blockUntilAvailable(MetaRegionTracker.java:183)
+	at org.apache.hadoop.hbase.client.ZooKeeperRegistry.getMetaRegionLocation(ZooKeeperRegistry.java:58)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1102)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1196)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1105)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1062)
+	at org.apache.hadoop.hbase.client.AsyncProcess.findDestLocation(AsyncProcess.java:365)
+	at org.apache.hadoop.hbase.client.AsyncProcess.submit(AsyncProcess.java:310)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:964)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:108)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:105)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2015-04-21 22:11:46,330 ERROR org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper [EventServerSystem-akka.actor.default-dispatcher-7] - ZooKeeper getData failed after 4 attempts
+2015-04-21 22:11:46,330 ERROR org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher [EventServerSystem-akka.actor.default-dispatcher-7] - hconnection-0x60c16548-0x14cdf86a6630006, quorum=localhost:2181, baseZNode=/hbase Received unexpected KeeperException, re-throwing exception
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /hbase/meta-region-server
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1155)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.getData(RecoverableZooKeeper.java:337)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.getData(ZKUtil.java:683)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.blockUntilAvailable(ZKUtil.java:1835)
+	at org.apache.hadoop.hbase.zookeeper.MetaRegionTracker.blockUntilAvailable(MetaRegionTracker.java:183)
+	at org.apache.hadoop.hbase.client.ZooKeeperRegistry.getMetaRegionLocation(ZooKeeperRegistry.java:58)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1102)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1196)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1105)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1062)
+	at org.apache.hadoop.hbase.client.AsyncProcess.findDestLocation(AsyncProcess.java:365)
+	at org.apache.hadoop.hbase.client.AsyncProcess.submit(AsyncProcess.java:310)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:964)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:108)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:105)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2015-04-21 22:11:59,751 ERROR org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper [EventServerSystem-akka.actor.default-dispatcher-3] - ZooKeeper getData failed after 4 attempts
+2015-04-21 22:11:59,752 ERROR org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher [EventServerSystem-akka.actor.default-dispatcher-3] - hconnection-0x60c16548-0x14cdf86a6630006, quorum=localhost:2181, baseZNode=/hbase Received unexpected KeeperException, re-throwing exception
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /hbase/meta-region-server
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1155)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.getData(RecoverableZooKeeper.java:337)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.getData(ZKUtil.java:683)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.blockUntilAvailable(ZKUtil.java:1835)
+	at org.apache.hadoop.hbase.zookeeper.MetaRegionTracker.blockUntilAvailable(MetaRegionTracker.java:183)
+	at org.apache.hadoop.hbase.client.ZooKeeperRegistry.getMetaRegionLocation(ZooKeeperRegistry.java:58)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1102)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1196)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1105)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1062)
+	at org.apache.hadoop.hbase.client.AsyncProcess.findDestLocation(AsyncProcess.java:365)
+	at org.apache.hadoop.hbase.client.AsyncProcess.submit(AsyncProcess.java:310)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:964)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:108)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:105)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2015-04-21 22:12:05,259 ERROR org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper [EventServerSystem-akka.actor.default-dispatcher-7] - ZooKeeper getData failed after 4 attempts
+2015-04-21 22:12:05,259 ERROR org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher [EventServerSystem-akka.actor.default-dispatcher-7] - hconnection-0x60c16548-0x14cdf86a6630006, quorum=localhost:2181, baseZNode=/hbase Received unexpected KeeperException, re-throwing exception
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /hbase/meta-region-server
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1155)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.getData(RecoverableZooKeeper.java:337)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.getData(ZKUtil.java:683)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.blockUntilAvailable(ZKUtil.java:1835)
+	at org.apache.hadoop.hbase.zookeeper.MetaRegionTracker.blockUntilAvailable(MetaRegionTracker.java:183)
+	at org.apache.hadoop.hbase.client.ZooKeeperRegistry.getMetaRegionLocation(ZooKeeperRegistry.java:58)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1102)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1196)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1105)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1062)
+	at org.apache.hadoop.hbase.client.AsyncProcess.findDestLocation(AsyncProcess.java:365)
+	at org.apache.hadoop.hbase.client.AsyncProcess.submit(AsyncProcess.java:310)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:964)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:108)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:105)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2015-04-21 22:12:36,963 INFO  io.prediction.tools.console.Console$ [main] - Creating Event Server at 0.0.0.0:7070
+2015-04-21 22:12:38,574 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 22:12:41,328 INFO  spray.can.server.HttpListener [EventServerSystem-akka.actor.default-dispatcher-4] - Bound to /0.0.0.0:7070
+2015-04-21 22:12:41,329 INFO  io.prediction.data.api.EventServerActor [EventServerSystem-akka.actor.default-dispatcher-4] - Bound received. EventServer is ready.
+2015-04-21 22:13:15,736 INFO  io.prediction.tools.console.App$ [main] -                 Name |   ID |                                                       Access Key | Allowed Event(s)
+2015-04-21 22:13:15,897 INFO  io.prediction.tools.console.App$ [main] -      FinalDeployTest |    4 | 3p42NlUE6uqwOX39vGSd0djm6QvdgiriZ1lmQnzPinPjHiYnaimxr5KP89s9ue53 | (all)
+2015-04-21 22:13:15,910 INFO  io.prediction.tools.console.App$ [main] -               MyApp1 |    1 | ddu1ynBz4ONm9bxqPE73RvagJeQNNauZkHU5CsH3h5CFJU6rKM5Kc0uiezP7ZCLw | (all)
+2015-04-21 22:13:15,918 INFO  io.prediction.tools.console.App$ [main] -               MyApp2 |    2 | Ou8SV0FJoP84LfSyXy3cBLV2TgWSHV9q2BiNgQLy4Zuji0RiJ6nfNKMp8kUGdC9O | (all)
+2015-04-21 22:13:15,935 INFO  io.prediction.tools.console.App$ [main] -               PTest1 |    3 | TO4tXr8YDZHdzWo3EH0KMtE8JwOP0GEz8gqVEpVB31GzNHD6ILSJNLXNlNrZNTBn | (all)
+2015-04-21 22:13:15,964 INFO  io.prediction.tools.console.App$ [main] -              TextApp |    6 | 4MM9gXNr3LkMCSCfCoZcVzaWPJi1Gbpn2Hm1PiIvsSRVONiaSqhSRemUSnkaUZng | (all)
+2015-04-21 22:13:15,989 INFO  io.prediction.tools.console.App$ [main] -             TextApp1 |    5 | IHeGYSNna0a1vNPnk9TNulOW1qzIhrI23JiMurUKK555ePCOzdCOFInZ0iS6cMdK | (all)
+2015-04-21 22:13:16,002 INFO  io.prediction.tools.console.App$ [main] - Finished listing 6 app(s).
+2015-04-21 22:13:28,164 INFO  io.prediction.tools.console.App$ [main] - The following app will be deleted. Are you sure?
+2015-04-21 22:13:28,166 INFO  io.prediction.tools.console.App$ [main] -     App Name: FinalDeployTest
+2015-04-21 22:13:28,166 INFO  io.prediction.tools.console.App$ [main] -       App ID: 4
+2015-04-21 22:13:28,167 INFO  io.prediction.tools.console.App$ [main] -  Description: None
+2015-04-21 22:13:34,831 INFO  io.prediction.tools.console.App$ [main] - Aborted.
+2015-04-21 22:13:46,526 INFO  io.prediction.tools.console.App$ [main] - The following app will be deleted. Are you sure?
+2015-04-21 22:13:46,528 INFO  io.prediction.tools.console.App$ [main] -     App Name: FinalDeployTest
+2015-04-21 22:13:46,528 INFO  io.prediction.tools.console.App$ [main] -       App ID: 4
+2015-04-21 22:13:46,529 INFO  io.prediction.tools.console.App$ [main] -  Description: None
+2015-04-21 22:13:47,968 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 22:13:53,992 INFO  io.prediction.data.storage.hbase.HBLEvents [main] - Removing table predictionio_eventdata:events_4...
+2015-04-21 22:13:59,357 INFO  io.prediction.tools.console.App$ [main] - Removed Event Store for this app ID: 4
+2015-04-21 22:13:59,373 INFO  io.prediction.tools.console.App$ [main] - Deleted app FinalDeployTest.
+2015-04-21 22:13:59,475 INFO  io.prediction.tools.console.App$ [main] - Done.
+2015-04-21 22:14:10,541 INFO  io.prediction.tools.console.App$ [main] - The following app will be deleted. Are you sure?
+2015-04-21 22:14:10,543 INFO  io.prediction.tools.console.App$ [main] -     App Name: MyApp1
+2015-04-21 22:14:10,544 INFO  io.prediction.tools.console.App$ [main] -       App ID: 1
+2015-04-21 22:14:10,544 INFO  io.prediction.tools.console.App$ [main] -  Description: None
+2015-04-21 22:14:16,265 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 22:14:22,354 INFO  io.prediction.data.storage.hbase.HBLEvents [main] - Removing table predictionio_eventdata:events_1...
+2015-04-21 22:14:32,784 INFO  io.prediction.tools.console.App$ [main] - Removed Event Store for this app ID: 1
+2015-04-21 22:14:32,806 INFO  io.prediction.tools.console.App$ [main] - Deleted app MyApp1.
+2015-04-21 22:14:32,909 INFO  io.prediction.tools.console.App$ [main] - Done.
+2015-04-21 22:14:52,504 INFO  io.prediction.tools.console.App$ [main] - The following app will be deleted. Are you sure?
+2015-04-21 22:14:52,506 INFO  io.prediction.tools.console.App$ [main] -     App Name: MyApp2
+2015-04-21 22:14:52,507 INFO  io.prediction.tools.console.App$ [main] -       App ID: 2
+2015-04-21 22:14:52,508 INFO  io.prediction.tools.console.App$ [main] -  Description: None
+2015-04-21 22:14:54,642 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 22:14:55,676 INFO  io.prediction.data.storage.hbase.HBLEvents [main] - Removing table predictionio_eventdata:events_2...
+2015-04-21 22:15:01,520 INFO  io.prediction.tools.console.App$ [main] - Removed Event Store for this app ID: 2
+2015-04-21 22:15:01,531 INFO  io.prediction.tools.console.App$ [main] - Deleted app MyApp2.
+2015-04-21 22:15:01,642 INFO  io.prediction.tools.console.App$ [main] - Done.
+2015-04-21 22:15:12,418 INFO  io.prediction.tools.console.App$ [main] -                 Name |   ID |                                                       Access Key | Allowed Event(s)
+2015-04-21 22:15:12,474 INFO  io.prediction.tools.console.App$ [main] -               PTest1 |    3 | TO4tXr8YDZHdzWo3EH0KMtE8JwOP0GEz8gqVEpVB31GzNHD6ILSJNLXNlNrZNTBn | (all)
+2015-04-21 22:15:12,498 INFO  io.prediction.tools.console.App$ [main] -              TextApp |    6 | 4MM9gXNr3LkMCSCfCoZcVzaWPJi1Gbpn2Hm1PiIvsSRVONiaSqhSRemUSnkaUZng | (all)
+2015-04-21 22:15:12,509 INFO  io.prediction.tools.console.App$ [main] -             TextApp1 |    5 | IHeGYSNna0a1vNPnk9TNulOW1qzIhrI23JiMurUKK555ePCOzdCOFInZ0iS6cMdK | (all)
+2015-04-21 22:15:12,510 INFO  io.prediction.tools.console.App$ [main] - Finished listing 3 app(s).
+2015-04-21 22:15:23,941 INFO  io.prediction.tools.console.App$ [main] - The following app will be deleted. Are you sure?
+2015-04-21 22:15:23,943 INFO  io.prediction.tools.console.App$ [main] -     App Name: PTest1
+2015-04-21 22:15:23,944 INFO  io.prediction.tools.console.App$ [main] -       App ID: 3
+2015-04-21 22:15:23,945 INFO  io.prediction.tools.console.App$ [main] -  Description: None
+2015-04-21 22:15:26,214 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 22:15:37,186 INFO  io.prediction.data.storage.hbase.HBLEvents [main] - Removing table predictionio_eventdata:events_3...
+2015-04-21 22:15:42,552 INFO  io.prediction.tools.console.App$ [main] - Removed Event Store for this app ID: 3
+2015-04-21 22:15:42,562 INFO  io.prediction.tools.console.App$ [main] - Deleted app PTest1.
+2015-04-21 22:15:42,672 INFO  io.prediction.tools.console.App$ [main] - Done.
+2015-04-21 22:15:55,961 INFO  io.prediction.tools.console.App$ [main] - The following app will be deleted. Are you sure?
+2015-04-21 22:15:55,963 INFO  io.prediction.tools.console.App$ [main] -     App Name: TextApp
+2015-04-21 22:15:55,964 INFO  io.prediction.tools.console.App$ [main] -       App ID: 6
+2015-04-21 22:15:55,964 INFO  io.prediction.tools.console.App$ [main] -  Description: None
+2015-04-21 22:15:58,135 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 22:15:59,129 INFO  io.prediction.data.storage.hbase.HBLEvents [main] - Removing table predictionio_eventdata:events_6...
+2015-04-21 22:16:04,483 INFO  io.prediction.tools.console.App$ [main] - Removed Event Store for this app ID: 6
+2015-04-21 22:16:04,493 INFO  io.prediction.tools.console.App$ [main] - Deleted app TextApp.
+2015-04-21 22:16:04,604 INFO  io.prediction.tools.console.App$ [main] - Done.
+2015-04-21 22:16:17,741 INFO  io.prediction.tools.console.App$ [main] - The following app will be deleted. Are you sure?
+2015-04-21 22:16:17,743 INFO  io.prediction.tools.console.App$ [main] -     App Name: TextApp1
+2015-04-21 22:16:17,744 INFO  io.prediction.tools.console.App$ [main] -       App ID: 5
+2015-04-21 22:16:17,744 INFO  io.prediction.tools.console.App$ [main] -  Description: None
+2015-04-21 22:16:20,469 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 22:16:21,504 INFO  io.prediction.data.storage.hbase.HBLEvents [main] - Removing table predictionio_eventdata:events_5...
+2015-04-21 22:16:27,048 INFO  io.prediction.tools.console.App$ [main] - Removed Event Store for this app ID: 5
+2015-04-21 22:16:27,058 INFO  io.prediction.tools.console.App$ [main] - Deleted app TextApp1.
+2015-04-21 22:16:27,168 INFO  io.prediction.tools.console.App$ [main] - Done.
+2015-04-21 22:17:29,191 INFO  io.prediction.tools.console.App$ [main] -                 Name |   ID |                                                       Access Key | Allowed Event(s)
+2015-04-21 22:17:29,194 INFO  io.prediction.tools.console.App$ [main] - Finished listing 0 app(s).
+2015-04-21 22:17:48,968 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 22:17:55,032 INFO  io.prediction.data.storage.hbase.HBLEvents [main] - The table predictionio_eventdata:events_7 doesn't exist yet. Creating now...
+2015-04-21 22:18:05,513 INFO  io.prediction.tools.console.App$ [main] - Initialized Event Store for this app ID: 7.
+2015-04-21 22:18:05,535 INFO  io.prediction.tools.console.App$ [main] - Created new app:
+2015-04-21 22:18:05,535 INFO  io.prediction.tools.console.App$ [main] -       Name: TextApp1
+2015-04-21 22:18:05,536 INFO  io.prediction.tools.console.App$ [main] -         ID: 7
+2015-04-21 22:18:05,536 INFO  io.prediction.tools.console.App$ [main] - Access Key: tTPBbTo25DDGz4fjwIauNAo8rQaED6bgd7XVidv7ytMucwcY1RIWpuHE5NXP2Nix
+2015-04-21 22:19:19,357 WARN  org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation [hconnection-0x60c16548-shared--pool1-t3] - Encountered problems when prefetch hbase:meta table: 
+org.apache.hadoop.hbase.TableNotFoundException: Cannot find row in hbase:meta for table: predictionio_eventdata:events_5, row=predictionio_eventdata:events_5,b\xB1Ms\xD0\xA6G\xD3\xFBC\xD3\xFB\xAD-\xAE\xEF\x00\x00\x01L\xDF\x90\xEC\xB9\xB7\xD2x\xAB\x16\xF9\x05\xDC,99999999999999
+	at org.apache.hadoop.hbase.client.MetaScanner.metaScan(MetaScanner.java:146)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.prefetchRegionCache(HConnectionManager.java:1153)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1217)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1105)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1062)
+	at org.apache.hadoop.hbase.client.AsyncProcess.findDestLocation(AsyncProcess.java:365)
+	at org.apache.hadoop.hbase.client.AsyncProcess.submit(AsyncProcess.java:507)
+	at org.apache.hadoop.hbase.client.AsyncProcess.logAndResubmit(AsyncProcess.java:717)
+	at org.apache.hadoop.hbase.client.AsyncProcess.receiveMultiAction(AsyncProcess.java:813)
+	at org.apache.hadoop.hbase.client.AsyncProcess.access$300(AsyncProcess.java:93)
+	at org.apache.hadoop.hbase.client.AsyncProcess$1.run(AsyncProcess.java:560)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2015-04-21 22:19:19,376 ERROR akka.actor.LocalActorRef [EventServerSystem-akka.actor.default-dispatcher-11] - Error during processing of request HttpRequest(POST,http://localhost:7070/events.json?accessKey=IHeGYSNna0a1vNPnk9TNulOW1qzIhrI23JiMurUKK555ePCOzdCOFInZ0iS6cMdK,List(Connection: keep-alive, Content-Type: application/json, Content-Length: 776, Accept-Encoding: identity, Host: localhost:7070),HttpEntity(application/json,{"properties": {"label": 11, "text": "From: rj@ri.cadre.com (Rob deFriesse)\nSubject: Can DES code be shipped to Canada?\nArticle-I.D.: fripp.1993Apr22.125402.27561\nReply-To: rj@ri.cadre.com\nOrganization: Cadre Technologies Inc.\nLines: 13\nNntp-Posting-Host: 192.9.200.19\n\nSomeone in Canada asked me to send him some public domain DES file\nencryption code I have.  Is it legal for me to send it?\n\nThanx.\n--\nEschew Obfuscation\n\nRob deFriesse                    Mail:  rj@ri.cadre.com\nCadr...),HTTP/1.1)
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: predictionio_eventdata:events_5: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:108)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:105)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2015-04-21 22:20:39,210 INFO  io.prediction.tools.console.Console$ [main] - Creating Event Server at 0.0.0.0:7070
+2015-04-21 22:20:43,121 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 22:20:48,578 INFO  spray.can.server.HttpListener [EventServerSystem-akka.actor.default-dispatcher-3] - Bound to /0.0.0.0:7070
+2015-04-21 22:20:48,579 INFO  io.prediction.data.api.EventServerActor [EventServerSystem-akka.actor.default-dispatcher-3] - Bound received. EventServer is ready.
+2015-04-21 22:20:53,970 WARN  org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation [EventServerSystem-akka.actor.default-dispatcher-4] - Encountered problems when prefetch hbase:meta table: 
+org.apache.hadoop.hbase.TableNotFoundException: Cannot find row in hbase:meta for table: predictionio_eventdata:events_5, row=predictionio_eventdata:events_5,b\xB1Ms\xD0\xA6G\xD3\xFBC\xD3\xFB\xAD-\xAE\xEF\x00\x00\x01L\xDF\x92[\xBD\x96[I\xED\x14\xCA\xA4?,99999999999999
+	at org.apache.hadoop.hbase.client.MetaScanner.metaScan(MetaScanner.java:146)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.prefetchRegionCache(HConnectionManager.java:1153)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1217)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1105)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1062)
+	at org.apache.hadoop.hbase.client.AsyncProcess.findDestLocation(AsyncProcess.java:365)
+	at org.apache.hadoop.hbase.client.AsyncProcess.submit(AsyncProcess.java:310)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:964)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:108)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:105)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2015-04-21 22:20:54,003 ERROR akka.actor.LocalActorRef [EventServerSystem-akka.actor.default-dispatcher-2] - Error during processing of request HttpRequest(POST,http://localhost:7070/events.json?accessKey=IHeGYSNna0a1vNPnk9TNulOW1qzIhrI23JiMurUKK555ePCOzdCOFInZ0iS6cMdK,List(Content-Type: application/json, Connection: keep-alive, Content-Length: 776, Accept-Encoding: identity, Host: localhost:7070),HttpEntity(application/json,{"entityType": "source", "entityId": 1, "properties": {"text": "From: rj@ri.cadre.com (Rob deFriesse)\nSubject: Can DES code be shipped to Canada?\nArticle-I.D.: fripp.1993Apr22.125402.27561\nReply-To: rj@ri.cadre.com\nOrganization: Cadre Technologies Inc.\nLines: 13\nNntp-Posting-Host: 192.9.200.19\n\nSomeone in Canada asked me to send him some public domain DES file\nencryption code I have.  Is it legal for me to send it?\n\nThanx.\n--\nEschew Obfuscation\n\nRob deFriesse                    Ma...),HTTP/1.1)
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: predictionio_eventdata:events_5: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:108)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:105)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2015-04-21 22:23:45,489 WARN  org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation [EventServerSystem-akka.actor.default-dispatcher-9] - Encountered problems when prefetch hbase:meta table: 
+org.apache.hadoop.hbase.TableNotFoundException: Cannot find row in hbase:meta for table: predictionio_eventdata:events_5, row=predictionio_eventdata:events_5,b\xB1Ms\xD0\xA6G\xD3\xFBC\xD3\xFB\xAD-\xAE\xEF\x00\x00\x01L\xDF\x94\xFC\xBD\xAB\xBA\x5C\xFB\xE7%rf,99999999999999
+	at org.apache.hadoop.hbase.client.MetaScanner.metaScan(MetaScanner.java:146)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.prefetchRegionCache(HConnectionManager.java:1153)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1217)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1105)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1062)
+	at org.apache.hadoop.hbase.client.AsyncProcess.findDestLocation(AsyncProcess.java:365)
+	at org.apache.hadoop.hbase.client.AsyncProcess.submit(AsyncProcess.java:310)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:964)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:108)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:105)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2015-04-21 22:23:45,493 ERROR akka.actor.LocalActorRef [EventServerSystem-akka.actor.default-dispatcher-5] - Error during processing of request HttpRequest(POST,http://localhost:7070/events.json?accessKey=IHeGYSNna0a1vNPnk9TNulOW1qzIhrI23JiMurUKK555ePCOzdCOFInZ0iS6cMdK,List(Content-Type: application/json, Connection: keep-alive, Content-Length: 776, Accept-Encoding: identity, Host: localhost:7070),HttpEntity(application/json,{"entityType": "source", "event": "documents", "entityId": 1, "properties": {"text": "From: rj@ri.cadre.com (Rob deFriesse)\nSubject: Can DES code be shipped to Canada?\nArticle-I.D.: fripp.1993Apr22.125402.27561\nReply-To: rj@ri.cadre.com\nOrganization: Cadre Technologies Inc.\nLines: 13\nNntp-Posting-Host: 192.9.200.19\n\nSomeone in Canada asked me to send him some public domain DES file\nencryption code I have.  Is it legal for me to send it?\n\nThanx.\n--\nEschew Obfuscation\n\nRob deFriesse...),HTTP/1.1)
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: predictionio_eventdata:events_5: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:108)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:105)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2015-04-21 22:47:44,056 INFO  io.prediction.tools.console.Console$ [main] - Creating Event Server at 0.0.0.0:7070
+2015-04-21 22:47:45,227 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 22:47:52,522 INFO  spray.can.server.HttpListener [EventServerSystem-akka.actor.default-dispatcher-2] - Bound to /0.0.0.0:7070
+2015-04-21 22:47:52,523 INFO  io.prediction.data.api.EventServerActor [EventServerSystem-akka.actor.default-dispatcher-2] - Bound received. EventServer is ready.
+2015-04-21 22:48:04,020 WARN  org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation [EventServerSystem-akka.actor.default-dispatcher-2] - Encountered problems when prefetch hbase:meta table: 
+org.apache.hadoop.hbase.TableNotFoundException: Cannot find row in hbase:meta for table: predictionio_eventdata:events_5, row=predictionio_eventdata:events_5,b\xB1Ms\xD0\xA6G\xD3\xFBC\xD3\xFB\xAD-\xAE\xEF\x00\x00\x01L\xDF\xAB<\xE1\x85\xD4\xBB\x03\xA5\x9C\xFB',99999999999999
+	at org.apache.hadoop.hbase.client.MetaScanner.metaScan(MetaScanner.java:146)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.prefetchRegionCache(HConnectionManager.java:1153)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1217)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1105)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1062)
+	at org.apache.hadoop.hbase.client.AsyncProcess.findDestLocation(AsyncProcess.java:365)
+	at org.apache.hadoop.hbase.client.AsyncProcess.submit(AsyncProcess.java:310)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:964)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:108)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:105)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2015-04-21 22:48:04,033 ERROR akka.actor.LocalActorRef [EventServerSystem-akka.actor.default-dispatcher-4] - Error during processing of request HttpRequest(POST,http://localhost:7070/events.json?accessKey=IHeGYSNna0a1vNPnk9TNulOW1qzIhrI23JiMurUKK555ePCOzdCOFInZ0iS6cMdK,List(Connection: keep-alive, Content-Type: application/json, Content-Length: 776, Accept-Encoding: identity, Host: localhost:7070),HttpEntity(application/json,{"entityType": "source", "event": "documents", "properties": {"label": 11, "text": "From: rj@ri.cadre.com (Rob deFriesse)\nSubject: Can DES code be shipped to Canada?\nArticle-I.D.: fripp.1993Apr22.125402.27561\nReply-To: rj@ri.cadre.com\nOrganization: Cadre Technologies Inc.\nLines: 13\nNntp-Posting-Host: 192.9.200.19\n\nSomeone in Canada asked me to send him some public domain DES file\nencryption code I have.  Is it legal for me to send it?\n\nThanx.\n--\nEschew Obfuscation\n\nRob deFriesse  ...),HTTP/1.1)
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: predictionio_eventdata:events_5: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:108)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:105)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2015-04-21 22:48:48,310 WARN  org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation [EventServerSystem-akka.actor.default-dispatcher-9] - Encountered problems when prefetch hbase:meta table: 
+org.apache.hadoop.hbase.TableNotFoundException: Cannot find row in hbase:meta for table: predictionio_eventdata:events_5, row=predictionio_eventdata:events_5,b\xB1Ms\xD0\xA6G\xD3\xFBC\xD3\xFB\xAD-\xAE\xEF\x00\x00\x01L\xDF\xAB\xEB\x1D\xACbDP\x977\x9Es,99999999999999
+	at org.apache.hadoop.hbase.client.MetaScanner.metaScan(MetaScanner.java:146)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.prefetchRegionCache(HConnectionManager.java:1153)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1217)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1105)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1062)
+	at org.apache.hadoop.hbase.client.AsyncProcess.findDestLocation(AsyncProcess.java:365)
+	at org.apache.hadoop.hbase.client.AsyncProcess.submit(AsyncProcess.java:310)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:964)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:108)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:105)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2015-04-21 22:48:48,314 ERROR akka.actor.LocalActorRef [EventServerSystem-akka.actor.default-dispatcher-5] - Error during processing of request HttpRequest(POST,http://localhost:7070/events.json?accessKey=IHeGYSNna0a1vNPnk9TNulOW1qzIhrI23JiMurUKK555ePCOzdCOFInZ0iS6cMdK,List(Content-Type: application/json, Connection: keep-alive, Content-Length: 776, Accept-Encoding: identity, Host: localhost:7070),HttpEntity(application/json,{"eventTime": "2015-04-22T05:48:48.285+0000", "event": "documents", "entityId": 1, "properties": {"text": "From: rj@ri.cadre.com (Rob deFriesse)\nSubject: Can DES code be shipped to Canada?\nArticle-I.D.: fripp.1993Apr22.125402.27561\nReply-To: rj@ri.cadre.com\nOrganization: Cadre Technologies Inc.\nLines: 13\nNntp-Posting-Host: 192.9.200.19\n\nSomeone in Canada asked me to send him some public domain DES file\nencryption code I have.  Is it legal for me to send it?\n\nThanx.\n--\nEschew Obfusca...),HTTP/1.1)
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: predictionio_eventdata:events_5: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:108)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:105)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2015-04-21 22:49:23,526 INFO  io.prediction.tools.console.Console$ [main] - Creating Event Server at 0.0.0.0:7070
+2015-04-21 22:49:24,791 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 22:49:27,083 INFO  spray.can.server.HttpListener [EventServerSystem-akka.actor.default-dispatcher-3] - Bound to /0.0.0.0:7070
+2015-04-21 22:49:27,084 INFO  io.prediction.data.api.EventServerActor [EventServerSystem-akka.actor.default-dispatcher-3] - Bound received. EventServer is ready.
+2015-04-21 22:49:37,956 WARN  org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation [EventServerSystem-akka.actor.default-dispatcher-3] - Encountered problems when prefetch hbase:meta table: 
+org.apache.hadoop.hbase.TableNotFoundException: Cannot find row in hbase:meta for table: predictionio_eventdata:events_5, row=predictionio_eventdata:events_5,b\xB1Ms\xD0\xA6G\xD3\xFBC\xD3\xFB\xAD-\xAE\xEF\x00\x00\x01L\xDF\xAC\xAB\xDD\xBA!\xC8\xDD:\x00\xAF\xE9,99999999999999
+	at org.apache.hadoop.hbase.client.MetaScanner.metaScan(MetaScanner.java:146)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.prefetchRegionCache(HConnectionManager.java:1153)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1217)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1105)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1062)
+	at org.apache.hadoop.hbase.client.AsyncProcess.findDestLocation(AsyncProcess.java:365)
+	at org.apache.hadoop.hbase.client.AsyncProcess.submit(AsyncProcess.java:310)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:964)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:108)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:105)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2015-04-21 22:49:37,969 ERROR akka.actor.LocalActorRef [EventServerSystem-akka.actor.default-dispatcher-2] - Error during processing of request HttpRequest(POST,http://localhost:7070/events.json?accessKey=IHeGYSNna0a1vNPnk9TNulOW1qzIhrI23JiMurUKK555ePCOzdCOFInZ0iS6cMdK,List(Connection: keep-alive, Content-Type: application/json, Content-Length: 776, Accept-Encoding: identity, Host: localhost:7070),HttpEntity(application/json,{"entityId": 1, "event": "documents", "properties": {"label": 11, "text": "From: rj@ri.cadre.com (Rob deFriesse)\nSubject: Can DES code be shipped to Canada?\nArticle-I.D.: fripp.1993Apr22.125402.27561\nReply-To: rj@ri.cadre.com\nOrganization: Cadre Technologies Inc.\nLines: 13\nNntp-Posting-Host: 192.9.200.19\n\nSomeone in Canada asked me to send him some public domain DES file\nencryption code I have.  Is it legal for me to send it?\n\nThanx.\n--\nEschew Obfuscation\n\nRob deFriesse           ...),HTTP/1.1)
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: predictionio_eventdata:events_5: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:108)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:105)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2015-04-21 22:56:07,377 WARN  org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation [EventServerSystem-akka.actor.default-dispatcher-9] - Encountered problems when prefetch hbase:meta table: 
+org.apache.hadoop.hbase.TableNotFoundException: Cannot find row in hbase:meta for table: predictionio_eventdata:events_5, row=predictionio_eventdata:events_5,b\xB1Ms\xD0\xA6G\xD3\xFBC\xD3\xFB\xAD-\xAE\xEF\x00\x00\x01L\xDF\xB2\x9E?\xB7\xFA)K\x1D<\xD7\x15,99999999999999
+	at org.apache.hadoop.hbase.client.MetaScanner.metaScan(MetaScanner.java:146)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.prefetchRegionCache(HConnectionManager.java:1153)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1217)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1105)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:1062)
+	at org.apache.hadoop.hbase.client.AsyncProcess.findDestLocation(AsyncProcess.java:365)
+	at org.apache.hadoop.hbase.client.AsyncProcess.submit(AsyncProcess.java:310)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:964)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:108)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:105)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2015-04-21 22:56:07,381 ERROR akka.actor.LocalActorRef [EventServerSystem-akka.actor.default-dispatcher-5] - Error during processing of request HttpRequest(POST,http://localhost:7070/events.json?accessKey=IHeGYSNna0a1vNPnk9TNulOW1qzIhrI23JiMurUKK555ePCOzdCOFInZ0iS6cMdK,List(Content-Type: application/json, Connection: keep-alive, Content-Length: 776, Accept-Encoding: identity, Host: localhost:7070),HttpEntity(application/json,{"entityType": "source", "event": "documents", "entityId": 1, "eventTime": "2015-04-22T05:56:07.359+0000", "properties": {"label": 11, "text": "From: rj@ri.cadre.com (Rob deFriesse)\nSubject: Can DES code be shipped to Canada?\nArticle-I.D.: fripp.1993Apr22.125402.27561\nReply-To: rj@ri.cadre.com\nOrganization: Cadre Technologies Inc.\nLines: 13\nNntp-Posting-Host: 192.9.200.19\n\nSomeone in Canada asked me to send him some public domain DES file\nencryption code I have.  Is it legal for me to s...),HTTP/1.1)
+org.apache.hadoop.hbase.client.RetriesExhaustedWithDetailsException: Failed 1 action: predictionio_eventdata:events_5: 1 time, 
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.makeException(AsyncProcess.java:192)
+	at org.apache.hadoop.hbase.client.AsyncProcess$BatchErrors.access$500(AsyncProcess.java:176)
+	at org.apache.hadoop.hbase.client.AsyncProcess.getErrors(AsyncProcess.java:913)
+	at org.apache.hadoop.hbase.client.HTable.backgroundFlushCommits(HTable.java:984)
+	at org.apache.hadoop.hbase.client.HTable.flushCommits(HTable.java:1252)
+	at org.apache.hadoop.hbase.client.HTable.put(HTable.java:910)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:108)
+	at io.prediction.data.storage.hbase.HBLEvents$$anonfun$futureInsert$1.apply(HBLEvents.scala:105)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2015-04-21 23:02:25,081 INFO  io.prediction.tools.console.Console$ [main] - Creating Event Server at 0.0.0.0:7070
+2015-04-21 23:02:26,652 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 23:02:28,990 INFO  spray.can.server.HttpListener [EventServerSystem-akka.actor.default-dispatcher-4] - Bound to /0.0.0.0:7070
+2015-04-21 23:02:28,991 INFO  io.prediction.data.api.EventServerActor [EventServerSystem-akka.actor.default-dispatcher-4] - Bound received. EventServer is ready.
+2015-04-21 23:05:06,126 INFO  io.prediction.tools.console.App$ [main] -                 Name |   ID |                                                       Access Key | Allowed Event(s)
+2015-04-21 23:05:06,252 INFO  io.prediction.tools.console.App$ [main] -             TextApp1 |    7 | tTPBbTo25DDGz4fjwIauNAo8rQaED6bgd7XVidv7ytMucwcY1RIWpuHE5NXP2Nix | (all)
+2015-04-21 23:05:06,253 INFO  io.prediction.tools.console.App$ [main] - Finished listing 1 app(s).
+2015-04-21 23:05:17,469 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /Users/Marco/TextManipulationEngine/manifest.json
+2015-04-21 23:05:17,515 INFO  io.prediction.tools.console.Console$ [main] - Using command '/Users/Marco/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-21 23:05:17,515 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-21 23:05:17,516 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.1.jar is absent.
+2015-04-21 23:05:17,517 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /Users/Marco/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-21 23:05:31,631 INFO  io.prediction.tools.console.Console$ [main] - Build finished successfully.
+2015-04-21 23:05:31,632 INFO  io.prediction.tools.console.Console$ [main] - Looking for an engine...
+2015-04-21 23:05:31,639 INFO  io.prediction.tools.console.Console$ [main] - Found TextManipulationEngine-assembly-0.1-SNAPSHOT-deps.jar
+2015-04-21 23:05:31,640 INFO  io.prediction.tools.console.Console$ [main] - Found textmanipulationengine_2.10-0.1-SNAPSHOT.jar
+2015-04-21 23:05:31,648 INFO  io.prediction.tools.console.Console$ [main] - HADOOP_CONF_DIR is not set. Assuming HDFS is unavailable.
+2015-04-21 23:05:33,249 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 23:05:33,352 INFO  io.prediction.tools.RegisterEngine$ [main] - Copying file:/Users/Marco/TextManipulationEngine/target/scala-2.10/TextManipulationEngine-assembly-0.1-SNAPSHOT-deps.jar to file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/TextManipulationEngine-assembly-0.1-SNAPSHOT-deps.jar
+2015-04-21 23:05:33,435 INFO  io.prediction.tools.RegisterEngine$ [main] - Copying file:/Users/Marco/TextManipulationEngine/target/scala-2.10/textmanipulationengine_2.10-0.1-SNAPSHOT.jar to file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/textmanipulationengine_2.10-0.1-SNAPSHOT.jar
+2015-04-21 23:05:33,458 INFO  io.prediction.tools.RegisterEngine$ [main] - Registering engine 0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje f8de3b2e82df59a352b216bc539994f3f1bed16d
+2015-04-21 23:05:33,550 INFO  io.prediction.tools.console.Console$ [main] - Your engine is ready for training.
+2015-04-21 23:05:38,119 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /Users/Marco/TextManipulationEngine/manifest.json
+2015-04-21 23:05:39,771 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 23:05:39,900 INFO  io.prediction.tools.RunWorkflow$ [main] - Submission command: /Users/Marco/PredictionIO/vendors/spark-1.2.1/bin/spark-submit --class io.prediction.workflow.CreateWorkflow --name PredictionIO Training: 0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje f8de3b2e82df59a352b216bc539994f3f1bed16d () --jars file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/textmanipulationengine_2.10-0.1-SNAPSHOT.jar,file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/TextManipulationEngine-assembly-0.1-SNAPSHOT-deps.jar --files /Users/Marco/PredictionIO/conf/log4j.properties,/Users/Marco/PredictionIO/vendors/hbase-0.98.11/conf/hbase-site.xml --driver-class-path /Users/Marco/PredictionIO/conf:/Users/Marco/PredictionIO/vendors/hbase-0.98.11/conf /Users/Marco/PredictionIO/lib/pio-assembly-0.9.1.jar --env PIO_STORAGE_SOURCES_HBASE_TYPE=hbase,PIO_ENV_LOADED=1,PIO_STORAGE_SOURCES_HBASE_HOSTS=0,PIO_STORAGE_REPOSITORIES_METADATA_NAME=predictionio_metadata,PIO_FS_BASEDIR=/Users/Marco/.pio_store,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOSTS=localhost,PIO_STORAGE_SOURCES_HBASE_HOME=/Users/Marco/PredictionIO/vendors/hbase-0.98.11,PIO_HOME=/Users/Marco/PredictionIO,PIO_FS_ENGINESDIR=/Users/Marco/.pio_store/engines,PIO_STORAGE_SOURCES_HBASE_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_TYPE=elasticsearch,PIO_STORAGE_REPOSITORIES_METADATA_SOURCE=ELASTICSEARCH,PIO_STORAGE_REPOSITORIES_MODELDATA_SOURCE=LOCALFS,PIO_STORAGE_REPOSITORIES_EVENTDATA_NAME=predictionio_eventdata,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOME=/Users/Marco/PredictionIO/vendors/elasticsearch-1.4.4,PIO_FS_TMPDIR=/Users/Marco/.pio_store/tmp,PIO_STORAGE_REPOSITORIES_MODELDATA_NAME=pio_,PIO_STORAGE_SOURCES_LOCALFS_HOSTS=/Users/Marco/.pio_store/models,PIO_STORAGE_REPOSITORIES_EVENTDATA_SOURCE=HBASE,PIO_CONF_DIR=/Users/Marco/PredictionIO/conf,PIO_STORAGE_SOURCES_LOCALFS_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_PORTS=9300,PIO_STORAGE_SOURCES_LOCALFS_TYPE=localfs --engine-id 0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje --engine-version f8de3b2e82df59a352b216bc539994f3f1bed16d --engine-variant /Users/Marco/TextManipulationEngine/engine.json --verbosity 0
+2015-04-21 23:05:41,930 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 23:05:42,959 INFO  io.prediction.controller.Engine [main] - Extracting datasource params...
+2015-04-21 23:05:43,070 INFO  io.prediction.workflow.WorkflowUtils$ [main] - No 'name' is found. Default empty String will be used.
+2015-04-21 23:05:43,085 INFO  io.prediction.controller.Engine [main] - Datasource params: (,DataSourceParams(7))
+2015-04-21 23:05:43,086 INFO  io.prediction.controller.Engine [main] - Extracting preparator params...
+2015-04-21 23:05:43,087 INFO  io.prediction.workflow.WorkflowUtils$ [main] - No 'name' is found. Default empty String will be used.
+2015-04-21 23:05:43,088 INFO  io.prediction.controller.Engine [main] - Preparator params: (,PreparatorParams(1,2))
+2015-04-21 23:05:43,094 INFO  io.prediction.controller.Engine [main] - Extracting serving params...
+2015-04-21 23:05:43,095 INFO  io.prediction.controller.Engine [main] - Serving params: (,Empty)
+2015-04-21 23:05:44,884 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-3] - Starting remoting
+2015-04-21 23:05:45,120 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-3] - Remoting started; listening on addresses :[akka.tcp://sparkDriver@calvisitor-10-105-139-9.calvisitor.1918.berkeley.edu:49747]
+2015-04-21 23:05:46,677 INFO  io.prediction.controller.Engine$ [main] - EngineWorkflow.train
+2015-04-21 23:05:46,678 INFO  io.prediction.controller.Engine$ [main] - DataSource: TextManipulationEngine.DataSource@47b269c4
+2015-04-21 23:05:46,679 INFO  io.prediction.controller.Engine$ [main] - Preparator: TextManipulationEngine.Preparator@7c40ffef
+2015-04-21 23:05:46,679 INFO  io.prediction.controller.Engine$ [main] - AlgorithmList: List(TextManipulationEngine.SupervisedAlgorithm@1e3df614)
+2015-04-21 23:05:46,680 INFO  io.prediction.controller.Engine$ [main] - Data santiy check is on.
+2015-04-21 23:05:48,004 INFO  io.prediction.controller.Engine$ [main] - TextManipulationEngine.TrainingData does not support data sanity check. Skipping check.
+2015-04-21 23:05:59,992 INFO  io.prediction.controller.Engine$ [main] - TextManipulationEngine.PreparedData does not support data sanity check. Skipping check.
+2015-04-21 23:06:08,627 INFO  io.prediction.controller.Engine$ [main] - TextManipulationEngine.SupervisedModel does not support data sanity check. Skipping check.
+2015-04-21 23:06:08,628 INFO  io.prediction.controller.Engine$ [main] - EngineWorkflow.train completed
+2015-04-21 23:06:08,629 INFO  io.prediction.controller.Engine [main] - engineInstanceId=AUzfu2tqdR2XI-DnFBQn
+2015-04-21 23:06:08,642 INFO  io.prediction.workflow.CoreWorkflow$ [main] - Inserting persistent model
+2015-04-21 23:06:08,797 INFO  io.prediction.workflow.CoreWorkflow$ [main] - Updating engine instance
+2015-04-21 23:06:08,823 INFO  io.prediction.workflow.CoreWorkflow$ [main] - Training completed successfully.
+2015-04-21 23:06:16,698 INFO  io.prediction.tools.RunServer$ [main] - Submission command: /Users/Marco/PredictionIO/vendors/spark-1.2.1/bin/spark-submit --class io.prediction.workflow.CreateServer --name PredictionIO Engine Instance: AUzfu2tqdR2XI-DnFBQn --jars file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/textmanipulationengine_2.10-0.1-SNAPSHOT.jar,file:/Users/Marco/.pio_store/engines/0IXnmkEdEZLz5zywAGvkm4DeXrC1oxje/f8de3b2e82df59a352b216bc539994f3f1bed16d/TextManipulationEngine-assembly-0.1-SNAPSHOT-deps.jar --files /Users/Marco/PredictionIO/conf/log4j.properties,/Users/Marco/PredictionIO/vendors/hbase-0.98.11/conf/hbase-site.xml --driver-class-path /Users/Marco/PredictionIO/conf:/Users/Marco/PredictionIO/vendors/hbase-0.98.11/conf /Users/Marco/PredictionIO/lib/pio-assembly-0.9.1.jar --engineInstanceId AUzfu2tqdR2XI-DnFBQn --ip localhost --port 8000 --event-server-ip localhost --event-server-port 7070
+2015-04-21 23:06:20,476 WARN  io.prediction.workflow.WorkflowUtils$ [pio-server-akka.actor.default-dispatcher-4] - Non-empty parameters supplied to TextManipulationEngine.Serving, but its constructor does not accept any arguments. Stubbing with empty parameters.
+2015-04-21 23:06:20,885 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-3] - Starting remoting
+2015-04-21 23:06:21,052 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-3] - Remoting started; listening on addresses :[akka.tcp://sparkDriver@calvisitor-10-105-139-9.calvisitor.1918.berkeley.edu:49789]
+2015-04-21 23:06:21,349 WARN  org.apache.hadoop.util.NativeCodeLoader [pio-server-akka.actor.default-dispatcher-4] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-21 23:06:22,251 INFO  io.prediction.controller.Engine [pio-server-akka.actor.default-dispatcher-4] - Using persisted model
+2015-04-21 23:06:22,253 INFO  io.prediction.controller.Engine [pio-server-akka.actor.default-dispatcher-4] - Loaded model TextManipulationEngine.SupervisedModel for algorithm TextManipulationEngine.SupervisedAlgorithm
+2015-04-21 23:06:22,269 INFO  io.prediction.workflow.MasterActor [pio-server-akka.actor.default-dispatcher-2] - Undeploying any existing engine instance at http://localhost:8000
+2015-04-21 23:06:22,289 WARN  io.prediction.workflow.MasterActor [pio-server-akka.actor.default-dispatcher-2] - Nothing at http://localhost:8000
+2015-04-21 23:06:23,179 INFO  spray.can.server.HttpListener [pio-server-akka.actor.default-dispatcher-4] - Bound to localhost/127.0.0.1:8000
+2015-04-21 23:06:23,180 INFO  io.prediction.workflow.MasterActor [pio-server-akka.actor.default-dispatcher-5] - Bind successful. Ready to serve.
+2015-04-22 00:50:57,326 WARN  org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation [main-EventThread] - This client just lost it's session with ZooKeeper, closing it. It will be recreated next time someone needs it
+org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired
+	at org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher.connectionEvent(ZooKeeperWatcher.java:401)
+	at org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher.process(ZooKeeperWatcher.java:319)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:522)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:498)
+2015-04-22 12:42:53,146 WARN  org.elasticsearch.common [main] - Unable to get a valid mac address, will use a dummy address
+2015-04-22 12:42:55,123 INFO  io.prediction.tools.console.App$ [main] -                 Name |   ID |                                                       Access Key | Allowed Event(s)
+2015-04-22 12:42:55,240 INFO  io.prediction.tools.console.App$ [main] -             TextApp1 |    7 | tTPBbTo25DDGz4fjwIauNAo8rQaED6bgd7XVidv7ytMucwcY1RIWpuHE5NXP2Nix | (all)
+2015-04-22 12:42:55,241 INFO  io.prediction.tools.console.App$ [main] - Finished listing 1 app(s).

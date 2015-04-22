@@ -4,7 +4,7 @@
 		module="textmanipulationengine_2.10"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20150421002538"
+		publication="20150422005550"
 	>
 		<description>
 		TextManipulationEngine
@@ -36,5 +36,6 @@
 		<dependency org="org.apache.spark" name="spark-core_2.10" rev="1.3.1" conf="provided->default(compile)"/>
 		<dependency org="org.apache.spark" name="spark-mllib_2.10" rev="1.3.1" conf="provided->default(compile)"/>
 		<dependency org="org.apache.opennlp" name="opennlp-tools" rev="1.5.3" conf="compile->default(compile)"/>
+		<dependency org="org.scalanlp" name="breeze" rev="0.11.2" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>
