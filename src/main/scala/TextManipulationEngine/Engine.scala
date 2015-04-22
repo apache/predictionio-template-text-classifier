@@ -8,7 +8,7 @@ class Query(
 
 class PredictedResult (
                         val label: Double,
-                      val confidence : Double
+                        val confidence: Double
                         ) extends Serializable
 
 object TextManipulationEngine extends IEngineFactory {

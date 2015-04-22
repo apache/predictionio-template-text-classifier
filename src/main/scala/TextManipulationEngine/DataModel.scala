@@ -6,7 +6,6 @@ import opennlp.tools.util.StringList
 import org.apache.spark.rdd.RDD
 
 import scala.collection.JavaConversions._
-import scala.collection.mutable
 
 
 // This class will take in as parameters an instance of type
@@ -43,10 +42,7 @@ class DataModel(
 
   // Create token-gram universe.
   private def createUniverse(u: RDD[Map[String, Double]]): Array[String] = {
-    val universe = new mutable.LinkedHashSet[String]
-    for (x <- u)
-      x.keySet.foreach(universe.add)
-    universe.toArray
+    u.map(e => e.keySet).reduce((a, b) => a.union(b)).toArray
   }
 
   private val universe = createUniverse(
