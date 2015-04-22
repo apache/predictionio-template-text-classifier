@@ -42,7 +42,7 @@ class DataModel(
 
 
   // Create token-gram universe.
-  private def createUniverse(u: RDD[mutable.HashMap[String, Double]]): Array[String] = {
+  private def createUniverse(u: RDD[Map[String, Double]]): Array[String] = {
     val universe = new mutable.LinkedHashSet[String]
     for (x <- u)
       x.keySet.foreach(universe.add)
