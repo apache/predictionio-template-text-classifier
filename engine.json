@@ -7,13 +7,17 @@
       "appId": 5
     }
   },
+  "preparator": {
+    "params": {
+      "nMin": 1,
+      "nMax": 2
+    }
+  },
   "algorithms": [
     {
       "name": "sup",
       "params": {
-        "lambda": 1.0,
-        "nMin": 1,
-        "nMax": 2
+        "lambda": 1.0
       }
     }
   ]
