@@ -7,7 +7,7 @@
 		revision="0.1-SNAPSHOT"
 		conf="runtime"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20150422005550"/>
+		date="20150422152545"/>
 	<dependencies>
 		<module organisation="org.apache.opennlp" name="opennlp-tools">
 			<revision name="1.5.3" status="release" pubdate="20130403060341" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
@@ -52,13 +52,6 @@
 					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="7126372" time="0" location="/Users/Marco/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.4.jar">
 						<origin-location is-local="false" location="UNKNOWN"/>
 					</artifact>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="org.scalanlp" name="breeze">
-			<revision name="0.11.2" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
-				<caller organisation="textmanipulationengine" name="textmanipulationengine_2.10" conf="compile, runtime" rev="0.11.2" rev-constraint-default="0.11.2" rev-constraint-dynamic="0.11.2" callerrev="0.1-SNAPSHOT"/>
-				<artifacts>
 				</artifacts>
 			</revision>
 		</module>

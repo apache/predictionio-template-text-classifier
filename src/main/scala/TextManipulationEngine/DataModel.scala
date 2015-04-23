@@ -17,7 +17,7 @@ class DataModel(
                  td: TrainingData,
                  nMin: Int,
                  nMax: Int
-                 ) {
+                 ) extends Serializable {
 
 
   // This private method will tokenize our text entries.
@@ -31,7 +31,6 @@ class DataModel(
   // document is associated to the number of times it appears in the
   // document.
   private def hashDoc(doc: String): Map[String, Double] = {
-
     val model = new NGramModel()
     model.add(new StringList(tokenize(doc): _*), nMin, nMax)
     model.iterator.map(
@@ -42,7 +41,7 @@ class DataModel(
 
   // Create token-gram universe.
   private def createUniverse(u: RDD[Map[String, Double]]): Array[String] = {
-    u.map(e => e.keySet).reduce((a, b) => a.union(b)).toArray
+    u.flatMap(e => e.keySet).distinct().collect
   }
 
   private val universe = createUniverse(
@@ -53,7 +52,6 @@ class DataModel(
   // Transforms a given string document into a data vector
   // based on the given data model.
   def transform(doc : String) : Array[Double] = {
-
     val hashedDoc = hashDoc(doc)
     universe.map(
       e => hashedDoc.getOrElse(e, 0.0)

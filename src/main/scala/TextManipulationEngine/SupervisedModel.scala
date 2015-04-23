@@ -19,12 +19,8 @@ class SupervisedModel(
     ), lambda = lambda)
 
   private def innerProduct (x : Array[Double], y : Array[Double]) : Double = {
-
     require(x.length == y.length)
-
-   (0 until x.length).toArray.map(
-        i => x(i) * y(i)
-   ).sum
+    x.zip(y).map(e => e._1 * e._2).sum
   }
 
   private def getScores(doc : String) : Array[(Double, Double)] = {
@@ -37,8 +33,7 @@ class SupervisedModel(
 
   def predict(doc : String) : PredictedResult = {
     val x : Array[(Double, Double)] = getScores(doc)
-    val C : Double = x.reduceLeft((a, b) => (1, a._2 + b._2))._2
-
+    val C = x.map(e => e._2).sum
     val y : (Double, Double) = x.reduceLeft((a, b) => if (a._2 >= b._2) a else b)
 
     new PredictedResult(y._1, y._2 / C)
