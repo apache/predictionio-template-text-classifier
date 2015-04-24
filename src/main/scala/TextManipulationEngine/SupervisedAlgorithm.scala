@@ -3,13 +3,12 @@ package TextManipulationEngine
 import io.prediction.controller.{P2LAlgorithm, Params}
 import org.apache.spark.SparkContext
 
-case class SupervisedAlgorithmParams(
-                                      lambda: Double
-                                      ) extends Params
+case class SupervisedAlgorithmParams(lambda: Double) extends Params
 
 
-class SupervisedAlgorithm(sap: SupervisedAlgorithmParams)
+class SupervisedAlgorithm(val sap: SupervisedAlgorithmParams)
   extends P2LAlgorithm[PreparedData, SupervisedModel, Query, PredictedResult] {
+
 
   def train(sc: SparkContext, pd: PreparedData): SupervisedModel = {
     new SupervisedModel(pd, sap.lambda)

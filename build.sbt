@@ -11,5 +11,3 @@ libraryDependencies ++= Seq(
   "org.xerial.snappy" % "snappy-java" % "1.1.1.7",
   "org.apache.opennlp" % "opennlp-tools" % "1.5.3"
 )
-
-

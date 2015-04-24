@@ -4,20 +4,21 @@
   "engineFactory": "TextManipulationEngine.TextManipulationEngine",
   "datasource": {
     "params": {
-      "appId": 2
+      "appName": "test"
     }
   },
   "preparator": {
     "params": {
       "nMin": 1,
-      "nMax": 2
+      "nMax": 2,
+      "tfidf": true
     }
   },
   "algorithms": [
     {
       "name": "sup",
       "params": {
-        "lambda": 1.0
+        "lambda": 0.4
       }
     }
   ]

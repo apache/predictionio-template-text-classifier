@@ -6,6 +6,7 @@ import opennlp.tools.util.StringList
 import org.apache.spark.rdd.RDD
 
 import scala.collection.JavaConversions._
+import scala.math.log
 
 
 // This class will take in as parameters an instance of type
@@ -16,11 +17,15 @@ import scala.collection.JavaConversions._
 class DataModel(
                  td: TrainingData,
                  nMin: Int,
-                 nMax: Int
+                 nMax: Int,
+                 tfidf: Boolean,
+                 stopWords: Set[String] = Set()
                  ) extends Serializable {
 
 
   // This private method will tokenize our text entries.
+
+
   private def tokenize (doc : String): Array[String] = {
     SimpleTokenizer.INSTANCE.tokenize(doc)
   }
@@ -35,28 +40,43 @@ class DataModel(
     model.add(new StringList(tokenize(doc): _*), nMin, nMax)
     model.iterator.map(
       x => (x.toString, model.getCount(x).toDouble)
-    ).toMap
+    ).toMap.filter(e => !stopWords.contains(e._1))
   }
+
+  private val hashedData = td.data.map(e => hashDoc(e.text))
 
 
   // Create token-gram universe.
   private def createUniverse(u: RDD[Map[String, Double]]): Array[String] = {
-    u.flatMap(e => e.keySet).distinct().collect
+    u.flatMap(e => e.keySet).distinct.collect
   }
 
-  private val universe = createUniverse(
-    td.data.map(
-      e => hashDoc(e.text)
-    ))
+  private val universe = createUniverse(hashedData)
+
+
+  // Compute required idf data.
+
+  private val numDocs = td.data.count.toDouble
+
+  private def computeIdf(s: String): Double = {
+    log(numDocs / hashedData.filter(e => e.keySet.contains(s)).count.toDouble)
+  }
+
+  private val idfVector = universe.map(e => computeIdf(e))
+
+
 
   // Transforms a given string document into a data vector
-  // based on the given data model.
-  def transform(doc : String) : Array[Double] = {
+  // based on the given data model (tfidf indicates whether
+  // tfidf transformation performed.
+  def transform(doc: String, tfidf: Boolean = tfidf): Array[Double] = {
     val hashedDoc = hashDoc(doc)
-    universe.map(
-      e => hashedDoc.getOrElse(e, 0.0)
-    )
+    val x = universe.map(e => hashedDoc.getOrElse(e, 0.0))
+    if (tfidf)
+      x.zip(idfVector).map(e => e._1 * e._2)
+    else x
   }
+
 
   // Returns a data instance that is ready to be used for
   // model training.
@@ -65,4 +85,5 @@ class DataModel(
       e => (e.label, transform(e.text))
     )
   }
+
 }

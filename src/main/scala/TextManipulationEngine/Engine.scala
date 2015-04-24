@@ -11,7 +11,9 @@ class PredictedResult (
                         val confidence: Double
                         ) extends Serializable
 
-object TextManipulationEngine extends IEngineFactory {
+class ActualResult(val label: Double) extends Serializable
+
+object TextManipulationEngine extends EngineFactory {
   override
   def apply() = {
     new Engine(
