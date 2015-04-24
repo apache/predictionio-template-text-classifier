@@ -71,7 +71,8 @@ class DataModel(
   // tfidf transformation performed.
   def transform(doc: String, tfidf: Boolean = tfidf): Array[Double] = {
     val hashedDoc = hashDoc(doc)
-    val x = universe.map(e => hashedDoc.getOrElse(e, 0.0))
+    val N = hashedDoc.values.sum
+    val x = universe.map(e => hashedDoc.getOrElse(e, 0.0) / N)
     if (tfidf)
       x.zip(idfVector).map(e => e._1 * e._2)
     else x
