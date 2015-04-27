@@ -35,7 +35,5 @@ object EngineParamsList extends EngineParamsGenerator {
   // and leave the number of n-grams fixed. The number of n-grams itself is a model hyperparameter
   // and should also be tuned.
   engineParamsList = Seq(
-    baseEP.copy(algorithmParamsList = Seq(("sup", SupervisedAlgorithmParams(1)))),
-    baseEP.copy(algorithmParamsList = Seq(("sup", SupervisedAlgorithmParams(10)))),
-    baseEP.copy(algorithmParamsList = Seq(("sup", SupervisedAlgorithmParams(100)))))
+    baseEP.copy(algorithmParamsList = Seq(("sup", SupervisedAlgorithmParams(0.5)))))
 }
