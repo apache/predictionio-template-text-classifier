@@ -1,0 +1,19 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+Apache OpenNLP Tools
+
+
+From: 'an unknown organization'
+  - Java WordNet Library (http://jwordnet.sourceforge.net/) net.sf.jwordnet:jwnl:jar:1.3.3
+    License: BSD 3-Clause License  (http://jwordnet.svn.sourceforge.net/svnroot/jwordnet/trunk/jwnl/license.txt)
+
+From: 'The Apache Software Foundation' (http://www.apache.org/)
+  - Apache OpenNLP Maxent (http://www.apache.org/opennlp-maxent/) org.apache.opennlp:opennlp-maxent:bundle:3.0.3
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+
+

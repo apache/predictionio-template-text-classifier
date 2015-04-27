@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Built-By: colen
+Created-By: Apache Maven Bundle Plugin
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bnd-LastModified: 1364994054947
+Export-Package: opennlp.maxent;uses:="opennlp.model,opennlp.maxent.io,
+ opennlp.perceptron",opennlp.maxent.io;uses:="opennlp.model,opennlp.ma
+ xent",opennlp.model;uses:="opennlp.maxent,opennlp.maxent.io,opennlp.p
+ erceptron",opennlp.perceptron;uses:="opennlp.model"
+Bundle-Version: 3.0.3
+Bundle-Name: Apache OpenNLP Maxent
+Bundle-Description: The Apache Software Foundation provides support fo
+ r the Apache community of open-source software projects.    The Apach
+ e projects are characterized by a collaborative, consensus based deve
+ lopment process, an open and    pragmatic software license, and a des
+ ire to create high quality software that leads the way in its field. 
+    We consider ourselves not simply a group of projects sharing a ser
+ ver, but rather a community of developers    and users.
+Build-Jdk: 1.5.0_22
+Bundle-DocURL: http://www.apache.org/
+Bundle-Vendor: The Apache Software Foundation
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.apache.opennlp.maxent
+Tool: Bnd-1.15.0
+

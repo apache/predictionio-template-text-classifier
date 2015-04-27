@@ -1,0 +1,16 @@
+[0m[[0minfo[0m] [0mIncluding from cache: opennlp-maxent-3.0.3.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jwnl-1.3.3.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: opennlp-tools-1.5.3.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: snappy-java-1.1.1.7.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: scala-library.jar[0m
+[0m[[0mdebug[0m] [0mCalculate mappings...[0m
+[0m[[0minfo[0m] [0mChecking every *.class/*.jar file's SHA-1.[0m
+[0m[[0minfo[0m] [0mMerging files...[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/DEPENDENCIES' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/MANIFEST.MF' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.opennlp/opennlp-maxent/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.opennlp/opennlp-maxent/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.opennlp/opennlp-tools/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.opennlp/opennlp-tools/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mStrategy 'discard' was applied to 6 files[0m
+[0m[[0minfo[0m] [0mAssembly up to date: /Users/Marco/TextManipulationEngine/target/scala-2.10/TextManipulationEngine-assembly-0.1-SNAPSHOT-deps.jar[0m
