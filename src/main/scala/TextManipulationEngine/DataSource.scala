@@ -1,10 +1,13 @@
 package TextManipulationEngine
 
 import grizzled.slf4j.Logger
-import io.prediction.controller.{EmptyEvaluationInfo, PDataSource, Params}
+import io.prediction.controller.EmptyEvaluationInfo
+import io.prediction.controller.PDataSource
+import io.prediction.controller.Params
 import io.prediction.data.store.PEventStore
 import org.apache.spark.SparkContext
 import org.apache.spark.rdd.RDD
+
 
 
 case class DataSourceParams(
@@ -21,6 +24,7 @@ class DataSource (val dsp : DataSourceParams)
   // a SparkContext.
   private def readEventData(sc: SparkContext) : RDD[Observation] = {
     // Get PEvents database instance.
+
     PEventStore.find(
       appName = dsp.appName,
       entityType = Some("source"),
@@ -43,17 +47,16 @@ class DataSource (val dsp : DataSourceParams)
   override
   def readEval(sc: SparkContext):
   Seq[(TrainingData, EmptyEvaluationInfo, RDD[(Query, ActualResult)])] = {
-    val data = readEventData(sc).zipWithIndex
+    val data = readEventData(sc).zipWithIndex()
 
     (0 until dsp.evalK.get).map(
-      k => (new TrainingData(data.filter(_._2 % k != 0).map(_._1)),
-        new EmptyEvaluationInfo,
-        data.filter(_._2 % k == 0).map(_._1).map(e => (new Query(e.text), new ActualResult(e.label)))
+      k => (new TrainingData(data.filter(_._2 % dsp.evalK.get != k).map(_._1)),
+        new EmptyEvaluationInfo(),
+        data.filter(_._2 % dsp.evalK.get == k).map(_._1).map(e => (new Query(e.text), new ActualResult(e.label)))
         )
     )
   }
 }
-
 
 
 case class Observation(

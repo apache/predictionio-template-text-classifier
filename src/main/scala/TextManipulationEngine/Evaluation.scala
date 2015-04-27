@@ -3,21 +3,18 @@ package TextManipulationEngine
 
 import io.prediction.controller._
 
-import scala.math.pow
-
-case class MeanSquaredError() extends
-AverageMetric[EmptyEvaluationInfo, Query, PredictedResult, ActualResult] {
+case class Accuracy()
+  extends AverageMetric[EmptyEvaluationInfo, Query, PredictedResult, ActualResult] {
   def calculate(query: Query, predicted: PredictedResult, actual: ActualResult)
-  : Double = pow(predicted.label - actual.label, 2)
+  : Double = if (predicted.label == actual.label) 1.0 else 0.0
 }
 
 
-object MSEEvaluation extends Evaluation {
+object AccuracyEvaluation extends Evaluation {
   // Define Engine and Metric used in Evaluation
-  override val engineEvaluator = (TextManipulationEngine(),
-    MetricEvaluator(
-      metric = MeanSquaredError()
-    ))
+  engineMetric = (
+    TextManipulationEngine(),
+    new Accuracy())
 }
 
 object EngineParamsList extends EngineParamsGenerator {
@@ -27,7 +24,8 @@ object EngineParamsList extends EngineParamsGenerator {
   // the data is read, and a evalK parameter is used to define the
   // cross-validation.
   private[this] val baseEP = EngineParams(
-    dataSourceParams = DataSourceParams(appName = "test", evalK = Some(5)))
+    dataSourceParams = DataSourceParams(appName = "test", evalK = Some(5)),
+    preparatorParams = PreparatorParams(1, 2, tfidf = true))
 
   // Second, we specify the engine params list by explicitly listing all
   // algorithm parameters. In this case, we evaluate 3 engine params, each with
@@ -37,7 +35,7 @@ object EngineParamsList extends EngineParamsGenerator {
   // and leave the number of n-grams fixed. The number of n-grams itself is a model hyperparameter
   // and should also be tuned.
   engineParamsList = Seq(
-    baseEP.copy(algorithmParamsList = Seq(("algo", SupervisedAlgorithmParams(0.3)))),
-    baseEP.copy(algorithmParamsList = Seq(("algo", SupervisedAlgorithmParams(0.5)))),
-    baseEP.copy(algorithmParamsList = Seq(("algo", SupervisedAlgorithmParams(1)))))
+    baseEP.copy(algorithmParamsList = Seq(("sup", SupervisedAlgorithmParams(1)))),
+    baseEP.copy(algorithmParamsList = Seq(("sup", SupervisedAlgorithmParams(10)))),
+    baseEP.copy(algorithmParamsList = Seq(("sup", SupervisedAlgorithmParams(100)))))
 }

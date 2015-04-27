@@ -1,9 +1,8 @@
 package TextManipulationEngine
 
 
-import org.apache.spark.mllib.classification.{NaiveBayes, NaiveBayesModel}
-import org.apache.spark.mllib.linalg.Vectors
-import org.apache.spark.mllib.regression.LabeledPoint
+import org.apache.spark.mllib.classification.NaiveBayes
+import org.apache.spark.mllib.classification.NaiveBayesModel
 
 import scala.math.exp
 
@@ -14,29 +13,25 @@ class SupervisedModel(
 
 
   private val nb : NaiveBayesModel = NaiveBayes.train(
-    pd.dataModel.transformData.map(
-      e => LabeledPoint(e._1, Vectors.dense(e._2))
-    ), lambda = lambda)
+    pd.dataModel.transformData, lambda)
 
   private def innerProduct (x : Array[Double], y : Array[Double]) : Double = {
     require(x.length == y.length)
     x.zip(y).map(e => e._1 * e._2).sum
   }
 
-  private def getScores(doc : String) : Array[(Double, Double)] = {
+
+  private def getScores(doc: String): Array[Double] = {
+    def normalize(u: Array[Double]): Array[Double] = u.map(_ / u.sum)
     val x: Array[Double] = pd.dataModel.transform(doc)
-    (0 until nb.pi.length).toArray.map(
-      i => (i.toDouble, exp(
-        innerProduct(nb.theta(i), x) + nb.pi(i)
-      )))
+    normalize((nb.pi zip nb.theta).map(
+      e => exp(innerProduct(e._2, x) + e._1)
+    ))
   }
 
   def predict(doc : String) : PredictedResult = {
-    val x : Array[(Double, Double)] = getScores(doc)
-    val C = x.map(e => e._2).sum
-    val y : (Double, Double) = x.reduceLeft((a, b) => if (a._2 >= b._2) a else b)
-
-    new PredictedResult(y._1, y._2 / C)
+    val x: Array[Double] = getScores(doc)
+    val y: (Double, Double) = (nb.labels zip x).maxBy(_._2)
+    new PredictedResult(y._1, y._2)
   }
-
 }

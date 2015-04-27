@@ -3,6 +3,8 @@ package TextManipulationEngine
 import opennlp.tools.ngram.NGramModel
 import opennlp.tools.tokenize.SimpleTokenizer
 import opennlp.tools.util.StringList
+import org.apache.spark.mllib.linalg.Vectors
+import org.apache.spark.mllib.regression.LabeledPoint
 import org.apache.spark.rdd.RDD
 
 import scala.collection.JavaConversions._
@@ -40,29 +42,27 @@ class DataModel(
     model.add(new StringList(tokenize(doc): _*), nMin, nMax)
     model.iterator.map(
       x => (x.toString, model.getCount(x).toDouble)
-    ).toMap.filter(e => !stopWords.contains(e._1))
+    ).filter(e => !stopWords.contains(e._1)).toMap
   }
 
   private val hashedData = td.data.map(e => hashDoc(e.text))
 
-
-  // Create token-gram universe.
-  private def createUniverse(u: RDD[Map[String, Double]]): Array[String] = {
-    u.flatMap(e => e.keySet).distinct.collect
-  }
-
-  private val universe = createUniverse(hashedData)
-
-
   // Compute required idf data.
 
-  private val numDocs = td.data.count.toDouble
+  private val numDocs: Double = hashedData.count().toDouble
 
-  private def computeIdf(s: String): Double = {
-    log(numDocs / hashedData.filter(e => e.keySet.contains(s)).count.toDouble)
+  // Creates token-gram universe.
+  private def createUniverse(u: RDD[Map[String, Double]]): Array[(String, Double)] = {
+    u.flatMap(identity).map(
+      e => (e._1, 1.0)
+    ).reduceByKey(_ + _).map(
+        e => (e._1, log(numDocs / e._2))
+      ).collect()
   }
 
-  private val idfVector = universe.map(e => computeIdf(e))
+
+  // Create token universe zipped, and corresponding idf values.
+  private val universe = createUniverse(hashedData)
 
 
 
@@ -71,19 +71,19 @@ class DataModel(
   // tfidf transformation performed.
   def transform(doc: String, tfidf: Boolean = tfidf): Array[Double] = {
     val hashedDoc = hashDoc(doc)
-    val N = hashedDoc.values.sum
-    val x = universe.map(e => hashedDoc.getOrElse(e, 0.0) / N)
+    val n = hashedDoc.values.sum
+    val x = universe.map(e => hashedDoc.getOrElse(e._1, 0.0) / n)
     if (tfidf)
-      x.zip(idfVector).map(e => e._1 * e._2)
+      x.zip(universe.map(_._2)).map(e => e._1 * e._2)
     else x
   }
 
 
   // Returns a data instance that is ready to be used for
   // model training.
-  def transformData: RDD[(Double, Array[Double])] = {
+  def transformData: RDD[LabeledPoint] = {
     td.data.map(
-      e => (e.label, transform(e.text))
+      e => LabeledPoint(e.label, Vectors.dense(transform(e.text)))
     )
   }
 

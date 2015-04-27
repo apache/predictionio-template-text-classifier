@@ -4,8 +4,9 @@ import argparse
 
 
 twenty_train = fetch_20newsgroups(subset = 'train',
-                                    shuffle = True,
-                                    random_state = 10)
+                                  shuffle=True,
+                                  random_state=10,
+                                  categories=categories)
 
 
 
@@ -22,7 +23,7 @@ def import_events(client):
             entity_id = count,
             entity_type = "source",
             properties = {
-                "label": float(elem[0]),
+                "label": elem[0],
                 "text": elem[1]
             })
     print("Imported {0} events.".format(count))
