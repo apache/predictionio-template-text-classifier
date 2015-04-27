@@ -3,7 +3,7 @@ import argparse
 
 
 def import_words(client):
-    words = open('common-english-words.txt', 'r').read().split(",")
+    words = open('./data/common-english-words.txt', 'r').read().split(",")
     count = 0
     for word in words:
         count += 1
