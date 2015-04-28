@@ -9,7 +9,7 @@ def import_words(client):
         count += 1
         client.create_event(
             event = "stopwords",
-            entity_id = count,
+            entity_id = "word" + str(count),
             entity_type = "stopword",
             properties = {
                 "word": word
