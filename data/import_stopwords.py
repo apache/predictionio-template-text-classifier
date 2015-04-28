@@ -14,7 +14,7 @@ def import_words(client):
             properties = {
                 "word": word
             })
-        print("Imported {0} stopwords.".format(count))
+    print("Imported {0} stopwords.".format(count))
 
 
 
