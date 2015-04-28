@@ -94,24 +94,23 @@ We are given our observations as a set of strings $\mathcal{S}.$ In a general se
 
 In both cases, we are tasked with learning a model $f.$ However, before this we must first represent our strings $s$ in such a manner so that we may apply existing machine learning methods provided in the Spark MLLib library. We will be using the Apache OpenNLP tools library for the purpose of data representation. 
 
-Our engine includes a Data Model implementation which deals with representing our text data as numeric feature vectors. The Training Model here is an abstract framework representing a set of Scala classes that can produce a supervised (or unsupervised) learning model. For our supervised training model implementation, $f$ will be a classifier, and for our unsupervised training model, an assignment of class labels for each string in $\mathcal{S}.$ The following diagram shows the how the provided Modeling Text Data Engine template functionality is structured, and the interactions between your web/app, the provided Event Server, and our Modeling Text Data Engine.
-
-
+Our engine includes a Data Model implementation which deals with representing our text data as numeric feature vectors. The Training Model here is a conceptual framework representing a set of Scala classes that can produce a supervised (or unsupervised) learning model $f$. For our supervised training model implementation, $f$ will be a classifier, and for our unsupervised training model, an assignment of class labels for each string in $\mathcal{S}.$ The following diagram shows the how the provided Modeling Text Data Engine template functionality is structured, and the interactions between your web/app, the provided Event Server, and our Modeling Text Data Engine.
 
 
 \centerline{
-\xymatrixcolsep{3pc}\xymatrix{
+\xymatrixcolsep{4pc}\xymatrix{
 & \\
 \encircled{\bf{Event Server}} \ar[r] & \\
 & \ar[ldd] \\
 & \\
-\encircled{\bf{Your Web/App}} \ar[ruu] \ar[uuu]^{\text{Event Data}}& 
+\encircled{\bf{Your Web/App}} \ar[ruu]_{\text{Deployment}} \ar[uuu]^{\text{Event Data}}& 
 }
 \rected{
 \xymatrixcolsep{2pc}\xymatrix{
-\encircled{Data Source}\ar[r]& \encircled{Preparator} \ar[r] \ar[d]& \encircled{Algorithm} \ar[d] \ar[r] & \encircled{Serving} \\
+\encircled{Data Source}\ar[r]& \encircled{Preparator} \ar[r] \ar[d]& \encircled{Training Algorithm} \ar[d] \ar[r] & \encircled{Serving} \\
 \bf{Engine} & \encircled{Data Model} \ar[ru] & \encircled{Training Model} \ar[ru]&
 }}}
+\vspace{0.5cm}
 
 
 We begin the data collection stage by importing a Scikit Learn dataset, \tt{20newsgroups}, into PredictionIO's event server. 

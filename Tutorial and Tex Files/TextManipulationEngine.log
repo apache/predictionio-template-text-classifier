@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  28 APR 2015 12:55
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  28 APR 2015 14:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -945,24 +945,24 @@ LaTeX Font Info:    Try loading font information for U+eus on input line 93.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/ueus.fd
 File: ueus.fd 2013/01/14 v3.01 Euler Script
 ) <xymatrix 2x5
-185> <xymatrix 4x2 272> [1
+192> <xymatrix 4x2 272> [1
 
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 176.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 175.
  [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 176.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 175.
  (./TextManipulationEngine.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 176.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 176.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 175.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 175.
 Package rerunfilecheck Info: File `TextManipulationEngine.out' has not changed.
 
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 176.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 175.
  ) 
 Here is how much of TeX's memory you used:
  19867 strings out of 493315
  332448 string characters out of 6137904
- 475467 words of memory out of 5000000
+ 475446 words of memory out of 5000000
  22932 multiletter control sequences out of 15000+600000
  42683 words of font info for 53 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -979,7 +979,7 @@ local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texl
 ive/2013/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2013/t
 exmf-dist/fonts/type1/public/xypic/xyatip10.pfb></usr/local/texlive/2013/texmf-
 dist/fonts/type1/public/xypic/xybtip10.pfb>
-Output written on TextManipulationEngine.pdf (3 pages, 126474 bytes).
+Output written on TextManipulationEngine.pdf (3 pages, 127183 bytes).
 PDF statistics:
  69 PDF objects out of 1000 (max. 8388607)
  54 compressed objects within 1 object stream
