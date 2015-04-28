@@ -20,8 +20,8 @@ class DataModel(
                  td: TrainingData,
                  nMin: Int,
                  nMax: Int,
-                 tfidf: Boolean,
-                 stopWords: Set[String] = Set()
+                 tfidf: Boolean
+                 //stopWords: Set[String] = Set()
                  ) extends Serializable {
 
 
@@ -42,7 +42,7 @@ class DataModel(
     model.add(new StringList(tokenize(doc): _*), nMin, nMax)
     model.iterator.map(
       x => (x.toString, model.getCount(x).toDouble)
-    ).filter(e => !stopWords.contains(e._1)).toMap
+    ).toMap
   }
 
   private val hashedData = td.data.map(e => hashDoc(e.text))
