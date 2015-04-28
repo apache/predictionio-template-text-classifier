@@ -4,7 +4,7 @@
 		module="textmanipulationengine_2.10"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20150427182338"
+		publication="20150427192834"
 	>
 		<description>
 		TextManipulationEngine
@@ -27,9 +27,7 @@
 	</configurations>
 	<publications>
 		<artifact name="textmanipulationengine_2.10" type="pom" ext="pom" conf="pom"/>
-		<artifact name="textmanipulationengine_2.10" type="jar" ext="jar" conf="compile"/>
-		<artifact name="textmanipulationengine_2.10" type="src" ext="jar" conf="sources" e:classifier="sources"/>
-		<artifact name="textmanipulationengine_2.10" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		<artifact name="textmanipulationengine_2.10" type="jar" ext="jar" conf="optional" e:classifier="download, resolveClassifiers, resolveSbtClassifiers"/>
 	</publications>
 	<dependencies>
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.10.4" conf="scala-tool->default,optional(default)"/>

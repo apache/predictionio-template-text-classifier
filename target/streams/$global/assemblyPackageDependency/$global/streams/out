@@ -1,7 +1,7 @@
 [0m[[0minfo[0m] [0mIncluding from cache: opennlp-maxent-3.0.3.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: snappy-java-1.1.1.7.jar[0m
-[0m[[0minfo[0m] [0mIncluding from cache: opennlp-tools-1.5.3.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: jwnl-1.3.3.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: opennlp-tools-1.5.3.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: scala-library.jar[0m
 [0m[[0mdebug[0m] [0mCalculate mappings...[0m
 [0m[[0minfo[0m] [0mChecking every *.class/*.jar file's SHA-1.[0m

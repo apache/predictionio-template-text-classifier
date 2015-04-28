@@ -1,13 +1,36 @@
 from sklearn.datasets import fetch_20newsgroups
+from sklearn.feature_extraction import text 
 import predictionio
 import argparse
 
 
+
+
+
+
+
+categories = ['alt.atheism', 'soc.religion.christian',
+              'comp.graphics', 'sci.med']
 twenty_train = fetch_20newsgroups(subset = 'train',
                                   shuffle=True,
-                                  random_state=10)
+                                  random_state=10,
+                                  categories = categories)
+stop_words = text.ENGLISH_STOP_WORDS
 
 
+def import_stopwords(client):
+    count = 0
+    for elem in train:
+        count += 1
+        client.create_event(
+            event = "stopwords",
+            entity_id = count,
+            entity_type = "rsc",
+            properties = {
+                "word" : elem
+            })
+    print("Imported {0} stopwords.".format(count))
+        
 
 def import_events(client):
     train = ((float(twenty_train.target[k]),
@@ -42,4 +65,5 @@ if __name__ == '__main__':
         qsize=5000)
 
     import_events(client)
+    import_stopwords(client)
 
