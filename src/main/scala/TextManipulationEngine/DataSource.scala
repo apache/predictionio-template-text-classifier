@@ -35,7 +35,7 @@ class DataSource (val dsp : DataSourceParams)
     )(sc).map(e => Observation(
       e.properties.get[Double]("label"),
       e.properties.get[String]("text")
-    ))
+    )).cache()
   }
 
   private def readStopWords(sc : SparkContext) : Set[String] = {
