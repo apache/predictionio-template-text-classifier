@@ -26,11 +26,16 @@ class Preparator(pp: PreparatorParams) extends PPreparator[TrainingData, Prepare
       ).collect.toSet
 
 
-
     new PreparedData(new DataModel(td, pp.nMin, pp.nMax, pp.tfidf, stopWords))
   }
 }
 
 class PreparedData(
                     val dataModel: DataModel
-                    ) extends Serializable
+                    ) extends Serializable {
+  override def toString() : String = {
+    dataModel.td.data.count.toString +
+      dataModel.stopWords.size.toString
+  }
+}
+

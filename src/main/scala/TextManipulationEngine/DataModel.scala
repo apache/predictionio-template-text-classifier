@@ -17,11 +17,11 @@ import scala.math.log
 // as an implementation of our data model.
 
 class DataModel(
-                 td: TrainingData,
+                 val td: TrainingData,
                  nMin: Int,
                  nMax: Int,
                  tfidf: Boolean,
-                 stopWords: Set[String] = Set()
+                 val stopWords: Set[String] = Set()
                  ) extends Serializable {
 
 
