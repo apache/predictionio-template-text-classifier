@@ -4,12 +4,9 @@ import predictionio
 import argparse
 
 
-categories = ['alt.atheism', 'soc.religion.christian',
-              'comp.graphics', 'sci.med']
 twenty_train = fetch_20newsgroups(subset = 'train',
                                   shuffle=True,
-                                  random_state=10,
-                                  categories = categories)
+                                  random_state=10)
 stop_words = text.ENGLISH_STOP_WORDS
 
 
