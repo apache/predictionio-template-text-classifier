@@ -36,6 +36,8 @@ class DataModel(
   // and return a HashMap in which every token that appears in the
   // document is associated to the number of times it appears in the
   // document.
+
+  // Map(token -> token_count)
   private def hashDoc(doc: String): Map[String, Double] = {
     val model = new NGramModel()
     model.add(new StringList(tokenize(doc): _*), nMin, nMax)
