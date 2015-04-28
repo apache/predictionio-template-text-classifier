@@ -5,8 +5,7 @@ import argparse
 
 twenty_train = fetch_20newsgroups(subset = 'train',
                                   shuffle=True,
-                                  random_state=10,
-                                  categories=categories)
+                                  random_state=10)
 
 
 
