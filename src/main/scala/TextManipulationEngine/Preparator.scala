@@ -35,8 +35,7 @@ class PreparedData(
                     val dataModel: DataModel
                     ) extends Serializable with SanityCheck {
   override def toString() : String = {
-    dataModel.td.data.count.toString + ", no. stopwords" +
-      dataModel.stopWords.size.toString
+    dataModel.td.data.count.toString + ", " + dataModel.stopWords.size.toString
   }
 
   override def sanityCheck(): Unit = {
