@@ -20,7 +20,7 @@ stop_words = text.ENGLISH_STOP_WORDS
 
 def import_stopwords(client):
     count = 0
-    for elem in train:
+    for elem in stop_words:
         count += 1
         client.create_event(
             event = "stopwords",
