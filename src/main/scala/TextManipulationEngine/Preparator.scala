@@ -9,25 +9,25 @@ import org.apache.spark.SparkContext
 case class PreparatorParams(
                              nMin: Int,
                              nMax: Int,
-                             tfidf: Boolean
-                             //appName : String
+                             tfidf: Boolean,
+                             appName : String
                              ) extends Params
 
 
 class Preparator(pp: PreparatorParams) extends PPreparator[TrainingData, PreparedData] {
   def prepare(sc : SparkContext, td: TrainingData): PreparedData = {
 
-    //val stopWords = PEventStore.find(
-    //  appName = pp.appName,
-    //  entityType = Some("stopword"),
-    //  eventNames = Some(List("stopwords"))
-    //)(sc).map(e =>
-    //    e.properties.get[String]("word")
-    //  ).collect.toSet
+    val stopWords = PEventStore.find(
+      appName = pp.appName,
+      entityType = Some("stopword"),
+      eventNames = Some(List("stopwords"))
+    )(sc).map(e =>
+        e.properties.get[String]("word")
+      ).collect.toSet
 
 
 
-    new PreparedData(new DataModel(td, pp.nMin, pp.nMax, pp.tfidf))
+    new PreparedData(new DataModel(td, pp.nMin, pp.nMax, pp.tfidf, stopWords))
   }
 }
 

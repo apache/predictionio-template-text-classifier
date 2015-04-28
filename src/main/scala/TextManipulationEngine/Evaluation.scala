@@ -25,7 +25,7 @@ object EngineParamsList extends EngineParamsGenerator {
   // cross-validation.
   private[this] val baseEP = EngineParams(
     dataSourceParams = DataSourceParams(appName = "marco-testapp", evalK = Some(5)),
-    preparatorParams = PreparatorParams(nMin = 1, nMax = 2, tfidf = true))
+    preparatorParams = PreparatorParams(nMin = 1, nMax = 2, tfidf = true, "marco-testapp"))
 
   // Second, we specify the engine params list by explicitly listing all
   // algorithm parameters. In this case, we evaluate 3 engine params, each with
