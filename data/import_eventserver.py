@@ -16,7 +16,7 @@ def import_stopwords(client):
         client.create_event(
             event = "stopwords",
             entity_id = count,
-            entity_type = "rsc",
+            entity_type = "resource",
             properties = {
                 "word" : elem
             })

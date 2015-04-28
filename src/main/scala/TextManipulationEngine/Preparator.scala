@@ -10,24 +10,17 @@ import org.apache.spark.SparkContext
 case class PreparatorParams(
                              nMin: Int,
                              nMax: Int,
-                             tfidf: Boolean,
-                             appName : String
+                             tfidf: Boolean
                              ) extends Params
 
 
 class Preparator(pp: PreparatorParams) extends PPreparator[TrainingData, PreparedData] {
   def prepare(sc : SparkContext, td: TrainingData): PreparedData = {
 
-    val stopWords = PEventStore.find(
-      appName = pp.appName,
-      entityType = Some("stopword"),
-      eventNames = Some(List("stopwords"))
-    )(sc).map(e =>
-        e.properties.get[String]("word")
-      ).collect.toSet
 
 
-    new PreparedData(new DataModel(td, pp.nMin, pp.nMax, pp.tfidf, stopWords))
+
+    new PreparedData(new DataModel(td, pp.nMin, pp.nMax, pp.tfidf))
   }
 }
 
@@ -35,7 +28,7 @@ class PreparedData(
                     val dataModel: DataModel
                     ) extends Serializable with SanityCheck {
   override def toString() : String = {
-    dataModel.td.data.count.toString + ", " + dataModel.stopWords.size.toString
+    dataModel.td.data.count.toString + ", " + dataModel.td.stopWords.size.toString
   }
 
   override def sanityCheck(): Unit = {

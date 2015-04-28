@@ -11,8 +11,7 @@
     "params": {
       "nMin": 1,
       "nMax": 2,
-      "tfidf": true,
-      "appName": "marco-testapp"
+      "tfidf": true
     }
   },
   "algorithms": [

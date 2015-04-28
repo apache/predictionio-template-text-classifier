@@ -36,14 +36,23 @@ class DataSource (val dsp : DataSourceParams)
       e.properties.get[Double]("label"),
       e.properties.get[String]("text")
     ))
-
-
   }
+
+  private def readStopWords(sc : SparkContext) : Set[String] = {
+    PEventStore.find(
+      appName = dsp.appName,
+      entityType = Some("resource"),
+      eventNames = Some(List("stopwords"))
+    )(sc).map(e =>
+      e.properties.get[String]("word")
+      ).collect.toSet
+  }
+
 
   //
   override
   def readTraining(sc: SparkContext): TrainingData = {
-    new TrainingData(readEventData(sc))
+    new TrainingData(readEventData(sc), readStopWords(sc))
   }
 
   override
@@ -52,7 +61,7 @@ class DataSource (val dsp : DataSourceParams)
     val data = readEventData(sc).zipWithIndex()
 
     (0 until dsp.evalK.get).map(
-      k => (new TrainingData(data.filter(_._2 % dsp.evalK.get != k).map(_._1)),
+      k => (new TrainingData(data.filter(_._2 % dsp.evalK.get != k).map(_._1), readStopWords((sc))),
         new EmptyEvaluationInfo(),
         data.filter(_._2 % dsp.evalK.get == k).map(_._1).map(e => (new Query(e.text), new ActualResult(e.label)))
         )
@@ -68,5 +77,6 @@ case class Observation(
 
 
 class TrainingData(
-                    val data : RDD[Observation]
+                    val data : RDD[Observation],
+                    val stopWords : Set[String]
                     ) extends Serializable
