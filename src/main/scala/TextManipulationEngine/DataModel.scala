@@ -63,7 +63,7 @@ class DataModel(
 
 
   // Create token universe zipped, and corresponding idf values.
-  private val universe = createUniverse(hashedData)
+  val universe = createUniverse(hashedData)
 
 
 

@@ -94,7 +94,7 @@ We are given our observations as a set of strings $\mathcal{S}.$ In a general se
 
 In both cases, we are tasked with learning a model $f.$ However, before this we must first represent our strings $s$ in such a manner so that we may apply existing machine learning methods provided in the Spark MLLib library. We will be using the Apache OpenNLP tools library for the purpose of data representation. 
 
-Our engine includes a Data Model implementation which deals with representing our text data as numeric feature vectors. The Training Model here is a conceptual framework representing a set of Scala classes that can produce a supervised (or unsupervised) learning model $f$. For our supervised training model implementation, $f$ will be a classifier, and for our unsupervised training model, an assignment of class labels for each string in $\mathcal{S}.$ The following diagram shows the how the provided Modeling Text Data Engine template functionality is structured, and the interactions between your web/app, the provided Event Server, and our Modeling Text Data Engine.
+Our engine includes all DASE components, as well as a Data Model implementation which deals with representing our text data as numeric feature vectors. It also incorporates a Training Model component which is more of a conceptual framework representing a set of Scala classes that can produce a supervised (or unsupervised) learning model $f$. For our supervised training model implementation, $f$ will be a classifier, and for our unsupervised training model, an assignment of class labels for each string in $\mathcal{S}.$ The following diagram shows the how the provided Modeling Text Data Engine template functionality is structured, and the interactions between your web/app, the provided Event Server, and our Modeling Text Data Engine.
 
 
 \centerline{
@@ -110,14 +110,14 @@ Our engine includes a Data Model implementation which deals with representing ou
 \encircled{Data Source}\ar[r]& \encircled{Preparator} \ar[r] \ar[d]& \encircled{Training Algorithm} \ar[d] \ar[r] & \encircled{Serving} \\
 \bf{Engine} & \encircled{Data Model} \ar[ru] & \encircled{Training Model} \ar[ru]&
 }}}
-\vspace{0.5cm}
+\vspace{0.7cm}
 
 
-We begin the data collection stage by importing a Scikit Learn dataset, \tt{20newsgroups}, into PredictionIO's event server. 
+We begin the data collection stage by importing a Scikit Learn dataset, \tt{20newsgroups}, into PredictionIO's event server, as well as a set of English stop words that will be used in the Data Model implementation. We will delve more into the latter event data when we reach the Data Model section.
 
 \section*{\normalsize Importing Data}
 
-We will be using Scikit Learn's datasets module. Let's get a better feel for the data: initialize your Python interpreter and type the following lines:
+We will be using Scikit Learn's datasets and text module. Let's get a better feel for the data: initialize your Python interpreter and type the following lines:
 
 \begin{verbatim}
 >>> from sklearn.datasets import fetch_20newsgroups

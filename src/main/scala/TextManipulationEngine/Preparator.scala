@@ -30,7 +30,7 @@ class PreparedData(
   override def toString() : String = {
     dataModel.td.data.count.toString + ", " +
       dataModel.td.stopWords.size.toString + ", " +
-      dataModel.transformData.count.toString
+      dataModel.universe.size.toString
   }
 
   override def sanityCheck(): Unit = {

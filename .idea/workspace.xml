@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d6d4992-d84f-4f46-8d8c-5194cf77decd" name="Default" comment="Completed 1 - 6">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/TextManipulationEngine/DataSource.scala" afterPath="$PROJECT_DIR$/src/main/scala/TextManipulationEngine/DataSource.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tutorial and Tex Files/TextManipulationEngine.pdf" afterPath="$PROJECT_DIR$/Tutorial and Tex Files/TextManipulationEngine.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tutorial and Tex Files/TextManipulationEngine.synctex.gz" afterPath="$PROJECT_DIR$/Tutorial and Tex Files/TextManipulationEngine.synctex.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/TextManipulationEngine/DataModel.scala" afterPath="$PROJECT_DIR$/src/main/scala/TextManipulationEngine/DataModel.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/TextManipulationEngine/Preparator.scala" afterPath="$PROJECT_DIR$/src/main/scala/TextManipulationEngine/Preparator.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tutorial and Tex Files/TextManipulationEngine.log" afterPath="$PROJECT_DIR$/Tutorial and Tex Files/TextManipulationEngine.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tutorial and Tex Files/TextManipulationEngine.tex" afterPath="$PROJECT_DIR$/Tutorial and Tex Files/TextManipulationEngine.tex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TextManipulationEngine.iws" />
@@ -116,21 +121,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataModel.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DataModel.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/TextManipulationEngine/DataModel.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="57" column="22" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.57274824">
+              <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataSource.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DataSource.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/TextManipulationEngine/DataSource.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35796767">
-              <caret line="37" column="14" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -140,7 +145,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/scala/TextManipulationEngine/Preparator.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding>
                 <element signature="e#32#75#0" expanded="true" />
               </folding>
@@ -215,9 +220,9 @@
         <option value="$PROJECT_DIR$/data/import_eventserver.py" />
         <option value="$PROJECT_DIR$/engine.json" />
         <option value="$PROJECT_DIR$/src/main/scala/TextManipulationEngine/Evaluation.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/TextManipulationEngine/DataSource.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/TextManipulationEngine/DataModel.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/TextManipulationEngine/Preparator.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/TextManipulationEngine/DataSource.scala" />
       </list>
     </option>
   </component>
@@ -1098,7 +1103,7 @@
       <workItem from="1430187145295" duration="948000" />
       <workItem from="1430207658133" duration="3128000" />
       <workItem from="1430216199619" duration="687000" />
-      <workItem from="1430249786216" duration="8715000" />
+      <workItem from="1430249786216" duration="11829000" />
     </task>
     <task id="LOCAL-00001" summary="Push project.">
       <created>1429589522078</created>
@@ -1242,7 +1247,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109523000" />
+    <option name="totallyTimeSpent" value="112637000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2777" y="22" width="1063" height="1396" extended-state="0" />
@@ -1732,18 +1737,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/TextManipulationEngine/DataModel.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="57" column="22" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/TextManipulationEngine/Preparator.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding>
             <element signature="e#32#75#0" expanded="true" />
           </folding>
@@ -1752,8 +1749,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/TextManipulationEngine/DataSource.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35796767">
-          <caret line="37" column="14" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/TextManipulationEngine/DataModel.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.57274824">
+          <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
           <folding />
         </state>
       </provider>
