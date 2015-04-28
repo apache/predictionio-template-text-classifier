@@ -6,7 +6,7 @@
 [debug] == resolving dependencies for io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT [compile]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.10.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4b223af3
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5f842579
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.4
 [debug] 	local: revision in cache: org.scala-lang#scala-library;2.10.4
 [debug] 	found org.scala-lang#scala-library;2.10.4 in sbt-chain
@@ -16,7 +16,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [compile->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.xerial.snappy#snappy-java;1.1.1.7 [compile->default(compile)]
 [info] Resolving org.xerial.snappy#snappy-java;1.1.1.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@fa1d5fc
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2e715c7a
 [debug] sbt-chain: module revision found in cache: org.xerial.snappy#snappy-java;1.1.1.7
 [debug] 	local: revision in cache: org.xerial.snappy#snappy-java;1.1.1.7
 [debug] 	found org.xerial.snappy#snappy-java;1.1.1.7 in sbt-chain
@@ -25,7 +25,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.xerial.snappy#snappy-java;1.1.1.7 [compile->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.opennlp#opennlp-tools;1.5.3 [compile->default(compile)]
 [info] Resolving org.apache.opennlp#opennlp-tools;1.5.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6219d582
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2a34304d
 [debug] sbt-chain: module revision found in cache: org.apache.opennlp#opennlp-tools;1.5.3
 [debug] 	local: revision in cache: org.apache.opennlp#opennlp-tools;1.5.3
 [debug] 	found org.apache.opennlp#opennlp-tools;1.5.3 in sbt-chain
@@ -34,7 +34,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.opennlp#opennlp-tools;1.5.3 [compile->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.opennlp#opennlp-maxent;3.0.3 [compile->default(compile)]
 [info] Resolving org.apache.opennlp#opennlp-maxent;3.0.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@f57021c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@610d97fc
 [debug] sbt-chain: module revision found in cache: org.apache.opennlp#opennlp-maxent;3.0.3
 [debug] 	local: revision in cache: org.apache.opennlp#opennlp-maxent;3.0.3
 [debug] 	found org.apache.opennlp#opennlp-maxent;3.0.3 in sbt-chain
@@ -43,7 +43,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.opennlp#opennlp-maxent;3.0.3 [compile->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->net.sf.jwordnet#jwnl;1.3.3 [compile->default(compile)]
 [info] Resolving net.sf.jwordnet#jwnl;1.3.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6cd0b9fa
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3152b327
 [debug] sbt-chain: module revision found in cache: net.sf.jwordnet#jwnl;1.3.3
 [debug] 	local: revision in cache: net.sf.jwordnet#jwnl;1.3.3
 [debug] 	found net.sf.jwordnet#jwnl;1.3.3 in sbt-chain
@@ -165,7 +165,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->io.prediction#core_2.10;0.9.2 [provided->default(compile)]
 [info] Resolving io.prediction#core_2.10;0.9.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@60576649
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@12f26f1f
 [debug] sbt-chain: module revision found in cache: io.prediction#core_2.10;0.9.2
 [debug] 	local: revision in cache: io.prediction#core_2.10;0.9.2
 [debug] 	found io.prediction#core_2.10;0.9.2 in sbt-chain
@@ -174,7 +174,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->io.prediction#core_2.10;0.9.2 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->io.prediction#data_2.10;0.9.2 [provided->default(compile)]
 [info] Resolving io.prediction#data_2.10;0.9.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1c1338a7
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6611a38b
 [debug] sbt-chain: module revision found in cache: io.prediction#data_2.10;0.9.2
 [debug] 	local: revision in cache: io.prediction#data_2.10;0.9.2
 [debug] 	found io.prediction#data_2.10;0.9.2 in sbt-chain
@@ -183,7 +183,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->io.prediction#data_2.10;0.9.2 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->io.prediction#common_2.10;0.9.2 [provided->default(compile)]
 [info] Resolving io.prediction#common_2.10;0.9.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@478bb92a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1e1326e7
 [debug] sbt-chain: module revision found in cache: io.prediction#common_2.10;0.9.2
 [debug] 	local: revision in cache: io.prediction#common_2.10;0.9.2
 [debug] 	found io.prediction#common_2.10;0.9.2 in sbt-chain
@@ -192,7 +192,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->io.prediction#common_2.10;0.9.2 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->commons-codec#commons-codec;1.9 [provided->default(compile)]
 [info] Resolving commons-codec#commons-codec;1.9 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5ca6d3e0
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@769aea4b
 [debug] sbt-chain: module revision found in cache: commons-codec#commons-codec;1.9
 [debug] 	local: revision in cache: commons-codec#commons-codec;1.9
 [debug] 	found commons-codec#commons-codec;1.9 in sbt-chain
@@ -201,7 +201,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->commons-codec#commons-codec;1.9 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->io.spray#spray-can_2.10;1.3.2 [provided->default(compile)]
 [info] Resolving io.spray#spray-can_2.10;1.3.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4005681
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7760a6a4
 [debug] sbt-chain: module revision found in cache: io.spray#spray-can_2.10;1.3.2
 [debug] 	local: revision in cache: io.spray#spray-can_2.10;1.3.2
 [debug] 	found io.spray#spray-can_2.10;1.3.2 in sbt-chain
@@ -210,7 +210,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->io.spray#spray-can_2.10;1.3.2 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->io.spray#spray-io_2.10;1.3.2 [provided->default(compile)]
 [info] Resolving io.spray#spray-io_2.10;1.3.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@150f9f91
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@422568a8
 [debug] sbt-chain: module revision found in cache: io.spray#spray-io_2.10;1.3.2
 [debug] 	local: revision in cache: io.spray#spray-io_2.10;1.3.2
 [debug] 	found io.spray#spray-io_2.10;1.3.2 in sbt-chain
@@ -219,7 +219,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->io.spray#spray-io_2.10;1.3.2 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->io.spray#spray-util_2.10;1.3.2 [provided->default(compile)]
 [info] Resolving io.spray#spray-util_2.10;1.3.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@432da5cf
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5da44650
 [debug] sbt-chain: module revision found in cache: io.spray#spray-util_2.10;1.3.2
 [debug] 	local: revision in cache: io.spray#spray-util_2.10;1.3.2
 [debug] 	found io.spray#spray-util_2.10;1.3.2 in sbt-chain
@@ -228,7 +228,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->io.spray#spray-util_2.10;1.3.2 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->io.spray#spray-http_2.10;1.3.2 [provided->default(compile)]
 [info] Resolving io.spray#spray-http_2.10;1.3.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@9c5ec52
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@161f39ee
 [debug] sbt-chain: module revision found in cache: io.spray#spray-http_2.10;1.3.2
 [debug] 	local: revision in cache: io.spray#spray-http_2.10;1.3.2
 [debug] 	found io.spray#spray-http_2.10;1.3.2 in sbt-chain
@@ -237,7 +237,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->io.spray#spray-http_2.10;1.3.2 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.parboiled#parboiled-scala_2.10;1.1.6 [provided->default(compile)]
 [info] Resolving org.parboiled#parboiled-scala_2.10;1.1.6 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@78acf6b6
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@38903a1f
 [debug] sbt-chain: module revision found in cache: org.parboiled#parboiled-scala_2.10;1.1.6
 [debug] 	local: revision in cache: org.parboiled#parboiled-scala_2.10;1.1.6
 [debug] 	found org.parboiled#parboiled-scala_2.10;1.1.6 in sbt-chain
@@ -246,7 +246,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.parboiled#parboiled-scala_2.10;1.1.6 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.parboiled#parboiled-core;1.1.6 [provided->default(compile)]
 [info] Resolving org.parboiled#parboiled-core;1.1.6 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@64aeb166
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5db4483f
 [debug] sbt-chain: module revision found in cache: org.parboiled#parboiled-core;1.1.6
 [debug] 	local: revision in cache: org.parboiled#parboiled-core;1.1.6
 [debug] 	found org.parboiled#parboiled-core;1.1.6 in sbt-chain
@@ -255,7 +255,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.parboiled#parboiled-core;1.1.6 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->io.spray#spray-routing_2.10;1.3.2 [provided->default(compile)]
 [info] Resolving io.spray#spray-routing_2.10;1.3.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1cc92536
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@10281ccf
 [debug] sbt-chain: module revision found in cache: io.spray#spray-routing_2.10;1.3.2
 [debug] 	local: revision in cache: io.spray#spray-routing_2.10;1.3.2
 [debug] 	found io.spray#spray-routing_2.10;1.3.2 in sbt-chain
@@ -264,7 +264,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->io.spray#spray-routing_2.10;1.3.2 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->io.spray#spray-httpx_2.10;1.3.2 [provided->default(compile)]
 [info] Resolving io.spray#spray-httpx_2.10;1.3.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@770d1d8e
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@57901551
 [debug] sbt-chain: module revision found in cache: io.spray#spray-httpx_2.10;1.3.2
 [debug] 	local: revision in cache: io.spray#spray-httpx_2.10;1.3.2
 [debug] 	found io.spray#spray-httpx_2.10;1.3.2 in sbt-chain
@@ -273,7 +273,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->io.spray#spray-httpx_2.10;1.3.2 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.jvnet.mimepull#mimepull;1.9.4 [provided->default(compile)]
 [info] Resolving org.jvnet.mimepull#mimepull;1.9.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3583dd92
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6d85d99f
 [debug] sbt-chain: module revision found in cache: org.jvnet.mimepull#mimepull;1.9.4
 [debug] 	local: revision in cache: org.jvnet.mimepull#mimepull;1.9.4
 [debug] 	found org.jvnet.mimepull#mimepull;1.9.4 in sbt-chain
@@ -282,7 +282,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.jvnet.mimepull#mimepull;1.9.4 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.chuusai#shapeless_2.10;1.2.4 [provided->default(compile)]
 [info] Resolving com.chuusai#shapeless_2.10;1.2.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5aa6be76
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@624c6a0f
 [debug] sbt-chain: module revision found in cache: com.chuusai#shapeless_2.10;1.2.4
 [debug] 	local: revision in cache: com.chuusai#shapeless_2.10;1.2.4
 [debug] 	found com.chuusai#shapeless_2.10;1.2.4 in sbt-chain
@@ -291,7 +291,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.chuusai#shapeless_2.10;1.2.4 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hadoop#hadoop-common;2.5.0 [provided->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-common;2.5.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3df2e113
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5da8c826
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-common;2.5.0
 [debug] 	local: revision in cache: org.apache.hadoop#hadoop-common;2.5.0
 [debug] 	found org.apache.hadoop#hadoop-common;2.5.0 in sbt-chain
@@ -300,7 +300,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hadoop#hadoop-common;2.5.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hadoop#hadoop-annotations;2.5.0 [provided->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-annotations;2.5.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@65f8ba95
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7c01dcc5
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-annotations;2.5.0
 [debug] 	local: revision in cache: org.apache.hadoop#hadoop-annotations;2.5.0
 [debug] 	found org.apache.hadoop#hadoop-annotations;2.5.0 in sbt-chain
@@ -309,7 +309,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hadoop#hadoop-annotations;2.5.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->commons-cli#commons-cli;1.2 [provided->default(compile)]
 [info] Resolving commons-cli#commons-cli;1.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@494153e
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@14c62fb5
 [debug] sbt-chain: module revision found in cache: commons-cli#commons-cli;1.2
 [debug] 	local: revision in cache: commons-cli#commons-cli;1.2
 [debug] 	found commons-cli#commons-cli;1.2 in sbt-chain
@@ -318,7 +318,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->commons-cli#commons-cli;1.2 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.commons#commons-math3;3.1.1 [provided->default(compile)]
 [info] Resolving org.apache.commons#commons-math3;3.1.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3b6ea014
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7c1d03d5
 [debug] sbt-chain: module revision found in cache: org.apache.commons#commons-math3;3.1.1
 [debug] 	local: revision in cache: org.apache.commons#commons-math3;3.1.1
 [debug] 	found org.apache.commons#commons-math3;3.1.1 in sbt-chain
@@ -327,7 +327,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.commons#commons-math3;3.1.1 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->commons-httpclient#commons-httpclient;3.1 [provided->default(compile)]
 [info] Resolving commons-httpclient#commons-httpclient;3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@13610e33
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5250b001
 [debug] sbt-chain: module revision found in cache: commons-httpclient#commons-httpclient;3.1
 [debug] 	local: revision in cache: commons-httpclient#commons-httpclient;3.1
 [debug] 	found commons-httpclient#commons-httpclient;3.1 in sbt-chain
@@ -336,7 +336,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->commons-httpclient#commons-httpclient;3.1 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->commons-io#commons-io;2.4 [provided->default(compile)]
 [info] Resolving commons-io#commons-io;2.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7ded67db
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@752ab68
 [debug] sbt-chain: module revision found in cache: commons-io#commons-io;2.4
 [debug] 	local: revision in cache: commons-io#commons-io;2.4
 [debug] 	found commons-io#commons-io;2.4 in sbt-chain
@@ -345,7 +345,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->commons-io#commons-io;2.4 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->commons-net#commons-net;3.1 [provided->default(compile)]
 [info] Resolving commons-net#commons-net;3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1c3be16c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5bf5a0fa
 [debug] sbt-chain: module revision found in cache: commons-net#commons-net;3.1
 [debug] 	local: revision in cache: commons-net#commons-net;3.1
 [debug] 	found commons-net#commons-net;3.1 in sbt-chain
@@ -354,7 +354,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->commons-net#commons-net;3.1 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->commons-collections#commons-collections;3.2.1 [provided->default(compile)]
 [info] Resolving commons-collections#commons-collections;3.2.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4478edfa
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4fefb5a9
 [debug] sbt-chain: module revision found in cache: commons-collections#commons-collections;3.2.1
 [debug] 	local: revision in cache: commons-collections#commons-collections;3.2.1
 [debug] 	found commons-collections#commons-collections;3.2.1 in sbt-chain
@@ -363,7 +363,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->commons-collections#commons-collections;3.2.1 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.mortbay.jetty#jetty;6.1.26 [provided->default(compile)]
 [info] Resolving org.mortbay.jetty#jetty;6.1.26 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2d22fbbe
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@671a6464
 [debug] sbt-chain: module revision found in cache: org.mortbay.jetty#jetty;6.1.26
 [debug] 	local: revision in cache: org.mortbay.jetty#jetty;6.1.26
 [debug] 	found org.mortbay.jetty#jetty;6.1.26 in sbt-chain
@@ -372,7 +372,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.mortbay.jetty#jetty;6.1.26 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.mortbay.jetty#jetty-util;6.1.26 [provided->default(compile)]
 [info] Resolving org.mortbay.jetty#jetty-util;6.1.26 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4572195e
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2ce5d465
 [debug] sbt-chain: module revision found in cache: org.mortbay.jetty#jetty-util;6.1.26
 [debug] 	local: revision in cache: org.mortbay.jetty#jetty-util;6.1.26
 [debug] 	found org.mortbay.jetty#jetty-util;6.1.26 in sbt-chain
@@ -381,7 +381,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.mortbay.jetty#jetty-util;6.1.26 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.sun.jersey#jersey-core;1.9 [provided->default(compile)]
 [info] Resolving com.sun.jersey#jersey-core;1.9 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@716e7bbe
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2bbf8f6f
 [debug] sbt-chain: module revision found in cache: com.sun.jersey#jersey-core;1.9
 [debug] 	local: revision in cache: com.sun.jersey#jersey-core;1.9
 [debug] 	found com.sun.jersey#jersey-core;1.9 in sbt-chain
@@ -390,7 +390,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.sun.jersey#jersey-core;1.9 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.sun.jersey#jersey-json;1.9 [provided->default(compile)]
 [info] Resolving com.sun.jersey#jersey-json;1.9 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6421689b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@33a1b1ec
 [debug] sbt-chain: module revision found in cache: com.sun.jersey#jersey-json;1.9
 [debug] 	local: revision in cache: com.sun.jersey#jersey-json;1.9
 [debug] 	found com.sun.jersey#jersey-json;1.9 in sbt-chain
@@ -399,7 +399,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.sun.jersey#jersey-json;1.9 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.codehaus.jettison#jettison;1.1 [provided->default(compile)]
 [info] Resolving org.codehaus.jettison#jettison;1.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2e7ec4e8
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@ea62562
 [debug] sbt-chain: module revision found in cache: org.codehaus.jettison#jettison;1.1
 [debug] 	local: revision in cache: org.codehaus.jettison#jettison;1.1
 [debug] 	found org.codehaus.jettison#jettison;1.1 in sbt-chain
@@ -408,7 +408,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.codehaus.jettison#jettison;1.1 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.sun.xml.bind#jaxb-impl;2.2.3-1 [provided->default(compile)]
 [info] Resolving com.sun.xml.bind#jaxb-impl;2.2.3-1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@28d46cec
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@dbd9b7
 [debug] sbt-chain: module revision found in cache: com.sun.xml.bind#jaxb-impl;2.2.3-1
 [debug] 	local: revision in cache: com.sun.xml.bind#jaxb-impl;2.2.3-1
 [debug] 	found com.sun.xml.bind#jaxb-impl;2.2.3-1 in sbt-chain
@@ -417,7 +417,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.sun.xml.bind#jaxb-impl;2.2.3-1 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->javax.xml.bind#jaxb-api;2.2.2 [provided->default(compile)]
 [info] Resolving javax.xml.bind#jaxb-api;2.2.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1fed118
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7ae3b369
 [debug] sbt-chain: module revision found in cache: javax.xml.bind#jaxb-api;2.2.2
 [debug] 	local: revision in cache: javax.xml.bind#jaxb-api;2.2.2
 [debug] 	found javax.xml.bind#jaxb-api;2.2.2 in sbt-chain
@@ -426,7 +426,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->javax.xml.bind#jaxb-api;2.2.2 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->javax.xml.stream#stax-api;1.0-2 [provided->default(compile)]
 [info] Resolving javax.xml.stream#stax-api;1.0-2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@47458d4
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6ccee376
 [debug] sbt-chain: module revision found in cache: javax.xml.stream#stax-api;1.0-2
 [debug] 	local: revision in cache: javax.xml.stream#stax-api;1.0-2
 [debug] 	found javax.xml.stream#stax-api;1.0-2 in sbt-chain
@@ -435,7 +435,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->javax.xml.stream#stax-api;1.0-2 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->javax.activation#activation;1.1 [provided->default(compile)]
 [info] Resolving javax.activation#activation;1.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6c8ada1c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@13734949
 [debug] sbt-chain: module revision found in cache: javax.activation#activation;1.1
 [debug] 	local: revision in cache: javax.activation#activation;1.1
 [debug] 	found javax.activation#activation;1.1 in sbt-chain
@@ -444,7 +444,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->javax.activation#activation;1.1 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.codehaus.jackson#jackson-xc;1.8.3 [provided->default(compile)]
 [info] Resolving org.codehaus.jackson#jackson-xc;1.8.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@57c21a00
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1afdc807
 [debug] sbt-chain: module revision found in cache: org.codehaus.jackson#jackson-xc;1.8.3
 [debug] 	local: revision in cache: org.codehaus.jackson#jackson-xc;1.8.3
 [debug] 	found org.codehaus.jackson#jackson-xc;1.8.3 in sbt-chain
@@ -453,7 +453,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.codehaus.jackson#jackson-xc;1.8.3 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.sun.jersey#jersey-server;1.9 [provided->default(compile)]
 [info] Resolving com.sun.jersey#jersey-server;1.9 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5d1de8fa
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@366f24dc
 [debug] sbt-chain: module revision found in cache: com.sun.jersey#jersey-server;1.9
 [debug] 	local: revision in cache: com.sun.jersey#jersey-server;1.9
 [debug] 	found com.sun.jersey#jersey-server;1.9 in sbt-chain
@@ -462,7 +462,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.sun.jersey#jersey-server;1.9 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->commons-logging#commons-logging;1.1.3 [provided->default(compile)]
 [info] Resolving commons-logging#commons-logging;1.1.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@45e81b01
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@38943404
 [debug] sbt-chain: module revision found in cache: commons-logging#commons-logging;1.1.3
 [debug] 	local: revision in cache: commons-logging#commons-logging;1.1.3
 [debug] 	found commons-logging#commons-logging;1.1.3 in sbt-chain
@@ -471,7 +471,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->commons-logging#commons-logging;1.1.3 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->log4j#log4j;1.2.17 [provided->default(compile)]
 [info] Resolving log4j#log4j;1.2.17 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@35300107
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7597278b
 [debug] sbt-chain: module revision found in cache: log4j#log4j;1.2.17
 [debug] 	local: revision in cache: log4j#log4j;1.2.17
 [debug] 	found log4j#log4j;1.2.17 in sbt-chain
@@ -480,7 +480,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->log4j#log4j;1.2.17 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->net.java.dev.jets3t#jets3t;0.9.0 [provided->default(compile)]
 [info] Resolving net.java.dev.jets3t#jets3t;0.9.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@50a52cea
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@20842a0
 [debug] sbt-chain: module revision found in cache: net.java.dev.jets3t#jets3t;0.9.0
 [debug] 	local: revision in cache: net.java.dev.jets3t#jets3t;0.9.0
 [debug] 	found net.java.dev.jets3t#jets3t;0.9.0 in sbt-chain
@@ -489,7 +489,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->net.java.dev.jets3t#jets3t;0.9.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.jamesmurty.utils#java-xmlbuilder;0.4 [provided->default(compile)]
 [info] Resolving com.jamesmurty.utils#java-xmlbuilder;0.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@15c4a6b5
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3a5252fd
 [debug] sbt-chain: module revision found in cache: com.jamesmurty.utils#java-xmlbuilder;0.4
 [debug] 	local: revision in cache: com.jamesmurty.utils#java-xmlbuilder;0.4
 [debug] 	found com.jamesmurty.utils#java-xmlbuilder;0.4 in sbt-chain
@@ -498,7 +498,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.jamesmurty.utils#java-xmlbuilder;0.4 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->commons-lang#commons-lang;2.6 [provided->default(compile)]
 [info] Resolving commons-lang#commons-lang;2.6 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2b95e602
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@19543e72
 [debug] sbt-chain: module revision found in cache: commons-lang#commons-lang;2.6
 [debug] 	local: revision in cache: commons-lang#commons-lang;2.6
 [debug] 	found commons-lang#commons-lang;2.6 in sbt-chain
@@ -507,7 +507,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->commons-lang#commons-lang;2.6 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->commons-configuration#commons-configuration;1.6 [provided->default(compile)]
 [info] Resolving commons-configuration#commons-configuration;1.6 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2f48671b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@70bdbb18
 [debug] sbt-chain: module revision found in cache: commons-configuration#commons-configuration;1.6
 [debug] 	local: revision in cache: commons-configuration#commons-configuration;1.6
 [debug] 	found commons-configuration#commons-configuration;1.6 in sbt-chain
@@ -516,7 +516,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->commons-configuration#commons-configuration;1.6 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->commons-digester#commons-digester;1.8 [provided->default(compile)]
 [info] Resolving commons-digester#commons-digester;1.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5c923897
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5e0ce759
 [debug] sbt-chain: module revision found in cache: commons-digester#commons-digester;1.8
 [debug] 	local: revision in cache: commons-digester#commons-digester;1.8
 [debug] 	found commons-digester#commons-digester;1.8 in sbt-chain
@@ -525,7 +525,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->commons-digester#commons-digester;1.8 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->commons-beanutils#commons-beanutils;1.7.0 [provided->default(compile)]
 [info] Resolving commons-beanutils#commons-beanutils;1.7.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@642f5ab9
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4b091540
 [debug] sbt-chain: module revision found in cache: commons-beanutils#commons-beanutils;1.7.0
 [debug] 	local: revision in cache: commons-beanutils#commons-beanutils;1.7.0
 [debug] 	found commons-beanutils#commons-beanutils;1.7.0 in sbt-chain
@@ -534,7 +534,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->commons-beanutils#commons-beanutils;1.7.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.codehaus.jackson#jackson-core-asl;1.9.13 [provided->default(compile)]
 [info] Resolving org.codehaus.jackson#jackson-core-asl;1.9.13 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@78fa840e
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@765af636
 [debug] sbt-chain: module revision found in cache: org.codehaus.jackson#jackson-core-asl;1.9.13
 [debug] 	local: revision in cache: org.codehaus.jackson#jackson-core-asl;1.9.13
 [debug] 	found org.codehaus.jackson#jackson-core-asl;1.9.13 in sbt-chain
@@ -543,7 +543,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.codehaus.jackson#jackson-core-asl;1.9.13 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.codehaus.jackson#jackson-mapper-asl;1.9.13 [provided->default(compile)]
 [info] Resolving org.codehaus.jackson#jackson-mapper-asl;1.9.13 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@60f30469
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@776cbc28
 [debug] sbt-chain: module revision found in cache: org.codehaus.jackson#jackson-mapper-asl;1.9.13
 [debug] 	local: revision in cache: org.codehaus.jackson#jackson-mapper-asl;1.9.13
 [debug] 	found org.codehaus.jackson#jackson-mapper-asl;1.9.13 in sbt-chain
@@ -552,7 +552,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.codehaus.jackson#jackson-mapper-asl;1.9.13 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.avro#avro;1.7.4 [provided->default(compile)]
 [info] Resolving org.apache.avro#avro;1.7.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@57e857e7
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3419b91a
 [debug] sbt-chain: module revision found in cache: org.apache.avro#avro;1.7.4
 [debug] 	local: revision in cache: org.apache.avro#avro;1.7.4
 [debug] 	found org.apache.avro#avro;1.7.4 in sbt-chain
@@ -561,7 +561,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.avro#avro;1.7.4 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.commons#commons-compress;1.4.1 [provided->default(compile)]
 [info] Resolving org.apache.commons#commons-compress;1.4.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6b15a687
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@776196d3
 [debug] sbt-chain: module revision found in cache: org.apache.commons#commons-compress;1.4.1
 [debug] 	local: revision in cache: org.apache.commons#commons-compress;1.4.1
 [debug] 	found org.apache.commons#commons-compress;1.4.1 in sbt-chain
@@ -570,7 +570,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.commons#commons-compress;1.4.1 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.tukaani#xz;1.0 [provided->default(compile)]
 [info] Resolving org.tukaani#xz;1.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4bdcedbd
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5c6eaa7a
 [debug] sbt-chain: module revision found in cache: org.tukaani#xz;1.0
 [debug] 	local: revision in cache: org.tukaani#xz;1.0
 [debug] 	found org.tukaani#xz;1.0 in sbt-chain
@@ -579,7 +579,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.tukaani#xz;1.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [provided->default(compile)]
 [info] Resolving com.google.protobuf#protobuf-java;2.5.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@369a34cd
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@755b08e0
 [debug] sbt-chain: module revision found in cache: com.google.protobuf#protobuf-java;2.5.0
 [debug] 	local: revision in cache: com.google.protobuf#protobuf-java;2.5.0
 [debug] 	found com.google.protobuf#protobuf-java;2.5.0 in sbt-chain
@@ -588,7 +588,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hadoop#hadoop-auth;2.5.0 [provided->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-auth;2.5.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7aad3a56
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@604fdaca
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-auth;2.5.0
 [debug] 	local: revision in cache: org.apache.hadoop#hadoop-auth;2.5.0
 [debug] 	found org.apache.hadoop#hadoop-auth;2.5.0 in sbt-chain
@@ -597,7 +597,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hadoop#hadoop-auth;2.5.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.httpcomponents#httpclient;4.2.5 [provided->default(compile)]
 [info] Resolving org.apache.httpcomponents#httpclient;4.2.5 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@74f88ead
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@fda3ef
 [debug] sbt-chain: module revision found in cache: org.apache.httpcomponents#httpclient;4.2.5
 [debug] 	local: revision in cache: org.apache.httpcomponents#httpclient;4.2.5
 [debug] 	found org.apache.httpcomponents#httpclient;4.2.5 in sbt-chain
@@ -606,7 +606,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.httpcomponents#httpclient;4.2.5 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.httpcomponents#httpcore;4.2.4 [provided->default(compile)]
 [info] Resolving org.apache.httpcomponents#httpcore;4.2.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@184c6831
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1fe96c28
 [debug] sbt-chain: module revision found in cache: org.apache.httpcomponents#httpcore;4.2.4
 [debug] 	local: revision in cache: org.apache.httpcomponents#httpcore;4.2.4
 [debug] 	found org.apache.httpcomponents#httpcore;4.2.4 in sbt-chain
@@ -615,7 +615,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.httpcomponents#httpcore;4.2.4 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.directory.server#apacheds-kerberos-codec;2.0.0-M15 [provided->default(compile)]
 [info] Resolving org.apache.directory.server#apacheds-kerberos-codec;2.0.0-M15 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7d47eb55
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3ccf6b19
 [debug] sbt-chain: module revision found in cache: org.apache.directory.server#apacheds-kerberos-codec;2.0.0-M15
 [debug] 	local: revision in cache: org.apache.directory.server#apacheds-kerberos-codec;2.0.0-M15
 [debug] 	found org.apache.directory.server#apacheds-kerberos-codec;2.0.0-M15 in sbt-chain
@@ -624,7 +624,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.directory.server#apacheds-kerberos-codec;2.0.0-M15 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.directory.server#apacheds-i18n;2.0.0-M15 [provided->default(compile)]
 [info] Resolving org.apache.directory.server#apacheds-i18n;2.0.0-M15 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2a1260a3
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@bb919cb
 [debug] sbt-chain: module revision found in cache: org.apache.directory.server#apacheds-i18n;2.0.0-M15
 [debug] 	local: revision in cache: org.apache.directory.server#apacheds-i18n;2.0.0-M15
 [debug] 	found org.apache.directory.server#apacheds-i18n;2.0.0-M15 in sbt-chain
@@ -633,7 +633,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.directory.server#apacheds-i18n;2.0.0-M15 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.directory.api#api-asn1-api;1.0.0-M20 [provided->default(compile)]
 [info] Resolving org.apache.directory.api#api-asn1-api;1.0.0-M20 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@42f2456b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3917f47c
 [debug] sbt-chain: module revision found in cache: org.apache.directory.api#api-asn1-api;1.0.0-M20
 [debug] 	local: revision in cache: org.apache.directory.api#api-asn1-api;1.0.0-M20
 [debug] 	found org.apache.directory.api#api-asn1-api;1.0.0-M20 in sbt-chain
@@ -642,7 +642,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.directory.api#api-asn1-api;1.0.0-M20 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.directory.api#api-util;1.0.0-M20 [provided->default(compile)]
 [info] Resolving org.apache.directory.api#api-util;1.0.0-M20 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@10d278ae
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6741d2
 [debug] sbt-chain: module revision found in cache: org.apache.directory.api#api-util;1.0.0-M20
 [debug] 	local: revision in cache: org.apache.directory.api#api-util;1.0.0-M20
 [debug] 	found org.apache.directory.api#api-util;1.0.0-M20 in sbt-chain
@@ -651,7 +651,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.directory.api#api-util;1.0.0-M20 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.jcraft#jsch;0.1.42 [provided->default(compile)]
 [info] Resolving com.jcraft#jsch;0.1.42 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@649f76a7
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3a7bf18e
 [debug] sbt-chain: module revision found in cache: com.jcraft#jsch;0.1.42
 [debug] 	local: revision in cache: com.jcraft#jsch;0.1.42
 [debug] 	found com.jcraft#jsch;0.1.42 in sbt-chain
@@ -660,7 +660,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.jcraft#jsch;0.1.42 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hbase#hbase-common;0.98.5-hadoop2 [provided->default(compile)]
 [info] Resolving org.apache.hbase#hbase-common;0.98.5-hadoop2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3c17df12
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@15965dd9
 [debug] sbt-chain: module revision found in cache: org.apache.hbase#hbase-common;0.98.5-hadoop2
 [debug] 	local: revision in cache: org.apache.hbase#hbase-common;0.98.5-hadoop2
 [debug] 	found org.apache.hbase#hbase-common;0.98.5-hadoop2 in sbt-chain
@@ -669,7 +669,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hbase#hbase-common;0.98.5-hadoop2 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.github.stephenc.findbugs#findbugs-annotations;1.3.9-1 [provided->default(compile)]
 [info] Resolving com.github.stephenc.findbugs#findbugs-annotations;1.3.9-1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@d27cea1
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@51c8f457
 [debug] sbt-chain: module revision found in cache: com.github.stephenc.findbugs#findbugs-annotations;1.3.9-1
 [debug] 	local: revision in cache: com.github.stephenc.findbugs#findbugs-annotations;1.3.9-1
 [debug] 	found com.github.stephenc.findbugs#findbugs-annotations;1.3.9-1 in sbt-chain
@@ -678,7 +678,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.github.stephenc.findbugs#findbugs-annotations;1.3.9-1 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->junit#junit;4.11 [provided->default(compile)]
 [info] Resolving junit#junit;4.11 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@759c46d7
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@650ba9f0
 [debug] sbt-chain: module revision found in cache: junit#junit;4.11
 [debug] 	local: revision in cache: junit#junit;4.11
 [debug] 	found junit#junit;4.11 in sbt-chain
@@ -687,7 +687,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->junit#junit;4.11 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.hamcrest#hamcrest-core;1.3 [provided->default(compile)]
 [info] Resolving org.hamcrest#hamcrest-core;1.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@12acf266
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2ffc10d9
 [debug] sbt-chain: module revision found in cache: org.hamcrest#hamcrest-core;1.3
 [debug] 	local: revision in cache: org.hamcrest#hamcrest-core;1.3
 [debug] 	found org.hamcrest#hamcrest-core;1.3 in sbt-chain
@@ -696,7 +696,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.hamcrest#hamcrest-core;1.3 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hbase#hbase-client;0.98.5-hadoop2 [provided->default(compile)]
 [info] Resolving org.apache.hbase#hbase-client;0.98.5-hadoop2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5ec880d3
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4c024031
 [debug] sbt-chain: module revision found in cache: org.apache.hbase#hbase-client;0.98.5-hadoop2
 [debug] 	local: revision in cache: org.apache.hbase#hbase-client;0.98.5-hadoop2
 [debug] 	found org.apache.hbase#hbase-client;0.98.5-hadoop2 in sbt-chain
@@ -705,7 +705,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hbase#hbase-client;0.98.5-hadoop2 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hbase#hbase-protocol;0.98.5-hadoop2 [provided->default(compile)]
 [info] Resolving org.apache.hbase#hbase-protocol;0.98.5-hadoop2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@408aadc0
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@307f073c
 [debug] sbt-chain: module revision found in cache: org.apache.hbase#hbase-protocol;0.98.5-hadoop2
 [debug] 	local: revision in cache: org.apache.hbase#hbase-protocol;0.98.5-hadoop2
 [debug] 	found org.apache.hbase#hbase-protocol;0.98.5-hadoop2 in sbt-chain
@@ -714,7 +714,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hbase#hbase-protocol;0.98.5-hadoop2 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.cloudera.htrace#htrace-core;2.04 [provided->default(compile)]
 [info] Resolving org.cloudera.htrace#htrace-core;2.04 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@300823d8
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3a7ba29b
 [debug] sbt-chain: module revision found in cache: org.cloudera.htrace#htrace-core;2.04
 [debug] 	local: revision in cache: org.cloudera.htrace#htrace-core;2.04
 [debug] 	found org.cloudera.htrace#htrace-core;2.04 in sbt-chain
@@ -723,7 +723,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.cloudera.htrace#htrace-core;2.04 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hbase#hbase-server;0.98.5-hadoop2 [provided->default(compile)]
 [info] Resolving org.apache.hbase#hbase-server;0.98.5-hadoop2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@315165cc
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3851f086
 [debug] sbt-chain: module revision found in cache: org.apache.hbase#hbase-server;0.98.5-hadoop2
 [debug] 	local: revision in cache: org.apache.hbase#hbase-server;0.98.5-hadoop2
 [debug] 	found org.apache.hbase#hbase-server;0.98.5-hadoop2 in sbt-chain
@@ -732,7 +732,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hbase#hbase-server;0.98.5-hadoop2 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.yammer.metrics#metrics-core;2.2.0 [provided->default(compile)]
 [info] Resolving com.yammer.metrics#metrics-core;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7d1f4bc8
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@61395a30
 [debug] sbt-chain: module revision found in cache: com.yammer.metrics#metrics-core;2.2.0
 [debug] 	local: revision in cache: com.yammer.metrics#metrics-core;2.2.0
 [debug] 	found com.yammer.metrics#metrics-core;2.2.0 in sbt-chain
@@ -741,7 +741,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.yammer.metrics#metrics-core;2.2.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.github.stephenc.high-scale-lib#high-scale-lib;1.1.1 [provided->default(compile)]
 [info] Resolving com.github.stephenc.high-scale-lib#high-scale-lib;1.1.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@214c4850
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@523d1e99
 [debug] sbt-chain: module revision found in cache: com.github.stephenc.high-scale-lib#high-scale-lib;1.1.1
 [debug] 	local: revision in cache: com.github.stephenc.high-scale-lib#high-scale-lib;1.1.1
 [debug] 	found com.github.stephenc.high-scale-lib#high-scale-lib;1.1.1 in sbt-chain
@@ -750,7 +750,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.github.stephenc.high-scale-lib#high-scale-lib;1.1.1 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.commons#commons-math;2.1 [provided->default(compile)]
 [info] Resolving org.apache.commons#commons-math;2.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@78f0ea48
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1832b8f8
 [debug] sbt-chain: module revision found in cache: org.apache.commons#commons-math;2.1
 [debug] 	local: revision in cache: org.apache.commons#commons-math;2.1
 [debug] 	found org.apache.commons#commons-math;2.1 in sbt-chain
@@ -759,7 +759,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.commons#commons-math;2.1 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.mortbay.jetty#jetty-sslengine;6.1.26 [provided->default(compile)]
 [info] Resolving org.mortbay.jetty#jetty-sslengine;6.1.26 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3260ff28
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7c5bb4d
 [debug] sbt-chain: module revision found in cache: org.mortbay.jetty#jetty-sslengine;6.1.26
 [debug] 	local: revision in cache: org.mortbay.jetty#jetty-sslengine;6.1.26
 [debug] 	found org.mortbay.jetty#jetty-sslengine;6.1.26 in sbt-chain
@@ -768,7 +768,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.mortbay.jetty#jetty-sslengine;6.1.26 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.codehaus.jackson#jackson-jaxrs;1.8.8 [provided->default(compile)]
 [info] Resolving org.codehaus.jackson#jackson-jaxrs;1.8.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@29fba2d4
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@29b3644
 [debug] sbt-chain: module revision found in cache: org.codehaus.jackson#jackson-jaxrs;1.8.8
 [debug] 	local: revision in cache: org.codehaus.jackson#jackson-jaxrs;1.8.8
 [debug] 	found org.codehaus.jackson#jackson-jaxrs;1.8.8 in sbt-chain
@@ -777,7 +777,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.codehaus.jackson#jackson-jaxrs;1.8.8 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.jamon#jamon-runtime;2.3.1 [provided->default(compile)]
 [info] Resolving org.jamon#jamon-runtime;2.3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6261b6d7
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@10ac1dda
 [debug] sbt-chain: module revision found in cache: org.jamon#jamon-runtime;2.3.1
 [debug] 	local: revision in cache: org.jamon#jamon-runtime;2.3.1
 [debug] 	found org.jamon#jamon-runtime;2.3.1 in sbt-chain
@@ -786,7 +786,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.jamon#jamon-runtime;2.3.1 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.zookeeper#zookeeper;3.4.6 [provided->default(compile)]
 [info] Resolving org.apache.zookeeper#zookeeper;3.4.6 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@12d1800b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@77475f2b
 [debug] sbt-chain: module revision found in cache: org.apache.zookeeper#zookeeper;3.4.6
 [debug] 	local: revision in cache: org.apache.zookeeper#zookeeper;3.4.6
 [debug] 	found org.apache.zookeeper#zookeeper;3.4.6 in sbt-chain
@@ -795,7 +795,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.zookeeper#zookeeper;3.4.6 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->jline#jline;0.9.94 [provided->default(compile)]
 [info] Resolving jline#jline;0.9.94 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2cb342d7
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1a06780e
 [debug] sbt-chain: module revision found in cache: jline#jline;0.9.94
 [debug] 	local: revision in cache: jline#jline;0.9.94
 [debug] 	found jline#jline;0.9.94 in sbt-chain
@@ -804,7 +804,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->jline#jline;0.9.94 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.clapper#grizzled-slf4j_2.10;1.0.2 [provided->default(compile)]
 [info] Resolving org.clapper#grizzled-slf4j_2.10;1.0.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1a6ab551
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@221a0912
 [debug] sbt-chain: module revision found in cache: org.clapper#grizzled-slf4j_2.10;1.0.2
 [debug] 	local: revision in cache: org.clapper#grizzled-slf4j_2.10;1.0.2
 [debug] 	found org.clapper#grizzled-slf4j_2.10;1.0.2 in sbt-chain
@@ -813,7 +813,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.clapper#grizzled-slf4j_2.10;1.0.2 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.elasticsearch#elasticsearch;1.4.4 [provided->default(compile)]
 [info] Resolving org.elasticsearch#elasticsearch;1.4.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3295d57
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@43fecc76
 [debug] sbt-chain: module revision found in cache: org.elasticsearch#elasticsearch;1.4.4
 [debug] 	local: revision in cache: org.elasticsearch#elasticsearch;1.4.4
 [debug] 	found org.elasticsearch#elasticsearch;1.4.4 in sbt-chain
@@ -822,7 +822,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.elasticsearch#elasticsearch;1.4.4 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.lucene#lucene-core;4.10.3 [provided->default(compile)]
 [info] Resolving org.apache.lucene#lucene-core;4.10.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@17411e82
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@31bd8d42
 [debug] sbt-chain: module revision found in cache: org.apache.lucene#lucene-core;4.10.3
 [debug] 	local: revision in cache: org.apache.lucene#lucene-core;4.10.3
 [debug] 	found org.apache.lucene#lucene-core;4.10.3 in sbt-chain
@@ -831,7 +831,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.lucene#lucene-core;4.10.3 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.lucene#lucene-analyzers-common;4.10.3 [provided->default(compile)]
 [info] Resolving org.apache.lucene#lucene-analyzers-common;4.10.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6849d65b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5707ca9e
 [debug] sbt-chain: module revision found in cache: org.apache.lucene#lucene-analyzers-common;4.10.3
 [debug] 	local: revision in cache: org.apache.lucene#lucene-analyzers-common;4.10.3
 [debug] 	found org.apache.lucene#lucene-analyzers-common;4.10.3 in sbt-chain
@@ -840,7 +840,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.lucene#lucene-analyzers-common;4.10.3 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.lucene#lucene-queries;4.10.3 [provided->default(compile)]
 [info] Resolving org.apache.lucene#lucene-queries;4.10.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@401ffba1
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1fbb3f46
 [debug] sbt-chain: module revision found in cache: org.apache.lucene#lucene-queries;4.10.3
 [debug] 	local: revision in cache: org.apache.lucene#lucene-queries;4.10.3
 [debug] 	found org.apache.lucene#lucene-queries;4.10.3 in sbt-chain
@@ -849,7 +849,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.lucene#lucene-queries;4.10.3 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.lucene#lucene-memory;4.10.3 [provided->default(compile)]
 [info] Resolving org.apache.lucene#lucene-memory;4.10.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@131f6bd5
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7e2de08
 [debug] sbt-chain: module revision found in cache: org.apache.lucene#lucene-memory;4.10.3
 [debug] 	local: revision in cache: org.apache.lucene#lucene-memory;4.10.3
 [debug] 	found org.apache.lucene#lucene-memory;4.10.3 in sbt-chain
@@ -858,7 +858,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.lucene#lucene-memory;4.10.3 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.lucene#lucene-highlighter;4.10.3 [provided->default(compile)]
 [info] Resolving org.apache.lucene#lucene-highlighter;4.10.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2cce34d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5e36217
 [debug] sbt-chain: module revision found in cache: org.apache.lucene#lucene-highlighter;4.10.3
 [debug] 	local: revision in cache: org.apache.lucene#lucene-highlighter;4.10.3
 [debug] 	found org.apache.lucene#lucene-highlighter;4.10.3 in sbt-chain
@@ -867,7 +867,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.lucene#lucene-highlighter;4.10.3 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.lucene#lucene-queryparser;4.10.3 [provided->default(compile)]
 [info] Resolving org.apache.lucene#lucene-queryparser;4.10.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@66173006
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@77190e19
 [debug] sbt-chain: module revision found in cache: org.apache.lucene#lucene-queryparser;4.10.3
 [debug] 	local: revision in cache: org.apache.lucene#lucene-queryparser;4.10.3
 [debug] 	found org.apache.lucene#lucene-queryparser;4.10.3 in sbt-chain
@@ -876,7 +876,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.lucene#lucene-queryparser;4.10.3 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.lucene#lucene-sandbox;4.10.3 [provided->default(compile)]
 [info] Resolving org.apache.lucene#lucene-sandbox;4.10.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@27e25415
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5ada5c23
 [debug] sbt-chain: module revision found in cache: org.apache.lucene#lucene-sandbox;4.10.3
 [debug] 	local: revision in cache: org.apache.lucene#lucene-sandbox;4.10.3
 [debug] 	found org.apache.lucene#lucene-sandbox;4.10.3 in sbt-chain
@@ -885,7 +885,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.lucene#lucene-sandbox;4.10.3 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.lucene#lucene-suggest;4.10.3 [provided->default(compile)]
 [info] Resolving org.apache.lucene#lucene-suggest;4.10.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@47180f63
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6fe6f0ed
 [debug] sbt-chain: module revision found in cache: org.apache.lucene#lucene-suggest;4.10.3
 [debug] 	local: revision in cache: org.apache.lucene#lucene-suggest;4.10.3
 [debug] 	found org.apache.lucene#lucene-suggest;4.10.3 in sbt-chain
@@ -894,7 +894,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.lucene#lucene-suggest;4.10.3 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.lucene#lucene-misc;4.10.3 [provided->default(compile)]
 [info] Resolving org.apache.lucene#lucene-misc;4.10.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3d72e162
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@24d31f7
 [debug] sbt-chain: module revision found in cache: org.apache.lucene#lucene-misc;4.10.3
 [debug] 	local: revision in cache: org.apache.lucene#lucene-misc;4.10.3
 [debug] 	found org.apache.lucene#lucene-misc;4.10.3 in sbt-chain
@@ -903,7 +903,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.lucene#lucene-misc;4.10.3 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.lucene#lucene-join;4.10.3 [provided->default(compile)]
 [info] Resolving org.apache.lucene#lucene-join;4.10.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@10404637
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@8384f66
 [debug] sbt-chain: module revision found in cache: org.apache.lucene#lucene-join;4.10.3
 [debug] 	local: revision in cache: org.apache.lucene#lucene-join;4.10.3
 [debug] 	found org.apache.lucene#lucene-join;4.10.3 in sbt-chain
@@ -912,7 +912,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.lucene#lucene-join;4.10.3 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.lucene#lucene-grouping;4.10.3 [provided->default(compile)]
 [info] Resolving org.apache.lucene#lucene-grouping;4.10.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@25bd3618
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@65885788
 [debug] sbt-chain: module revision found in cache: org.apache.lucene#lucene-grouping;4.10.3
 [debug] 	local: revision in cache: org.apache.lucene#lucene-grouping;4.10.3
 [debug] 	found org.apache.lucene#lucene-grouping;4.10.3 in sbt-chain
@@ -921,7 +921,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.lucene#lucene-grouping;4.10.3 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.lucene#lucene-spatial;4.10.3 [provided->default(compile)]
 [info] Resolving org.apache.lucene#lucene-spatial;4.10.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@eeae5bc
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3b128250
 [debug] sbt-chain: module revision found in cache: org.apache.lucene#lucene-spatial;4.10.3
 [debug] 	local: revision in cache: org.apache.lucene#lucene-spatial;4.10.3
 [debug] 	found org.apache.lucene#lucene-spatial;4.10.3 in sbt-chain
@@ -930,7 +930,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.lucene#lucene-spatial;4.10.3 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.spatial4j#spatial4j;0.4.1 [provided->default(compile)]
 [info] Resolving com.spatial4j#spatial4j;0.4.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@783c6e19
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@151e9eb0
 [debug] sbt-chain: module revision found in cache: com.spatial4j#spatial4j;0.4.1
 [debug] 	local: revision in cache: com.spatial4j#spatial4j;0.4.1
 [debug] 	found com.spatial4j#spatial4j;0.4.1 in sbt-chain
@@ -939,7 +939,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.spatial4j#spatial4j;0.4.1 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.antlr#antlr-runtime;3.5 [provided->default(compile)]
 [info] Resolving org.antlr#antlr-runtime;3.5 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@201d0503
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7e4b86b1
 [debug] sbt-chain: module revision found in cache: org.antlr#antlr-runtime;3.5
 [debug] 	local: revision in cache: org.antlr#antlr-runtime;3.5
 [debug] 	found org.antlr#antlr-runtime;3.5 in sbt-chain
@@ -948,7 +948,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.antlr#antlr-runtime;3.5 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.ow2.asm#asm;4.1 [provided->default(compile)]
 [info] Resolving org.ow2.asm#asm;4.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7e868a99
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@126af357
 [debug] sbt-chain: module revision found in cache: org.ow2.asm#asm;4.1
 [debug] 	local: revision in cache: org.ow2.asm#asm;4.1
 [debug] 	found org.ow2.asm#asm;4.1 in sbt-chain
@@ -957,7 +957,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.ow2.asm#asm;4.1 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.ow2.asm#asm-commons;4.1 [provided->default(compile)]
 [info] Resolving org.ow2.asm#asm-commons;4.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5957fda3
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5d40bd9
 [debug] sbt-chain: module revision found in cache: org.ow2.asm#asm-commons;4.1
 [debug] 	local: revision in cache: org.ow2.asm#asm-commons;4.1
 [debug] 	found org.ow2.asm#asm-commons;4.1 in sbt-chain
@@ -966,7 +966,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.ow2.asm#asm-commons;4.1 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.json4s#json4s-native_2.10;3.2.10 [provided->default(compile)]
 [info] Resolving org.json4s#json4s-native_2.10;3.2.10 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@18f85fd7
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1b4491b4
 [debug] sbt-chain: module revision found in cache: org.json4s#json4s-native_2.10;3.2.10
 [debug] 	local: revision in cache: org.json4s#json4s-native_2.10;3.2.10
 [debug] 	found org.json4s#json4s-native_2.10;3.2.10 in sbt-chain
@@ -975,7 +975,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.json4s#json4s-native_2.10;3.2.10 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.json4s#json4s-core_2.10;3.2.10 [provided->default(compile)]
 [info] Resolving org.json4s#json4s-core_2.10;3.2.10 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@50edea1f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@40f3b083
 [debug] sbt-chain: module revision found in cache: org.json4s#json4s-core_2.10;3.2.10
 [debug] 	local: revision in cache: org.json4s#json4s-core_2.10;3.2.10
 [debug] 	found org.json4s#json4s-core_2.10;3.2.10 in sbt-chain
@@ -984,7 +984,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.json4s#json4s-core_2.10;3.2.10 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.json4s#json4s-ast_2.10;3.2.10 [provided->default(compile)]
 [info] Resolving org.json4s#json4s-ast_2.10;3.2.10 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4198e275
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@56fd32e7
 [debug] sbt-chain: module revision found in cache: org.json4s#json4s-ast_2.10;3.2.10
 [debug] 	local: revision in cache: org.json4s#json4s-ast_2.10;3.2.10
 [debug] 	found org.json4s#json4s-ast_2.10;3.2.10 in sbt-chain
@@ -993,7 +993,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.json4s#json4s-ast_2.10;3.2.10 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.thoughtworks.paranamer#paranamer;2.6 [provided->default(compile)]
 [info] Resolving com.thoughtworks.paranamer#paranamer;2.6 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@769b7af7
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6564a9a8
 [debug] sbt-chain: module revision found in cache: com.thoughtworks.paranamer#paranamer;2.6
 [debug] 	local: revision in cache: com.thoughtworks.paranamer#paranamer;2.6
 [debug] 	found com.thoughtworks.paranamer#paranamer;2.6 in sbt-chain
@@ -1002,7 +1002,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.thoughtworks.paranamer#paranamer;2.6 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.scala-lang#scalap;2.10.0 [provided->default(compile)]
 [info] Resolving org.scala-lang#scalap;2.10.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@28798c39
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@8ba9cd5
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scalap;2.10.0
 [debug] 	local: revision in cache: org.scala-lang#scalap;2.10.0
 [debug] 	found org.scala-lang#scalap;2.10.0 in sbt-chain
@@ -1011,7 +1011,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.scala-lang#scalap;2.10.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.json4s#json4s-ext_2.10;3.2.10 [provided->default(compile)]
 [info] Resolving org.json4s#json4s-ext_2.10;3.2.10 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1253b2c5
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3fa806fb
 [debug] sbt-chain: module revision found in cache: org.json4s#json4s-ext_2.10;3.2.10
 [debug] 	local: revision in cache: org.json4s#json4s-ext_2.10;3.2.10
 [debug] 	found org.json4s#json4s-ext_2.10;3.2.10 in sbt-chain
@@ -1020,7 +1020,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.json4s#json4s-ext_2.10;3.2.10 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->joda-time#joda-time;2.3 [provided->default(compile)]
 [info] Resolving joda-time#joda-time;2.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5a5360c8
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6b3dfb2f
 [debug] sbt-chain: module revision found in cache: joda-time#joda-time;2.3
 [debug] 	local: revision in cache: joda-time#joda-time;2.3
 [debug] 	found joda-time#joda-time;2.3 in sbt-chain
@@ -1029,7 +1029,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->joda-time#joda-time;2.3 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.joda#joda-convert;1.6 [provided->default(compile)]
 [info] Resolving org.joda#joda-convert;1.6 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@36649a16
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1d540ff2
 [debug] sbt-chain: module revision found in cache: org.joda#joda-convert;1.6
 [debug] 	local: revision in cache: org.joda#joda-convert;1.6
 [debug] 	found org.joda#joda-convert;1.6 in sbt-chain
@@ -1038,7 +1038,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.joda#joda-convert;1.6 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.mongodb#casbah-commons_2.10;2.7.2 [provided->default(compile)]
 [info] Resolving org.mongodb#casbah-commons_2.10;2.7.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4a30e9bd
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2fc82c90
 [debug] sbt-chain: module revision found in cache: org.mongodb#casbah-commons_2.10;2.7.2
 [debug] 	local: revision in cache: org.mongodb#casbah-commons_2.10;2.7.2
 [debug] 	found org.mongodb#casbah-commons_2.10;2.7.2 in sbt-chain
@@ -1047,7 +1047,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.mongodb#casbah-commons_2.10;2.7.2 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.github.nscala-time#nscala-time_2.10;1.0.0 [provided->default(compile)]
 [info] Resolving com.github.nscala-time#nscala-time_2.10;1.0.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@53ebdae4
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@37b36aca
 [debug] sbt-chain: module revision found in cache: com.github.nscala-time#nscala-time_2.10;1.0.0
 [debug] 	local: revision in cache: com.github.nscala-time#nscala-time_2.10;1.0.0
 [debug] 	found com.github.nscala-time#nscala-time_2.10;1.0.0 in sbt-chain
@@ -1056,7 +1056,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.github.nscala-time#nscala-time_2.10;1.0.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.mongodb#mongo-java-driver;2.12.2 [provided->default(compile)]
 [info] Resolving org.mongodb#mongo-java-driver;2.12.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@36476323
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1e65a02c
 [debug] sbt-chain: module revision found in cache: org.mongodb#mongo-java-driver;2.12.2
 [debug] 	local: revision in cache: org.mongodb#mongo-java-driver;2.12.2
 [debug] 	found org.mongodb#mongo-java-driver;2.12.2 in sbt-chain
@@ -1065,7 +1065,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.mongodb#mongo-java-driver;2.12.2 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.mongodb#casbah-core_2.10;2.7.2 [provided->default(compile)]
 [info] Resolving org.mongodb#casbah-core_2.10;2.7.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@131f3a75
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5cf70861
 [debug] sbt-chain: module revision found in cache: org.mongodb#casbah-core_2.10;2.7.2
 [debug] 	local: revision in cache: org.mongodb#casbah-core_2.10;2.7.2
 [debug] 	found org.mongodb#casbah-core_2.10;2.7.2 in sbt-chain
@@ -1074,7 +1074,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.mongodb#casbah-core_2.10;2.7.2 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.mongodb#casbah-query_2.10;2.7.2 [provided->default(compile)]
 [info] Resolving org.mongodb#casbah-query_2.10;2.7.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4c6f30d6
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@56e6a08a
 [debug] sbt-chain: module revision found in cache: org.mongodb#casbah-query_2.10;2.7.2
 [debug] 	local: revision in cache: org.mongodb#casbah-query_2.10;2.7.2
 [debug] 	found org.mongodb#casbah-query_2.10;2.7.2 in sbt-chain
@@ -1083,7 +1083,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.mongodb#casbah-query_2.10;2.7.2 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.mongodb#casbah-gridfs_2.10;2.7.2 [provided->default(compile)]
 [info] Resolving org.mongodb#casbah-gridfs_2.10;2.7.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5f6fe23d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@118d5296
 [debug] sbt-chain: module revision found in cache: org.mongodb#casbah-gridfs_2.10;2.7.2
 [debug] 	local: revision in cache: org.mongodb#casbah-gridfs_2.10;2.7.2
 [debug] 	found org.mongodb#casbah-gridfs_2.10;2.7.2 in sbt-chain
@@ -1092,7 +1092,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.mongodb#casbah-gridfs_2.10;2.7.2 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.spark-project.akka#akka-actor_2.10;2.3.4-spark [provided->default(compile)]
 [info] Resolving org.spark-project.akka#akka-actor_2.10;2.3.4-spark ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@30f7ef39
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4f5c7db4
 [debug] sbt-chain: module revision found in cache: org.spark-project.akka#akka-actor_2.10;2.3.4-spark
 [debug] 	local: revision in cache: org.spark-project.akka#akka-actor_2.10;2.3.4-spark
 [debug] 	found org.spark-project.akka#akka-actor_2.10;2.3.4-spark in sbt-chain
@@ -1101,7 +1101,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.spark-project.akka#akka-actor_2.10;2.3.4-spark [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.typesafe#config;1.2.1 [provided->default(compile)]
 [info] Resolving com.typesafe#config;1.2.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@178d6876
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5b2c25f2
 [debug] sbt-chain: module revision found in cache: com.typesafe#config;1.2.1
 [debug] 	local: revision in cache: com.typesafe#config;1.2.1
 [debug] 	found com.typesafe#config;1.2.1 in sbt-chain
@@ -1110,7 +1110,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.typesafe#config;1.2.1 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.mortbay.jetty#servlet-api;2.5-20081211 [provided->default(compile)]
 [info] Resolving org.mortbay.jetty#servlet-api;2.5-20081211 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@52f64b84
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@770d46eb
 [debug] sbt-chain: module revision found in cache: org.mortbay.jetty#servlet-api;2.5-20081211
 [debug] 	local: revision in cache: org.mortbay.jetty#servlet-api;2.5-20081211
 [debug] 	found org.mortbay.jetty#servlet-api;2.5-20081211 in sbt-chain
@@ -1119,7 +1119,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.mortbay.jetty#servlet-api;2.5-20081211 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->commons-el#commons-el;1.0 [provided->default(compile)]
 [info] Resolving commons-el#commons-el;1.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7324e3b4
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5bc11e4d
 [debug] sbt-chain: module revision found in cache: commons-el#commons-el;1.0
 [debug] 	local: revision in cache: commons-el#commons-el;1.0
 [debug] 	found commons-el#commons-el;1.0 in sbt-chain
@@ -1128,7 +1128,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->commons-el#commons-el;1.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->javax.servlet.jsp#jsp-api;2.1 [provided->default(compile)]
 [info] Resolving javax.servlet.jsp#jsp-api;2.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@37fb842b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@48453994
 [debug] sbt-chain: module revision found in cache: javax.servlet.jsp#jsp-api;2.1
 [debug] 	local: revision in cache: javax.servlet.jsp#jsp-api;2.1
 [debug] 	found javax.servlet.jsp#jsp-api;2.1 in sbt-chain
@@ -1137,7 +1137,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->javax.servlet.jsp#jsp-api;2.1 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hbase#hbase-prefix-tree;0.98.5-hadoop2 [provided->default(compile)]
 [info] Resolving org.apache.hbase#hbase-prefix-tree;0.98.5-hadoop2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5951be5d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4e1f8c30
 [debug] sbt-chain: module revision found in cache: org.apache.hbase#hbase-prefix-tree;0.98.5-hadoop2
 [debug] 	local: revision in cache: org.apache.hbase#hbase-prefix-tree;0.98.5-hadoop2
 [debug] 	found org.apache.hbase#hbase-prefix-tree;0.98.5-hadoop2 in sbt-chain
@@ -1146,7 +1146,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hbase#hbase-prefix-tree;0.98.5-hadoop2 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.typesafe.play#twirl-api_2.10;1.0.3 [provided->default(compile)]
 [info] Resolving com.typesafe.play#twirl-api_2.10;1.0.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@561a45b9
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@321fc290
 [debug] sbt-chain: module revision found in cache: com.typesafe.play#twirl-api_2.10;1.0.3
 [debug] 	local: revision in cache: com.typesafe.play#twirl-api_2.10;1.0.3
 [debug] 	found com.typesafe.play#twirl-api_2.10;1.0.3 in sbt-chain
@@ -1155,7 +1155,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.typesafe.play#twirl-api_2.10;1.0.3 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.github.scopt#scopt_2.10;3.2.0 [provided->default(compile)]
 [info] Resolving com.github.scopt#scopt_2.10;3.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7b855c57
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@9c512df
 [debug] sbt-chain: module revision found in cache: com.github.scopt#scopt_2.10;3.2.0
 [debug] 	local: revision in cache: com.github.scopt#scopt_2.10;3.2.0
 [debug] 	found com.github.scopt#scopt_2.10;3.2.0 in sbt-chain
@@ -1164,7 +1164,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.github.scopt#scopt_2.10;3.2.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.google.code.gson#gson;2.2.4 [provided->default(compile)]
 [info] Resolving com.google.code.gson#gson;2.2.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1458e4b2
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6bf00cd7
 [debug] sbt-chain: module revision found in cache: com.google.code.gson#gson;2.2.4
 [debug] 	local: revision in cache: com.google.code.gson#gson;2.2.4
 [debug] 	found com.google.code.gson#gson;2.2.4 in sbt-chain
@@ -1182,7 +1182,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.google.guava#guava;18.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.twitter#chill_2.10;0.5.0 [provided->default(compile)]
 [info] Resolving com.twitter#chill_2.10;0.5.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2f72b1e5
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@46a42166
 [debug] sbt-chain: module revision found in cache: com.twitter#chill_2.10;0.5.0
 [debug] 	local: revision in cache: com.twitter#chill_2.10;0.5.0
 [debug] 	found com.twitter#chill_2.10;0.5.0 in sbt-chain
@@ -1191,7 +1191,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.twitter#chill_2.10;0.5.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.twitter#chill-java;0.5.0 [provided->default(compile)]
 [info] Resolving com.twitter#chill-java;0.5.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@796965c4
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@10f49ebb
 [debug] sbt-chain: module revision found in cache: com.twitter#chill-java;0.5.0
 [debug] 	local: revision in cache: com.twitter#chill-java;0.5.0
 [debug] 	found com.twitter#chill-java;0.5.0 in sbt-chain
@@ -1200,7 +1200,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.twitter#chill-java;0.5.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.twitter#chill-bijection_2.10;0.5.0 [provided->default(compile)]
 [info] Resolving com.twitter#chill-bijection_2.10;0.5.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4a910630
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2e3fcba4
 [debug] sbt-chain: module revision found in cache: com.twitter#chill-bijection_2.10;0.5.0
 [debug] 	local: revision in cache: com.twitter#chill-bijection_2.10;0.5.0
 [debug] 	found com.twitter#chill-bijection_2.10;0.5.0 in sbt-chain
@@ -1209,7 +1209,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.twitter#chill-bijection_2.10;0.5.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.twitter#bijection-core_2.10;0.7.0 [provided->default(compile)]
 [info] Resolving com.twitter#bijection-core_2.10;0.7.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4cbb5843
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@678faed3
 [debug] sbt-chain: module revision found in cache: com.twitter#bijection-core_2.10;0.7.0
 [debug] 	local: revision in cache: com.twitter#bijection-core_2.10;0.7.0
 [debug] 	found com.twitter#bijection-core_2.10;0.7.0 in sbt-chain
@@ -1218,7 +1218,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.twitter#bijection-core_2.10;0.7.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->de.javakaffee#kryo-serializers;0.28 [provided->default(compile)]
 [info] Resolving de.javakaffee#kryo-serializers;0.28 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@259695bb
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5090421f
 [debug] sbt-chain: module revision found in cache: de.javakaffee#kryo-serializers;0.28
 [debug] 	local: revision in cache: de.javakaffee#kryo-serializers;0.28
 [debug] 	found de.javakaffee#kryo-serializers;0.28 in sbt-chain
@@ -1227,7 +1227,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->de.javakaffee#kryo-serializers;0.28 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.esotericsoftware.kryo#kryo;2.24.0 [provided->default(compile)]
 [info] Resolving com.esotericsoftware.kryo#kryo;2.24.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2ff72cca
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@440b6bc4
 [debug] sbt-chain: module revision found in cache: com.esotericsoftware.kryo#kryo;2.24.0
 [debug] 	local: revision in cache: com.esotericsoftware.kryo#kryo;2.24.0
 [debug] 	found com.esotericsoftware.kryo#kryo;2.24.0 in sbt-chain
@@ -1236,7 +1236,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.esotericsoftware.kryo#kryo;2.24.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.esotericsoftware.minlog#minlog;1.2 [provided->default(compile)]
 [info] Resolving com.esotericsoftware.minlog#minlog;1.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7327972a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@205f20fa
 [debug] sbt-chain: module revision found in cache: com.esotericsoftware.minlog#minlog;1.2
 [debug] 	local: revision in cache: com.esotericsoftware.minlog#minlog;1.2
 [debug] 	found com.esotericsoftware.minlog#minlog;1.2 in sbt-chain
@@ -1245,7 +1245,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.esotericsoftware.minlog#minlog;1.2 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.objenesis#objenesis;2.1 [provided->default(compile)]
 [info] Resolving org.objenesis#objenesis;2.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7833f52f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2bf13ebb
 [debug] sbt-chain: module revision found in cache: org.objenesis#objenesis;2.1
 [debug] 	local: revision in cache: org.objenesis#objenesis;2.1
 [debug] 	found org.objenesis#objenesis;2.1 in sbt-chain
@@ -1254,7 +1254,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.objenesis#objenesis;2.1 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->net.jodah#typetools;0.3.1 [provided->default(compile)]
 [info] Resolving net.jodah#typetools;0.3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@50a1f83e
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5858c244
 [debug] sbt-chain: module revision found in cache: net.jodah#typetools;0.3.1
 [debug] 	local: revision in cache: net.jodah#typetools;0.3.1
 [debug] 	found net.jodah#typetools;0.3.1 in sbt-chain
@@ -1263,7 +1263,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->net.jodah#typetools;0.3.1 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.scalaj#scalaj-http_2.10;1.1.0 [provided->default(compile)]
 [info] Resolving org.scalaj#scalaj-http_2.10;1.1.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@18f9c398
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@993a710
 [debug] sbt-chain: module revision found in cache: org.scalaj#scalaj-http_2.10;1.1.0
 [debug] 	local: revision in cache: org.scalaj#scalaj-http_2.10;1.1.0
 [debug] 	found org.scalaj#scalaj-http_2.10;1.1.0 in sbt-chain
@@ -1272,7 +1272,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.scalaj#scalaj-http_2.10;1.1.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.spark#spark-core_2.10;1.3.0 [provided->default(compile)]
 [info] Resolving org.apache.spark#spark-core_2.10;1.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2f867d85
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1e06a8c2
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-core_2.10;1.3.0
 [debug] 	local: revision in cache: org.apache.spark#spark-core_2.10;1.3.0
 [debug] 	found org.apache.spark#spark-core_2.10;1.3.0 in sbt-chain
@@ -1281,7 +1281,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.spark#spark-core_2.10;1.3.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hadoop#hadoop-client;2.2.0 [provided->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-client;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2a6ba2b3
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2c1eb0ed
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-client;2.2.0
 [debug] 	local: revision in cache: org.apache.hadoop#hadoop-client;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-client;2.2.0 in sbt-chain
@@ -1290,7 +1290,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hadoop#hadoop-client;2.2.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hadoop#hadoop-hdfs;2.2.0 [provided->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-hdfs;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6090737
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@28a1be88
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-hdfs;2.2.0
 [debug] 	local: revision in cache: org.apache.hadoop#hadoop-hdfs;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-hdfs;2.2.0 in sbt-chain
@@ -1299,7 +1299,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hadoop#hadoop-hdfs;2.2.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hadoop#hadoop-mapreduce-client-app;2.2.0 [provided->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-mapreduce-client-app;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3dc24a00
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4d3210b
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-mapreduce-client-app;2.2.0
 [debug] 	local: revision in cache: org.apache.hadoop#hadoop-mapreduce-client-app;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-mapreduce-client-app;2.2.0 in sbt-chain
@@ -1308,7 +1308,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hadoop#hadoop-mapreduce-client-app;2.2.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hadoop#hadoop-mapreduce-client-common;2.2.0 [provided->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-mapreduce-client-common;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@17332969
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5c260417
 [debug] 		tried /Users/Marco/.ivy2/local/org.apache.hadoop/hadoop-mapreduce-client-common/2.2.0/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.apache.hadoop#hadoop-mapreduce-client-common;2.2.0
 [debug] 		tried http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-common/2.2.0/hadoop-mapreduce-client-common-2.2.0.pom
@@ -1318,7 +1318,7 @@
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-common/2.2.0/hadoop-mapreduce-client-common-2.2.0.pom
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-common/2.2.0/hadoop-mapreduce-client-common-2.2.0.pom.sha1
 [debug] sha1 OK for http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-common/2.2.0/hadoop-mapreduce-client-common-2.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.hadoop#hadoop-mapreduce-client-common;2.2.0!hadoop-mapreduce-client-common.pom(pom.original) (305ms)
+[debug] 	[SUCCESSFUL ] org.apache.hadoop#hadoop-mapreduce-client-common;2.2.0!hadoop-mapreduce-client-common.pom(pom.original) (260ms)
 [info] Resolving org.apache.hadoop#hadoop-mapreduce-client;2.2.0 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.hadoop#hadoop-mapreduce-client;2.2.0 {}
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-mapreduce-client;2.2.0
@@ -1329,7 +1329,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hadoop#hadoop-mapreduce-client-common;2.2.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hadoop#hadoop-yarn-common;2.2.0 [provided->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-yarn-common;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@62e711f6
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@79f76626
 [debug] 		tried /Users/Marco/.ivy2/local/org.apache.hadoop/hadoop-yarn-common/2.2.0/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.apache.hadoop#hadoop-yarn-common;2.2.0
 [debug] 		tried http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-common/2.2.0/hadoop-yarn-common-2.2.0.pom
@@ -1339,7 +1339,7 @@
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-common/2.2.0/hadoop-yarn-common-2.2.0.pom
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-common/2.2.0/hadoop-yarn-common-2.2.0.pom.sha1
 [debug] sha1 OK for http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-common/2.2.0/hadoop-yarn-common-2.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-common;2.2.0!hadoop-yarn-common.pom(pom.original) (310ms)
+[debug] 	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-common;2.2.0!hadoop-yarn-common.pom(pom.original) (242ms)
 [info] Resolving org.apache.hadoop#hadoop-yarn;2.2.0 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.hadoop#hadoop-yarn;2.2.0 {}
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-yarn;2.2.0
@@ -1350,7 +1350,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hadoop#hadoop-yarn-common;2.2.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hadoop#hadoop-yarn-api;2.2.0 [provided->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-yarn-api;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1591c76
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@39b81121
 [debug] 		tried /Users/Marco/.ivy2/local/org.apache.hadoop/hadoop-yarn-api/2.2.0/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.apache.hadoop#hadoop-yarn-api;2.2.0
 [debug] 		tried http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-api/2.2.0/hadoop-yarn-api-2.2.0.pom
@@ -1360,7 +1360,7 @@
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-api/2.2.0/hadoop-yarn-api-2.2.0.pom
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-api/2.2.0/hadoop-yarn-api-2.2.0.pom.sha1
 [debug] sha1 OK for http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-api/2.2.0/hadoop-yarn-api-2.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-api;2.2.0!hadoop-yarn-api.pom(pom.original) (302ms)
+[debug] 	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-api;2.2.0!hadoop-yarn-api.pom(pom.original) (233ms)
 [info] Resolving org.apache.hadoop#hadoop-yarn;2.2.0 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.hadoop#hadoop-yarn;2.2.0 {}
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-yarn;2.2.0
@@ -1371,7 +1371,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hadoop#hadoop-yarn-api;2.2.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.google.inject#guice;3.0 [provided->default(compile)]
 [info] Resolving com.google.inject#guice;3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6277933f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@26139dc2
 [debug] sbt-chain: module revision found in cache: com.google.inject#guice;3.0
 [debug] 	local: revision in cache: com.google.inject#guice;3.0
 [debug] 	found com.google.inject#guice;3.0 in sbt-chain
@@ -1380,7 +1380,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.google.inject#guice;3.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->javax.inject#javax.inject;1 [provided->default(compile)]
 [info] Resolving javax.inject#javax.inject;1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@912cc5
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3919ee88
 [debug] sbt-chain: module revision found in cache: javax.inject#javax.inject;1
 [debug] 	local: revision in cache: javax.inject#javax.inject;1
 [debug] 	found javax.inject#javax.inject;1 in sbt-chain
@@ -1389,7 +1389,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->javax.inject#javax.inject;1 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->aopalliance#aopalliance;1.0 [provided->default(compile)]
 [info] Resolving aopalliance#aopalliance;1.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@66c8b6b0
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@580e1801
 [debug] sbt-chain: module revision found in cache: aopalliance#aopalliance;1.0
 [debug] 	local: revision in cache: aopalliance#aopalliance;1.0
 [debug] 	found aopalliance#aopalliance;1.0 in sbt-chain
@@ -1398,7 +1398,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->aopalliance#aopalliance;1.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.sonatype.sisu.inject#cglib;2.2.1-v20090111 [provided->default(compile)]
 [info] Resolving org.sonatype.sisu.inject#cglib;2.2.1-v20090111 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@44362822
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7eca9fda
 [debug] sbt-chain: module revision found in cache: org.sonatype.sisu.inject#cglib;2.2.1-v20090111
 [debug] 	local: revision in cache: org.sonatype.sisu.inject#cglib;2.2.1-v20090111
 [debug] 	found org.sonatype.sisu.inject#cglib;2.2.1-v20090111 in sbt-chain
@@ -1407,7 +1407,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.sonatype.sisu.inject#cglib;2.2.1-v20090111 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.sun.jersey.jersey-test-framework#jersey-test-framework-grizzly2;1.9 [provided->default(compile)]
 [info] Resolving com.sun.jersey.jersey-test-framework#jersey-test-framework-grizzly2;1.9 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6bfb6129
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6a424ad1
 [debug] sbt-chain: module revision found in cache: com.sun.jersey.jersey-test-framework#jersey-test-framework-grizzly2;1.9
 [debug] 	local: revision in cache: com.sun.jersey.jersey-test-framework#jersey-test-framework-grizzly2;1.9
 [debug] 	found com.sun.jersey.jersey-test-framework#jersey-test-framework-grizzly2;1.9 in sbt-chain
@@ -1416,7 +1416,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.sun.jersey.jersey-test-framework#jersey-test-framework-grizzly2;1.9 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.sun.jersey.contribs#jersey-guice;1.9 [provided->default(compile)]
 [info] Resolving com.sun.jersey.contribs#jersey-guice;1.9 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3dba4f2b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1e5e7d57
 [debug] sbt-chain: module revision found in cache: com.sun.jersey.contribs#jersey-guice;1.9
 [debug] 	local: revision in cache: com.sun.jersey.contribs#jersey-guice;1.9
 [debug] 	found com.sun.jersey.contribs#jersey-guice;1.9 in sbt-chain
@@ -1425,7 +1425,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.sun.jersey.contribs#jersey-guice;1.9 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hadoop#hadoop-yarn-client;2.2.0 [provided->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-yarn-client;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4ae08c3f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4dc825e8
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-yarn-client;2.2.0
 [debug] 	local: revision in cache: org.apache.hadoop#hadoop-yarn-client;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-yarn-client;2.2.0 in sbt-chain
@@ -1434,7 +1434,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hadoop#hadoop-yarn-client;2.2.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hadoop#hadoop-mapreduce-client-core;2.2.0 [provided->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-mapreduce-client-core;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@695a3deb
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@529e5e56
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-mapreduce-client-core;2.2.0
 [debug] 	local: revision in cache: org.apache.hadoop#hadoop-mapreduce-client-core;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-mapreduce-client-core;2.2.0 in sbt-chain
@@ -1443,7 +1443,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hadoop#hadoop-mapreduce-client-core;2.2.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hadoop#hadoop-yarn-server-common;2.2.0 [provided->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-yarn-server-common;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3bd03ee9
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@33d7f3ef
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-yarn-server-common;2.2.0
 [debug] 	local: revision in cache: org.apache.hadoop#hadoop-yarn-server-common;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-yarn-server-common;2.2.0 in sbt-chain
@@ -1452,7 +1452,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hadoop#hadoop-yarn-server-common;2.2.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hadoop#hadoop-mapreduce-client-shuffle;2.2.0 [provided->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-mapreduce-client-shuffle;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@31a8ee4b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2b980191
 [debug] 		tried /Users/Marco/.ivy2/local/org.apache.hadoop/hadoop-mapreduce-client-shuffle/2.2.0/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.apache.hadoop#hadoop-mapreduce-client-shuffle;2.2.0
 [debug] 		tried http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.2.0/hadoop-mapreduce-client-shuffle-2.2.0.pom
@@ -1462,7 +1462,7 @@
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.2.0/hadoop-mapreduce-client-shuffle-2.2.0.pom
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.2.0/hadoop-mapreduce-client-shuffle-2.2.0.pom.sha1
 [debug] sha1 OK for http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.2.0/hadoop-mapreduce-client-shuffle-2.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.hadoop#hadoop-mapreduce-client-shuffle;2.2.0!hadoop-mapreduce-client-shuffle.pom(pom.original) (440ms)
+[debug] 	[SUCCESSFUL ] org.apache.hadoop#hadoop-mapreduce-client-shuffle;2.2.0!hadoop-mapreduce-client-shuffle.pom(pom.original) (243ms)
 [info] Resolving org.apache.hadoop#hadoop-mapreduce-client;2.2.0 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.hadoop#hadoop-mapreduce-client;2.2.0 {}
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-mapreduce-client;2.2.0
@@ -1473,7 +1473,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hadoop#hadoop-mapreduce-client-shuffle;2.2.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hadoop#hadoop-mapreduce-client-jobclient;2.2.0 [provided->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-mapreduce-client-jobclient;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@120e8946
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3ac994c7
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-mapreduce-client-jobclient;2.2.0
 [debug] 	local: revision in cache: org.apache.hadoop#hadoop-mapreduce-client-jobclient;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-mapreduce-client-jobclient;2.2.0 in sbt-chain
@@ -1482,7 +1482,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hadoop#hadoop-mapreduce-client-jobclient;2.2.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hadoop#hadoop-yarn-server-nodemanager;2.2.0 [provided->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-yarn-server-nodemanager;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@19b2e340
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@413a3912
 [debug] 		tried /Users/Marco/.ivy2/local/org.apache.hadoop/hadoop-yarn-server-nodemanager/2.2.0/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.apache.hadoop#hadoop-yarn-server-nodemanager;2.2.0
 [debug] 		tried http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-server-nodemanager/2.2.0/hadoop-yarn-server-nodemanager-2.2.0.pom
@@ -1492,7 +1492,7 @@
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-server-nodemanager/2.2.0/hadoop-yarn-server-nodemanager-2.2.0.pom
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-server-nodemanager/2.2.0/hadoop-yarn-server-nodemanager-2.2.0.pom.sha1
 [debug] sha1 OK for http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-server-nodemanager/2.2.0/hadoop-yarn-server-nodemanager-2.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-server-nodemanager;2.2.0!hadoop-yarn-server-nodemanager.pom(pom.original) (348ms)
+[debug] 	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-server-nodemanager;2.2.0!hadoop-yarn-server-nodemanager.pom(pom.original) (299ms)
 [info] Resolving org.apache.hadoop#hadoop-yarn-server;2.2.0 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.hadoop#hadoop-yarn-server;2.2.0 {}
 [debug] 		tried /Users/Marco/.ivy2/local/org.apache.hadoop/hadoop-yarn-server/2.2.0/ivys/ivy.xml
@@ -1504,7 +1504,7 @@
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-server/2.2.0/hadoop-yarn-server-2.2.0.pom
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-server/2.2.0/hadoop-yarn-server-2.2.0.pom.sha1
 [debug] sha1 OK for http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-server/2.2.0/hadoop-yarn-server-2.2.0.pom
-[debug] 	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-server;2.2.0!hadoop-yarn-server.pom(pom.original) (307ms)
+[debug] 	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-server;2.2.0!hadoop-yarn-server.pom(pom.original) (243ms)
 [info] Resolving org.apache.hadoop#hadoop-yarn;2.2.0 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.hadoop#hadoop-yarn;2.2.0 {}
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-yarn;2.2.0
@@ -1518,7 +1518,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.hadoop#hadoop-yarn-server-nodemanager;2.2.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.spark#spark-network-common_2.10;1.3.0 [provided->default(compile)]
 [info] Resolving org.apache.spark#spark-network-common_2.10;1.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3cda3afa
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@52d4e3b8
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-network-common_2.10;1.3.0
 [debug] 	local: revision in cache: org.apache.spark#spark-network-common_2.10;1.3.0
 [debug] 	found org.apache.spark#spark-network-common_2.10;1.3.0 in sbt-chain
@@ -1527,7 +1527,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.spark#spark-network-common_2.10;1.3.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->io.netty#netty-all;4.0.23.Final [provided->default(compile)]
 [info] Resolving io.netty#netty-all;4.0.23.Final ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@71349e8f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4597006d
 [debug] sbt-chain: module revision found in cache: io.netty#netty-all;4.0.23.Final
 [debug] 	local: revision in cache: io.netty#netty-all;4.0.23.Final
 [debug] 	found io.netty#netty-all;4.0.23.Final in sbt-chain
@@ -1536,7 +1536,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->io.netty#netty-all;4.0.23.Final [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.spark-project.spark#unused;1.0.0 [provided->default(compile)]
 [info] Resolving org.spark-project.spark#unused;1.0.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4d8f7f29
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5c8d3899
 [debug] sbt-chain: module revision found in cache: org.spark-project.spark#unused;1.0.0
 [debug] 	local: revision in cache: org.spark-project.spark#unused;1.0.0
 [debug] 	found org.spark-project.spark#unused;1.0.0 in sbt-chain
@@ -1545,7 +1545,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.spark-project.spark#unused;1.0.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.spark#spark-network-shuffle_2.10;1.3.0 [provided->default(compile)]
 [info] Resolving org.apache.spark#spark-network-shuffle_2.10;1.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3692560
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5049d87e
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-network-shuffle_2.10;1.3.0
 [debug] 	local: revision in cache: org.apache.spark#spark-network-shuffle_2.10;1.3.0
 [debug] 	found org.apache.spark#spark-network-shuffle_2.10;1.3.0 in sbt-chain
@@ -1554,7 +1554,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.spark#spark-network-shuffle_2.10;1.3.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.curator#curator-recipes;2.4.0 [provided->default(compile)]
 [info] Resolving org.apache.curator#curator-recipes;2.4.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@52bd6dba
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@52e61335
 [debug] sbt-chain: module revision found in cache: org.apache.curator#curator-recipes;2.4.0
 [debug] 	local: revision in cache: org.apache.curator#curator-recipes;2.4.0
 [debug] 	found org.apache.curator#curator-recipes;2.4.0 in sbt-chain
@@ -1563,7 +1563,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.curator#curator-recipes;2.4.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.curator#curator-framework;2.4.0 [provided->default(compile)]
 [info] Resolving org.apache.curator#curator-framework;2.4.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1187fc90
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@47de8fce
 [debug] sbt-chain: module revision found in cache: org.apache.curator#curator-framework;2.4.0
 [debug] 	local: revision in cache: org.apache.curator#curator-framework;2.4.0
 [debug] 	found org.apache.curator#curator-framework;2.4.0 in sbt-chain
@@ -1572,7 +1572,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.curator#curator-framework;2.4.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.curator#curator-client;2.4.0 [provided->default(compile)]
 [info] Resolving org.apache.curator#curator-client;2.4.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5ec262e9
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@189d646d
 [debug] sbt-chain: module revision found in cache: org.apache.curator#curator-client;2.4.0
 [debug] 	local: revision in cache: org.apache.curator#curator-client;2.4.0
 [debug] 	found org.apache.curator#curator-client;2.4.0 in sbt-chain
@@ -1581,7 +1581,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.curator#curator-client;2.4.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [provided->default(compile)]
 [info] Resolving org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@70d74942
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1fc13384
 [debug] sbt-chain: module revision found in cache: org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016
 [debug] 	local: revision in cache: org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016
 [debug] 	found org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 in sbt-chain
@@ -1590,7 +1590,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.commons#commons-lang3;3.3.2 [provided->default(compile)]
 [info] Resolving org.apache.commons#commons-lang3;3.3.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@eae1f5e
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7676f71a
 [debug] sbt-chain: module revision found in cache: org.apache.commons#commons-lang3;3.3.2
 [debug] 	local: revision in cache: org.apache.commons#commons-lang3;3.3.2
 [debug] 	found org.apache.commons#commons-lang3;3.3.2 in sbt-chain
@@ -1599,7 +1599,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.commons#commons-lang3;3.3.2 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.slf4j#slf4j-api;1.7.10 [provided->default(compile)]
 [info] Resolving org.slf4j#slf4j-api;1.7.10 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5b498400
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@72c0f66d
 [debug] sbt-chain: module revision found in cache: org.slf4j#slf4j-api;1.7.10
 [debug] 	local: revision in cache: org.slf4j#slf4j-api;1.7.10
 [debug] 	found org.slf4j#slf4j-api;1.7.10 in sbt-chain
@@ -1608,7 +1608,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.slf4j#slf4j-api;1.7.10 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.slf4j#jul-to-slf4j;1.7.10 [provided->default(compile)]
 [info] Resolving org.slf4j#jul-to-slf4j;1.7.10 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@579b7cfb
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@420a4728
 [debug] sbt-chain: module revision found in cache: org.slf4j#jul-to-slf4j;1.7.10
 [debug] 	local: revision in cache: org.slf4j#jul-to-slf4j;1.7.10
 [debug] 	found org.slf4j#jul-to-slf4j;1.7.10 in sbt-chain
@@ -1617,7 +1617,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.slf4j#jul-to-slf4j;1.7.10 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.10 [provided->default(compile)]
 [info] Resolving org.slf4j#jcl-over-slf4j;1.7.10 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5ce58167
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3c387943
 [debug] sbt-chain: module revision found in cache: org.slf4j#jcl-over-slf4j;1.7.10
 [debug] 	local: revision in cache: org.slf4j#jcl-over-slf4j;1.7.10
 [debug] 	found org.slf4j#jcl-over-slf4j;1.7.10 in sbt-chain
@@ -1626,7 +1626,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.10 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.slf4j#slf4j-log4j12;1.7.10 [provided->default(compile)]
 [info] Resolving org.slf4j#slf4j-log4j12;1.7.10 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2f7cf95d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1d24f6fc
 [debug] sbt-chain: module revision found in cache: org.slf4j#slf4j-log4j12;1.7.10
 [debug] 	local: revision in cache: org.slf4j#slf4j-log4j12;1.7.10
 [debug] 	found org.slf4j#slf4j-log4j12;1.7.10 in sbt-chain
@@ -1635,7 +1635,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.slf4j#slf4j-log4j12;1.7.10 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.ning#compress-lzf;1.0.0 [provided->default(compile)]
 [info] Resolving com.ning#compress-lzf;1.0.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4d92cc90
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@526ecff
 [debug] sbt-chain: module revision found in cache: com.ning#compress-lzf;1.0.0
 [debug] 	local: revision in cache: com.ning#compress-lzf;1.0.0
 [debug] 	found com.ning#compress-lzf;1.0.0 in sbt-chain
@@ -1653,7 +1653,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.xerial.snappy#snappy-java;1.1.1.6 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->net.jpountz.lz4#lz4;1.2.0 [provided->default(compile)]
 [info] Resolving net.jpountz.lz4#lz4;1.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@42ae6e40
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2ec22ea9
 [debug] sbt-chain: module revision found in cache: net.jpountz.lz4#lz4;1.2.0
 [debug] 	local: revision in cache: net.jpountz.lz4#lz4;1.2.0
 [debug] 	found net.jpountz.lz4#lz4;1.2.0 in sbt-chain
@@ -1662,7 +1662,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->net.jpountz.lz4#lz4;1.2.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.roaringbitmap#RoaringBitmap;0.4.5 [provided->default(compile)]
 [info] Resolving org.roaringbitmap#RoaringBitmap;0.4.5 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3b08a65d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2b096d4a
 [debug] sbt-chain: module revision found in cache: org.roaringbitmap#RoaringBitmap;0.4.5
 [debug] 	local: revision in cache: org.roaringbitmap#RoaringBitmap;0.4.5
 [debug] 	found org.roaringbitmap#RoaringBitmap;0.4.5 in sbt-chain
@@ -1671,7 +1671,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.roaringbitmap#RoaringBitmap;0.4.5 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.spark-project.akka#akka-remote_2.10;2.3.4-spark [provided->default(compile)]
 [info] Resolving org.spark-project.akka#akka-remote_2.10;2.3.4-spark ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@68069986
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7474bf39
 [debug] sbt-chain: module revision found in cache: org.spark-project.akka#akka-remote_2.10;2.3.4-spark
 [debug] 	local: revision in cache: org.spark-project.akka#akka-remote_2.10;2.3.4-spark
 [debug] 	found org.spark-project.akka#akka-remote_2.10;2.3.4-spark in sbt-chain
@@ -1680,7 +1680,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.spark-project.akka#akka-remote_2.10;2.3.4-spark [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->io.netty#netty;3.8.0.Final [provided->default(compile)]
 [info] Resolving io.netty#netty;3.8.0.Final ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6042e9f8
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@451218fb
 [debug] sbt-chain: module revision found in cache: io.netty#netty;3.8.0.Final
 [debug] 	local: revision in cache: io.netty#netty;3.8.0.Final
 [debug] 	found io.netty#netty;3.8.0.Final in sbt-chain
@@ -1689,7 +1689,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->io.netty#netty;3.8.0.Final [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.spark-project.protobuf#protobuf-java;2.5.0-spark [provided->default(compile)]
 [info] Resolving org.spark-project.protobuf#protobuf-java;2.5.0-spark ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5e71418f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@42f5d545
 [debug] sbt-chain: module revision found in cache: org.spark-project.protobuf#protobuf-java;2.5.0-spark
 [debug] 	local: revision in cache: org.spark-project.protobuf#protobuf-java;2.5.0-spark
 [debug] 	found org.spark-project.protobuf#protobuf-java;2.5.0-spark in sbt-chain
@@ -1698,7 +1698,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.spark-project.protobuf#protobuf-java;2.5.0-spark [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [provided->default(compile)]
 [info] Resolving org.uncommons.maths#uncommons-maths;1.2.2a ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@546cab2f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7bb595e9
 [debug] sbt-chain: module revision found in cache: org.uncommons.maths#uncommons-maths;1.2.2a
 [debug] 	local: revision in cache: org.uncommons.maths#uncommons-maths;1.2.2a
 [debug] 	found org.uncommons.maths#uncommons-maths;1.2.2a in sbt-chain
@@ -1707,7 +1707,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.spark-project.akka#akka-slf4j_2.10;2.3.4-spark [provided->default(compile)]
 [info] Resolving org.spark-project.akka#akka-slf4j_2.10;2.3.4-spark ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6ae2d3b3
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7cd78dd8
 [debug] sbt-chain: module revision found in cache: org.spark-project.akka#akka-slf4j_2.10;2.3.4-spark
 [debug] 	local: revision in cache: org.spark-project.akka#akka-slf4j_2.10;2.3.4-spark
 [debug] 	found org.spark-project.akka#akka-slf4j_2.10;2.3.4-spark in sbt-chain
@@ -1716,7 +1716,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.spark-project.akka#akka-slf4j_2.10;2.3.4-spark [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.json4s#json4s-jackson_2.10;3.2.10 [provided->default(compile)]
 [info] Resolving org.json4s#json4s-jackson_2.10;3.2.10 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4e774abb
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7fc265a2
 [debug] sbt-chain: module revision found in cache: org.json4s#json4s-jackson_2.10;3.2.10
 [debug] 	local: revision in cache: org.json4s#json4s-jackson_2.10;3.2.10
 [debug] 	found org.json4s#json4s-jackson_2.10;3.2.10 in sbt-chain
@@ -1725,7 +1725,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.json4s#json4s-jackson_2.10;3.2.10 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.mesos#mesos;0.21.0 [provided->default(compile)]
 [info] Resolving org.apache.mesos#mesos;0.21.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5541bbba
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2329bbfa
 [debug] sbt-chain: module revision found in cache: org.apache.mesos#mesos;0.21.0
 [debug] 	local: revision in cache: org.apache.mesos#mesos;0.21.0
 [debug] 	found org.apache.mesos#mesos;0.21.0 in sbt-chain
@@ -1734,7 +1734,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.mesos#mesos;0.21.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.clearspring.analytics#stream;2.7.0 [provided->default(compile)]
 [info] Resolving com.clearspring.analytics#stream;2.7.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@427e76a5
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@58bb931
 [debug] sbt-chain: module revision found in cache: com.clearspring.analytics#stream;2.7.0
 [debug] 	local: revision in cache: com.clearspring.analytics#stream;2.7.0
 [debug] 	found com.clearspring.analytics#stream;2.7.0 in sbt-chain
@@ -1743,7 +1743,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.clearspring.analytics#stream;2.7.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->io.dropwizard.metrics#metrics-core;3.1.0 [provided->default(compile)]
 [info] Resolving io.dropwizard.metrics#metrics-core;3.1.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3601a519
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@511eddbe
 [debug] sbt-chain: module revision found in cache: io.dropwizard.metrics#metrics-core;3.1.0
 [debug] 	local: revision in cache: io.dropwizard.metrics#metrics-core;3.1.0
 [debug] 	found io.dropwizard.metrics#metrics-core;3.1.0 in sbt-chain
@@ -1752,7 +1752,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->io.dropwizard.metrics#metrics-core;3.1.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->io.dropwizard.metrics#metrics-jvm;3.1.0 [provided->default(compile)]
 [info] Resolving io.dropwizard.metrics#metrics-jvm;3.1.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4d900027
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6b224b7e
 [debug] sbt-chain: module revision found in cache: io.dropwizard.metrics#metrics-jvm;3.1.0
 [debug] 	local: revision in cache: io.dropwizard.metrics#metrics-jvm;3.1.0
 [debug] 	found io.dropwizard.metrics#metrics-jvm;3.1.0 in sbt-chain
@@ -1761,7 +1761,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->io.dropwizard.metrics#metrics-jvm;3.1.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->io.dropwizard.metrics#metrics-json;3.1.0 [provided->default(compile)]
 [info] Resolving io.dropwizard.metrics#metrics-json;3.1.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5e89bf9
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@327c9ea3
 [debug] sbt-chain: module revision found in cache: io.dropwizard.metrics#metrics-json;3.1.0
 [debug] 	local: revision in cache: io.dropwizard.metrics#metrics-json;3.1.0
 [debug] 	found io.dropwizard.metrics#metrics-json;3.1.0 in sbt-chain
@@ -1770,7 +1770,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->io.dropwizard.metrics#metrics-json;3.1.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->io.dropwizard.metrics#metrics-graphite;3.1.0 [provided->default(compile)]
 [info] Resolving io.dropwizard.metrics#metrics-graphite;3.1.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6241a8cc
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@78ee39dc
 [debug] sbt-chain: module revision found in cache: io.dropwizard.metrics#metrics-graphite;3.1.0
 [debug] 	local: revision in cache: io.dropwizard.metrics#metrics-graphite;3.1.0
 [debug] 	found io.dropwizard.metrics#metrics-graphite;3.1.0 in sbt-chain
@@ -1779,7 +1779,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->io.dropwizard.metrics#metrics-graphite;3.1.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.4.4 [provided->default(compile)]
 [info] Resolving com.fasterxml.jackson.core#jackson-databind;2.4.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@54cad901
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@18d4b390
 [debug] sbt-chain: module revision found in cache: com.fasterxml.jackson.core#jackson-databind;2.4.4
 [debug] 	local: revision in cache: com.fasterxml.jackson.core#jackson-databind;2.4.4
 [debug] 	found com.fasterxml.jackson.core#jackson-databind;2.4.4 in sbt-chain
@@ -1788,7 +1788,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.4.4 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.fasterxml.jackson.core#jackson-core;2.4.4 [provided->default(compile)]
 [info] Resolving com.fasterxml.jackson.core#jackson-core;2.4.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@61935f97
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@381001f8
 [debug] sbt-chain: module revision found in cache: com.fasterxml.jackson.core#jackson-core;2.4.4
 [debug] 	local: revision in cache: com.fasterxml.jackson.core#jackson-core;2.4.4
 [debug] 	found com.fasterxml.jackson.core#jackson-core;2.4.4 in sbt-chain
@@ -1797,7 +1797,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.fasterxml.jackson.core#jackson-core;2.4.4 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.fasterxml.jackson.module#jackson-module-scala_2.10;2.4.4 [provided->default(compile)]
 [info] Resolving com.fasterxml.jackson.module#jackson-module-scala_2.10;2.4.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@28ea2429
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5fae8e92
 [debug] sbt-chain: module revision found in cache: com.fasterxml.jackson.module#jackson-module-scala_2.10;2.4.4
 [debug] 	local: revision in cache: com.fasterxml.jackson.module#jackson-module-scala_2.10;2.4.4
 [debug] 	found com.fasterxml.jackson.module#jackson-module-scala_2.10;2.4.4 in sbt-chain
@@ -1806,7 +1806,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.fasterxml.jackson.module#jackson-module-scala_2.10;2.4.4 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.scala-lang#scala-reflect;2.10.4 [provided->default(compile)]
 [info] Resolving org.scala-lang#scala-reflect;2.10.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2d5eb64a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@21cf5032
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.10.4
 [debug] 	local: revision in cache: org.scala-lang#scala-reflect;2.10.4
 [debug] 	found org.scala-lang#scala-reflect;2.10.4 in sbt-chain
@@ -1816,7 +1816,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.scala-lang#scala-reflect;2.10.4 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.fasterxml.jackson.core#jackson-annotations;2.4.4 [provided->default(compile)]
 [info] Resolving com.fasterxml.jackson.core#jackson-annotations;2.4.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7a9dc6cc
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2f0e011e
 [debug] sbt-chain: module revision found in cache: com.fasterxml.jackson.core#jackson-annotations;2.4.4
 [debug] 	local: revision in cache: com.fasterxml.jackson.core#jackson-annotations;2.4.4
 [debug] 	found com.fasterxml.jackson.core#jackson-annotations;2.4.4 in sbt-chain
@@ -1825,7 +1825,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.fasterxml.jackson.core#jackson-annotations;2.4.4 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.ivy#ivy;2.4.0 [provided->default(compile)]
 [info] Resolving org.apache.ivy#ivy;2.4.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@56b58a90
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@12731337
 [debug] sbt-chain: module revision found in cache: org.apache.ivy#ivy;2.4.0
 [debug] 	local: revision in cache: org.apache.ivy#ivy;2.4.0
 [debug] 	found org.apache.ivy#ivy;2.4.0 in sbt-chain
@@ -1834,7 +1834,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.ivy#ivy;2.4.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->oro#oro;2.0.8 [provided->default(compile)]
 [info] Resolving oro#oro;2.0.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7d086890
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@62796f5d
 [debug] sbt-chain: module revision found in cache: oro#oro;2.0.8
 [debug] 	local: revision in cache: oro#oro;2.0.8
 [debug] 	found oro#oro;2.0.8 in sbt-chain
@@ -1843,7 +1843,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->oro#oro;2.0.8 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.tachyonproject#tachyon-client;0.5.0 [provided->default(compile)]
 [info] Resolving org.tachyonproject#tachyon-client;0.5.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@10ba4a7c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@45accc45
 [debug] sbt-chain: module revision found in cache: org.tachyonproject#tachyon-client;0.5.0
 [debug] 	local: revision in cache: org.tachyonproject#tachyon-client;0.5.0
 [debug] 	found org.tachyonproject#tachyon-client;0.5.0 in sbt-chain
@@ -1852,7 +1852,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.tachyonproject#tachyon-client;0.5.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.tachyonproject#tachyon;0.5.0 [provided->default(compile)]
 [info] Resolving org.tachyonproject#tachyon;0.5.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@783879bf
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@410e0ad6
 [debug] sbt-chain: module revision found in cache: org.tachyonproject#tachyon;0.5.0
 [debug] 	local: revision in cache: org.tachyonproject#tachyon;0.5.0
 [debug] 	found org.tachyonproject#tachyon;0.5.0 in sbt-chain
@@ -1861,7 +1861,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.tachyonproject#tachyon;0.5.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.spark-project#pyrolite;2.0.1 [provided->default(compile)]
 [info] Resolving org.spark-project#pyrolite;2.0.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@15bcf54c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5ab7236d
 [debug] sbt-chain: module revision found in cache: org.spark-project#pyrolite;2.0.1
 [debug] 	local: revision in cache: org.spark-project#pyrolite;2.0.1
 [debug] 	found org.spark-project#pyrolite;2.0.1 in sbt-chain
@@ -1870,7 +1870,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.spark-project#pyrolite;2.0.1 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->net.sf.py4j#py4j;0.8.2.1 [provided->default(compile)]
 [info] Resolving net.sf.py4j#py4j;0.8.2.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@763aeede
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@25a60e92
 [debug] sbt-chain: module revision found in cache: net.sf.py4j#py4j;0.8.2.1
 [debug] 	local: revision in cache: net.sf.py4j#py4j;0.8.2.1
 [debug] 	found net.sf.py4j#py4j;0.8.2.1 in sbt-chain
@@ -1879,7 +1879,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->net.sf.py4j#py4j;0.8.2.1 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.spark#spark-mllib_2.10;1.3.0 [provided->default(compile)]
 [info] Resolving org.apache.spark#spark-mllib_2.10;1.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4663045f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@a42c36a
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-mllib_2.10;1.3.0
 [debug] 	local: revision in cache: org.apache.spark#spark-mllib_2.10;1.3.0
 [debug] 	found org.apache.spark#spark-mllib_2.10;1.3.0 in sbt-chain
@@ -1888,7 +1888,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.spark#spark-mllib_2.10;1.3.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.spark#spark-streaming_2.10;1.3.0 [provided->default(compile)]
 [info] Resolving org.apache.spark#spark-streaming_2.10;1.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@78eeda85
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@25d3fea
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-streaming_2.10;1.3.0
 [debug] 	local: revision in cache: org.apache.spark#spark-streaming_2.10;1.3.0
 [debug] 	found org.apache.spark#spark-streaming_2.10;1.3.0 in sbt-chain
@@ -1897,7 +1897,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.spark#spark-streaming_2.10;1.3.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.spark#spark-sql_2.10;1.3.0 [provided->default(compile)]
 [info] Resolving org.apache.spark#spark-sql_2.10;1.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@56ba59d0
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@17341505
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-sql_2.10;1.3.0
 [debug] 	local: revision in cache: org.apache.spark#spark-sql_2.10;1.3.0
 [debug] 	found org.apache.spark#spark-sql_2.10;1.3.0 in sbt-chain
@@ -1906,7 +1906,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.spark#spark-sql_2.10;1.3.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.spark#spark-catalyst_2.10;1.3.0 [provided->default(compile)]
 [info] Resolving org.apache.spark#spark-catalyst_2.10;1.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@73a38bf9
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@51117970
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-catalyst_2.10;1.3.0
 [debug] 	local: revision in cache: org.apache.spark#spark-catalyst_2.10;1.3.0
 [debug] 	found org.apache.spark#spark-catalyst_2.10;1.3.0 in sbt-chain
@@ -1915,7 +1915,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.spark#spark-catalyst_2.10;1.3.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [provided->default(compile)]
 [info] Resolving org.scala-lang#scala-compiler;2.10.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3f06dbe2
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2dfd98a3
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-compiler;2.10.4
 [debug] 	local: revision in cache: org.scala-lang#scala-compiler;2.10.4
 [debug] 	found org.scala-lang#scala-compiler;2.10.4 in sbt-chain
@@ -1924,7 +1924,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.scalamacros#quasiquotes_2.10;2.0.1 [provided->default(compile)]
 [info] Resolving org.scalamacros#quasiquotes_2.10;2.0.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@22aeea8d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6a4007f
 [debug] sbt-chain: module revision found in cache: org.scalamacros#quasiquotes_2.10;2.0.1
 [debug] 	local: revision in cache: org.scalamacros#quasiquotes_2.10;2.0.1
 [debug] 	found org.scalamacros#quasiquotes_2.10;2.0.1 in sbt-chain
@@ -1933,7 +1933,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.scalamacros#quasiquotes_2.10;2.0.1 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.twitter#parquet-column;1.6.0rc3 [provided->default(compile)]
 [info] Resolving com.twitter#parquet-column;1.6.0rc3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4f84fc0a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2e96efa0
 [debug] sbt-chain: module revision found in cache: com.twitter#parquet-column;1.6.0rc3
 [debug] 	local: revision in cache: com.twitter#parquet-column;1.6.0rc3
 [debug] 	found com.twitter#parquet-column;1.6.0rc3 in sbt-chain
@@ -1942,7 +1942,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.twitter#parquet-column;1.6.0rc3 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.twitter#parquet-common;1.6.0rc3 [provided->default(compile)]
 [info] Resolving com.twitter#parquet-common;1.6.0rc3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5dcae6ad
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7998a477
 [debug] sbt-chain: module revision found in cache: com.twitter#parquet-common;1.6.0rc3
 [debug] 	local: revision in cache: com.twitter#parquet-common;1.6.0rc3
 [debug] 	found com.twitter#parquet-common;1.6.0rc3 in sbt-chain
@@ -1951,7 +1951,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.twitter#parquet-common;1.6.0rc3 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.twitter#parquet-encoding;1.6.0rc3 [provided->default(compile)]
 [info] Resolving com.twitter#parquet-encoding;1.6.0rc3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7933ee1b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@50a72ad7
 [debug] sbt-chain: module revision found in cache: com.twitter#parquet-encoding;1.6.0rc3
 [debug] 	local: revision in cache: com.twitter#parquet-encoding;1.6.0rc3
 [debug] 	found com.twitter#parquet-encoding;1.6.0rc3 in sbt-chain
@@ -1960,7 +1960,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.twitter#parquet-encoding;1.6.0rc3 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.twitter#parquet-generator;1.6.0rc3 [provided->default(compile)]
 [info] Resolving com.twitter#parquet-generator;1.6.0rc3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@27e712ef
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@69b06fdc
 [debug] sbt-chain: module revision found in cache: com.twitter#parquet-generator;1.6.0rc3
 [debug] 	local: revision in cache: com.twitter#parquet-generator;1.6.0rc3
 [debug] 	found com.twitter#parquet-generator;1.6.0rc3 in sbt-chain
@@ -1969,7 +1969,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.twitter#parquet-generator;1.6.0rc3 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.twitter#parquet-hadoop;1.6.0rc3 [provided->default(compile)]
 [info] Resolving com.twitter#parquet-hadoop;1.6.0rc3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1a19c3c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@43ffff1b
 [debug] sbt-chain: module revision found in cache: com.twitter#parquet-hadoop;1.6.0rc3
 [debug] 	local: revision in cache: com.twitter#parquet-hadoop;1.6.0rc3
 [debug] 	found com.twitter#parquet-hadoop;1.6.0rc3 in sbt-chain
@@ -1978,7 +1978,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.twitter#parquet-hadoop;1.6.0rc3 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.twitter#parquet-format;2.2.0-rc1 [provided->default(compile)]
 [info] Resolving com.twitter#parquet-format;2.2.0-rc1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4824fba
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@33beb41c
 [debug] sbt-chain: module revision found in cache: com.twitter#parquet-format;2.2.0-rc1
 [debug] 	local: revision in cache: com.twitter#parquet-format;2.2.0-rc1
 [debug] 	found com.twitter#parquet-format;2.2.0-rc1 in sbt-chain
@@ -1987,7 +1987,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.twitter#parquet-format;2.2.0-rc1 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.twitter#parquet-jackson;1.6.0rc3 [provided->default(compile)]
 [info] Resolving com.twitter#parquet-jackson;1.6.0rc3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3e701a07
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@25476063
 [debug] sbt-chain: module revision found in cache: com.twitter#parquet-jackson;1.6.0rc3
 [debug] 	local: revision in cache: com.twitter#parquet-jackson;1.6.0rc3
 [debug] 	found com.twitter#parquet-jackson;1.6.0rc3 in sbt-chain
@@ -1996,7 +1996,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.twitter#parquet-jackson;1.6.0rc3 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.jodd#jodd-core;3.6.3 [provided->default(compile)]
 [info] Resolving org.jodd#jodd-core;3.6.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@26bf2b04
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@74cfc49c
 [debug] sbt-chain: module revision found in cache: org.jodd#jodd-core;3.6.3
 [debug] 	local: revision in cache: org.jodd#jodd-core;3.6.3
 [debug] 	found org.jodd#jodd-core;3.6.3 in sbt-chain
@@ -2005,7 +2005,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.jodd#jodd-core;3.6.3 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.spark#spark-graphx_2.10;1.3.0 [provided->default(compile)]
 [info] Resolving org.apache.spark#spark-graphx_2.10;1.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2bf4be66
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6cbaabd5
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-graphx_2.10;1.3.0
 [debug] 	local: revision in cache: org.apache.spark#spark-graphx_2.10;1.3.0
 [debug] 	found org.apache.spark#spark-graphx_2.10;1.3.0 in sbt-chain
@@ -2014,7 +2014,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.apache.spark#spark-graphx_2.10;1.3.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.jblas#jblas;1.2.3 [provided->default(compile)]
 [info] Resolving org.jblas#jblas;1.2.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@11958e5c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@341959a5
 [debug] sbt-chain: module revision found in cache: org.jblas#jblas;1.2.3
 [debug] 	local: revision in cache: org.jblas#jblas;1.2.3
 [debug] 	found org.jblas#jblas;1.2.3 in sbt-chain
@@ -2023,7 +2023,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.jblas#jblas;1.2.3 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.scalanlp#breeze_2.10;0.11.1 [provided->default(compile)]
 [info] Resolving org.scalanlp#breeze_2.10;0.11.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3c821271
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@a5598ba
 [debug] sbt-chain: module revision found in cache: org.scalanlp#breeze_2.10;0.11.1
 [debug] 	local: revision in cache: org.scalanlp#breeze_2.10;0.11.1
 [debug] 	found org.scalanlp#breeze_2.10;0.11.1 in sbt-chain
@@ -2032,7 +2032,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.scalanlp#breeze_2.10;0.11.1 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.scalanlp#breeze-macros_2.10;0.11.1 [provided->default(compile)]
 [info] Resolving org.scalanlp#breeze-macros_2.10;0.11.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1895064e
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6e6cff9a
 [debug] sbt-chain: module revision found in cache: org.scalanlp#breeze-macros_2.10;0.11.1
 [debug] 	local: revision in cache: org.scalanlp#breeze-macros_2.10;0.11.1
 [debug] 	found org.scalanlp#breeze-macros_2.10;0.11.1 in sbt-chain
@@ -2041,7 +2041,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.scalanlp#breeze-macros_2.10;0.11.1 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.github.fommil.netlib#core;1.1.2 [provided->default(compile)]
 [info] Resolving com.github.fommil.netlib#core;1.1.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@56e418c5
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@788563ed
 [debug] sbt-chain: module revision found in cache: com.github.fommil.netlib#core;1.1.2
 [debug] 	local: revision in cache: com.github.fommil.netlib#core;1.1.2
 [debug] 	found com.github.fommil.netlib#core;1.1.2 in sbt-chain
@@ -2050,7 +2050,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.github.fommil.netlib#core;1.1.2 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->net.sourceforge.f2j#arpack_combined_all;0.1 [provided->default(compile)]
 [info] Resolving net.sourceforge.f2j#arpack_combined_all;0.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4ca2d88c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3c9416e7
 [debug] sbt-chain: module revision found in cache: net.sourceforge.f2j#arpack_combined_all;0.1
 [debug] 	local: revision in cache: net.sourceforge.f2j#arpack_combined_all;0.1
 [debug] 	found net.sourceforge.f2j#arpack_combined_all;0.1 in sbt-chain
@@ -2059,7 +2059,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->net.sourceforge.f2j#arpack_combined_all;0.1 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->net.sf.opencsv#opencsv;2.3 [provided->default(compile)]
 [info] Resolving net.sf.opencsv#opencsv;2.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7aa2eb3c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1eb9ba08
 [debug] sbt-chain: module revision found in cache: net.sf.opencsv#opencsv;2.3
 [debug] 	local: revision in cache: net.sf.opencsv#opencsv;2.3
 [debug] 	found net.sf.opencsv#opencsv;2.3 in sbt-chain
@@ -2068,7 +2068,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->net.sf.opencsv#opencsv;2.3 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.github.rwl#jtransforms;2.4.0 [provided->default(compile)]
 [info] Resolving com.github.rwl#jtransforms;2.4.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5134b567
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@70b063f6
 [debug] sbt-chain: module revision found in cache: com.github.rwl#jtransforms;2.4.0
 [debug] 	local: revision in cache: com.github.rwl#jtransforms;2.4.0
 [debug] 	found com.github.rwl#jtransforms;2.4.0 in sbt-chain
@@ -2077,7 +2077,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->com.github.rwl#jtransforms;2.4.0 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.spire-math#spire_2.10;0.7.4 [provided->default(compile)]
 [info] Resolving org.spire-math#spire_2.10;0.7.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@10685466
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6addff5f
 [debug] sbt-chain: module revision found in cache: org.spire-math#spire_2.10;0.7.4
 [debug] 	local: revision in cache: org.spire-math#spire_2.10;0.7.4
 [debug] 	found org.spire-math#spire_2.10;0.7.4 in sbt-chain
@@ -2086,7 +2086,7 @@
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.spire-math#spire_2.10;0.7.4 [provided->master]
 [debug] == resolving dependencies io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT->org.spire-math#spire-macros_2.10;0.7.4 [provided->default(compile)]
 [info] Resolving org.spire-math#spire-macros_2.10;0.7.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@53c70d71
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7a4a038
 [debug] sbt-chain: module revision found in cache: org.spire-math#spire-macros_2.10;0.7.4
 [debug] 	local: revision in cache: org.spire-math#spire-macros_2.10;0.7.4
 [debug] 	found org.spire-math#spire-macros_2.10;0.7.4 in sbt-chain
@@ -6251,7 +6251,7 @@
 [debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar(doc)
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar(doc)
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar(src)
-[debug] :: resolution report :: resolve 16664ms :: artifacts dl 694ms
+[debug] :: resolution report :: resolve 22856ms :: artifacts dl 801ms
 [debug] 	report for io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT compile produced in /Users/Marco/TextManipulationEngine/target/resolution-cache/reports/io.prediction-textmanipulationengine$sources_javadoc_2.10-compile.xml
 [debug] 	report for io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT runtime produced in /Users/Marco/TextManipulationEngine/target/resolution-cache/reports/io.prediction-textmanipulationengine$sources_javadoc_2.10-runtime.xml
 [debug] 	report for io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT test produced in /Users/Marco/TextManipulationEngine/target/resolution-cache/reports/io.prediction-textmanipulationengine$sources_javadoc_2.10-test.xml
@@ -6265,4 +6265,4 @@
 [debug] 	report for io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT docs produced in /Users/Marco/TextManipulationEngine/target/resolution-cache/reports/io.prediction-textmanipulationengine$sources_javadoc_2.10-docs.xml
 [debug] 	report for io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT pom produced in /Users/Marco/TextManipulationEngine/target/resolution-cache/reports/io.prediction-textmanipulationengine$sources_javadoc_2.10-pom.xml
 [debug] 	report for io.prediction#textmanipulationengine$sources_javadoc_2.10;0.1-SNAPSHOT scala-tool produced in /Users/Marco/TextManipulationEngine/target/resolution-cache/reports/io.prediction-textmanipulationengine$sources_javadoc_2.10-scala-tool.xml
-[debug] 	resolve done (16664ms resolve - 694ms download)
+[debug] 	resolve done (22856ms resolve - 801ms download)
