@@ -9,6 +9,11 @@
 \everymath{\displaystyle}
 \setlength\parindent{0pt}
 
+
+\newcommand*\encircled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=1pt] (char) {#1};}}
+\newcommand*\rected[1]{\tikz[baseline=(char.base)]{
+            \node[shape=rectangle,draw,inner sep=2pt] (char) {#1};}}
 \newcommand{\dlim}{\underset{\longrightarrow}{\lim} \ }
 \newcommand{\field}[1]{\mathbb{#1}}
 \newcommand{\N}{\field{N}}
@@ -67,98 +72,74 @@
   \int}
 \def\lowint{\mkern3mu\underline{\vphantom{\intop}\mkern7mu}\mkern-10mu\int}
 \begin{document}
-\title{\vspace{-1.5 cm}\bf{Text Manipulation Engine Tutorial}}
+\title{\vspace{-1.5 cm}\bf{ \Large PredictionIO Engine Template: Modeling Text Data}}
 \author{\vspace{-1.5cm}}
 \date{}
 \maketitle
 
-This tutorial will serve three purposes: (i) this will serve as a guide for creating an engine from scratch using Intellij IDEA (we will be using version 14); (ii) show you how to integrate an open source library (we will be using Apache's OpenNLP library), and (iii) prepare you with tools for working with text data.
+\section*{\normalsize Introduction}
+
+The purpose of this tutorial is to illustrate how to model text data using PredictionIO's engine platform. We will be largely mirroring the tutorial provided for Scikit's Learn package title \enquote{Working With Text Data.} However, we will be providing instructions for building the model using PredictionIO's engine platform. The advantages of using this framework include the usage of Apache Spark for distributed computation which is crucial for computation with large data sets, as well as the capacity to use a newly trained predictive model to respond to queries in real-time. 
+
+We will assume the user is running the PredictionIO version 0.9.2, and meets all minimum computing requirements. To download PredictionIO, follow the instructions on the Getting Started tutorial.
+
+\section*{\normalsize Engine Overview}
 
 
-\section*{Prerequisites}
-
-First and foremost, you should have \bf{PredictionIO} installed. To do this, follow the instructions listed on the following site \tt{"http://docs.prediction.io/install/"}. We will be using \bf{Intellij IDEA} to develop this engine.
-
-\section*{Setting Up the Engine as an SBT Project}
-
-Once you have downloaded \bf{Intellij IDEA}, install the Scala plugin. Now, click on New Project (in the File tab on the toolbar), and select the following project settings
-
-\begin{center}
-\vspace{0.6cm}
-\includegraphics[width=7in, height=4in, keepaspectratio=true, trim=0em 3em 0em 3em]{img1.png}
-\end{center}
-\vspace{0.5cm}
-
-Go ahead and click Next. To simplify things, go ahead and check the four boxes corresponding to the options : Use auto-import, Create directories for empty content roots automatically, Download sources and docs, Download SBT sources and docs. Save this project in a desired directory, and click Finish. For illustration purposes, we will assume this project is saved in a project directory called TextManipulationEngine.
-
-The new project should now be initialized. Expand the \enquote{project} directory in your sidebar (shown below)
-
-\begin{center}
-\vspace{0.6cm}
-\includegraphics[width=3in, height=2in, keepaspectratio=true, trim=0em 3em 0em 3em]{img2.png}
-\end{center}
-\vspace{0.5cm}
 
 
-Upon expanding, you should see four different items. Go ahead and select the files \tt{build.properties} and \tt{plugins.sbt}, right-click and select Delete as we will not be needing these files. Now, right-click on the main project directory (corresponding to the symbol consisting of three blue lines), select New and then File. You will name this file \tt{assembly.sbt}. In this file you will include the line
-$$
-\tt{addSbtPlugin("com.eed3si9n" \% "sbt-assembly" \% "0.13.0")}
-$$
-You may need to change the version number (the string following the second \%) depending on what version of SBT you are using. Now, repeat the latter step, this time creating a file named \tt{pio-build.sbt}. In this file, you will include the line
-$$
-\tt{addSbtPlugin("io.prediction" \% "pio-build" \% "0.9.0")}
-$$
-Modify the version number as necessary. 
+As a user, we are charged with collecting data and importing it into an event server. The data is then read and processed by our engine via the \tt{DataSource} and \tt{Preparation} components. The \tt{Algorithm} engine component then trains a predictive model using the processed, or prepared, data. Once we have trained a model, we are ready to deploy our engine and respond to real-time queries via the \tt{Serving} component. 
 
-Alright, now we are ready to setup our \tt{build.sbt} file. Modify this to include only the following:
-\begin{verbatim}
-name := "TextManipulationEngine"
+We are given our observations as a set of strings $\mathcal{S}.$ In a general setting, there are two different kind of problems we can be given. In the first, each string $s$ contained in $\mathcal{S}$ is also associated to a class label $y$ taking values in $\{1, 2, ..., K\},$ where $K$ is an integer, which we can think of as a categorical, or class, label.We may proceed by learning a predictive model $f,$ a function which takes in a string $s$ and outputs a class label, using the observed data pairs $(y, s).$ Once we have learned $f$ then given a new string $s_\text{new},$ we can predict a class label $f(s_\text{new}).$ This is an example of a supervised learning problem. To exemplify the second kind of problem, suppose we are only given the set of strings $\mathcal {S},$ and are asked to group the string together into $K$ different groups based on a set of characteristics which we extract from the strings. This is an example of an unsupervised learning problem. 
 
-libraryDependencies ++= Seq(
-  "io.prediction"    %% "core"        % pioVersion.value % "provided",
-  "org.apache.spark" %% "spark-core"  % "1.2.0"          % "provided",
-  "org.apache.spark" %% "spark-mllib" % "1.2.0"          % "provided"
-)
-\end{verbatim}
-Again, modify version numbers as necessary. Now, recall that we will be using Apache's OpenNLP library for purposes of text manipulation. To include this, you will add the following line to your \tt{build.sbt} file:
-$$
-\tt{libraryDependencies += "org.apache.opennlp" \% "opennlp-tools" \% "1.5.3"}
-$$
-At this point, you should be able to compile your project. 
+In both cases, we are tasked with learning a model $f.$ However, before this we must first represent our strings $s$ in such a manner so that we may apply existing machine learning methods provided in the Spark MLLib library. We will be using the Apache OpenNLP tools library for the purpose of data representation. 
 
-We are now ready to start developing our engine, but first we will download some data which we will be using to test our engine. This is the subject of the following section.
-
-\section*{Import Data}
-
-For illustration purposes, we will be using the data available for the following Kaggle competition:
-$$
-\tt{https://www.kaggle.com/c/sentiment-analysis-on-movie-reviews/data}
-$$
-Create a directory in the TextManipulationEngine called \enquote{data.} Download the \tt{train.tsv} zip file from the Kaggle competition site, unzip the file, and place the resulting \tt{tsv} file in the data directory you just created. We now recall how your app will interact with our engine:
-
-\begin{center}
-\vspace{0.6cm}
-\includegraphics[width=4in, height=3in, keepaspectratio=true, trim=0em 3em 0em 3em]{img3.png}
-\end{center}
-\vspace{0.5cm}
+Our engine includes a Data Model implementation which deals with representing our text data as numeric feature vectors. The Training Model here is an abstract framework representing a set of Scala classes that can produce a supervised (or unsupervised) learning model. For our supervised training model implementation, $f$ will be a classifier, and for our unsupervised training model, an assignment of class labels for each string in $\mathcal{S}.$ The following diagram shows the how the provided Modeling Text Data Engine template functionality is structured, and the interactions between your web/app, the provided Event Server, and our Modeling Text Data Engine.
 
 
-As a user, we are charged with collecting data and importing it into an event server. The data will then be read and processed by our engine via the \tt{DataSource} and \tt{Preparation} components. The \tt{Algorithm} engine component then trains a predictive model using the processed, or prepared, data. Once we have trained a model, we are ready to deploy our engine and respond to real-time queries via the \tt{Serving} component.
 
-In this section, we are dealing with the data collection process. The data we have collected is stored in \tt{train.tsv}. We will be using the PredictionIO Python SDK to import our data into PredictionIO's Event Server. Let's first explore our data a little bit more using our Terminal shell. First change into the TextManipulationEngine directory. From here using the command \tt{head -n 2 data/train.tsv}, we obtain in the following output, the first two lines of our data document:
+
+\centerline{
+\xymatrixcolsep{3pc}\xymatrix{
+& \\
+\encircled{\bf{Event Server}} \ar[r] & \\
+& \ar[ldd] \\
+& \\
+\encircled{\bf{Your Web/App}} \ar[ruu] \ar[uuu]^{\text{Event Data}}& 
+}
+\rected{
+\xymatrixcolsep{2pc}\xymatrix{
+\encircled{Data Source}\ar[r]& \encircled{Preparator} \ar[r] \ar[d]& \encircled{Algorithm} \ar[d] \ar[r] & \encircled{Serving} \\
+\bf{Engine} & \encircled{Data Model} \ar[ru] & \encircled{Training Model} \ar[ru]&
+}}}
+
+
+We begin the data collection stage by importing a Scikit Learn dataset, \tt{20newsgroups}, into PredictionIO's event server. 
+
+\section*{\normalsize Importing Data}
+
+We will be using Scikit Learn's datasets module. Let's get a better feel for the data: initialize your Python interpreter and type the following lines:
 
 \begin{verbatim}
-PhraseId	SentenceId	Phrase	Sentiment
-1	1	A series of escapades demonstrating the adage that what is good for the goose 
-is also good for the gander , some of which occasionally amuses but none of which 
-amounts to much of a story .	1
+>>> from sklearn.datasets import fetch_20newsgroups
+>>> twenty_train = fetch_20newsgroups(subset = 'train',
+...                                     shuffle = True,
+...                                     random_state = 10)
 \end{verbatim}
 
-The first line gives us our variable names, and the second gives us the first observation of our data. We will take note of the variable names, but use the command 
-$$
-\tt{sed -e "1d" data/train.tsv > x; mv x data/train.tsv}
-$$ 
-to remove the first line from the document to avoid complications when reading the data later.  We also note that each observation's data entry is separated by a  $\backslash\tt{t}$ character. We are now ready to import our data into the event server. 
+This initializes a dictionary-like object as can be seen in the following output:
+
+\begin{verbatim}
+>>> twenty_train.keys()
+dict_keys(['filenames', 'DESCR', 'target', 'data', 'target_names'])
+\end{verbatim}
+
+What we are interested in here are the target an data entries. Type in the following line to see how we prepare the Scikit data prior to importing it to the PredictionIO Event Server.
+
+\begin{verbatim}
+>>> [(twenty_train.target[k], twenty_train.data[k]) 
+...  for k in range(len(twenty_train.data))][0]
+\end{verbatim}
 
 Our main tool from the Python SDK that we will use to import our data into the event server is the class \tt{EventClient} and its method \tt{create\_event}. Now, in your data directory create a file named \tt{import\_eventserver.py}. Initialize the script by adding the following lines:
 \begin{verbatim}
@@ -171,93 +152,23 @@ $$
 $$
 We will process each line in the file and convert it to a list of strings. Once each line is processed, an event is created using the aforementioned client method. We will be assigning various properties to our data so that our engine can successfully read the corresponding event data parts that will be needed to train our predictive model. Your function should look similar to the following:
 \begin{verbatim}
-def import_events(client, file):
-    f, count = open(file, 'r'), 0
-    print("Importing data...")
-    for line in f:
+def import_events(client):
+    train = ((float(twenty_train.target[k]), twenty_train.data[k])
+             for k in range(len(twenty_train.data)))
+    count = 0
+    print('Importing data.....')
+    for elem in train:
         count += 1
-        line = line.replace('\n', '').split('\t')
         client.create_event(
-            event = "text",
-            entity_id = line[0],
-            entity_type = "user",
+            event = "documents",
+            entity_id = count,
+            entity_type = "source",
             properties = {
-                "text" : line[2],
-                "label" : line[3],
-            }
-        )
-    f.close()
+                "label": elem[0],
+                "text": elem[1]
+            })
     print("Imported {0} events.".format(count))
 \end{verbatim}
-
-In the latter function we save as event properties the actual text data itself, and the classification label associated to it. In the future, it will be easier to abstract our learning predictors/features as simply strings of text. Also, since we are storing as an event property a label associated to each string, we can both illustrate supervised training (classification) and unsupervised training (clustering) with this text data.
-
-\break
-
-The library \tt{argparse} is a Python module used to read in arguments from the command line. In this tutorial, this will be used when we want to enter the appropriate access key for our application. The remaining code for our Python script sets these arguments settings, and initializes an \tt{EventClient} instance, and finally calls our \tt{import\_event} function on the client instance and the given file argument.
-
-\begin{verbatim}
-if __name__ == '__main__':
-    parser = argparse.ArgumentParser(
-        description="Import sample data for text manipulation engine")
-    parser.add_argument('--access_key', default='invald_access_key')
-    parser.add_argument('--url', default="http://localhost:7070")
-    parser.add_argument('--file', default="./data/train.tsv")
-
-    args = parser.parse_args()
-
-    client = predictionio.EventClient(
-        access_key=args.access_key,
-        url=args.url,
-        threads=5,
-        qsize=500)
-
-    import_events(client, args.file)
-\end{verbatim}
-
-Awesome! Now, we are ready to import our data into PredictionIO's Event Server. To do this, using Terminal, go to the TextManipulationEngine directory. First, to avoid any errors due to currently running instances, go ahead and type in the command \tt{pio-stop-all}. Now, restart the process by typing \tt{pio-start-all}, and create a new application by typing in the command \tt{pio app new TextApp1}. You should see set of lines of output of the form
-\begin{verbatim}
-[INFO] [App$] Initialized Event Store for this app ID: 5.
-[INFO] [App$] Created new app:
-[INFO] [App$]       Name: TextApp1
-[INFO] [App$]         ID: 5
-[INFO] [App$] Access Key: *****
-\end{verbatim}
-Take note of your access key. Now, run the following command to begin importing events:
-$$
-\tt{python data/import\_eventserver.py --access\_key *****}
-$$
-This part may take a little while, but if the data is successfully loaded you should see the following printed output:
-\begin{verbatim}
-Importing data...
-Imported 156060 events.
-\end{verbatim}
-
-We will now go ahead and begin integrating the OpenNLP library for use in our engine. 
-
-\break
-
-\section*{Integrating OpenNLP and Building a Text Processing Toolset}
-
-Currently each observation $x$ in our data can be expressed in the form $(y_x, D_x)$ where $y_x$ is a discrete variable, and $D_x,$ some string, or document. We cannot yet perform a learning algorithm on the document data in its current representation, as we must first transform it to an appropriate numeric representation. The simplest model to do this is to assume each document $D_x$ is of the form
-$$
-\text{token}_{x, 1} \ \ \text{token}_{x, 2} \ \ \cdots \ \ \text{token}_{x, m_x}.
-$$
-These tokens can be words, punctuation symbols, or even single characters. In the case of our sample data, we are dealing with phrases and sentences which perfectly match this form. The two representations of our text data matrix that we will use for training in this tutorial are based on the following construction.
-
-We will let $\mathcal{V},$ our vocabulary, denote the set of all tokens appearing in our data documents. For any practical application, this set will be finite, and so we can assume some arbitrary indexing by integers on our tokens $t_1, ..., t_{|\mathcal{V}|}.$ Now, we can associate to our vocabulary a real vector space of dimension $|\mathcal{V}|$ by assigning the $i^\text{th}$ standard basis vector to the $i^\text{th}$ token in the vocabulary $\3(\text{for those algebraists out there, this is simply the free $\R$-module over $\mathcal{V}$}\4).$ This construction allows us to represent our documents as vectors in this vector space! 
-
-Of course, in order to even begin implementing anything relating to the latter construction, we need to be able to tokenize each of our documents. Let's start by creating a class called \tt{TextVectorizer} and defining a private method called \tt{tokenize}. We will use OpenNLP's \tt{SimpleTokenizer} class to do this, which can be imported with the statement \tt{import opennlp.tools.tokenize.SimpleTokenizer}. We note that there are other choices available in the OpenNLP library for tokenizers if you wishes to explore a more fitting option for your needs.
-
-
-To do this, we can easily define a function \tt{tokenize} that takes in a document (or sentence represented as type \tt{String} in Scala), and returns an array of tokens in the order that they appear in the document. 
-
-\subsection*{Bag-of-Words Model}
-
-In this model, we want to transform each document $D$ into a collection of pairs $(t, n_t)$ where $t$ denotes a unique token appearing in $D,$ and $n_t$ the number of counts it appears in the document. We will then embed $D$ as a vector with entry $n_t$ corresponding the basis vector associated to the token $t$, and 0 for all entries corresponding to tokens not present in $D.$ For example, say that my 
-
-
-
 
 
 

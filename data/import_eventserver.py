@@ -30,8 +30,7 @@ def import_stopwords(client):
         
 
 def import_events(client):
-    train = ((float(twenty_train.target[k]),
-              twenty_train.data[k])
+    train = ((float(twenty_train.target[k]), twenty_train.data[k])
              for k in range(len(twenty_train.data)))
     count = 0
     print('Importing data.....')
