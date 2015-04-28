@@ -3,11 +3,6 @@ from sklearn.feature_extraction import text
 import predictionio
 import argparse
 
-categories = ['comp.graphics', 'comp.os.ms-windows.misc', 'comp.sys.ibm.pc.hardware',
-              'comp.sys.mac.hardware', 'comp.windows.x', 'sci.crypt', 'sci.electronics',
-              'sci.med', 'sci.space']
-
-
 twenty_train = fetch_20newsgroups(subset = 'train',
                                   shuffle=True,
                                   random_state=10,

@@ -1,5 +1,6 @@
 package TextManipulationEngine
 
+import io.prediction.controller.SanityCheck
 import io.prediction.controller.{PPreparator, Params}
 import io.prediction.data.store.LEventStore
 import io.prediction.data.store.PEventStore
@@ -32,10 +33,15 @@ class Preparator(pp: PreparatorParams) extends PPreparator[TrainingData, Prepare
 
 class PreparedData(
                     val dataModel: DataModel
-                    ) extends Serializable {
+                    ) extends Serializable with SanityCheck {
   override def toString() : String = {
-    dataModel.td.data.count.toString +
+    dataModel.td.data.count.toString + ", no. stopwords" +
       dataModel.stopWords.size.toString
+  }
+
+  override def sanityCheck(): Unit = {
+    // add your other checking here
+    println(this.toString())
   }
 }
 
