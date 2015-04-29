@@ -54,66 +54,52 @@ class DataModel(
   private val numDocs: Double = hashedData.count.toDouble
 
   // Creates token-gram universe.
-  private def createUniverse(u: RDD[Map[String, Double]]): RDD[(Long, (String, Double))] = {
+  private def createUniverse(u: RDD[Map[String, Double]]): Array[(Long, (String, Double))] = {
     u.flatMap(identity).map(
       e => (e._1, 1.0)
     ).reduceByKey(_ + _).map(
         e => (e._1, log(numDocs / e._2))
-      ).zipWithIndex.map(_.swap)
+      ).zipWithIndex.map(_.swap).collect
   }
 
 
   // Create token universe zipped, and corresponding idf values.
-  private var universe = createUniverse(hashedData).cache
-  private val numTokens = universe.count.toInt
+  private val universe = createUniverse(hashedData)
+  private val numTokens = universe.size
 
 
   // Transforms a given string document into a data vector
   // based on the given data model (tfidf indicates whether
   // tfidf transformation performed.
-  def transform(doc: String, tfidf: Boolean = tfidf): Vector = {
-
-    // Some helper funcitons.
-    val f : Int => String = (k : Int) => universe.lookup(k)(0)._1
-    val g = (map: Map[String, Double], k: Int) => {
-      val x = map.getOrElse(f(k), 0.0)
-      val n = map.values.sum
-      if (tfidf) (x / n) * universe.lookup(k)(0)._2 else x
-    }
-
-
+  def transform(doc: String, tfidf: Boolean = tfidf): Array[Double] = {
     val hashedDoc = hashDoc(doc)
-    val indexSeq : Seq[Int] = (0 until numTokens).filter(
-      k => hashedDoc.keySet.contains(f(k))
-    )
-
-    Vectors.sparse(numTokens, indexSeq.map(k => (k, g(hashedDoc, k))))
+    val n = hashedDoc.values.sum
+    val x = universe.map(e => hashedDoc.getOrElse(e._2._1, 0.0) / n)
+    if (tfidf)
+      x.zip(universe.map(_._2._2)).map(e => e._1 * e._2)
+    else x
   }
 
 
   // Returns a data instance that is ready to be used for
   // model training.
   def transformData: RDD[LabeledPoint] = {
+    val x = td.data.map(e => (e.label, hashDoc(e.text)))
 
     // Some helper functions.
-    val e = (x : Map[String, Double], y : (String, Double)) => {
-      val n = x.values.sum
-      val z = x.getOrElse(y._1, 0.0)
-      if (tfidf) (z / n) * y._2 else z
+    val f_help = (map : Map[String, Double], pair: (String, Double)) =>
+      map.keySet.contains(pair._1)
+    val g_help = (map : Map[String, Double], pair : (String, Double), n : Double) => {
+      val x = map.getOrElse(pair._1, 0.0)
+      if (tfidf) (x / n) * pair._2 else x
     }
-    val f = (obs : Observation, dataId : Long) => (dataId, (obs.label, hashDoc(obs.text)))
-    val g = (x : (Long, (Double, Map[String, Double])), y : (Long, (String, Double))) =>
-      ((x._1, x._2._1), (y._1.toInt, e(x._2._2, y._2)))
+    val h_help = (map : Map[String, Double], arr : Array[(Long, (String, Double))]) =>
+      arr.map(e => (e._1.toInt, g_help(map, e._2, map.values.sum)))
 
-    // Map training data to RDD[LabeledPoint].
-    td.data.zipWithUniqueId.map(
-      e => f(e._1, e._2)
-    ).cartesian(universe).filter(
-      e => e._1._2._2.keySet.contains(e._2._2._1)).map(
-        e => g(e._1, e._2)).groupByKey.map(
-        e => LabeledPoint(
-          e._1._2, Vectors.sparse(numTokens, e._2.toSeq))
-      )
 
+    x.map(e => (e._1, e._2, universe.filter(f => f_help(e._2, f._2)))).map(
+      e => LabeledPoint(e._1, Vectors.sparse(
+        numTokens, h_help(e._2, e._3)
+      )))
   }
 }
