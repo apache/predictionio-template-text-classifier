@@ -26,16 +26,6 @@ class Preparator(pp: PreparatorParams) extends PPreparator[TrainingData, Prepare
 
 class PreparedData(
                     val dataModel: DataModel
-                    ) extends Serializable with SanityCheck {
-  override def toString() : String = {
-    dataModel.td.data.count.toString + ", " +
-      dataModel.td.stopWords.size.toString + ", " +
-      dataModel.universe.size.toString
-  }
+                    ) extends Serializable
 
-  override def sanityCheck(): Unit = {
-    // add your other checking here
-    println(this.toString())
-  }
-}
 

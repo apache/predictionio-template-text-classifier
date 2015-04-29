@@ -23,7 +23,7 @@ class SupervisedModel(
 
   private def getScores(doc: String): Array[Double] = {
     def normalize(u: Array[Double]): Array[Double] = u.map(_ / u.sum)
-    val x: Array[Double] = pd.dataModel.transform(doc)
+    val x: Array[Double] = pd.dataModel.transform(doc).toArray
     normalize((nb.pi zip nb.theta).map(
       e => exp(innerProduct(e._2, x) + e._1)
     ))

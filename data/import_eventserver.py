@@ -11,6 +11,7 @@ stop_words = text.ENGLISH_STOP_WORDS
 
 def import_stopwords(client):
     count = 0
+    print("Importing stop words.....")
     for elem in stop_words:
         count += 1
         client.create_event(
@@ -20,7 +21,7 @@ def import_stopwords(client):
             properties = {
                 "word" : elem
             })
-    print("Imported {0} stopwords.".format(count))
+    print("Imported {0} stop words.".format(count))
         
 
 def import_events(client):

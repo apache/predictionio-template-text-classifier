@@ -7,10 +7,10 @@
 		revision="0.1-SNAPSHOT"
 		conf="compile-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20150428123725"/>
+		date="20150428211224"/>
 	<dependencies>
 		<module organisation="org.apache.spark" name="spark-mllib_2.10">
-			<revision name="1.3.0" status="release" pubdate="20150305154336" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spark.apache.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="186">
+			<revision name="1.3.0" status="release" pubdate="20150305154336" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spark.apache.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="181">
 				<metadata-artifact status="no" details="" size="39724" time="0" location="/Users/Marco/.ivy2/cache/org.apache.spark/spark-mllib_2.10/ivy-1.3.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.10/1.3.0/spark-mllib_2.10-1.3.0.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -27,7 +27,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scalanlp" name="breeze_2.10">
-			<revision name="0.11.1" status="release" pubdate="20150303205632" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scalanlp.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="202">
+			<revision name="0.11.1" status="release" pubdate="20150303205632" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scalanlp.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="197">
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="4481" time="0" location="/Users/Marco/.ivy2/cache/org.scalanlp/breeze_2.10/ivy-0.11.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scalanlp/breeze_2.10/0.11.1/breeze_2.10-0.11.1.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="0.11.1" rev-constraint-default="0.11.1" rev-constraint-dynamic="0.11.1" callerrev="0.1-SNAPSHOT"/>
@@ -45,7 +45,7 @@
 			</revision>
 		</module>
 		<module organisation="org.spire-math" name="spire_2.10">
-			<revision name="0.7.4" status="release" pubdate="20140424082204" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spire-math.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="208">
+			<revision name="0.7.4" status="release" pubdate="20140424082204" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spire-math.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="203">
 				<license name="BSD-style" url="http://opensource.org/licenses/MIT"/>
 				<metadata-artifact status="no" details="" size="3151" time="0" location="/Users/Marco/.ivy2/cache/org.spire-math/spire_2.10/ivy-0.7.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/spire-math/spire_2.10/0.7.4/spire_2.10-0.7.4.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="0.7.4" rev-constraint-default="0.7.4" rev-constraint-dynamic="0.7.4" callerrev="0.1-SNAPSHOT"/>
@@ -63,7 +63,7 @@
 			</revision>
 		</module>
 		<module organisation="org.spire-math" name="spire-macros_2.10">
-			<revision name="0.7.4" status="release" pubdate="20140424081914" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spire-math.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="209">
+			<revision name="0.7.4" status="release" pubdate="20140424081914" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spire-math.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="204">
 				<license name="BSD-style" url="http://opensource.org/licenses/MIT"/>
 				<metadata-artifact status="no" details="" size="3028" time="0" location="/Users/Marco/.ivy2/cache/org.spire-math/spire-macros_2.10/ivy-0.7.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/spire-math/spire-macros_2.10/0.7.4/spire-macros_2.10-0.7.4.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="0.7.4" rev-constraint-default="0.7.4" rev-constraint-dynamic="0.7.4" callerrev="0.1-SNAPSHOT"/>
@@ -81,7 +81,7 @@
 			</revision>
 		</module>
 		<module organisation="com.github.rwl" name="jtransforms">
-			<revision name="2.4.0" status="release" pubdate="20120519070656" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://sourceforge.net/projects/jtransforms/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="207">
+			<revision name="2.4.0" status="release" pubdate="20120519070656" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://sourceforge.net/projects/jtransforms/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="202">
 				<license name="MPL" url="http://www.mozilla.org/MPL/2.0/index.txt"/>
 				<license name="LGPL" url="http://www.gnu.org/licenses/lgpl-2.1.txt"/>
 				<license name="GPL" url="http://www.gnu.org/licenses/gpl-2.0.txt"/>
@@ -101,7 +101,7 @@
 			</revision>
 		</module>
 		<module organisation="net.sf.opencsv" name="opencsv">
-			<revision name="2.3" status="release" pubdate="20110727220018" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://opencsv.sf.net" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="206">
+			<revision name="2.3" status="release" pubdate="20110727220018" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://opencsv.sf.net" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="201">
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3222" time="0" location="/Users/Marco/.ivy2/cache/net.sf.opencsv/opencsv/ivy-2.3.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/net/sf/opencsv/opencsv/2.3/opencsv-2.3.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="2.3" rev-constraint-default="2.3" rev-constraint-dynamic="2.3" callerrev="0.1-SNAPSHOT"/>
@@ -119,7 +119,7 @@
 			</revision>
 		</module>
 		<module organisation="com.github.fommil.netlib" name="core">
-			<revision name="1.1.2" status="release" pubdate="20131126035411" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="204">
+			<revision name="1.1.2" status="release" pubdate="20131126035411" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="199">
 				<metadata-artifact status="no" details="" size="4801" time="0" location="/Users/Marco/.ivy2/cache/com.github.fommil.netlib/core/ivy-1.1.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/github/fommil/netlib/core/1.1.2/core-1.1.2.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="1.1.2" rev-constraint-default="1.1.2" rev-constraint-dynamic="1.1.2" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -136,7 +136,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scalanlp" name="breeze-macros_2.10">
-			<revision name="0.11.1" status="release" pubdate="20150303205005" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scalanlp.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="203">
+			<revision name="0.11.1" status="release" pubdate="20150303205005" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scalanlp.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="198">
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="3142" time="0" location="/Users/Marco/.ivy2/cache/org.scalanlp/breeze-macros_2.10/ivy-0.11.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scalanlp/breeze-macros_2.10/0.11.1/breeze-macros_2.10-0.11.1.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="0.11.1" rev-constraint-default="0.11.1" rev-constraint-dynamic="0.11.1" callerrev="0.1-SNAPSHOT"/>
@@ -154,7 +154,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.spark" name="spark-graphx_2.10">
-			<revision name="1.3.0" status="release" pubdate="20150305154416" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spark.apache.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="200">
+			<revision name="1.3.0" status="release" pubdate="20150305154416" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spark.apache.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="195">
 				<metadata-artifact status="no" details="" size="38022" time="0" location="/Users/Marco/.ivy2/cache/org.apache.spark/spark-graphx_2.10/ivy-1.3.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.10/1.3.0/spark-graphx_2.10-1.3.0.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -171,7 +171,7 @@
 			</revision>
 		</module>
 		<module organisation="org.jblas" name="jblas">
-			<revision name="1.2.3" status="release" pubdate="20130213062349" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jblas.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="201">
+			<revision name="1.2.3" status="release" pubdate="20130213062349" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jblas.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="196">
 				<license name="BSD 3-clause style license" url="http://opensource.org/licenses/BSD-3-Clause"/>
 				<metadata-artifact status="no" details="" size="3120" time="0" location="/Users/Marco/.ivy2/cache/org.jblas/jblas/ivy-1.2.3.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/jblas/jblas/1.2.3/jblas-1.2.3.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="1.2.3" rev-constraint-default="1.2.3" rev-constraint-dynamic="1.2.3" callerrev="0.1-SNAPSHOT"/>
@@ -189,7 +189,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.spark" name="spark-sql_2.10">
-			<revision name="1.3.0" status="release" pubdate="20150305154329" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spark.apache.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="188">
+			<revision name="1.3.0" status="release" pubdate="20150305154329" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spark.apache.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="183">
 				<metadata-artifact status="no" details="" size="39259" time="0" location="/Users/Marco/.ivy2/cache/org.apache.spark/spark-sql_2.10/ivy-1.3.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/spark/spark-sql_2.10/1.3.0/spark-sql_2.10-1.3.0.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -206,7 +206,7 @@
 			</revision>
 		</module>
 		<module organisation="org.jodd" name="jodd-core">
-			<revision name="3.6.3" status="release" pubdate="20141203030042" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jodd.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="199">
+			<revision name="3.6.3" status="release" pubdate="20141203030042" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jodd.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="194">
 				<license name="The New BSD License" url="http://jodd.org/license.html"/>
 				<metadata-artifact status="no" details="" size="2375" time="0" location="/Users/Marco/.ivy2/cache/org.jodd/jodd-core/ivy-3.6.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jodd/jodd-core/3.6.3/jodd-core-3.6.3.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="3.6.3" rev-constraint-default="3.6.3" rev-constraint-dynamic="3.6.3" callerrev="0.1-SNAPSHOT"/>
@@ -224,7 +224,7 @@
 			</revision>
 		</module>
 		<module organisation="com.twitter" name="parquet-hadoop">
-			<revision name="1.6.0rc3" status="release" pubdate="20141002143012" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/Parquet/parquet-mr" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="196">
+			<revision name="1.6.0rc3" status="release" pubdate="20141002143012" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/Parquet/parquet-mr" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="191">
 				<metadata-artifact status="no" details="" size="5937" time="0" location="/Users/Marco/.ivy2/cache/com.twitter/parquet-hadoop/ivy-1.6.0rc3.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/twitter/parquet-hadoop/1.6.0rc3/parquet-hadoop-1.6.0rc3.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="1.6.0rc3" rev-constraint-default="1.6.0rc3" rev-constraint-dynamic="1.6.0rc3" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -241,7 +241,7 @@
 			</revision>
 		</module>
 		<module organisation="com.twitter" name="parquet-jackson">
-			<revision name="1.6.0rc3" status="release" pubdate="20141002142948" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/Parquet/parquet-mr" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="198">
+			<revision name="1.6.0rc3" status="release" pubdate="20141002142948" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/Parquet/parquet-mr" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="193">
 				<metadata-artifact status="no" details="" size="5331" time="0" location="/Users/Marco/.ivy2/cache/com.twitter/parquet-jackson/ivy-1.6.0rc3.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/twitter/parquet-jackson/1.6.0rc3/parquet-jackson-1.6.0rc3.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="1.6.0rc3" rev-constraint-default="1.6.0rc3" rev-constraint-dynamic="1.6.0rc3" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -258,7 +258,7 @@
 			</revision>
 		</module>
 		<module organisation="com.twitter" name="parquet-format">
-			<revision name="2.2.0-rc1" status="release" pubdate="20140903134820" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://parquet.incubator.apache.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="197">
+			<revision name="2.2.0-rc1" status="release" pubdate="20140903134820" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://parquet.incubator.apache.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="192">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3958" time="0" location="/Users/Marco/.ivy2/cache/com.twitter/parquet-format/ivy-2.2.0-rc1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/twitter/parquet-format/2.2.0-rc1/parquet-format-2.2.0-rc1.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="2.2.0-rc1" rev-constraint-default="2.2.0-rc1" rev-constraint-dynamic="2.2.0-rc1" callerrev="0.1-SNAPSHOT"/>
@@ -276,7 +276,7 @@
 			</revision>
 		</module>
 		<module organisation="com.twitter" name="parquet-column">
-			<revision name="1.6.0rc3" status="release" pubdate="20141002142935" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/Parquet/parquet-mr" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="192">
+			<revision name="1.6.0rc3" status="release" pubdate="20141002142935" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/Parquet/parquet-mr" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="187">
 				<metadata-artifact status="no" details="" size="6089" time="0" location="/Users/Marco/.ivy2/cache/com.twitter/parquet-column/ivy-1.6.0rc3.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/twitter/parquet-column/1.6.0rc3/parquet-column-1.6.0rc3.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="1.6.0rc3" rev-constraint-default="1.6.0rc3" rev-constraint-dynamic="1.6.0rc3" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -293,7 +293,7 @@
 			</revision>
 		</module>
 		<module organisation="com.twitter" name="parquet-encoding">
-			<revision name="1.6.0rc3" status="release" pubdate="20141002142853" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/Parquet/parquet-mr" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="194">
+			<revision name="1.6.0rc3" status="release" pubdate="20141002142853" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/Parquet/parquet-mr" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="189">
 				<metadata-artifact status="no" details="" size="5042" time="0" location="/Users/Marco/.ivy2/cache/com.twitter/parquet-encoding/ivy-1.6.0rc3.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/twitter/parquet-encoding/1.6.0rc3/parquet-encoding-1.6.0rc3.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="1.6.0rc3" rev-constraint-default="1.6.0rc3" rev-constraint-dynamic="1.6.0rc3" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -310,7 +310,7 @@
 			</revision>
 		</module>
 		<module organisation="com.twitter" name="parquet-generator">
-			<revision name="1.6.0rc3" status="release" pubdate="20141002142838" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/Parquet/parquet-mr" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="195">
+			<revision name="1.6.0rc3" status="release" pubdate="20141002142838" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/Parquet/parquet-mr" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="190">
 				<metadata-artifact status="no" details="" size="4670" time="0" location="/Users/Marco/.ivy2/cache/com.twitter/parquet-generator/ivy-1.6.0rc3.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/twitter/parquet-generator/1.6.0rc3/parquet-generator-1.6.0rc3.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="1.6.0rc3" rev-constraint-default="1.6.0rc3" rev-constraint-dynamic="1.6.0rc3" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -327,7 +327,7 @@
 			</revision>
 		</module>
 		<module organisation="com.twitter" name="parquet-common">
-			<revision name="1.6.0rc3" status="release" pubdate="20141002142830" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/Parquet/parquet-mr" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="193">
+			<revision name="1.6.0rc3" status="release" pubdate="20141002142830" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/Parquet/parquet-mr" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="188">
 				<metadata-artifact status="no" details="" size="4572" time="0" location="/Users/Marco/.ivy2/cache/com.twitter/parquet-common/ivy-1.6.0rc3.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/twitter/parquet-common/1.6.0rc3/parquet-common-1.6.0rc3.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="1.6.0rc3" rev-constraint-default="1.6.0rc3" rev-constraint-dynamic="1.6.0rc3" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -344,7 +344,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.spark" name="spark-catalyst_2.10">
-			<revision name="1.3.0" status="release" pubdate="20150305154439" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spark.apache.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="189">
+			<revision name="1.3.0" status="release" pubdate="20150305154439" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spark.apache.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="184">
 				<metadata-artifact status="no" details="" size="38218" time="0" location="/Users/Marco/.ivy2/cache/org.apache.spark/spark-catalyst_2.10/ivy-1.3.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.10/1.3.0/spark-catalyst_2.10-1.3.0.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -361,7 +361,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scalamacros" name="quasiquotes_2.10">
-			<revision name="2.0.1" status="release" pubdate="20150303025226" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/scalamacros/paradise" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="191">
+			<revision name="2.0.1" status="release" pubdate="20150303025226" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/scalamacros/paradise" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="186">
 				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html"/>
 				<metadata-artifact status="no" details="" size="2730" time="0" location="/Users/Marco/.ivy2/cache/org.scalamacros/quasiquotes_2.10/ivy-2.0.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scalamacros/quasiquotes_2.10/2.0.1/quasiquotes_2.10-2.0.1.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="2.0.1" rev-constraint-default="2.0.1" rev-constraint-dynamic="2.0.1" callerrev="0.1-SNAPSHOT"/>
@@ -379,7 +379,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-lang" name="scala-compiler">
-			<revision name="2.10.4" status="release" pubdate="20140318144738" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="190">
+			<revision name="2.10.4" status="release" pubdate="20140318144738" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="185">
 				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
 				<metadata-artifact status="no" details="" size="2809" time="0" location="/Users/Marco/.ivy2/cache/org.scala-lang/scala-compiler/ivy-2.10.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.4/scala-compiler-2.10.4.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="0.1-SNAPSHOT"/>
@@ -397,7 +397,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.spark" name="spark-streaming_2.10">
-			<revision name="1.3.0" status="release" pubdate="20150305154609" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spark.apache.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="187">
+			<revision name="1.3.0" status="release" pubdate="20150305154609" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spark.apache.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="182">
 				<metadata-artifact status="no" details="" size="40182" time="0" location="/Users/Marco/.ivy2/cache/org.apache.spark/spark-streaming_2.10/ivy-1.3.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/spark/spark-streaming_2.10/1.3.0/spark-streaming_2.10-1.3.0.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -409,6 +409,23 @@
 					</artifact>
 					<artifact name="spark-streaming_2.10" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="184278" time="0" location="/Users/Marco/.ivy2/cache/org.apache.spark/spark-streaming_2.10/srcs/spark-streaming_2.10-1.3.0-sources.jar">
 						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/spark/spark-streaming_2.10/1.3.0/spark-streaming_2.10-1.3.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.hadoop" name="hadoop-yarn-client">
+			<revision name="2.2.0" status="release" pubdate="20131006233604" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="138">
+				<metadata-artifact status="no" details="" size="28329" time="0" location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-yarn-client/ivy-2.2.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-client/2.2.0/hadoop-yarn-client-2.2.0.pom"/>
+				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="hadoop-yarn-client" type="jar" ext="jar" status="no" details="" size="94728" time="0" location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-yarn-client/jars/hadoop-yarn-client-2.2.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-client/2.2.0/hadoop-yarn-client-2.2.0.jar"/>
+					</artifact>
+					<artifact name="hadoop-yarn-client" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="603744" time="0" location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-yarn-client/docs/hadoop-yarn-client-2.2.0-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-client/2.2.0/hadoop-yarn-client-2.2.0-javadoc.jar"/>
+					</artifact>
+					<artifact name="hadoop-yarn-client" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="59389" time="0" location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-yarn-client/srcs/hadoop-yarn-client-2.2.0-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-client/2.2.0/hadoop-yarn-client-2.2.0-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -1152,7 +1169,7 @@
 			</revision>
 		</module>
 		<module organisation="net.sf.py4j" name="py4j">
-			<revision name="0.8.2.1" status="release" pubdate="20140727164822" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://py4j.sourceforge.net/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="185">
+			<revision name="0.8.2.1" status="release" pubdate="20140727164822" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://py4j.sourceforge.net/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="180">
 				<license name="The New BSD License" url="http://www.opensource.org/licenses/bsd-license.html"/>
 				<metadata-artifact status="no" details="" size="3299" time="0" location="/Users/Marco/.ivy2/cache/net.sf.py4j/py4j/ivy-0.8.2.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/net/sf/py4j/py4j/0.8.2.1/py4j-0.8.2.1.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="0.8.2.1" rev-constraint-default="0.8.2.1" rev-constraint-dynamic="0.8.2.1" callerrev="0.1-SNAPSHOT"/>
@@ -1170,7 +1187,7 @@
 			</revision>
 		</module>
 		<module organisation="org.spark-project" name="pyrolite">
-			<revision name="2.0.1" status="release" pubdate="20140421235953" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://pythonhosted.org/Pyro4/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="184">
+			<revision name="2.0.1" status="release" pubdate="20140421235953" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://pythonhosted.org/Pyro4/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="179">
 				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
 				<metadata-artifact status="no" details="" size="2340" time="0" location="/Users/Marco/.ivy2/cache/org.spark-project/pyrolite/ivy-2.0.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/spark-project/pyrolite/2.0.1/pyrolite-2.0.1.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="2.0.1" rev-constraint-default="2.0.1" rev-constraint-dynamic="2.0.1" callerrev="0.1-SNAPSHOT"/>
@@ -1188,7 +1205,7 @@
 			</revision>
 		</module>
 		<module organisation="org.tachyonproject" name="tachyon-client">
-			<revision name="0.5.0" status="release" pubdate="20140719194638" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="182">
+			<revision name="0.5.0" status="release" pubdate="20140719194638" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="177">
 				<metadata-artifact status="no" details="" size="4859" time="0" location="/Users/Marco/.ivy2/cache/org.tachyonproject/tachyon-client/ivy-0.5.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/tachyonproject/tachyon-client/0.5.0/tachyon-client-0.5.0.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="0.5.0" rev-constraint-default="0.5.0" rev-constraint-dynamic="0.5.0" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -1202,7 +1219,7 @@
 			</revision>
 		</module>
 		<module organisation="org.tachyonproject" name="tachyon">
-			<revision name="0.5.0" status="release" pubdate="20140719194556" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="183">
+			<revision name="0.5.0" status="release" pubdate="20140719194556" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="178">
 				<metadata-artifact status="no" details="" size="7557" time="0" location="/Users/Marco/.ivy2/cache/org.tachyonproject/tachyon/ivy-0.5.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/tachyonproject/tachyon/0.5.0/tachyon-0.5.0.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="0.5.0" rev-constraint-default="0.5.0" rev-constraint-dynamic="0.5.0" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -1219,7 +1236,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.ivy" name="ivy">
-			<revision name="2.4.0" status="release" pubdate="20141222084010" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://ant.apache.org/ivy/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="180">
+			<revision name="2.4.0" status="release" pubdate="20141222084010" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://ant.apache.org/ivy/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="175">
 				<metadata-artifact status="no" details="" size="5562" time="0" location="/Users/Marco/.ivy2/cache/org.apache.ivy/ivy/ivy-2.4.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/ivy/ivy/2.4.0/ivy-2.4.0.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="2.4.0" rev-constraint-default="2.4.0" rev-constraint-dynamic="2.4.0" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -1236,7 +1253,7 @@
 			</revision>
 		</module>
 		<module organisation="com.fasterxml.jackson.module" name="jackson-module-scala_2.10">
-			<revision name="2.4.4" status="release" pubdate="20141201204049" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://wiki.fasterxml.com/JacksonModuleScala" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="177">
+			<revision name="2.4.4" status="release" pubdate="20141201204049" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://wiki.fasterxml.com/JacksonModuleScala" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="172">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="4360" time="0" location="/Users/Marco/.ivy2/cache/com.fasterxml.jackson.module/jackson-module-scala_2.10/ivy-2.4.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-scala_2.10/2.4.4/jackson-module-scala_2.10-2.4.4.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="2.4.4" rev-constraint-default="2.4.4" rev-constraint-dynamic="2.4.4" callerrev="0.1-SNAPSHOT"/>
@@ -1254,7 +1271,7 @@
 			</revision>
 		</module>
 		<module organisation="com.fasterxml.jackson.core" name="jackson-annotations">
-			<revision name="2.4.4" status="release" pubdate="20141124180225" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="179">
+			<revision name="2.4.4" status="release" pubdate="20141124180225" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="174">
 				<metadata-artifact status="no" details="" size="5982" time="0" location="/Users/Marco/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/ivy-2.4.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.4.4/jackson-annotations-2.4.4.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="2.4.4" rev-constraint-default="2.4.4" rev-constraint-dynamic="2.4.4" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -1271,7 +1288,7 @@
 			</revision>
 		</module>
 		<module organisation="com.fasterxml.jackson.core" name="jackson-databind">
-			<revision name="2.4.4" status="release" pubdate="20141124182902" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="175">
+			<revision name="2.4.4" status="release" pubdate="20141124182902" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="170">
 				<metadata-artifact status="no" details="" size="8211" time="0" location="/Users/Marco/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/ivy-2.4.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.4.4/jackson-databind-2.4.4.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="2.4.4" rev-constraint-default="2.4.4" rev-constraint-dynamic="2.4.4" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -1288,7 +1305,7 @@
 			</revision>
 		</module>
 		<module organisation="com.fasterxml.jackson.core" name="jackson-core">
-			<revision name="2.4.4" status="release" pubdate="20141124181728" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="176">
+			<revision name="2.4.4" status="release" pubdate="20141124181728" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="171">
 				<metadata-artifact status="no" details="" size="6430" time="0" location="/Users/Marco/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/ivy-2.4.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.4.4/jackson-core-2.4.4.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="2.4.4" rev-constraint-default="2.4.4" rev-constraint-dynamic="2.4.4" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -1305,24 +1322,24 @@
 			</revision>
 		</module>
 		<module organisation="io.dropwizard.metrics" name="metrics-graphite">
-			<revision name="3.1.0" status="release" pubdate="20140904080228" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="174">
+			<revision name="3.1.0" status="release" pubdate="20140904080228" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="169">
 				<metadata-artifact status="no" details="" size="5239" time="0" location="/Users/Marco/.ivy2/cache/io.dropwizard.metrics/metrics-graphite/ivy-3.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-graphite/3.1.0/metrics-graphite-3.1.0.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="3.1.0" rev-constraint-default="3.1.0" rev-constraint-dynamic="3.1.0" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
 					<artifact name="metrics-graphite" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="60052" time="0" location="/Users/Marco/.ivy2/cache/io.dropwizard.metrics/metrics-graphite/docs/metrics-graphite-3.1.0-javadoc.jar">
 						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-graphite/3.1.0/metrics-graphite-3.1.0-javadoc.jar"/>
 					</artifact>
-					<artifact name="metrics-graphite" type="jar" ext="jar" status="no" details="" size="20638" time="0" location="/Users/Marco/.ivy2/cache/io.dropwizard.metrics/metrics-graphite/jars/metrics-graphite-3.1.0.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-graphite/3.1.0/metrics-graphite-3.1.0.jar"/>
-					</artifact>
 					<artifact name="metrics-graphite" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="10570" time="0" location="/Users/Marco/.ivy2/cache/io.dropwizard.metrics/metrics-graphite/srcs/metrics-graphite-3.1.0-sources.jar">
 						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-graphite/3.1.0/metrics-graphite-3.1.0-sources.jar"/>
+					</artifact>
+					<artifact name="metrics-graphite" type="jar" ext="jar" status="no" details="" size="20638" time="0" location="/Users/Marco/.ivy2/cache/io.dropwizard.metrics/metrics-graphite/jars/metrics-graphite-3.1.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-graphite/3.1.0/metrics-graphite-3.1.0.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="io.dropwizard.metrics" name="metrics-json">
-			<revision name="3.1.0" status="release" pubdate="20140904080347" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="173">
+			<revision name="3.1.0" status="release" pubdate="20140904080347" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="168">
 				<metadata-artifact status="no" details="" size="5290" time="0" location="/Users/Marco/.ivy2/cache/io.dropwizard.metrics/metrics-json/ivy-3.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-json/3.1.0/metrics-json-3.1.0.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="3.1.0" rev-constraint-default="3.1.0" rev-constraint-dynamic="3.1.0" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -1339,7 +1356,7 @@
 			</revision>
 		</module>
 		<module organisation="io.dropwizard.metrics" name="metrics-jvm">
-			<revision name="3.1.0" status="release" pubdate="20140904080153" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="172">
+			<revision name="3.1.0" status="release" pubdate="20140904080153" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="167">
 				<metadata-artifact status="no" details="" size="5022" time="0" location="/Users/Marco/.ivy2/cache/io.dropwizard.metrics/metrics-jvm/ivy-3.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-jvm/3.1.0/metrics-jvm-3.1.0.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="3.1.0" rev-constraint-default="3.1.0" rev-constraint-dynamic="3.1.0" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -1356,7 +1373,7 @@
 			</revision>
 		</module>
 		<module organisation="io.dropwizard.metrics" name="metrics-core">
-			<revision name="3.1.0" status="release" pubdate="20140904080139" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="171">
+			<revision name="3.1.0" status="release" pubdate="20140904080139" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="166">
 				<metadata-artifact status="no" details="" size="5001" time="0" location="/Users/Marco/.ivy2/cache/io.dropwizard.metrics/metrics-core/ivy-3.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-core/3.1.0/metrics-core-3.1.0.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="3.1.0" rev-constraint-default="3.1.0" rev-constraint-dynamic="3.1.0" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -1373,7 +1390,7 @@
 			</revision>
 		</module>
 		<module organisation="com.clearspring.analytics" name="stream">
-			<revision name="2.7.0" status="release" pubdate="20140523064148" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/addthis/stream-lib" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="170">
+			<revision name="2.7.0" status="release" pubdate="20140523064148" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/addthis/stream-lib" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="165">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="4179" time="0" location="/Users/Marco/.ivy2/cache/com.clearspring.analytics/stream/ivy-2.7.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/clearspring/analytics/stream/2.7.0/stream-2.7.0.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="2.7.0" rev-constraint-default="2.7.0" rev-constraint-dynamic="2.7.0" callerrev="0.1-SNAPSHOT"/>
@@ -1391,7 +1408,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.mesos" name="mesos">
-			<revision name="0.21.0" status="release" pubdate="20141113103515" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://mesos.apache.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="169">
+			<revision name="0.21.0" status="release" pubdate="20141113103515" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://mesos.apache.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="164">
 				<metadata-artifact status="no" details="" size="3542" time="0" location="/Users/Marco/.ivy2/cache/org.apache.mesos/mesos/ivy-0.21.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/mesos/mesos/0.21.0/mesos-0.21.0.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="0.21.0" rev-constraint-default="0.21.0" rev-constraint-dynamic="0.21.0" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -1408,7 +1425,7 @@
 			</revision>
 		</module>
 		<module organisation="org.spark-project.akka" name="akka-slf4j_2.10">
-			<revision name="2.3.4-spark" status="release" pubdate="20140929125411" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="167">
+			<revision name="2.3.4-spark" status="release" pubdate="20140929125411" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="162">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="3076" time="0" location="/Users/Marco/.ivy2/cache/org.spark-project.akka/akka-slf4j_2.10/ivy-2.3.4-spark.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/spark-project/akka/akka-slf4j_2.10/2.3.4-spark/akka-slf4j_2.10-2.3.4-spark.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="2.3.4-spark" rev-constraint-default="2.3.4-spark" rev-constraint-dynamic="2.3.4-spark" callerrev="0.1-SNAPSHOT"/>
@@ -1426,7 +1443,7 @@
 			</revision>
 		</module>
 		<module organisation="org.spark-project.akka" name="akka-remote_2.10">
-			<revision name="2.3.4-spark" status="release" pubdate="20140929125514" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="163">
+			<revision name="2.3.4-spark" status="release" pubdate="20140929125514" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="158">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="3825" time="0" location="/Users/Marco/.ivy2/cache/org.spark-project.akka/akka-remote_2.10/ivy-2.3.4-spark.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/spark-project/akka/akka-remote_2.10/2.3.4-spark/akka-remote_2.10-2.3.4-spark.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="2.3.4-spark" rev-constraint-default="2.3.4-spark" rev-constraint-dynamic="2.3.4-spark" callerrev="0.1-SNAPSHOT"/>
@@ -1444,7 +1461,7 @@
 			</revision>
 		</module>
 		<module organisation="org.uncommons.maths" name="uncommons-maths">
-			<revision name="1.2.2a" status="release" pubdate="20110408065605" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maths.uncommons.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="166">
+			<revision name="1.2.2a" status="release" pubdate="20110408065605" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maths.uncommons.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="161">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="2738" time="0" location="/Users/Marco/.ivy2/cache/org.uncommons.maths/uncommons-maths/ivy-1.2.2a.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/uncommons/maths/uncommons-maths/1.2.2a/uncommons-maths-1.2.2a.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="1.2.2a" rev-constraint-default="1.2.2a" rev-constraint-dynamic="1.2.2a" callerrev="0.1-SNAPSHOT"/>
@@ -1462,7 +1479,7 @@
 			</revision>
 		</module>
 		<module organisation="org.spark-project.protobuf" name="protobuf-java">
-			<revision name="2.5.0-spark" status="release" pubdate="20140929125934" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/protobuf" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="165">
+			<revision name="2.5.0-spark" status="release" pubdate="20140929125934" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/protobuf" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="160">
 				<license name="New BSD license" url="http://www.opensource.org/licenses/bsd-license.php"/>
 				<metadata-artifact status="no" details="" size="3008" time="0" location="/Users/Marco/.ivy2/cache/org.spark-project.protobuf/protobuf-java/ivy-2.5.0-spark.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/spark-project/protobuf/protobuf-java/2.5.0-spark/protobuf-java-2.5.0-spark.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="2.5.0-spark" rev-constraint-default="2.5.0-spark" rev-constraint-dynamic="2.5.0-spark" callerrev="0.1-SNAPSHOT"/>
@@ -1480,7 +1497,7 @@
 			</revision>
 		</module>
 		<module organisation="io.netty" name="netty">
-			<revision name="3.8.0.Final" status="release" pubdate="20131107012312" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://netty.io/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="164">
+			<revision name="3.8.0.Final" status="release" pubdate="20131107012312" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://netty.io/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="159">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="6425" time="0" location="/Users/Marco/.ivy2/cache/io.netty/netty/ivy-3.8.0.Final.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/io/netty/netty/3.8.0.Final/netty-3.8.0.Final.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="3.8.0.Final" rev-constraint-default="3.8.0.Final" rev-constraint-dynamic="3.8.0.Final" callerrev="0.1-SNAPSHOT"/>
@@ -1534,7 +1551,7 @@
 			</revision>
 		</module>
 		<module organisation="org.roaringbitmap" name="RoaringBitmap">
-			<revision name="0.4.5" status="release" pubdate="20141031145105" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lemire/RoaringBitmap" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="162">
+			<revision name="0.4.5" status="release" pubdate="20141031145105" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lemire/RoaringBitmap" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="157">
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3861" time="0" location="/Users/Marco/.ivy2/cache/org.roaringbitmap/RoaringBitmap/ivy-0.4.5.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/roaringbitmap/RoaringBitmap/0.4.5/RoaringBitmap-0.4.5.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="0.4.5" rev-constraint-default="0.4.5" rev-constraint-dynamic="0.4.5" callerrev="0.1-SNAPSHOT"/>
@@ -1552,7 +1569,7 @@
 			</revision>
 		</module>
 		<module organisation="net.jpountz.lz4" name="lz4">
-			<revision name="1.2.0" status="release" pubdate="20130808083434" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/jpountz/lz4-java" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="161">
+			<revision name="1.2.0" status="release" pubdate="20130808083434" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/jpountz/lz4-java" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="156">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="2606" time="0" location="/Users/Marco/.ivy2/cache/net.jpountz.lz4/lz4/ivy-1.2.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/net/jpountz/lz4/lz4/1.2.0/lz4-1.2.0.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="1.2.0" rev-constraint-default="1.2.0" rev-constraint-dynamic="1.2.0" callerrev="0.1-SNAPSHOT"/>
@@ -1596,7 +1613,7 @@
 			</revision>
 		</module>
 		<module organisation="com.ning" name="compress-lzf">
-			<revision name="1.0.0" status="release" pubdate="20131202210438" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/ning/compress" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="160">
+			<revision name="1.0.0" status="release" pubdate="20131202210438" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/ning/compress" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="155">
 				<license name="Apache License 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="3422" time="0" location="/Users/Marco/.ivy2/cache/com.ning/compress-lzf/ivy-1.0.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/ning/compress-lzf/1.0.0/compress-lzf-1.0.0.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="0.1-SNAPSHOT"/>
@@ -1614,7 +1631,7 @@
 			</revision>
 		</module>
 		<module organisation="org.slf4j" name="jcl-over-slf4j">
-			<revision name="1.7.10" status="release" pubdate="20150106121314" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="158">
+			<revision name="1.7.10" status="release" pubdate="20150106121314" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="153">
 				<metadata-artifact status="no" details="" size="4845" time="0" location="/Users/Marco/.ivy2/cache/org.slf4j/jcl-over-slf4j/ivy-1.7.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.10/jcl-over-slf4j-1.7.10.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="1.7.10" rev-constraint-default="1.7.10" rev-constraint-dynamic="1.7.10" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -1631,7 +1648,7 @@
 			</revision>
 		</module>
 		<module organisation="org.slf4j" name="jul-to-slf4j">
-			<revision name="1.7.10" status="release" pubdate="20150106121407" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="157">
+			<revision name="1.7.10" status="release" pubdate="20150106121407" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="152">
 				<metadata-artifact status="no" details="" size="4884" time="0" location="/Users/Marco/.ivy2/cache/org.slf4j/jul-to-slf4j/ivy-1.7.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.7.10/jul-to-slf4j-1.7.10.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="1.7.10" rev-constraint-default="1.7.10" rev-constraint-dynamic="1.7.10" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -1648,7 +1665,7 @@
 			</revision>
 		</module>
 		<module organisation="org.slf4j" name="slf4j-log4j12">
-			<revision name="1.7.10" status="release" pubdate="20150106121207" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="159">
+			<revision name="1.7.10" status="release" pubdate="20150106121207" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="154">
 				<metadata-artifact status="no" details="" size="4846" time="0" location="/Users/Marco/.ivy2/cache/org.slf4j/slf4j-log4j12/ivy-1.7.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-log4j12/1.7.10/slf4j-log4j12-1.7.10.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="1.7.10" rev-constraint-default="1.7.10" rev-constraint-dynamic="1.7.10" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -1665,7 +1682,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.commons" name="commons-lang3">
-			<revision name="3.3.2" status="release" pubdate="20140406052129" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-lang/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="155">
+			<revision name="3.3.2" status="release" pubdate="20140406052129" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-lang/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="150">
 				<metadata-artifact status="no" details="" size="10410" time="0" location="/Users/Marco/.ivy2/cache/org.apache.commons/commons-lang3/ivy-3.3.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="3.3.2" rev-constraint-default="3.3.2" rev-constraint-dynamic="3.3.2" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -1682,7 +1699,7 @@
 			</revision>
 		</module>
 		<module organisation="org.eclipse.jetty.orbit" name="javax.servlet">
-			<revision name="3.0.0.v201112011016" status="release" pubdate="20111207114915" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="154">
+			<revision name="3.0.0.v201112011016" status="release" pubdate="20111207114915" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="149">
 				<metadata-artifact status="no" details="" size="3028" time="0" location="/Users/Marco/.ivy2/cache/org.eclipse.jetty.orbit/javax.servlet/ivy-3.0.0.v201112011016.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/eclipse/jetty/orbit/javax.servlet/3.0.0.v201112011016/javax.servlet-3.0.0.v201112011016.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="3.0.0.v201112011016" rev-constraint-default="3.0.0.v201112011016" rev-constraint-dynamic="3.0.0.v201112011016" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -1699,7 +1716,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.curator" name="curator-recipes">
-			<revision name="2.4.0" status="release" pubdate="20140205150911" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="151">
+			<revision name="2.4.0" status="release" pubdate="20140205150911" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="146">
 				<metadata-artifact status="no" details="" size="8089" time="0" location="/Users/Marco/.ivy2/cache/org.apache.curator/curator-recipes/ivy-2.4.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/curator/curator-recipes/2.4.0/curator-recipes-2.4.0.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="2.4.0" rev-constraint-default="2.4.0" rev-constraint-dynamic="2.4.0" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -1716,7 +1733,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.curator" name="curator-framework">
-			<revision name="2.4.0" status="release" pubdate="20140205150848" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="152">
+			<revision name="2.4.0" status="release" pubdate="20140205150848" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="147">
 				<metadata-artifact status="no" details="" size="7943" time="0" location="/Users/Marco/.ivy2/cache/org.apache.curator/curator-framework/ivy-2.4.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/curator/curator-framework/2.4.0/curator-framework-2.4.0.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="2.4.0" rev-constraint-default="2.4.0" rev-constraint-dynamic="2.4.0" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -1733,7 +1750,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.curator" name="curator-client">
-			<revision name="2.4.0" status="release" pubdate="20140205150826" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="153">
+			<revision name="2.4.0" status="release" pubdate="20140205150826" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="148">
 				<metadata-artifact status="no" details="" size="7984" time="0" location="/Users/Marco/.ivy2/cache/org.apache.curator/curator-client/ivy-2.4.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/curator/curator-client/2.4.0/curator-client-2.4.0.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="2.4.0" rev-constraint-default="2.4.0" rev-constraint-dynamic="2.4.0" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -1750,7 +1767,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.spark" name="spark-network-shuffle_2.10">
-			<revision name="1.3.0" status="release" pubdate="20150305154649" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spark.apache.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="150">
+			<revision name="1.3.0" status="release" pubdate="20150305154649" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spark.apache.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="145">
 				<metadata-artifact status="no" details="" size="39074" time="0" location="/Users/Marco/.ivy2/cache/org.apache.spark/spark-network-shuffle_2.10/ivy-1.3.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/spark/spark-network-shuffle_2.10/1.3.0/spark-network-shuffle_2.10-1.3.0.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -1767,7 +1784,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.spark" name="spark-network-common_2.10">
-			<revision name="1.3.0" status="release" pubdate="20150305154501" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spark.apache.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="147">
+			<revision name="1.3.0" status="release" pubdate="20150305154501" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spark.apache.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="142">
 				<metadata-artifact status="no" details="" size="38702" time="0" location="/Users/Marco/.ivy2/cache/org.apache.spark/spark-network-common_2.10/ivy-1.3.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/spark/spark-network-common_2.10/1.3.0/spark-network-common_2.10-1.3.0.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -1784,7 +1801,7 @@
 			</revision>
 		</module>
 		<module organisation="org.spark-project.spark" name="unused">
-			<revision name="1.0.0" status="release" pubdate="20141022000005" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="149">
+			<revision name="1.0.0" status="release" pubdate="20141022000005" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="144">
 				<license name="The Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="2849" time="0" location="/Users/Marco/.ivy2/cache/org.spark-project.spark/unused/ivy-1.0.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/spark-project/spark/unused/1.0.0/unused-1.0.0.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="0.1-SNAPSHOT"/>
@@ -1802,7 +1819,7 @@
 			</revision>
 		</module>
 		<module organisation="org.slf4j" name="slf4j-api">
-			<revision name="1.7.10" status="release" pubdate="20150106121107" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="156">
+			<revision name="1.7.10" status="release" pubdate="20150106121107" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="151">
 				<metadata-artifact status="no" details="" size="4667" time="0" location="/Users/Marco/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="1.7.10" rev-constraint-default="1.7.10" rev-constraint-dynamic="1.7.10" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -1819,7 +1836,7 @@
 			</revision>
 		</module>
 		<module organisation="io.netty" name="netty-all">
-			<revision name="4.0.23.Final" status="release" pubdate="20140815110640" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="148">
+			<revision name="4.0.23.Final" status="release" pubdate="20140815110640" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="143">
 				<metadata-artifact status="no" details="" size="15751" time="0" location="/Users/Marco/.ivy2/cache/io.netty/netty-all/ivy-4.0.23.Final.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/io/netty/netty-all/4.0.23.Final/netty-all-4.0.23.Final.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="4.0.23.Final" rev-constraint-default="4.0.23.Final" rev-constraint-dynamic="4.0.23.Final" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -1850,7 +1867,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.hadoop" name="hadoop-mapreduce-client-jobclient">
-			<revision name="2.2.0" status="release" pubdate="20131006233723" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="145">
+			<revision name="2.2.0" status="release" pubdate="20131006233723" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="141">
 				<metadata-artifact status="no" details="" size="30083" time="0" location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-jobclient/ivy-2.2.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-jobclient/2.2.0/hadoop-mapreduce-client-jobclient-2.2.0.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -1862,6 +1879,23 @@
 					</artifact>
 					<artifact name="hadoop-mapreduce-client-jobclient" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="21198" time="0" location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-jobclient/srcs/hadoop-mapreduce-client-jobclient-2.2.0-sources.jar">
 						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-jobclient/2.2.0/hadoop-mapreduce-client-jobclient-2.2.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.hadoop" name="hadoop-mapreduce-client-core">
+			<revision name="2.2.0" status="release" pubdate="20131006233626" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="139">
+				<metadata-artifact status="no" details="" size="28252" time="0" location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-core/ivy-2.2.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-core/2.2.0/hadoop-mapreduce-client-core-2.2.0.pom"/>
+				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="hadoop-mapreduce-client-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1008328" time="0" location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-core/srcs/hadoop-mapreduce-client-core-2.2.0-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-core/2.2.0/hadoop-mapreduce-client-core-2.2.0-sources.jar"/>
+					</artifact>
+					<artifact name="hadoop-mapreduce-client-core" type="jar" ext="jar" status="no" details="" size="1455001" time="0" location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-core/jars/hadoop-mapreduce-client-core-2.2.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-core/2.2.0/hadoop-mapreduce-client-core-2.2.0.jar"/>
+					</artifact>
+					<artifact name="hadoop-mapreduce-client-core" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="7813226" time="0" location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-core/docs/hadoop-mapreduce-client-core-2.2.0-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-core/2.2.0/hadoop-mapreduce-client-core-2.2.0-javadoc.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -1883,59 +1917,8 @@
 				</artifacts>
 			</revision>
 		</module>
-		<module organisation="org.apache.hadoop" name="hadoop-mapreduce-client-shuffle">
-			<revision name="2.2.0" status="release" pubdate="20131006233703" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="144">
-				<metadata-artifact status="successful" details="" size="1675" time="243" location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-shuffle/ivy-2.2.0.xml" searched="true" original-local-location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-shuffle/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.2.0/hadoop-mapreduce-client-shuffle-2.2.0.pom"/>
-				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="0.1-SNAPSHOT"/>
-				<artifacts>
-					<artifact name="hadoop-mapreduce-client-shuffle" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="108204" time="0" location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-shuffle/docs/hadoop-mapreduce-client-shuffle-2.2.0-javadoc.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.2.0/hadoop-mapreduce-client-shuffle-2.2.0-javadoc.jar"/>
-					</artifact>
-					<artifact name="hadoop-mapreduce-client-shuffle" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="10605" time="0" location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-shuffle/srcs/hadoop-mapreduce-client-shuffle-2.2.0-sources.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.2.0/hadoop-mapreduce-client-shuffle-2.2.0-sources.jar"/>
-					</artifact>
-					<artifact name="hadoop-mapreduce-client-shuffle" type="jar" ext="jar" status="no" details="" size="21537" time="0" location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-shuffle/jars/hadoop-mapreduce-client-shuffle-2.2.0.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.2.0/hadoop-mapreduce-client-shuffle-2.2.0.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="org.apache.hadoop" name="hadoop-yarn-server-nodemanager">
-			<revision name="2.2.0" status="release" pubdate="20131006233538" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="146">
-				<metadata-artifact status="successful" details="" size="7324" time="299" location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-yarn-server-nodemanager/ivy-2.2.0.xml" searched="true" original-local-location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-yarn-server-nodemanager/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-server-nodemanager/2.2.0/hadoop-yarn-server-nodemanager-2.2.0.pom"/>
-				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="0.1-SNAPSHOT"/>
-				<artifacts>
-					<artifact name="hadoop-yarn-server-nodemanager" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="262442" time="0" location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-yarn-server-nodemanager/srcs/hadoop-yarn-server-nodemanager-2.2.0-sources.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-server-nodemanager/2.2.0/hadoop-yarn-server-nodemanager-2.2.0-sources.jar"/>
-					</artifact>
-					<artifact name="hadoop-yarn-server-nodemanager" type="jar" ext="jar" status="no" details="" size="467638" time="0" location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-yarn-server-nodemanager/jars/hadoop-yarn-server-nodemanager-2.2.0.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-server-nodemanager/2.2.0/hadoop-yarn-server-nodemanager-2.2.0.jar"/>
-					</artifact>
-					<artifact name="hadoop-yarn-server-nodemanager" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="2962918" time="0" location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-yarn-server-nodemanager/docs/hadoop-yarn-server-nodemanager-2.2.0-javadoc.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-server-nodemanager/2.2.0/hadoop-yarn-server-nodemanager-2.2.0-javadoc.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="org.apache.hadoop" name="hadoop-mapreduce-client-common">
-			<revision name="2.2.0" status="release" pubdate="20131006233659" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="132">
-				<metadata-artifact status="successful" details="" size="3273" time="260" location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-common/ivy-2.2.0.xml" searched="true" original-local-location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-common/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-common/2.2.0/hadoop-mapreduce-client-common-2.2.0.pom"/>
-				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="0.1-SNAPSHOT"/>
-				<artifacts>
-					<artifact name="hadoop-mapreduce-client-common" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="244749" time="0" location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-common/srcs/hadoop-mapreduce-client-common-2.2.0-sources.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-common/2.2.0/hadoop-mapreduce-client-common-2.2.0-sources.jar"/>
-					</artifact>
-					<artifact name="hadoop-mapreduce-client-common" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="3225841" time="0" location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-common/docs/hadoop-mapreduce-client-common-2.2.0-javadoc.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-common/2.2.0/hadoop-mapreduce-client-common-2.2.0-javadoc.jar"/>
-					</artifact>
-					<artifact name="hadoop-mapreduce-client-common" type="jar" ext="jar" status="no" details="" size="656365" time="0" location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-common/jars/hadoop-mapreduce-client-common-2.2.0.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-common/2.2.0/hadoop-mapreduce-client-common-2.2.0.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
 		<module organisation="org.apache.hadoop" name="hadoop-yarn-server-common">
-			<revision name="2.2.0" status="release" pubdate="20131006233526" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="143">
+			<revision name="2.2.0" status="release" pubdate="20131006233526" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="140">
 				<metadata-artifact status="no" details="" size="30836" time="0" location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-yarn-server-common/ivy-2.2.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-server-common/2.2.0/hadoop-yarn-server-common-2.2.0.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -1951,76 +1934,8 @@
 				</artifacts>
 			</revision>
 		</module>
-		<module organisation="org.apache.hadoop" name="hadoop-mapreduce-client-core">
-			<revision name="2.2.0" status="release" pubdate="20131006233626" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="142">
-				<metadata-artifact status="no" details="" size="28252" time="0" location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-core/ivy-2.2.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-core/2.2.0/hadoop-mapreduce-client-core-2.2.0.pom"/>
-				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="0.1-SNAPSHOT"/>
-				<artifacts>
-					<artifact name="hadoop-mapreduce-client-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1008328" time="0" location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-core/srcs/hadoop-mapreduce-client-core-2.2.0-sources.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-core/2.2.0/hadoop-mapreduce-client-core-2.2.0-sources.jar"/>
-					</artifact>
-					<artifact name="hadoop-mapreduce-client-core" type="jar" ext="jar" status="no" details="" size="1455001" time="0" location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-core/jars/hadoop-mapreduce-client-core-2.2.0.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-core/2.2.0/hadoop-mapreduce-client-core-2.2.0.jar"/>
-					</artifact>
-					<artifact name="hadoop-mapreduce-client-core" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="7813226" time="0" location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-core/docs/hadoop-mapreduce-client-core-2.2.0-javadoc.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-core/2.2.0/hadoop-mapreduce-client-core-2.2.0-javadoc.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="org.apache.hadoop" name="hadoop-yarn-client">
-			<revision name="2.2.0" status="release" pubdate="20131006233604" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="141">
-				<metadata-artifact status="no" details="" size="28329" time="0" location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-yarn-client/ivy-2.2.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-client/2.2.0/hadoop-yarn-client-2.2.0.pom"/>
-				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="0.1-SNAPSHOT"/>
-				<artifacts>
-					<artifact name="hadoop-yarn-client" type="jar" ext="jar" status="no" details="" size="94728" time="0" location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-yarn-client/jars/hadoop-yarn-client-2.2.0.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-client/2.2.0/hadoop-yarn-client-2.2.0.jar"/>
-					</artifact>
-					<artifact name="hadoop-yarn-client" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="603744" time="0" location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-yarn-client/docs/hadoop-yarn-client-2.2.0-javadoc.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-client/2.2.0/hadoop-yarn-client-2.2.0-javadoc.jar"/>
-					</artifact>
-					<artifact name="hadoop-yarn-client" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="59389" time="0" location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-yarn-client/srcs/hadoop-yarn-client-2.2.0-sources.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-client/2.2.0/hadoop-yarn-client-2.2.0-sources.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="org.apache.hadoop" name="hadoop-yarn-common">
-			<revision name="2.2.0" status="release" pubdate="20131006233515" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="133">
-				<metadata-artifact status="successful" details="" size="5032" time="242" location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-yarn-common/ivy-2.2.0.xml" searched="true" original-local-location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-yarn-common/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-common/2.2.0/hadoop-yarn-common-2.2.0.pom"/>
-				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="0.1-SNAPSHOT"/>
-				<artifacts>
-					<artifact name="hadoop-yarn-common" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="6749818" time="0" location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-yarn-common/docs/hadoop-yarn-common-2.2.0-javadoc.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-common/2.2.0/hadoop-yarn-common-2.2.0-javadoc.jar"/>
-					</artifact>
-					<artifact name="hadoop-yarn-common" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="634761" time="0" location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-yarn-common/srcs/hadoop-yarn-common-2.2.0-sources.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-common/2.2.0/hadoop-yarn-common-2.2.0-sources.jar"/>
-					</artifact>
-					<artifact name="hadoop-yarn-common" type="jar" ext="jar" status="no" details="" size="1301627" time="0" location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-yarn-common/jars/hadoop-yarn-common-2.2.0.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-common/2.2.0/hadoop-yarn-common-2.2.0.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="org.apache.hadoop" name="hadoop-yarn-api">
-			<revision name="2.2.0" status="release" pubdate="20131006233452" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="134">
-				<metadata-artifact status="successful" details="" size="2956" time="233" location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-yarn-api/ivy-2.2.0.xml" searched="true" original-local-location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-yarn-api/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-api/2.2.0/hadoop-yarn-api-2.2.0.pom"/>
-				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="0.1-SNAPSHOT"/>
-				<artifacts>
-					<artifact name="hadoop-yarn-api" type="jar" ext="jar" status="no" details="" size="1158936" time="0" location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-yarn-api/jars/hadoop-yarn-api-2.2.0.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-api/2.2.0/hadoop-yarn-api-2.2.0.jar"/>
-					</artifact>
-					<artifact name="hadoop-yarn-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="360323" time="0" location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-yarn-api/srcs/hadoop-yarn-api-2.2.0-sources.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-api/2.2.0/hadoop-yarn-api-2.2.0-sources.jar"/>
-					</artifact>
-					<artifact name="hadoop-yarn-api" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="5619916" time="0" location="/Users/Marco/.ivy2/cache/org.apache.hadoop/hadoop-yarn-api/docs/hadoop-yarn-api-2.2.0-javadoc.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-api/2.2.0/hadoop-yarn-api-2.2.0-javadoc.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
 		<module organisation="com.sun.jersey.contribs" name="jersey-guice">
-			<revision name="1.9" status="release" pubdate="20110902042154" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="140">
+			<revision name="1.9" status="release" pubdate="20110902042154" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="137">
 				<metadata-artifact status="no" details="" size="5808" time="0" location="/Users/Marco/.ivy2/cache/com.sun.jersey.contribs/jersey-guice/ivy-1.9.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/sun/jersey/contribs/jersey-guice/1.9/jersey-guice-1.9.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="1.9" rev-constraint-default="1.9" rev-constraint-dynamic="1.9" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -2037,7 +1952,7 @@
 			</revision>
 		</module>
 		<module organisation="com.sun.jersey.jersey-test-framework" name="jersey-test-framework-grizzly2">
-			<revision name="1.9" status="release" pubdate="20110902042052" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="139">
+			<revision name="1.9" status="release" pubdate="20110902042052" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="136">
 				<metadata-artifact status="no" details="" size="4574" time="0" location="/Users/Marco/.ivy2/cache/com.sun.jersey.jersey-test-framework/jersey-test-framework-grizzly2/ivy-1.9.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/sun/jersey/jersey-test-framework/jersey-test-framework-grizzly2/1.9/jersey-test-framework-grizzly2-1.9.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="1.9" rev-constraint-default="1.9" rev-constraint-dynamic="1.9" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -2054,7 +1969,7 @@
 			</revision>
 		</module>
 		<module organisation="com.google.inject" name="guice">
-			<revision name="3.0" status="release" pubdate="20110325111947" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="135">
+			<revision name="3.0" status="release" pubdate="20110325111947" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="132">
 				<metadata-artifact status="no" details="" size="3949" time="0" location="/Users/Marco/.ivy2/cache/com.google.inject/guice/ivy-3.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/google/inject/guice/3.0/guice-3.0.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="3.0" rev-constraint-default="3.0" rev-constraint-dynamic="3.0" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -2071,7 +1986,7 @@
 			</revision>
 		</module>
 		<module organisation="org.sonatype.sisu.inject" name="cglib">
-			<revision name="2.2.1-v20090111" status="release" pubdate="20110104051244" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://sourceforge.net/projects/cglib/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="138">
+			<revision name="2.2.1-v20090111" status="release" pubdate="20110104051244" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://sourceforge.net/projects/cglib/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="135">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3770" time="0" location="/Users/Marco/.ivy2/cache/org.sonatype.sisu.inject/cglib/ivy-2.2.1-v20090111.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/sonatype/sisu/inject/cglib/2.2.1-v20090111/cglib-2.2.1-v20090111.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="2.2.1-v20090111" rev-constraint-default="2.2.1-v20090111" rev-constraint-dynamic="2.2.1-v20090111" callerrev="0.1-SNAPSHOT"/>
@@ -2089,7 +2004,7 @@
 			</revision>
 		</module>
 		<module organisation="aopalliance" name="aopalliance">
-			<revision name="1.0" status="release" pubdate="20070226144340" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://aopalliance.sourceforge.net" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="137">
+			<revision name="1.0" status="release" pubdate="20070226144340" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://aopalliance.sourceforge.net" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="134">
 				<license name="Public Domain"/>
 				<metadata-artifact status="no" details="" size="2291" time="0" location="/Users/Marco/.ivy2/cache/aopalliance/aopalliance/ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="0.1-SNAPSHOT"/>
@@ -2800,7 +2715,7 @@
 			</revision>
 		</module>
 		<module organisation="oro" name="oro">
-			<revision name="2.0.8" status="release" pubdate="20051108142901" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="181">
+			<revision name="2.0.8" status="release" pubdate="20051108142901" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="176">
 				<metadata-artifact status="no" details="" size="2170" time="0" location="/Users/Marco/.ivy2/cache/oro/oro/ivy-2.0.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/oro/oro/2.0.8/oro-2.0.8.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="2.0.8" rev-constraint-default="2.0.8" rev-constraint-dynamic="2.0.8" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -3218,7 +3133,7 @@
 			</revision>
 		</module>
 		<module organisation="org.json4s" name="json4s-jackson_2.10">
-			<revision name="3.2.10" status="release" pubdate="20140513101909" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="168">
+			<revision name="3.2.10" status="release" pubdate="20140513101909" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="163">
 				<license name="ASL" url="http://github.com/json4s/json4s/raw/HEAD/LICENSE"/>
 				<metadata-artifact status="no" details="" size="2823" time="0" location="/Users/Marco/.ivy2/cache/org.json4s/json4s-jackson_2.10/ivy-3.2.10.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/json4s/json4s-jackson_2.10/3.2.10/json4s-jackson_2.10-3.2.10.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="3.2.10" rev-constraint-default="3.2.10" rev-constraint-dynamic="3.2.10" callerrev="0.1-SNAPSHOT"/>
@@ -3307,7 +3222,7 @@
 			</revision>
 		</module>
 		<module organisation="net.sourceforge.f2j" name="arpack_combined_all">
-			<revision name="0.1" status="release" pubdate="20130708212740" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://f2j.sourceforge.net" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="205">
+			<revision name="0.1" status="release" pubdate="20130708212740" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://f2j.sourceforge.net" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="200">
 				<license name="The BSD License" url="http://www.opensource.org/licenses/bsd-license.php"/>
 				<metadata-artifact status="no" details="" size="2441" time="0" location="/Users/Marco/.ivy2/cache/net.sourceforge.f2j/arpack_combined_all/ivy-0.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/net/sourceforge/f2j/arpack_combined_all/0.1/arpack_combined_all-0.1.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="0.1" rev-constraint-default="0.1" rev-constraint-dynamic="0.1" callerrev="0.1-SNAPSHOT"/>
@@ -3322,7 +3237,7 @@
 			</revision>
 		</module>
 		<module organisation="javax.inject" name="javax.inject">
-			<revision name="1" status="release" pubdate="20091013163500" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/atinject/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="136">
+			<revision name="1" status="release" pubdate="20091013163500" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/atinject/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="133">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="2380" time="0" location="/Users/Marco/.ivy2/cache/javax.inject/javax.inject/ivy-1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="1" rev-constraint-default="1" rev-constraint-dynamic="1" callerrev="0.1-SNAPSHOT"/>
@@ -3485,7 +3400,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-lang" name="scala-reflect">
-			<revision name="2.10.4" status="release" pubdate="20140318144707" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.4/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="178">
+			<revision name="2.10.4" status="release" pubdate="20140318144707" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.4/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="173">
 				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
 				<metadata-artifact status="no" details="" size="2647" time="0" location="/Users/Marco/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.10.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.4/scala-reflect-2.10.4.pom"/>
 				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="0.1-SNAPSHOT" extra-info.apiURL="http://www.scala-lang.org/api/2.10.4/"/>
@@ -3639,6 +3554,41 @@
 					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="7126372" time="0" location="/Users/Marco/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.4.jar">
 						<origin-location is-local="false" location="UNKNOWN"/>
 					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.hadoop" name="hadoop-yarn-server-nodemanager">
+			<revision name="2.2.0" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.hadoop" name="hadoop-mapreduce-client-shuffle">
+			<revision name="2.2.0" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.hadoop" name="hadoop-yarn-api">
+			<revision name="2.2.0" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.hadoop" name="hadoop-yarn-common">
+			<revision name="2.2.0" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.hadoop" name="hadoop-mapreduce-client-common">
+			<revision name="2.2.0" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="io.prediction" name="textmanipulationengine$sources_javadoc_2.10" conf="compile-internal, compile, provided, optional" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
 				</artifacts>
 			</revision>
 		</module>
