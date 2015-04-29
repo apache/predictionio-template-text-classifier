@@ -10,8 +10,7 @@
   "preparator": {
     "params": {
       "nMin": 1,
-      "nMax": 2,
-      "tfidf": true
+      "nMax": 2
     }
   },
   "algorithms": [

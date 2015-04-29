@@ -9,8 +9,7 @@ import org.apache.spark.SparkContext
 
 case class PreparatorParams(
                              nMin: Int,
-                             nMax: Int,
-                             tfidf: Boolean
+                             nMax: Int
                              ) extends Params
 
 
@@ -20,7 +19,7 @@ class Preparator(pp: PreparatorParams) extends PPreparator[TrainingData, Prepare
 
 
 
-    new PreparedData(new DataModel(td, pp.nMin, pp.nMax, pp.tfidf))
+    new PreparedData(new DataModel(td, pp.nMin, pp.nMax))
   }
 }
 
