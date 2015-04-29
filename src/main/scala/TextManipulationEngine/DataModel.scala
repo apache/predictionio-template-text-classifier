@@ -20,14 +20,13 @@ import scala.math.log
 class DataModel(
                  td: TrainingData,
                  nMin: Int,
-                 nMax: Int,
-                 tfidf: Boolean
+                 nMax: Int
                  ) extends Serializable {
 
 
   // This private method will tokenize our text entries.
 
-
+  // document => token list
   private def tokenize (doc : String): Array[String] = {
     SimpleTokenizer.INSTANCE.tokenize(doc)
   }
@@ -42,9 +41,10 @@ class DataModel(
   private def hashDoc(doc: String): Map[String, Double] = {
     val model = new NGramModel()
     model.add(new StringList(tokenize(doc): _*), nMin, nMax)
-    model.iterator.map(
+    val map  = model.iterator.map(
       x => (x.toString, model.getCount(x).toDouble)
     ).filter(e => ! td.stopWords.contains(e)).toMap
+    map.mapValues(e => e / map.values.sum)
   }
 
   private val hashedData = td.data.map(e => hashDoc(e.text)).cache
@@ -54,52 +54,39 @@ class DataModel(
   private val numDocs: Double = hashedData.count.toDouble
 
   // Creates token-gram universe.
-  private def createUniverse(u: RDD[Map[String, Double]]): Array[(Long, (String, Double))] = {
+  private def createUniverse(u: RDD[Map[String, Double]]): RDD[((String, Double), Long)] = {
     u.flatMap(identity).map(
       e => (e._1, 1.0)
     ).reduceByKey(_ + _).map(
         e => (e._1, log(numDocs / e._2))
-      ).zipWithIndex.map(_.swap).collect
+      ).zipWithIndex
   }
-
-
-  // Create token universe zipped, and corresponding idf values.
   private val universe = createUniverse(hashedData)
-  private val numTokens = universe.size
+
+  // Map(token -> idf)
+  private val idf : Map[String, Double] = universe.map(_._1).collect.toMap
+  // Map(token -> token index in universe)
+  private val tokenIndex : Map[String, Int] = universe.map(e => (e._1._1, e._2.toInt)).collect.toMap
+  private val numTokens = idf.size
 
 
   // Transforms a given string document into a data vector
   // based on the given data model (tfidf indicates whether
   // tfidf transformation performed.
-  def transform(doc: String, tfidf: Boolean = tfidf): Array[Double] = {
+  def transform(doc: String): Vector = {
     val hashedDoc = hashDoc(doc)
-    val n = hashedDoc.values.sum
-    val x = universe.map(e => hashedDoc.getOrElse(e._2._1, 0.0) / n)
-    if (tfidf)
-      x.zip(universe.map(_._2._2)).map(e => e._1 * e._2)
-    else x
+    Vectors.sparse(numTokens, hashedDoc.map(e => (tokenIndex.get(e._1).get,
+      e._2 * idf.get(e._1).get)).toArray)
   }
 
 
   // Returns a data instance that is ready to be used for
   // model training.
   def transformData: RDD[LabeledPoint] = {
-    val x = td.data.map(e => (e.label, hashDoc(e.text)))
 
-    // Some helper functions.
-    val f_help = (map : Map[String, Double], pair: (String, Double)) =>
-      map.keySet.contains(pair._1)
-    val g_help = (map : Map[String, Double], pair : (String, Double), n : Double) => {
-      val x = map.getOrElse(pair._1, 0.0)
-      if (tfidf) (x / n) * pair._2 else x
+    td.data.map(obs => LabeledPoint(
+        obs.label, transform(obs.text)
+      ))
     }
-    val h_help = (map : Map[String, Double], arr : Array[(Long, (String, Double))]) =>
-      arr.map(e => (e._1.toInt, g_help(map, e._2, map.values.sum)))
 
-
-    x.map(e => (e._1, e._2, universe.filter(f => f_help(e._2, f._2)))).map(
-      e => LabeledPoint(e._1, Vectors.sparse(
-        numTokens, h_help(e._2, e._3)
-      )))
-  }
 }
