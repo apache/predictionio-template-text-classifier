@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d6d4992-d84f-4f46-8d8c-5194cf77decd" name="Default" comment="Completed 1 - 6">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tutorial and Tex Files/TextManipulationEngine.pdf" afterPath="$PROJECT_DIR$/Tutorial and Tex Files/TextManipulationEngine.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tutorial and Tex Files/TextManipulationEngine.synctex.gz" afterPath="$PROJECT_DIR$/Tutorial and Tex Files/TextManipulationEngine.synctex.gz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/TextManipulationEngine/DataModel.scala" afterPath="$PROJECT_DIR$/src/main/scala/TextManipulationEngine/DataModel.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tutorial and Tex Files/TextManipulationEngine.log" afterPath="$PROJECT_DIR$/Tutorial and Tex Files/TextManipulationEngine.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tutorial and Tex Files/TextManipulationEngine.tex" afterPath="$PROJECT_DIR$/Tutorial and Tex Files/TextManipulationEngine.tex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TextManipulationEngine.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -111,8 +106,8 @@
       <file leaf-file-name="DataModel.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/TextManipulationEngine/DataModel.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8333333">
-              <caret line="104" column="5" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.87009805">
+              <caret line="107" column="62" selection-start-line="107" selection-start-column="62" selection-end-line="107" selection-end-column="62" />
               <folding>
                 <element signature="e#32#69#0" expanded="true" />
               </folding>
@@ -1132,7 +1127,7 @@
       <workItem from="1430216199619" duration="687000" />
       <workItem from="1430249786216" duration="21326000" />
       <workItem from="1430280705711" duration="15970000" />
-      <workItem from="1430341010479" duration="13985000" />
+      <workItem from="1430341010479" duration="14095000" />
     </task>
     <task id="LOCAL-00001" summary="Push project.">
       <created>1429589522078</created>
@@ -1276,7 +1271,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152089000" />
+    <option name="totallyTimeSpent" value="152199000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2626" y="55" width="1173" height="1321" extended-state="0" />
@@ -1784,8 +1779,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/TextManipulationEngine/DataModel.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8333333">
-          <caret line="104" column="5" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.87009805">
+          <caret line="107" column="62" selection-start-line="107" selection-start-column="62" selection-end-line="107" selection-end-column="62" />
           <folding>
             <element signature="e#32#69#0" expanded="true" />
           </folding>

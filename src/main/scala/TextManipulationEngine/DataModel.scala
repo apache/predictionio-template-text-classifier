@@ -96,7 +96,7 @@ class DataModel (
   // not contained in the document).
   def transform(doc: String): Vector = {
     // Map(n-gram -> doument tf)
-    val hashedDoc = hash(tokenize(doc)).filter(idf.keySet.contains)
+    val hashedDoc = hash(tokenize(doc)).filter(e => idf.keySet.contains(e._1))
     Vectors.sparse(
       numTokens,
       hashedDoc.map {
