@@ -8,7 +8,8 @@
 \allowdisplaybreaks
 \everymath{\displaystyle}
 \setlength\parindent{0pt}
-\setstretch{1.15}
+\setlength\parskip{7.5pt}
+
 
 
 \newcommand*\encircled[1]{\tikz[baseline=(char.base)]{
@@ -79,7 +80,36 @@
 \maketitle
 
 
-The purpose of this tutorial is to illustrate how to model text data using PredictionIO's engine platform. We will be largely mirroring the tutorial provided for Scikit's Learn package title \enquote{Working With Text Data.} However, we will be providing instructions for building the model using PredictionIO's engine platform. The advantages of using this framework include the usage of Apache Spark for distributed computation which is crucial for computation with large data sets, as well as the capacity to use a newly trained predictive model to respond to queries in real-time. 
+In the real world, there are many applications that collect text as data. For example, suppose that you have a set of news articles and you want to implement an automatic categorization system that groups existing articles based on content similarity, and assigns future news articles into one of these categories. There are a wide array of machine learning models one can use to first cluster the news articles into categories and subsequently build a predictive model to classify new articles into the learned categories. However, before being able to use these techniques we must first transform the text data (in this case the set of articles) into numeric vectors, or feature vectors, that can be used to create, or train, a model.
+
+The purpose of this tutorial is to illustrate how one can go about doing this using PredictionIO's engine platform. In particular, we will show you how to:
+
+\begin{itemize}
+\item[$\bullet$]{import a corpus of text documents into PredictionIO's event server;}
+
+\item[$\bullet$]{read the imported data for use in processing;}
+
+\item[$\bullet$]{transform document text into a feature vector}
+
+\item[$\bullet$]
+\end{itemize}
+
+
+The advantages of using this platform include increased data processing and model training speed, as well as the capacity to use a newly trained predictive model to respond to queries in real-time.
+
+Going back to our example, 	 This process is shown as a graph in the following figure:
+
+\vspace{0.5cm}
+\centerline{
+\xymatrixcolsep{5pc}\xymatrix{
+\encircled{Text Documents} \ar[r]^{\text{Vectorization}} & \encircled{Numeric Vectors} \ar[r]^{\text{Model Training}} & \encircled{Learning Model}
+}}
+
+
+
+The first step is an example of an unsupervised learning problem, since we are only given the news articles without any prediction targets. The second step is an example of a supervised learning problem, since at this stage we can associate each article with  together 
+
+ 
 
 We will assume the user is running the PredictionIO version 0.9.2, and meets all minimum computing requirements. To download PredictionIO, follow the instructions on the Getting Started tutorial.
 
@@ -157,9 +187,9 @@ The corpus itself is imported into PredictionIO's Event Server via the function:
 
 \begin{verbatim}
 def import_events(client):
-    train = ((twenty_train.target_names[k],
+    train = ((twenty_train.target_names[twenty_train.target[k]],
               float(twenty_train.target[k]),
-              twenty_train.data[k])
+              twenty_train.data[k]) 
              for k in range(len(twenty_train.data)))
     count = 0
     print('Importing data.....')
@@ -199,7 +229,9 @@ if __name__ == '__main__':
     import_stopwords(client)
 \end{verbatim}
 
-The top block of code allows us to specify arguments from the command line. This will be necessary for specifying the access key of your application, and the port location where HBase lives. The second block of code actually initializes the instance of predictionio.EventClient that is then passed in to our two import functions. Finally, to import the data into our Event Server, we type in the following into our shell.
+The top block of code allows us to specify arguments from the command line. This will be necessary for specifying the access key of your application, and the port location where HBase lives. The second block of code actually initializes the instance of predictionio.EventClient that is then passed in to our two import functions. 
+
+Finally, to import the data into our Event Server, we must first create an application. To do this run the command \tt{pio app new MyTextApp}, and take note of your access key. If you forget your access key, you can obtain it by using the command \tt{pio app list}. Now, to import the data, mimic the following shell session
 
 Again, the class \tt{EventClient} is the SDK component that allows us import the stop word data into the PredictionIO event server. The function used to import the stop word events is \tt{import\_stopwords} which is defined in the same script. With these two functions under our belt, we are ready to begin importing data. First, make sure PredictionIO is running, you can check this by typing \tt{pio status} on your terminal. If it is not running, start it with the command \tt{pio-start-all}. Now, let's create a new application named MyTextApp by entering the command \tt{pio app new MyTextApp} in your shell. You should see some printed output which includes your newly created access key. At this point make sure you are in the template root directory, and import the data set using the following command:
 

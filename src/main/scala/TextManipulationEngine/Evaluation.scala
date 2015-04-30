@@ -42,7 +42,9 @@ object EngineParamsList extends EngineParamsGenerator {
   )
 
   // Set the algorithm params for which we will assess an accuracy score.
-  engineParamsList = Seq(baseEP.copy(
-    algorithmParamsList = Seq(("sup", SupervisedAlgorithmParams(0.5)))
-  ))
+  engineParamsList = Seq(
+    baseEP.copy(algorithmParamsList = Seq(("sup", SupervisedAlgorithmParams(0.5)))),
+    baseEP.copy(algorithmParamsList = Seq(("sup", SupervisedAlgorithmParams(1.5)))),
+    baseEP.copy(algorithmParamsList = Seq(("sup", SupervisedAlgorithmParams(5))))
+  )
 }

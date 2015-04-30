@@ -72,26 +72,27 @@ class DataModel (
 
   // 4. Set private class variables for use in data transformations.
 
-  // Create our n-gram universe.
-  private val universe : RDD[((String, Double), Long)]= createUniverse(
-    td.data
+  // Create ngram to idf hashmap for every n-gram in universe:
+  //    Map(n-gram -> n-gram idf)
+  private val idf : HashMap[String, Double] = HashMap(
+    createUniverse(
+      td.data
       .map(e => hash(tokenize(e.text)))
-  ).cache
+    ).map(_._1)
+    .collect
+    : _*)
 
   // Get total number n-grams in universe (in
   // bigram case, the number of unique n-grams
   // is about 1,200,000).
-  private val numTokens : Int = universe.count.toInt
+  private val numTokens : Int = idf.size
 
-  // Create ngram to idf hashmap:
-  //    Map(n-gram -> n-gram idf)
-  private val idf : HashMap[String, Double] = HashMap(universe.map(_._1).collect : _*)
 
   // Create n-gram to global index hashmap:
   //    Map(n-gram -> global index)
-  private val globalIndex : HashMap[String, Int] = HashMap(universe.map(
-    e => (e._1._1, e._2.toInt)
-  ).collect : _*)
+  private val globalIndex : HashMap[String, Int] = HashMap(
+    idf.keys.zipWithIndex.toSeq
+    : _*)
 
   // 5. Document Transformer: document => sparse tf-idf vector.
   // This takes a single document, tokenizes it, hashes it,
@@ -101,7 +102,7 @@ class DataModel (
 
   def transform(doc: String): Vector = {
     // Map(n-gram -> document tf)
-    val hashedDoc = hash(tokenize(doc)).filter(e => idf.keySet.contains(e._1))
+    val hashedDoc = hash(tokenize(doc)).filter(e => idf.contains(e._1))
     Vectors.sparse(
       numTokens,
       hashedDoc.map {

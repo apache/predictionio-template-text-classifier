@@ -103,13 +103,13 @@ class DataSource (
 // 3. Observation class serving as a wrapper for both our
 // data's class label and document string.
 case class Observation(
-                        label : Double,
-                        text : String
-                        ) extends Serializable
+  label : Double,
+  text : String
+) extends Serializable
 
 // 4. TrainingData class serving as a wrapper for all
 // read in from the Event Server.
 class TrainingData(
-                    val data : RDD[Observation],
-                    val stopWords : Set[String]
-                    ) extends Serializable
+  val data : RDD[Observation],
+  val stopWords : Set[String]
+) extends Serializable
