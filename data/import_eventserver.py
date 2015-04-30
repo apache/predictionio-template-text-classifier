@@ -9,6 +9,27 @@ twenty_train = fetch_20newsgroups(subset = 'train',
 stop_words = text.ENGLISH_STOP_WORDS
 
 
+def import_events(client):
+    train = ((twenty_train.target_names[k],
+              float(twenty_train.target[k]),
+              twenty_train.data[k])
+             for k in range(len(twenty_train.data)))
+    count = 0
+    print('Importing data.....')
+    for elem in train:
+        count += 1
+        client.create_event(
+            event = "documents",
+            entity_id = count,
+            entity_type = "source",
+            properties = {
+                "category": elem[0],
+                "label": elem[1],
+                "text": elem[2]
+            })
+    print("Imported {0} events.".format(count))
+
+
 def import_stopwords(client):
     count = 0
     print("Importing stop words.....")
@@ -24,29 +45,13 @@ def import_stopwords(client):
     print("Imported {0} stop words.".format(count))
         
 
-def import_events(client):
-    train = ((float(twenty_train.target[k]), twenty_train.data[k])
-             for k in range(len(twenty_train.data)))
-    count = 0
-    print('Importing data.....')
-    for elem in train:
-        count += 1
-        client.create_event(
-            event = "documents",
-            entity_id = count,
-            entity_type = "source",
-            properties = {
-                "label": elem[0],
-                "text": elem[1]
-            })
-    print("Imported {0} events.".format(count))
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
         description="Import sample data for text manipulation engine")
     parser.add_argument('--access_key', default='invald_access_key')
     parser.add_argument('--url', default="http://localhost:7070")
-
     args = parser.parse_args()
 
     client = predictionio.EventClient(

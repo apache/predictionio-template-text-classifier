@@ -43,7 +43,8 @@ class SupervisedModel(
     val x: Array[Double] = pd.dataModel.transform(doc).toArray
 
     normalize(
-      (nb.pi zip nb.theta)
+      nb.pi
+        .zip(nb.theta)
         .map(e => exp(innerProduct(e._2, x) + e._1))
     )
   }

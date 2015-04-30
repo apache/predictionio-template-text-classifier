@@ -19,10 +19,11 @@ import scala.math.log
 // TrainingData, nMin, nMax which are the lower and upper bounds,
 // respectively, of the model n-gram window.
 
+
 class DataModel (
-                  td: TrainingData,
-                  nMin: Int,
-                  nMax: Int
+                  val td: TrainingData,
+                  val nMin: Int,
+                  val nMax: Int
                   ) extends Serializable {
 
 
@@ -56,9 +57,11 @@ class DataModel (
   }
 
 
-  // 3. Bigram universe extractor: RDD[bigram hashmaps] => RDD[((n-gram, n-gram idf), global index)]
+  // 3. Bigram universe extractor: RDD[bigram hashmap] => RDD[((n-gram, n-gram idf), global index)]
 
   private def createUniverse(u: RDD[Map[String, Double]]): RDD[((String, Double), Long)] = {
+    // Total number of documents (should be 11314).
+    val numDocs: Double = td.data.count.toDouble
     u.flatMap(identity)
       .map(e => (e._1, 1.0))
       .reduceByKey(_ + _)
@@ -68,9 +71,6 @@ class DataModel (
 
 
   // 4. Set private class variables for use in data transformations.
-
-  // Total number of documents (should be 11314).
-  private val numDocs: Double = td.data.count.toDouble
 
   // Create our n-gram universe.
   private val universe : RDD[((String, Double), Long)]= createUniverse(
@@ -89,8 +89,9 @@ class DataModel (
 
   // Create n-gram to global index hashmap:
   //    Map(n-gram -> global index)
-  private val globalIndex : HashMap[String, Int] = HashMap(universe.map(e => (e._1._1, e._2.toInt)).collect : _*)
-
+  private val globalIndex : HashMap[String, Int] = HashMap(universe.map(
+    e => (e._1._1, e._2.toInt)
+  ).collect : _*)
 
   // 5. Document Transformer: document => sparse tf-idf vector.
   // This takes a single document, tokenizes it, hashes it,
@@ -99,7 +100,7 @@ class DataModel (
   // not contained in the document).
 
   def transform(doc: String): Vector = {
-    // Map(n-gram -> doument tf)
+    // Map(n-gram -> document tf)
     val hashedDoc = hash(tokenize(doc)).filter(e => idf.keySet.contains(e._1))
     Vectors.sparse(
       numTokens,
@@ -115,6 +116,7 @@ class DataModel (
   def transformData: RDD[LabeledPoint] = {
     td.data.map(e => LabeledPoint(e.label, transform(e.text)))
   }
+
 }
 
 

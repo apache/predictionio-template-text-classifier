@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  29 APR 2015 17:53
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  30 APR 2015 11:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -763,6 +763,9 @@ loaded) (/usr/local/texlive/2013/texmf-dist/tex/generic/xypic/xymatrix.tex
 Package: bbold 1994/04/06 Bbold symbol package
 LaTeX Font Info:    Redeclaring math alphabet \mathbb on input line 42.
 )
+(/usr/local/texlive/2013/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/eucal.sty
 Package: eucal 2009/06/22 v3.00 Euler Script fonts
 LaTeX Font Info:    Overwriting math alphabet `\EuScript' in version `bold'
@@ -793,27 +796,27 @@ Package csquotes Info: ... none found.
 (./TextManipulationEngine.aux)
 \openout1 = `TextManipulationEngine.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 74.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 75.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 \AtBeginShipoutBox=\box42
-Package hyperref Info: Link coloring OFF on input line 74.
+Package hyperref Info: Link coloring OFF on input line 75.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -823,9 +826,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count167
 )
-LaTeX Info: Redefining \ref on input line 74.
-LaTeX Info: Redefining \pageref on input line 74.
-LaTeX Info: Redefining \nameref on input line 74.
+LaTeX Info: Redefining \ref on input line 75.
+LaTeX Info: Redefining \pageref on input line 75.
+LaTeX Info: Redefining \nameref on input line 75.
 
 (./TextManipulationEngine.out) (./TextManipulationEngine.out)
 \@outlinefile=\write5
@@ -861,45 +864,45 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 74.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 75.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 74.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 75.
 
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 74.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 75.
 
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 74.
+(Font)              <12> on input line 75.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 74.
+(Font)              <8> on input line 75.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 74.
-LaTeX Font Info:    Try loading font information for U+msa on input line 74.
+(Font)              <6> on input line 75.
+LaTeX Font Info:    Try loading font information for U+msa on input line 75.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 74.
+LaTeX Font Info:    Try loading font information for U+msb on input line 75.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 74.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 75.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Package xypdf Info: Line width: 0.39998pt on input line 74.
+Package xypdf Info: Line width: 0.39998pt on input line 75.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -935,54 +938,51 @@ Package xypdf Info: Line width: 0.39998pt on input line 74.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 87.
+LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 88.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Try loading font information for U+eus on input line 89.
-
-(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/ueus.fd
-File: ueus.fd 2013/01/14 v3.01 Euler Script
 ) <xymatrix 2x5
 192> <xymatrix 4x2 272> [1
 
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 188.
- [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 188.
+ [4] [5]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 234.
+ [6]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 234.
  (./TextManipulationEngine.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 188.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 188.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 234.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 234.
 Package rerunfilecheck Info: File `TextManipulationEngine.out' has not changed.
 
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 188.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 234.
  ) 
 Here is how much of TeX's memory you used:
- 19872 strings out of 493315
- 332501 string characters out of 6137904
- 475466 words of memory out of 5000000
- 22933 multiletter control sequences out of 15000+600000
- 45629 words of font info for 54 fonts, out of 8000000 for 9000
+ 19900 strings out of 493315
+ 332955 string characters out of 6137904
+ 475277 words of memory out of 5000000
+ 22958 multiletter control sequences out of 15000+600000
+ 50918 words of font info for 53 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  65i,22n,71p,1470b,1183s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/
-texlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/20
-13/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2013/texmf-d
+{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/lo
+cal/texlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texliv
+e/2013/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2013/texmf-d
 ist/fonts/enc/dvips/lm/lm-rmtt.enc}</usr/local/texlive/2013/texmf-dist/fonts/ty
-pe1/public/amsfonts/euler/eusm10.pfb></usr/local/texlive/2013/texmf-dist/fonts/
-type1/public/lm/lmbx12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/publ
-ic/lm/lmmi12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmr1
-2.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/
-local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texl
-ive/2013/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2013/t
-exmf-dist/fonts/type1/public/xypic/xyatip10.pfb></usr/local/texlive/2013/texmf-
-dist/fonts/type1/public/xypic/xybtip10.pfb>
-Output written on TextManipulationEngine.pdf (4 pages, 132894 bytes).
+pe1/public/lm/lmbx10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public
+/lm/lmbx12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmmi12
+.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/
+local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texli
+ve/2013/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2013/texm
+f-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2013/texmf-dist/fon
+ts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/p
+ublic/xypic/xyatip10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public
+/xypic/xybtip10.pfb>
+Output written on TextManipulationEngine.pdf (6 pages, 182572 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
- 11 named destinations out of 1000 (max. 500000)
+ 89 PDF objects out of 1000 (max. 8388607)
+ 70 compressed objects within 1 object stream
+ 13 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

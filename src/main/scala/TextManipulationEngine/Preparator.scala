@@ -13,9 +13,9 @@ import org.apache.spark.SparkContext
 // components.
 
 case class PreparatorParams(
-                             nMin: Int,
-                             nMax: Int
-                             ) extends Params
+  nMin: Int,
+  nMax: Int
+) extends Params
 
 
 
@@ -30,9 +30,9 @@ class Preparator(pp: PreparatorParams) extends PPreparator[TrainingData, Prepare
 }
 
 
-//
+// Define PreparedData, a wrapper for our data model.
 class PreparedData(
-                    val dataModel: DataModel
-                    ) extends Serializable
+  val dataModel: DataModel
+) extends Serializable
 
 

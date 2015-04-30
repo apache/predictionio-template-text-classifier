@@ -10,8 +10,11 @@ case class Accuracy()
   extends AverageMetric[EmptyEvaluationInfo, Query, PredictedResult, ActualResult] {
 
   // Method for calculating prediction accuracy.
-  def calculate(query: Query, predicted: PredictedResult, actual: ActualResult)
-  : Double = if (predicted.label == actual.label) 1.0 else 0.0
+  def calculate(
+    query: Query,
+    predicted: PredictedResult,
+    actual: ActualResult
+  ) : Double = if (predicted.label == actual.label) 1.0 else 0.0
 }
 
 
@@ -23,21 +26,23 @@ object AccuracyEvaluation extends Evaluation {
   // Define Engine and Metric used in Evaluation.
   engineMetric = (
     TextManipulationEngine(),
-    new Accuracy)
+    new Accuracy
+  )
 }
 
 
 
 // 3. Set your engine parameters for evaluation procedure.
 object EngineParamsList extends EngineParamsGenerator {
-  // Define list of EngineParams used in Evaluation
 
   // Set data source and preparator parameters.
   private[this] val baseEP = EngineParams(
     dataSourceParams = DataSourceParams(appName = "marco-testapp", evalK = Some(5)),
-    preparatorParams = PreparatorParams(nMin = 1, nMax = 2))
+    preparatorParams = PreparatorParams(nMin = 1, nMax = 2)
+  )
 
   // Set the algorithm params for which we will assess an accuracy score.
-  engineParamsList = Seq(
-    baseEP.copy(algorithmParamsList = Seq(("sup", SupervisedAlgorithmParams(0.5)))))
+  engineParamsList = Seq(baseEP.copy(
+    algorithmParamsList = Seq(("sup", SupervisedAlgorithmParams(0.5)))
+  ))
 }

@@ -1,6 +1,6 @@
 \documentclass[a4paper,12pt]{article}
 
-\usepackage{amsfonts, amsmath, amssymb, authblk, scrextend, hyperref, enumerate,mathtools, tikz, csquotes, mathrsfs, lmodern,arydshln, xypic, bbold, graphicx}
+\usepackage{amsfonts, amsmath, amssymb, authblk, scrextend, hyperref, enumerate,mathtools, tikz, csquotes, mathrsfs, lmodern,arydshln, xypic, bbold, graphicx, setspace}
 \usepackage[mathcal]{eucal}
 \usetikzlibrary{matrix}
 \usepackage[lmargin=2.5 cm,rmargin=2.5cm,tmargin=3cm,bmargin=3cm]{geometry}
@@ -8,6 +8,7 @@
 \allowdisplaybreaks
 \everymath{\displaystyle}
 \setlength\parindent{0pt}
+\setstretch{1.15}
 
 
 \newcommand*\encircled[1]{\tikz[baseline=(char.base)]{
@@ -86,11 +87,16 @@ We will assume the user is running the PredictionIO version 0.9.2, and meets all
 
 As a user, we are charged with collecting data and importing it into an event server. The data is then read and processed by our engine via the \tt{DataSource} and \tt{Preparation} components. The \tt{Algorithm} engine component then trains a predictive model using the processed, or prepared, data. Once we have trained a model, we are ready to deploy our engine and respond to real-time queries via the \tt{Serving} component. 
 
-We are given our observations as a set of strings $\mathcal{S}.$ In a general setting, there are two different kind of problems we can be given. In the first, each string $s$ contained in $\mathcal{S}$ is also associated to a class label $y$ taking values in $\{1, 2, ..., K\},$ where $K$ is an integer, which we can think of as a categorical, or class, label.We may proceed by learning a predictive model $f,$ a function which takes in a string $s$ and outputs a class label, using the observed data pairs $(y, s).$ Once we have learned $f$ then given a new string $s_\text{new},$ we can predict a class label $f(s_\text{new}).$ This is an example of a supervised learning problem. To exemplify the second kind of problem, suppose we are only given the set of strings $\mathcal {S},$ and are asked to group the string together into $K$ different groups based on a set of characteristics which we extract from the strings. This is an example of an unsupervised learning problem. 
+%We are given our observations as a set of strings $\mathcal{S}.$ In a general setting, there are two different kind of problems we can be given. In the first, each string $s$ contained in $\mathcal{S}$ is also associated to a class label $y$ taking values in $\{1, 2, ..., K\},$ where $K$ is an integer, which we can think of as a categorical, or class, label.We may proceed by learning a predictive model $f,$ a function which takes in a string $s$ and outputs a class label, using the observed data pairs $(y, s).$ Once we have learned $f$ then given a new string $s_\text{new},$ we can predict a class label $f(s_\text{new}).$ This is an example of a supervised learning problem. To exemplify the second kind of problem, suppose we are only given the set of strings $\mathcal {S},$ and are asked to group the string together into $K$ different groups based on a set of characteristics which we extract from the strings. This is an example of an unsupervised learning problem. 
 
-In both cases, we are tasked with learning a model $f.$ However, before this we must first represent our strings $s$ in such a manner so that we may apply existing machine learning methods provided in the Spark MLLib library. We will be using the Apache OpenNLP tools library for the purpose of data representation. 
 
-Our engine includes all DASE components, as well as a Data Model implementation which deals with representing our text data as numeric feature vectors. It also incorporates a Training Model component which is more of a conceptual framework representing a set of Scala classes that can produce a supervised (or unsupervised) learning model $f$. For our supervised training model implementation, $f$ will be a classifier, and for our unsupervised training model, an assignment of class labels for each string in $\mathcal{S}.$ The following diagram shows the how the provided Modeling Text Data Engine template functionality is structured, and the interactions between your web/app, the provided Event Server, and our Modeling Text Data Engine.
+The problem we will solve using PredictionIO's framework is the following: given a set of documents represented as strings, we want to build a predictive model that either (i), given a categorization of our data documents, classifies new documents into a particular category, or (ii) groups the documents into different classes based on the document content, or . To do this we will transform our strings into numeric vectors using Apache's OpenNLP library so that we may apply existing machine learning methods for (i) classification and (ii) clustering.
+
+
+Our engine includes all DASE components, a Data Model implementation which deals with data representation, and a Training Model component which is more of a conceptual framework representing a set of Scala classes that can produce a predictive model. Figure 1 below demonstrates the general structure of our engine, as well as its interactions with your web/app and a provided Event Server. We emphasize here that the engine template itself is really just an SBT project.
+
+
+We begin by covering the data collection stage in which we will obtain a corpus of text documents from Scikit Learn's datasets module. For this purpose, we will use the PredictionIO Python SDK for importing our documents as events into PredictionIO's event server. You can pull the necessary SDK files from PredictionIO's Github repository, if required.
 
 
 \centerline{
@@ -106,42 +112,94 @@ Our engine includes all DASE components, as well as a Data Model implementation 
 \encircled{Data Source}\ar[r]& \encircled{Preparator} \ar[r] \ar[d]& \encircled{Training Algorithm} \ar[d] \ar[r] & \encircled{Serving} \\
 \bf{Engine} & \encircled{Data Model} \ar[ru] & \encircled{Training Model} \ar[ru]&
 }}}
+
+\
+
+{\small \bf{Figure 1}: Representation of PredictionIO framework for our Modeling Text Data Engine as a directed acyclic graph.}
+
 \vspace{0.7cm}
 
 
-We begin the data collection stage by importing a Scikit Learn dataset, \tt{20newsgroups}, into PredictionIO's event server, as well as a set of English stop words that will be used in the Data Model implementation. We will delve more into the latter event data when we reach the Data Model section.
-
 \section*{Importing Data}
 
-We will be using Scikit Learn's datasets and text modules, as well as the PredictionIO Python SDK. First, let's get a better feel for the data: initialize your Python interpreter and type the following lines:
+We will be importing two different sources of data into PredictionIO's: a corpus of news documents that are categorized into a set of topics, as well as a set of stop words. The definition of stop words will be made precise later in the tutorial, however, for now just think of these as words that we do not want to include in our corpus when modeling the text data. Also, for the remainder of the tutorial we will assume that the present working directory is the engine template root directory.
+
+The script in the  used to import the data is named import\_eventserver.py. The script begins with the following import statements:
 
 \begin{verbatim}
->>> from sklearn.datasets import fetch_20newsgroups
->>> twenty_train = fetch_20newsgroups(subset = 'train',
-...                                     shuffle = True,
-...                                     random_state = 10)
+from sklearn.datasets import fetch_20newsgroups
+from sklearn.feature_extraction import text 
+import predictionio
+import argparse
 \end{verbatim}
 
-This initializes a dictionary-like object as can be seen in the following output:
+The first line imports a function fetch\_20newsgroups which is used to fetch the text data; the second, imports an object text containing a list of English stop words as an attribute, and, the last two lines import the predictionio and argparse Python modules, respectively. The following lines bind the data and stop words to the respective variables twenty\_train and stop\_words.
+
+\begin{verbatim}
+twenty_train = fetch_20newsgroups(subset = 'train',
+                                  shuffle=True,
+                                  random_state=10)
+stop_words = text.ENGLISH_STOP_WORDS
+\end{verbatim}
+
+You can run the last few lines of code interactively in your Python interpreter to get a better feel for the data, and in particular, note that twenty\_train and stop\_words are implemented as a dictionary and a frozen set, respectively. This is shown in the following output:
 
 \begin{verbatim}
 >>> twenty_train.keys()
-dict_keys(['filenames', 'DESCR', 'target', 'data', 'target_names'])
+dict_keys(['DESCR', 'target', 'data', 'target_names', 'filenames'])
+>>> type(stop_words)
+<class 'frozenset'>
 \end{verbatim}
 
-What we are interested in here are the target and data keys. Type in the following line to see how we will be preparing the data prior to importing it to the PredictionIO Event Server.
+We are interested in the target, target\_names, and data keys of twenty\_train. The target attribute is a list of length equal to the number of observations (11,314) consisting of class labels corresponding to the document's given category; the target\_names, a list of strength of length 20 which give the corresponding category names; and the data attribute, a list containing our document strings. We note that you can take any sublist of twenty\_train.target\_names and use this to specify the optional parameter categories for the function fetch\_20newsgroups. This will also return a dictionary of the same form, except it will only include those documents whose class label corresponds to one of the selected categories.
+
+The corpus itself is imported into PredictionIO's Event Server via the function:
 
 \begin{verbatim}
->>> [(twenty_train.target[k], twenty_train.data[k]) 
-...  for k in range(len(twenty_train.data))][0]
+def import_events(client):
+    train = ((twenty_train.target_names[k],
+              float(twenty_train.target[k]),
+              twenty_train.data[k])
+             for k in range(len(twenty_train.data)))
+    count = 0
+    print('Importing data.....')
+    for elem in train:
+        count += 1
+        client.create_event(
+            event = "documents",
+            entity_id = count,
+            entity_type = "source",
+            properties = {
+                "category": elem[0],
+                "label": elem[1],
+                "text": elem[2]
+            })
+    print("Imported {0} events.".format(count))
 \end{verbatim}
 
-Our main tool from the PredictionIO Python SDK that we will use to import our data into the event server is the class \tt{EventClient} and its method \tt{create\_event}. The function that implements this in the script MyTextEngine/data/import\_eventserver.py with respect to the \tt{20newsgroups} dataset is \tt{import\_events}. As fore mentioned, we will also be importing Scikit's library of English stop words into PredictionIO's Event Server. This is locally stored as a frozen set of strings, as can be verified by typing the following into your Python interpreter:
+The parameter client is an instance of the class predictionio.EventClient. The first line in the body of the function binds a generator consisting of corresponding document-class-label tuples to the variable train. We also initialize a counter in order to report the number of events that are imported. The for loop iterates over the generator train, and creates an event using the given data. The parameters event, entity\_id, entity\_type help identify a given event when reading it in. The properties are the relevant parts of the data that we want to use for training and returning predictions.
+
+The subsequently defined function import\_stopwords works similarly. However, since this data is used separately from the document corpus, we must be sure to modify the event\_type field from the one specified in import\_events. The following lines are then executed when script is run in your shell:
 
 \begin{verbatim}
->>> from sklearn.feature_extraction import text
->>> text.ENGLISH_STOP_WORDS
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(
+        description="Import sample data for text manipulation engine")
+    parser.add_argument('--access_key', default='invald_access_key')
+    parser.add_argument('--url', default="http://localhost:7070")
+    args = parser.parse_args()
+
+    client = predictionio.EventClient(
+        access_key=args.access_key,
+        url=args.url,
+        threads=20,
+        qsize=5000)
+
+    import_events(client)
+    import_stopwords(client)
 \end{verbatim}
+
+The top block of code allows us to specify arguments from the command line. This will be necessary for specifying the access key of your application, and the port location where HBase lives. The second block of code actually initializes the instance of predictionio.EventClient that is then passed in to our two import functions. Finally, to import the data into our Event Server, we type in the following into our shell.
 
 Again, the class \tt{EventClient} is the SDK component that allows us import the stop word data into the PredictionIO event server. The function used to import the stop word events is \tt{import\_stopwords} which is defined in the same script. With these two functions under our belt, we are ready to begin importing data. First, make sure PredictionIO is running, you can check this by typing \tt{pio status} on your terminal. If it is not running, start it with the command \tt{pio-start-all}. Now, let's create a new application named MyTextApp by entering the command \tt{pio app new MyTextApp} in your shell. You should see some printed output which includes your newly created access key. At this point make sure you are in the template root directory, and import the data set using the following command:
 
@@ -149,7 +207,7 @@ Again, the class \tt{EventClient} is the SDK component that allows us import the
 python data/import_eventserver.py --access_key *****
 \end{verbatim}
 
-where you will replace \tt{*****} with your actual access key. If the data is successfully imported, you should see the following subsequent printed output
+where you will replace \tt{*****} with your actual access key. If the data is successfully imported, you should see the following output:
  
  \begin{verbatim}
  Importing data.....

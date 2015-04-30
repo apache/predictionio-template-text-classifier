@@ -16,9 +16,9 @@ import org.apache.spark.rdd.RDD
 // cross validation.
 
 case class DataSourceParams(
-                             appName: String,
-                             evalK: Option[Int]
-                             ) extends Params
+  appName: String,
+  evalK: Option[Int]
+) extends Params
 
 
 
@@ -26,8 +26,9 @@ case class DataSourceParams(
 // implement a readTraining method, and, optionally, a
 // readEval method.
 
-class DataSource (val dsp : DataSourceParams)
-  extends PDataSource[TrainingData, EmptyEvaluationInfo, Query, ActualResult] {
+class DataSource (
+  val dsp : DataSourceParams
+) extends PDataSource[TrainingData, EmptyEvaluationInfo, Query, ActualResult] {
 
   @transient lazy val logger = Logger[this.type]
 
@@ -81,14 +82,12 @@ class DataSource (val dsp : DataSourceParams)
 
     // Create cross validation folds by partitioning indices
     // based on their index value modulo the number of folds.
-    (0 until dsp.evalK.get)
-      .map { k =>
-
+    (0 until dsp.evalK.get).map { k =>
       // Prepare training data for fold.
       val train = new TrainingData(
         data.filter(_._2 % dsp.evalK.get != k).map(_._1),
-        readStopWords((sc))
-      )
+        readStopWords
+        ((sc)))
 
       // Prepare test data for fold.
       val test = data.filter(_._2 % dsp.evalK.get == k)

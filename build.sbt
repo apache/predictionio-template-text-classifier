@@ -1,5 +1,4 @@
 
-
 name := "TextManipulationEngine"
 
 organization := "io.prediction"
