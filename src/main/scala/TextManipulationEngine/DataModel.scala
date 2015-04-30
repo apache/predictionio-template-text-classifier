@@ -27,7 +27,6 @@ class DataModel (
 
 
   // 1. Tokenizer: document => token list.
-  //
   // Takes an individual document and converts it to
   // a list of allowable tokens.
 
@@ -36,6 +35,7 @@ class DataModel (
       .tokenize(doc)
       .filter(e => ! td.stopWords.contains(e))
   }
+
 
   // 2. Hasher: Array[tokens] => Map(n-gram -> n-gram document tf).
 
@@ -57,6 +57,7 @@ class DataModel (
 
 
   // 3. Bigram universe extractor: RDD[bigram hashmaps] => RDD[((n-gram, n-gram idf), global index)]
+
   private def createUniverse(u: RDD[Map[String, Double]]): RDD[((String, Double), Long)] = {
     u.flatMap(identity)
       .map(e => (e._1, 1.0))
@@ -64,6 +65,7 @@ class DataModel (
       .map(e => (e._1, log(numDocs / e._2)))
       .zipWithIndex
   }
+
 
   // 4. Set private class variables for use in data transformations.
 
@@ -89,11 +91,13 @@ class DataModel (
   //    Map(n-gram -> global index)
   private val globalIndex : HashMap[String, Int] = HashMap(universe.map(e => (e._1._1, e._2.toInt)).collect : _*)
 
+
   // 5. Document Transformer: document => sparse tf-idf vector.
   // This takes a single document, tokenizes it, hashes it,
   // and finally returns a sparse vector containing the
   // tf-idf entries of the document n-grams (0 for all n-grams
   // not contained in the document).
+
   def transform(doc: String): Vector = {
     // Map(n-gram -> doument tf)
     val hashedDoc = hash(tokenize(doc)).filter(e => idf.keySet.contains(e._1))
@@ -105,7 +109,9 @@ class DataModel (
     )
   }
 
+
   // 6. Data Transformer: RDD[documents] => RDD[LabeledPoints]
+
   def transformData: RDD[LabeledPoint] = {
     td.data.map(e => LabeledPoint(e.label, transform(e.text)))
   }
