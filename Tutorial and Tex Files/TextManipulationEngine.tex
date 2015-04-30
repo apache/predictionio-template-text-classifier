@@ -80,62 +80,47 @@
 \maketitle
 
 
-In the real world, there are many applications that collect text as data. For example, suppose that you have a set of news articles and you want to implement an automatic categorization system that groups existing articles based on content similarity, and assigns future news articles into one of these categories. There are a wide array of machine learning models one can use to first cluster the news articles into categories and subsequently build a predictive model to classify new articles into the learned categories. However, before being able to use these techniques we must first transform the text data (in this case the set of articles) into numeric vectors, or feature vectors, that can be used to create, or train, a model.
+In the real world, there are many applications that collect text as data. For example, suppose that you have a set of news articles and you want to implement an automatic categorization system that groups existing articles based on content similarity, and assigns future news articles into one of these categories. There are a wide array of machine learning models you can use to first cluster the news articles into categories and subsequently build a predictive model to classify new articles into the learned categories. However, before being able to use these techniques you must first transform the text data (in this case the set of articles) into numeric vectors, or feature vectors, that can be used to create, or train, a model.
 
-The purpose of this tutorial is to illustrate how one can go about doing this using PredictionIO's engine platform. In particular, we will show you how to:
+The purpose of this tutorial is to illustrate how you can go about doing this using PredictionIO's platform. The advantages of using this platform include distributed data processing and model training for an increase in performance speed, as well as the capacity to use a newly trained predictive model to respond to queries in real-time. In particular, we will show you how to:
 
 \begin{itemize}
 \item[$\bullet$]{import a corpus of text documents into PredictionIO's event server;}
 
-\item[$\bullet$]{read the imported data for use in processing;}
+\item[$\bullet$]{read the imported event data for use in text processing;}
 
-\item[$\bullet$]{transform document text into a feature vector}
+\item[$\bullet$]{transform document text into a feature vector;}
 
-\item[$\bullet$]
+\item[$\bullet$]{use the feature vectors to fit a Naive Bayes classification model (using Spark MLLib library implementation);}
+
+\item[$\bullet$]{use the feature vectors to fit a Latent Dirichlet Allocation clustering model (using Spark MLLib library implementation.}
+
+\item[$\bullet$]{evaluate the performance of the fitted models;}
+
+\item[$\bullet$]{yield predictions to queries in real-time using a fitted model.}
 \end{itemize}
 
 
-The advantages of using this platform include increased data processing and model training speed, as well as the capacity to use a newly trained predictive model to respond to queries in real-time.
+\section*{Prerequisites}
 
-Going back to our example, 	 This process is shown as a graph in the following figure:
+Before getting started, please make sure that you have the latest version of PredictionIO installed (https://docs.prediction.io/install/). You will also need PredictionIO's Python SDK (https://github.com/PredictionIO/PredictionIO-Python-SDK), and the Scikit learn library (http://scikit-learn.org/stable/) for importing a sample data set into the PredictionIO Event Server. Any Python version greater than 2.7 will work for the purposes of executing the \tt{data/import\_eventserver.py} script provided with this engine template.
 
-\vspace{0.5cm}
-\centerline{
-\xymatrixcolsep{5pc}\xymatrix{
-\encircled{Text Documents} \ar[r]^{\text{Vectorization}} & \encircled{Numeric Vectors} \ar[r]^{\text{Model Training}} & \encircled{Learning Model}
-}}
-
-
-
-The first step is an example of an unsupervised learning problem, since we are only given the news articles without any prediction targets. The second step is an example of a supervised learning problem, since at this stage we can associate each article with  together 
-
- 
-
-We will assume the user is running the PredictionIO version 0.9.2, and meets all minimum computing requirements. To download PredictionIO, follow the instructions on the Getting Started tutorial.
+You should also download the engine template named Modeling Text Data (http://templates.prediction.io/) that accompanies this tutorial.
 
 \section*{Engine Overview}
 
-As a user, we are charged with collecting data and importing it into an event server. The data is then read and processed by our engine via the \tt{DataSource} and \tt{Preparation} components. The \tt{Algorithm} engine component then trains a predictive model using the processed, or prepared, data. Once we have trained a model, we are ready to deploy our engine and respond to real-time queries via the \tt{Serving} component. 
+The engine follows the general DASE architecture which we briefly review here. Firstly, as a user, you are charged with collecting data from your web or application, and importing it into PredictionIO's Event Server. Once the data is in the server, it  can be read and processed by our engine via the DataSource and Preparation components, respectively. The Algorithm engine component then trains a predictive model using the processed, or prepared, data. Once we have trained a model, we are ready to deploy our engine and respond to real-time queries via the Serving component. The Evaluation component is used to compute an appropriate metric to test the performance of a fitted model, as well as aid in the tuning of model hyper parameters. 
 
-%We are given our observations as a set of strings $\mathcal{S}.$ In a general setting, there are two different kind of problems we can be given. In the first, each string $s$ contained in $\mathcal{S}$ is also associated to a class label $y$ taking values in $\{1, 2, ..., K\},$ where $K$ is an integer, which we can think of as a categorical, or class, label.We may proceed by learning a predictive model $f,$ a function which takes in a string $s$ and outputs a class label, using the observed data pairs $(y, s).$ Once we have learned $f$ then given a new string $s_\text{new},$ we can predict a class label $f(s_\text{new}).$ This is an example of a supervised learning problem. To exemplify the second kind of problem, suppose we are only given the set of strings $\mathcal {S},$ and are asked to group the string together into $K$ different groups based on a set of characteristics which we extract from the strings. This is an example of an unsupervised learning problem. 
+In addition to the DASE components, our engine also includes the components DataModel and TrainingModel. DataModel is the muscle in the Preparator stage as it is the component that vectorizes the text data. The TrainingModel component which is more of a conceptual framework representing a set of Scala classes that can produce a predictive model. The two particular Scala classes implemented in the engine template are named SupervisedModel and UnsupervisedModel. The figure below shows a graphical representation of the engine architecture just described, as well as its interactions with your web/app and a provided Event Server.
 
-
-The problem we will solve using PredictionIO's framework is the following: given a set of documents represented as strings, we want to build a predictive model that either (i), given a categorization of our data documents, classifies new documents into a particular category, or (ii) groups the documents into different classes based on the document content, or . To do this we will transform our strings into numeric vectors using Apache's OpenNLP library so that we may apply existing machine learning methods for (i) classification and (ii) clustering.
-
-
-Our engine includes all DASE components, a Data Model implementation which deals with data representation, and a Training Model component which is more of a conceptual framework representing a set of Scala classes that can produce a predictive model. Figure 1 below demonstrates the general structure of our engine, as well as its interactions with your web/app and a provided Event Server. We emphasize here that the engine template itself is really just an SBT project.
-
-
-We begin by covering the data collection stage in which we will obtain a corpus of text documents from Scikit Learn's datasets module. For this purpose, we will use the PredictionIO Python SDK for importing our documents as events into PredictionIO's event server. You can pull the necessary SDK files from PredictionIO's Github repository, if required.
-
-
+\vspace{0.15cm}
 \centerline{
 \xymatrixcolsep{4pc}\xymatrix{
-& \\
+\encircled{\bf{Evaluation}} & \ar[l] \\
 \encircled{\bf{Event Server}} \ar[r] & \\
 & \ar[ldd] \\
 & \\
-\encircled{\bf{Your Web/App}} \ar[ruu]_{\text{Deployment}} \ar[uuu]^{\text{Event Data}}& 
+\encircled{\bf{Your Web/App}} \ar[ruu] \ar[uuu]^{\text{Text Data}}& 
 }
 \rected{
 \xymatrixcolsep{2pc}\xymatrix{
@@ -143,112 +128,24 @@ We begin by covering the data collection stage in which we will obtain a corpus 
 \bf{Engine} & \encircled{Data Model} \ar[ru] & \encircled{Training Model} \ar[ru]&
 }}}
 
-\
-
-{\small \bf{Figure 1}: Representation of PredictionIO framework for our Modeling Text Data Engine as a directed acyclic graph.}
-
-\vspace{0.7cm}
-
-
 \section*{Importing Data}
 
-We will be importing two different sources of data into PredictionIO's: a corpus of news documents that are categorized into a set of topics, as well as a set of stop words. The definition of stop words will be made precise later in the tutorial, however, for now just think of these as words that we do not want to include in our corpus when modeling the text data. Also, for the remainder of the tutorial we will assume that the present working directory is the engine template root directory.
+In order to stick with the news article example, we will be importing two different sources of data into PredictionIO's: a corpus of news documents that are categorized into a set of topics, as well as a set of stop words. Stop words are words that we do not want to include in our corpus when modeling our text data. For the remainder of the tutorial, we will assume that the present working directory is the engine template root directory.
 
-The script in the  used to import the data is named import\_eventserver.py. The script begins with the following import statements:
-
-\begin{verbatim}
-from sklearn.datasets import fetch_20newsgroups
-from sklearn.feature_extraction import text 
-import predictionio
-import argparse
-\end{verbatim}
-
-The first line imports a function fetch\_20newsgroups which is used to fetch the text data; the second, imports an object text containing a list of English stop words as an attribute, and, the last two lines import the predictionio and argparse Python modules, respectively. The following lines bind the data and stop words to the respective variables twenty\_train and stop\_words.
+The script in the  used to import the data is named \tt{import\_eventserver.py}. To actually import the data into our Event Server, we must first create an application. To do this run the shell command \tt{pio app new MyTextApp}, and take note of your access key. If you forget your access key, you can obtain it by using the command \tt{pio app list}. Now, use the command:
+$$
+\tt{python import\_eventserver.py --access\_key **** --url http://...}
+$$
+where you replace \tt{*****} with your actual access key. You generally should not have to specify the url argument, but if you need to just follow the same structure as above. If the data is successfully imported, you should see the following output:
 
 \begin{verbatim}
-twenty_train = fetch_20newsgroups(subset = 'train',
-                                  shuffle=True,
-                                  random_state=10)
-stop_words = text.ENGLISH_STOP_WORDS
-\end{verbatim}
-
-You can run the last few lines of code interactively in your Python interpreter to get a better feel for the data, and in particular, note that twenty\_train and stop\_words are implemented as a dictionary and a frozen set, respectively. This is shown in the following output:
-
-\begin{verbatim}
->>> twenty_train.keys()
-dict_keys(['DESCR', 'target', 'data', 'target_names', 'filenames'])
->>> type(stop_words)
-<class 'frozenset'>
-\end{verbatim}
-
-We are interested in the target, target\_names, and data keys of twenty\_train. The target attribute is a list of length equal to the number of observations (11,314) consisting of class labels corresponding to the document's given category; the target\_names, a list of strength of length 20 which give the corresponding category names; and the data attribute, a list containing our document strings. We note that you can take any sublist of twenty\_train.target\_names and use this to specify the optional parameter categories for the function fetch\_20newsgroups. This will also return a dictionary of the same form, except it will only include those documents whose class label corresponds to one of the selected categories.
-
-The corpus itself is imported into PredictionIO's Event Server via the function:
-
-\begin{verbatim}
-def import_events(client):
-    train = ((twenty_train.target_names[twenty_train.target[k]],
-              float(twenty_train.target[k]),
-              twenty_train.data[k]) 
-             for k in range(len(twenty_train.data)))
-    count = 0
-    print('Importing data.....')
-    for elem in train:
-        count += 1
-        client.create_event(
-            event = "documents",
-            entity_id = count,
-            entity_type = "source",
-            properties = {
-                "category": elem[0],
-                "label": elem[1],
-                "text": elem[2]
-            })
-    print("Imported {0} events.".format(count))
-\end{verbatim}
-
-The parameter client is an instance of the class predictionio.EventClient. The first line in the body of the function binds a generator consisting of corresponding document-class-label tuples to the variable train. We also initialize a counter in order to report the number of events that are imported. The for loop iterates over the generator train, and creates an event using the given data. The parameters event, entity\_id, entity\_type help identify a given event when reading it in. The properties are the relevant parts of the data that we want to use for training and returning predictions.
-
-The subsequently defined function import\_stopwords works similarly. However, since this data is used separately from the document corpus, we must be sure to modify the event\_type field from the one specified in import\_events. The following lines are then executed when script is run in your shell:
-
-\begin{verbatim}
-if __name__ == '__main__':
-    parser = argparse.ArgumentParser(
-        description="Import sample data for text manipulation engine")
-    parser.add_argument('--access_key', default='invald_access_key')
-    parser.add_argument('--url', default="http://localhost:7070")
-    args = parser.parse_args()
-
-    client = predictionio.EventClient(
-        access_key=args.access_key,
-        url=args.url,
-        threads=20,
-        qsize=5000)
-
-    import_events(client)
-    import_stopwords(client)
-\end{verbatim}
-
-The top block of code allows us to specify arguments from the command line. This will be necessary for specifying the access key of your application, and the port location where HBase lives. The second block of code actually initializes the instance of predictionio.EventClient that is then passed in to our two import functions. 
-
-Finally, to import the data into our Event Server, we must first create an application. To do this run the command \tt{pio app new MyTextApp}, and take note of your access key. If you forget your access key, you can obtain it by using the command \tt{pio app list}. Now, to import the data, mimic the following shell session
-
-Again, the class \tt{EventClient} is the SDK component that allows us import the stop word data into the PredictionIO event server. The function used to import the stop word events is \tt{import\_stopwords} which is defined in the same script. With these two functions under our belt, we are ready to begin importing data. First, make sure PredictionIO is running, you can check this by typing \tt{pio status} on your terminal. If it is not running, start it with the command \tt{pio-start-all}. Now, let's create a new application named MyTextApp by entering the command \tt{pio app new MyTextApp} in your shell. You should see some printed output which includes your newly created access key. At this point make sure you are in the template root directory, and import the data set using the following command:
-
-\begin{verbatim}
-python data/import_eventserver.py --access_key *****
-\end{verbatim}
-
-where you will replace \tt{*****} with your actual access key. If the data is successfully imported, you should see the following output:
- 
- \begin{verbatim}
  Importing data.....
  Imported 11314 events.
  Importing stop words.....
  Imported 318 stop words.
  \end{verbatim}
  
-Our data is now sitting in PredictionIO's Event Server and ready to be used by our engine. The following section will get you acquainted with the different engine components that are implemented in this engine template.
+Our data is now imported
 
 \break
 
