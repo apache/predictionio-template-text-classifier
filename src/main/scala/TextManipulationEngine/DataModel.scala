@@ -96,7 +96,7 @@ class DataModel (
   // not contained in the document).
   def transform(doc: String): Vector = {
     // Map(n-gram -> doument tf)
-    val hashedDoc = hash(tokenize(doc))
+    val hashedDoc = hash(tokenize(doc)).filter(idf.keySet.contains)
     Vectors.sparse(
       numTokens,
       hashedDoc.map {
@@ -109,7 +109,9 @@ class DataModel (
   def transformData: RDD[LabeledPoint] = {
     td.data.map(e => LabeledPoint(e.label, transform(e.text)))
   }
-
 }
+
+
+
 
 

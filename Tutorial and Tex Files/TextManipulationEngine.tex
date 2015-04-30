@@ -164,6 +164,24 @@ Our data is now sitting in PredictionIO's Event Server and ready to be used by o
 
 \section*{Engine Components}
 
+\subsection*{Data Source}
+
+\subsection*{Preparator}
+
+\subsection*{Data Model}
+
+Our data model implementation is actually just a Scala class taking in as parameters \tt{td}, \tt{nMin}, \tt{nMax}, where \tt{td} is an object of class \tt{TrainingData}, and the other two parameters are the components of our n-gram window which we will define shortly. In this section, we give an overview of how we go about representing our document strings. It will be easier to explain this process with an example, so consider the document:
+$$
+D := \tt{"Hello, my name is Marco."}
+$$
+The first thing we need to do is break up $D$ into a list of \enquote{allowed tokens.} You can think of a token as a terminating sequence of characters that exist in our document (think of a word in a sentence). For example, the list of tokens that appear in $D$ is:
+$$
+\tt{Hello} \to \tt{,} \to \tt{my} \to \tt{name} \to \tt{is} \to \tt{Marco} \to \tt{.}
+$$
+Now, recall that when we imported our data, we also imported a set of stop words. This set of stop words contains all the words (or tokens) that we do not want to include once we tokenize our documents. Hence, we will call the tokens that appear in $D$ and are not contained in our set of stop words allowed tokens. So, if our set of stop words is $\{\tt{my}, \tt{is}\},$ then the list of allowed tokens appearing in $D$ is:
+$$
+\tt{Hello} \to \tt{,} \to \tt{name} \to \tt{Marco} \to \tt{.}
+$$
 
 
 
