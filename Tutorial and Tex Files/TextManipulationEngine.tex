@@ -103,7 +103,7 @@ The purpose of this tutorial is to illustrate how you can go about doing this us
 
 \section*{Prerequisites}
 
-Before getting started, please make sure that you have the latest version of PredictionIO installed (https://docs.prediction.io/install/). You will also need PredictionIO's Python SDK (https://github.com/PredictionIO/PredictionIO-Python-SDK), and the Scikit learn library (http://scikit-learn.org/stable/) for importing a sample data set into the PredictionIO Event Server. Any Python version greater than 2.7 will work for the purposes of executing the \tt{data/import\_eventserver.py} script provided with this engine template.
+Before getting started, please make sure that you have the latest version of PredictionIO installed (https://docs.prediction.io/install/). You will also need PredictionIO's Python SDK (https://github.com/PredictionIO/PredictionIO-Python-SDK), and the Scikit learn library (http://scikit-learn.org/stable/) for importing a sample data set into the PredictionIO Event Server. Any Python version greater than 2.7 will work for the purposes of executing the \tt{data/import\_eventserver.py} script provided with this engine template. Moreover, we emphasize here that this is an engine template written in \it{Scala} and can be more generally thought of as an SBT project containing all the necessary components.
 
 You should also download the engine template named Modeling Text Data (http://templates.prediction.io/) that accompanies this tutorial.
 
@@ -111,7 +111,7 @@ You should also download the engine template named Modeling Text Data (http://te
 
 The engine follows the general DASE architecture which we briefly review here. Firstly, as a user, you are charged with collecting data from your web or application, and importing it into PredictionIO's Event Server. Once the data is in the server, it  can be read and processed by our engine via the DataSource and Preparation components, respectively. The Algorithm engine component then trains a predictive model using the processed, or prepared, data. Once we have trained a model, we are ready to deploy our engine and respond to real-time queries via the Serving component. The Evaluation component is used to compute an appropriate metric to test the performance of a fitted model, as well as aid in the tuning of model hyper parameters. 
 
-In addition to the DASE components, our engine also includes the components DataModel and TrainingModel. DataModel is the muscle in the Preparator stage as it is the component that vectorizes the text data. The TrainingModel component which is more of a conceptual framework representing a set of Scala classes that can produce a predictive model. The two particular Scala classes implemented in the engine template are named SupervisedModel and UnsupervisedModel. The figure below shows a graphical representation of the engine architecture just described, as well as its interactions with your web/app and a provided Event Server.
+In addition to the DASE components, our engine also includes the components DataModel and TrainingModel. DataModel is the muscle in the Preparator stage as it is the component that vectorizes the text data. The TrainingModel component which is more of a conceptual framework representing a set of Scala classes that can produce a predictive model. The two particular Scala classes implemented in the engine template are named SupervisedModel and UnsupervisedModel. The figure below shows a graphical representation of the engine architecture just described, as well as its interactions with your web/app and a provided Event Server:
 
 \vspace{0.15cm}
 \centerline{
@@ -124,38 +124,73 @@ In addition to the DASE components, our engine also includes the components Data
 }
 \rected{
 \xymatrixcolsep{2pc}\xymatrix{
-\encircled{Data Source}\ar[r]& \encircled{Preparator} \ar[r] \ar[d]& \encircled{Training Algorithm} \ar[d] \ar[r] & \encircled{Serving} \\
-\bf{Engine} & \encircled{Data Model} \ar[ru] & \encircled{Training Model} \ar[ru]&
+\encircled{Data Source}\ar[r]& \encircled{Preparator} \ar[r] & \encircled{Algorithm}  \ar[r] & \encircled{Serving} \\
+\bf{Engine} & \encircled{Data Model} \ar[u] & \encircled{Training Model} \ar[u]&
 }}}
 
 \section*{Importing Data}
 
-In order to stick with the news article example, we will be importing two different sources of data into PredictionIO's: a corpus of news documents that are categorized into a set of topics, as well as a set of stop words. Stop words are words that we do not want to include in our corpus when modeling our text data. For the remainder of the tutorial, we will assume that the present working directory is the engine template root directory.
+In order to stick with the news article example, we will be importing two different sources of data into PredictionIO's: a corpus of news documents that are categorized into a set of topics, as well as a set of stop words. Stop words are words that we do not want to include in our corpus when modeling our text data. Both the data and stop words are imported from the Scikit learn Python library. 
 
-The script in the  used to import the data is named \tt{import\_eventserver.py}. To actually import the data into our Event Server, we must first create an application. To do this run the shell command \tt{pio app new MyTextApp}, and take note of your access key. If you forget your access key, you can obtain it by using the command \tt{pio app list}. Now, use the command:
-$$
-\tt{python import\_eventserver.py --access\_key **** --url http://...}
-$$
-where you replace \tt{*****} with your actual access key. You generally should not have to specify the url argument, but if you need to just follow the same structure as above. If the data is successfully imported, you should see the following output:
+For the remainder of the tutorial, we will assume that the present working directory is the engine template root directory. The script used to import the data is \tt{data/import\_eventserver.py}. To actually import the data into our Event Server, we must first create an application which we will name MyTextApp. To do this run the shell command \tt{pio app new MyTextApp}, and take note of your access key. If you forget your access key, you can obtain it by using the command \tt{pio app list}. The following shell output shows how the command for importing your data (first line), and the resulting output after the data has been successfully imported. Replace \tt{***} with your actual access key, and \tt{???} with the correct location of the port hosting HBase. You can usually leave out the url field as HBase will generally be hosting on port 7077.
 
 \begin{verbatim}
- Importing data.....
- Imported 11314 events.
- Importing stop words.....
- Imported 318 stop words.
+$ python data/import_eventserver.py --access_key *** --url ???
+Importing data.....
+Imported 11314 events.
+Importing stop words.....
+Imported 318 stop words.
  \end{verbatim}
- 
-Our data is now imported
+
+\section*{Data Source: Reading Event Data}
+
+Now that our data has been imported into PredictionIO's Event Server, it needs to be read from HBase for it to actually be used by our engine. This is precisely what the DataSource engine component is for. We first explain the classes Observation and Training Data which are defined in \tt{DataSource.scala}. Observation serves as a wrapper for storing the information about a news document needed to train a model. The class member label refers to the label of the category a document belongs to, and text, stores the actual document content. TrainingData is used to store an RDD of Observation objects and our set of stop words. 
+
+DataSourceParams,is used to specify the parameters needed to read and prepare the data for processing. This class is initialized with two parameters appName and evalK. The first parameter specifies your application name (i.e. MyTextApp), which is needed so that the DataSource component knows where to pull the event data from. The second parameter is used for model evaluation and specifies the number of folds to use in cross-validation 
+%http://en.wikipedia.org/wiki/Cross-validation_%28statistics%29
+when we estimate a model performance metric.
+
+Finally, we come to the DataSource class. This is initialized with its corresponding parameter class, and extends PDataSource[TD, E, Q, AR]. This extension means that it \bf{must} implement the method readTraining which returns an instance of type TD which is in this case the class TrainingData. This method completely relies on the defined \it{private} methods readEventData and readStopWords. Both of these functions read data observations as Event instances, create an RDD containing these events and finally transforms the RDD of events into an object of the appropriate type as seen below:
+
+\begin{verbatim}
+private def readEventData(sc: SparkContext) : RDD[Observation] = {
+    //Get RDD of Events.
+    PEventStore.find(
+      appName = dsp.appName,
+      entityType = Some("source"), // specify data entity type
+      eventNames = Some(List("documents")) // specify data event name
+
+      // Convert collected RDD of events to and RDD of Observation
+      // objects.
+    )(sc).map(e => Observation(
+      e.properties.get[Double]("label"),
+      e.properties.get[String]("text")
+    )).cache
+  }
+
+  // Helper function used to store stop words from
+  // event server.
+  private def readStopWords(sc : SparkContext) : Set[String] = {
+    PEventStore.find(
+      appName = dsp.appName,
+      entityType = Some("resource"),
+      eventNames = Some(List("stopwords"))
+
+    //Convert collected RDD of strings to a string set.
+    )(sc)
+      .map(e => e.properties.get[String]("word"))
+      .collect
+      .toSet
+  }
+\end{verbatim}
+
+Note that readEventData and readStopWords use different entity types and event names, but use the same application name. This is because we imported both our corpus and stop word set using the same access key. These field distinctions are required for distinguishing between the two data types. The method readEval also relies on readEventData and readStopWords, and its function is to prepare the different cross-validation folds needed for evaluating your model and tuning hyperparameters. 
 
 \break
 
-\section*{Engine Components}
+\subsection*{\normalsize Preparator : Processing the Data}
 
-\subsection*{Data Source}
-
-\subsection*{Preparator}
-
-\subsection*{Data Model}
+\subsection*{\normalsize Data Model}
 
 Our data model implementation is actually just a Scala class taking in as parameters \tt{td}, \tt{nMin}, \tt{nMax}, where \tt{td} is an object of class \tt{TrainingData}, and the other two parameters are the components of our n-gram window which we will define shortly. In this section, we give an overview of how we go about representing our document strings. It will be easier to explain this process with an example, so consider the document:
 $$

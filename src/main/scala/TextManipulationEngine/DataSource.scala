@@ -35,10 +35,11 @@ class DataSource (
   // Helper function used to store data given
   // a SparkContext.
   private def readEventData(sc: SparkContext) : RDD[Observation] = {
+    //Get RDD of Events.
     PEventStore.find(
       appName = dsp.appName,
-      entityType = Some("source"),
-      eventNames = Some(List("documents"))
+      entityType = Some("source"), // specify data entity type
+      eventNames = Some(List("documents")) // specify data event name
 
       // Convert collected RDD of events to and RDD of Observation
       // objects.

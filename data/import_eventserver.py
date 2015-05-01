@@ -10,9 +10,8 @@ stop_words = text.ENGLISH_STOP_WORDS
 
 
 def import_events(client):
-    train = ((twenty_train.target_names[twenty_train.target[k]],
-              float(twenty_train.target[k]),
-              twenty_train.data[k]) for k in range(len(twenty_train.data)))
+    train = ((float(twenty_train.target[k]),
+             twenty_train.data[k]) for k in range(len(twenty_train.data)))
     count = 0
     print('Importing data.....')
     for elem in train:
@@ -22,9 +21,8 @@ def import_events(client):
             entity_id = count,
             entity_type = "source",
             properties = {
-                "category": elem[0],
-                "label": elem[1],
-                "text": elem[2]
+                "label": elem[0],
+                "text": elem[1]
             })
     print("Imported {0} events.".format(count))
 
