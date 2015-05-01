@@ -6,7 +6,7 @@ import org.apache.spark.mllib.classification.NaiveBayesModel
 
 import scala.math.exp
 
-class SupervisedModel(
+class NBModel(
                        val pd: PreparedData,
                        lambda: Double
                        ) extends Serializable {
@@ -45,7 +45,8 @@ class SupervisedModel(
     normalize(
       nb.pi
         .zip(nb.theta)
-        .map(e => exp(innerProduct(e._2, x) + e._1))
+        .map(
+          e => exp(innerProduct(e._2, x) + e._1))
     )
   }
 

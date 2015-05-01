@@ -88,7 +88,9 @@
 
 In the real world, there are many applications that collect text as data. For example, suppose that you have a set of news articles that are categorized based on content, and you wish to automatically assign incoming, uncategorized articles to one of the existing categories. There are a wide array of machine learning models you can use create, or train, a predictive model to assign an incoming article, or query, to an existing category. Before you can use these techniques you must first transform the text data (in this case the set of news articles) into numeric vectors, or feature vectors, that can be used to train your model.
 
-The purpose of this tutorial is to illustrate how you can go about doing this using PredictionIO's platform. The advantages of using this platform include: a dynamic engine that responds to queries in real-time; distributed computing capabilities for handling data processing and model training tasks with large data sets. In particular, we will show you how to:
+The purpose of this tutorial is to illustrate how you can go about doing this using PredictionIO's platform. The advantages of using this platform include: a dynamic engine that responds to queries in real-time; separation of concerns,
+%http://en.wikipedia.org/wiki/Separation_of_concerns
+ which offers code re-use and maintainability, and distributed computing capabilities for efficiently handling data processing and model training tasks with large data sets. In particular, we will show you how to:
 
 \begin{itemize}
 \item[$\bullet$]{import a corpus of text documents into PredictionIO's event server;}
@@ -99,7 +101,7 @@ The purpose of this tutorial is to illustrate how you can go about doing this us
 
 \item[$\bullet$]{use the feature vectors to fit a classification model based on Naive Bayes (using Spark MLLib library implementation);}
 
-\item[$\bullet$]{use the feature vectors to fit a classification model based on Latent Dirichlet Allocation (using Spark MLLib library implementation.}
+\item[$\bullet$]{use the feature vectors to fit a classification model based on Latent Dirichlet Allocation (using Spark MLLib library implementation).}
 
 \item[$\bullet$]{evaluate the performance of the fitted models;}
 
@@ -121,7 +123,7 @@ You should also download the engine template named Modeling Text Data
 
 \section*{Engine Overview}
 
-The engine follows the general DASE architecture which we briefly review here. As a user, you are tasked with collecting data for your web or application, and importing it into PredictionIO's Event Server. Once the data is in the server, it  can be read and processed by the engine via the Data Source and Preparation components, respectively. The Algorithm component then trains a predictive model using the processed, or prepared, data. Once we have trained a model, we are ready to deploy our engine and respond to real-time queries via the Serving component. The Evaluation component is used to compute an appropriate metric to test the performance of a fitted model, as well as aid in the tuning of model hyper parameters. 
+The engine follows the DASE architecture which we briefly review here. As a user, you are tasked with collecting data for your web or application, and importing it into PredictionIO's Event Server. Once the data is in the server, it  can be read and processed by the engine via the Data Source and Preparation components, respectively. The Algorithm component then trains a predictive model using the processed, or prepared, data. Once we have trained a model, we are ready to deploy our engine and respond to real-time queries via the Serving component. The Evaluation component is used to compute an appropriate metric to test the performance of a fitted model, as well as aid in the tuning of model hyper parameters. 
 
 We are working with text data which means our queries, or newly observed documents, are of the form 
 $$
@@ -134,9 +136,9 @@ Here category is the model's class assignment for this new text document (i.e. n
 $$
 \tt{\{category : String\}}.
 $$
-This is used in the evaluation stage when estimating the performance of our predictive model. 
+This is used in the evaluation stage when estimating the performance of our predictive model (how well does the model predict categories). 
  
-In addition to the DASE components, our engine also includes the components DataModel and TrainingModel. DataModel is the muscle in the Preparator stage as it is the component that vectorizes the text data. The TrainingModel component takes the vectorized data and trains a classification model. The two particular Scala classes implemented in the engine template are named SupervisedModel and UnsupervisedModel. 
+In addition to the DASE components, our engine also includes the Data Model and Training Model abstractions. The Data Model refers to the implementation of modeling choices relating to feature extraction and selection. In our example, this includes the vectorization of text and any subsequent feature reduction or transformation procedures one might want to do. The Training Model abstraction refers to any set of Scala classes that take in a set of feature observations and outputs a predictive model. In our example, this includes the NBModel (Naive Bayes) and LDAModel (Latent Dirichlet Allocation) based classes which give us category classification models.
 
 To summarize: (1) we import text data to the Event Server; (2) the engine reads and processes the data, and trains a predictive model; (3) once the model is trained and the engine deployed, your web application can send text queries to which the engine can respond with a predicted result in real time; (4) in the evaluation, the engine produces both predicted results and actual results for the training data and feeds them to the Evaluation component. The figure below shows a graphical representation of the engine architecture just described, as well as its interactions with your web/app and a provided Event Server:
 
@@ -236,7 +238,7 @@ for more information
 
 \section*{Importing Data}
 
-In order to stick with the news article example, we will, for the purpose of this illustration, be importing two different sources of data into PredictionIO's Event Serve: a corpus of news documents that are categorized into a set of topics, as well as a set of stop words. Stop words are words that we do not want to include in our corpus when modeling our text data. Both the data and stop words are imported from the Scikit learn Python library. 
+In order to stick with the news article example, we will, for the purpose of this illustration, be importing two different sources of data from the Scikit learn Python library into PredictionIO's Event Serve: a corpus of text documents that are categorized into a set of topics, as well as a set of stop words. Stop words are words that we do not want to include in our corpus when modeling our text data. 
 
 For the remainder of the tutorial, we will assume that the present working directory is the engine template root directory. The script used to import the data is \tt{import\_eventserver.py} located in the data directory. To actually import the data into our Event Server, we must first create an application which we will name MyTextApp. To do this run the shell command \tt{pio app new MyTextApp}, and take note of your access key. If you forget your access key, you can obtain it by using the command \tt{pio app list}. The following shell output shows the command needed for importing your data (first line), and the resulting output after the data has been successfully imported. Replace \tt{***} with your actual access key, and \tt{???} with the correct location of the port hosting HBase. You can usually leave out the url field as HBase will generally be hosting on port 7070.
 

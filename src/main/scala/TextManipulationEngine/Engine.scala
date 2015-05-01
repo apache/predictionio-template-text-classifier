@@ -38,7 +38,7 @@ object TextManipulationEngine extends EngineFactory {
       classOf[DataSource],
       classOf[Preparator],
       Map(
-        "sup" -> classOf[SupervisedAlgorithm]
+        "nb" -> classOf[NBAlgorithm]
       ), classOf[Serving]
     )
   }

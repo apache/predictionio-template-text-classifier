@@ -7,7 +7,7 @@ import org.apache.spark.SparkContext
 // using a Naive Bayes classifier, which gives us only one
 // hyperparameter in this stage.
 
-case class SupervisedAlgorithmParams(
+case class NBAlgorithmParams(
   lambda: Double
 ) extends Params
 
@@ -15,17 +15,17 @@ case class SupervisedAlgorithmParams(
 
 // 2. Define SupervisedAlgorithm class.
 
-class SupervisedAlgorithm(
-  val sap: SupervisedAlgorithmParams
-) extends P2LAlgorithm[PreparedData, SupervisedModel, Query, PredictedResult] {
+class NBAlgorithm(
+  val sap: NBAlgorithmParams
+) extends P2LAlgorithm[PreparedData, NBModel, Query, PredictedResult] {
 
   // Train your model.
-  def train(sc: SparkContext, pd: PreparedData): SupervisedModel = {
-    new SupervisedModel(pd, sap.lambda)
+  def train(sc: SparkContext, pd: PreparedData): NBModel = {
+    new NBModel(pd, sap.lambda)
   }
 
   // Prediction method for trained model.
-  def predict(model: SupervisedModel, query: Query): PredictedResult = {
+  def predict(model: NBModel, query: Query): PredictedResult = {
     model.predict(query.text)
   }
 }
