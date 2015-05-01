@@ -15,9 +15,13 @@
 
 
 \newcommand*\encircled[1]{\tikz[baseline=(char.base)]{
-            \node[shape=circle,draw,inner sep=1pt] (char) {#1};}}
+            \node[black,fill=cyan,shape=circle,draw,inner sep=1pt] (char) {#1};}}
+\newcommand*\encircledblack[1]{\tikz[baseline=(char.base)]{
+            \node[black,fill=cyan,shape=circle,draw,inner sep=1pt] (char) {#1};}}
 \newcommand*\rected[1]{\tikz[baseline=(char.base)]{
-            \node[shape=rectangle,draw,inner sep=2pt] (char) {#1};}}
+            \node[black,fill=gray,shape=rectangle,draw,inner sep=2pt,] (char) {#1};}}
+\newcommand*\rectedblack[1]{\tikz[baseline=(char.base)]{
+            \node[gray,fill=black,shape=rectangle,draw,inner sep=2pt,] (char) {#1};}}
 \newcommand{\dlim}{\underset{\longrightarrow}{\lim} \ }
 \newcommand{\field}[1]{\mathbb{#1}}
 \newcommand{\N}{\field{N}}
@@ -76,15 +80,15 @@
   \int}
 \def\lowint{\mkern3mu\underline{\vphantom{\intop}\mkern7mu}\mkern-10mu\int}
 \begin{document}
-\title{\vspace{-1.5 cm}\bf{PredictionIO: Modeling Text Data Engine}}
+\title{\vspace{-1.5 cm}\bf{PredictionIO: Text Manipulation Engine}}
 \author{\vspace{-2cm}}
 \date{}
 \maketitle
 
 
-In the real world, there are many applications that collect text as data. For example, suppose that you have a set of news articles and you want to implement an automatic categorization system that groups existing articles based on content similarity, and assigns future news articles into one of these categories. There are a wide array of machine learning models you can use to first cluster the news articles into categories and subsequently build a predictive model to classify new articles into the learned categories. However, before being able to use these techniques you must first transform the text data (in this case the set of articles) into numeric vectors, or feature vectors, that can be used to create, or train, a model.
+In the real world, there are many applications that collect text as data. For example, suppose that you have a set of news articles that are categorized based on content, and you wish to automatically assign incoming, uncategorized articles to one of the existing categories. There are a wide array of machine learning models you can use create, or train, a predictive model to assign an incoming article, or query, to an existing category. Before you can use these techniques you must first transform the text data (in this case the set of news articles) into numeric vectors, or feature vectors, that can be used to train your model.
 
-The purpose of this tutorial is to illustrate how you can go about doing this using PredictionIO's platform. The advantages of using this platform include distributed data processing and model training for an increase in performance speed, as well as the capacity to use a newly trained predictive model to respond to queries in real-time. In particular, we will show you how to:
+The purpose of this tutorial is to illustrate how you can go about doing this using PredictionIO's platform. The advantages of using this platform include: a dynamic engine that responds to queries in real-time; distributed computing capabilities for handling data processing and model training tasks with large data sets. In particular, we will show you how to:
 
 \begin{itemize}
 \item[$\bullet$]{import a corpus of text documents into PredictionIO's event server;}
@@ -93,9 +97,9 @@ The purpose of this tutorial is to illustrate how you can go about doing this us
 
 \item[$\bullet$]{transform document text into a feature vector;}
 
-\item[$\bullet$]{use the feature vectors to fit a Naive Bayes classification model (using Spark MLLib library implementation);}
+\item[$\bullet$]{use the feature vectors to fit a classification model based on Naive Bayes (using Spark MLLib library implementation);}
 
-\item[$\bullet$]{use the feature vectors to fit a Latent Dirichlet Allocation clustering model (using Spark MLLib library implementation.}
+\item[$\bullet$]{use the feature vectors to fit a classification model based on Latent Dirichlet Allocation (using Spark MLLib library implementation.}
 
 \item[$\bullet$]{evaluate the performance of the fitted models;}
 
@@ -117,29 +121,46 @@ You should also download the engine template named Modeling Text Data
 
 \section*{Engine Overview}
 
-The engine follows the general DASE architecture which we briefly review here. Firstly, as a user, you are charged with collecting data from your web or application, and importing it into PredictionIO's Event Server. Once the data is in the server, it  can be read and processed by our engine via the DataSource and Preparation components, respectively. The Algorithm engine component then trains a predictive model using the processed, or prepared, data. Once we have trained a model, we are ready to deploy our engine and respond to real-time queries via the Serving component. The Evaluation component is used to compute an appropriate metric to test the performance of a fitted model, as well as aid in the tuning of model hyper parameters. 
+The engine follows the general DASE architecture which we briefly review here. As a user, you are tasked with collecting data for your web or application, and importing it into PredictionIO's Event Server. Once the data is in the server, it  can be read and processed by the engine via the Data Source and Preparation components, respectively. The Algorithm component then trains a predictive model using the processed, or prepared, data. Once we have trained a model, we are ready to deploy our engine and respond to real-time queries via the Serving component. The Evaluation component is used to compute an appropriate metric to test the performance of a fitted model, as well as aid in the tuning of model hyper parameters. 
 
-In addition to the DASE components, our engine also includes the components DataModel and TrainingModel. DataModel is the muscle in the Preparator stage as it is the component that vectorizes the text data. The TrainingModel component which is more of a conceptual framework representing a set of Scala classes that can produce a predictive model. The two particular Scala classes implemented in the engine template are named SupervisedModel and UnsupervisedModel. The figure below shows a graphical representation of the engine architecture just described, as well as its interactions with your web/app and a provided Event Server:
+We are working with text data which means our queries, or newly observed documents, are of the form 
+$$
+\tt{\{text : String\}}.$$
+In our example, a query would be an incoming news article. Once the engine is deployed it can process the query, and then return a Predicted Result of the form 
+$$
+\tt{\{category : String, confidence : Double\}}.
+$$
+Here category is the model's class assignment for this new text document (i.e. news article) and confidence is a value between 0 and 1 representing our confidence in the category prediction (0 meaning we have no confidence in our prediction). The Actual Result is of the form 
+$$
+\tt{\{category : String\}}.
+$$
+This is used in the evaluation stage when estimating the performance of our predictive model. 
+ 
+In addition to the DASE components, our engine also includes the components DataModel and TrainingModel. DataModel is the muscle in the Preparator stage as it is the component that vectorizes the text data. The TrainingModel component takes the vectorized data and trains a classification model. The two particular Scala classes implemented in the engine template are named SupervisedModel and UnsupervisedModel. 
 
-\vspace{0.15cm}
+To summarize: (1) we import text data to the Event Server; (2) the engine reads and processes the data, and trains a predictive model; (3) once the model is trained and the engine deployed, your web application can send text queries to which the engine can respond with a predicted result in real time; (4) in the evaluation, the engine produces both predicted results and actual results for the training data and feeds them to the Evaluation component. The figure below shows a graphical representation of the engine architecture just described, as well as its interactions with your web/app and a provided Event Server:
+
+\vspace{0.05cm}
 \centerline{
-\xymatrixcolsep{4pc}\xymatrix{
-\encircled{\bf{Evaluation}} & \ar[l]_(0.29){\text{Predicted Result}}^(0.3){\text{Actual Result}} \\
+\rectedblack{
+\xymatrixcolsep{3pc}\xymatrix{
+\encircled{\bf{Evaluation}} & \ar[l]_(0.25){\text{Predicted Result}}^(0.25){\text{Actual Result}} \\
 \encircled{\bf{Event Server}} \ar[r]^(0.7){\text{Event}} & \\
-& \ar@<1ex>[ldd]^(0.3){\text{Predicted Result}} \\
-& \\
-\encircled{\bf{Your Web/App}} \ar@<1ex>[ruu]^(0.7){\text{Query}} \ar[uuu]^{\text{Text Data}}& 
+& \ar@<1ex>[ld]^(0.3){\text{Predicted Result}} \\
+\encircled{\bf{Your Web/App}} \ar@<1ex>[ru]^(0.7){\text{Query}} \ar[uu]^{\text{Text Data}}& 
 }
+\hspace{-1cm}
 \rected{
 \xymatrixcolsep{2pc}\xymatrix{
-\encircled{Data Source}\ar[r]& \encircled{Preparator} \ar[r] & \encircled{Algorithm}  \ar[r] & \encircled{Serving} \\
-\bf{Engine} & \encircled{Data Model} \ar[u] & \encircled{Training Model} \ar[u]&
-}}}
+\encircledblack{Data Source}\ar[r]& \encircledblack{Preparator} \ar[r] & \encircledblack{Algorithm}  \ar[r] & \encircledblack{Serving} \\
+\bf{Engine} & \encircledblack{Data Model} \ar[u] & \encircledblack{Training Model} \ar[u]&
+}}}}
+
 
 
 \section*{Quick Start}
 
-This is a quick start guide for those who want to start using the engine right away. For more detailed information, read the corresponding sections below.
+This is a quick start guide in case you want to start using the engine right away. For more detailed information, read the subsequent sections.
 
 \begin{itemize}
 \item[1.]{Create a new application. After the application is created, you will be given an access key for the application.
@@ -153,6 +174,9 @@ $ python import_eventserver.py --access_key ***
 \end{verbatim}}
 
 \item[3.]{Set the engine parameters in the file \tt{engine.json}. The default settings are shown below.
+
+\break
+
 \begin{verbatim}
 {
   "id": "default",
@@ -180,8 +204,6 @@ $ python import_eventserver.py --access_key ***
   ]
 }
 \end{verbatim}}
-
-\break
 
 \item[4.]{Build your engine.
 \begin{verbatim}

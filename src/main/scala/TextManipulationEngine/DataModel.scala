@@ -85,7 +85,7 @@ class DataModel (
   // Get total number n-grams in universe (in
   // bigram case, the number of unique n-grams
   // is about 1,200,000).
-  private val numTokens : Int = idf.size
+  val numTokens : Int = idf.size
 
 
   // Create n-gram to global index hashmap:
