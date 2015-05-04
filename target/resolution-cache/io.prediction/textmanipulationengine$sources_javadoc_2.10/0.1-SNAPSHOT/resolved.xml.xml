@@ -4,7 +4,7 @@
 		module="textmanipulationengine$sources_javadoc_2.10"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20150430023259"
+		publication="20150504154120"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
@@ -523,7 +523,7 @@
 			<artifact name="scalaj-http_2.10" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 			<artifact name="scalaj-http_2.10" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 		</dependency>
-		<dependency org="org.apache.spark" name="spark-core_2.10" rev="1.3.0" transitive="false" conf="provided->default(compile);compile-internal->default(compile);test-internal->default(compile)">
+		<dependency org="org.apache.spark" name="spark-core_2.10" rev="1.3.1" transitive="false" conf="provided->default(compile);compile-internal->default(compile);test-internal->default(compile)">
 			<artifact name="spark-core_2.10" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 			<artifact name="spark-core_2.10" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 		</dependency>
@@ -597,7 +597,7 @@
 			<artifact name="hadoop-yarn-server-nodemanager" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 			<artifact name="hadoop-yarn-server-nodemanager" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 		</dependency>
-		<dependency org="org.apache.spark" name="spark-network-common_2.10" rev="1.3.0" transitive="false" conf="provided->default(compile);compile-internal->default(compile);test-internal->default(compile)">
+		<dependency org="org.apache.spark" name="spark-network-common_2.10" rev="1.3.1" transitive="false" conf="provided->default(compile);compile-internal->default(compile);test-internal->default(compile)">
 			<artifact name="spark-network-common_2.10" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 			<artifact name="spark-network-common_2.10" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 		</dependency>
@@ -609,7 +609,7 @@
 			<artifact name="unused" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 			<artifact name="unused" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 		</dependency>
-		<dependency org="org.apache.spark" name="spark-network-shuffle_2.10" rev="1.3.0" transitive="false" conf="provided->default(compile);compile-internal->default(compile);test-internal->default(compile)">
+		<dependency org="org.apache.spark" name="spark-network-shuffle_2.10" rev="1.3.1" transitive="false" conf="provided->default(compile);compile-internal->default(compile);test-internal->default(compile)">
 			<artifact name="spark-network-shuffle_2.10" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 			<artifact name="spark-network-shuffle_2.10" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 		</dependency>
@@ -755,19 +755,19 @@
 			<artifact name="py4j" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 			<artifact name="py4j" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 		</dependency>
-		<dependency org="org.apache.spark" name="spark-mllib_2.10" rev="1.3.0" transitive="false" conf="provided->default(compile);compile-internal->default(compile);test-internal->default(compile)">
+		<dependency org="org.apache.spark" name="spark-mllib_2.10" rev="1.3.1" transitive="false" conf="provided->default(compile);compile-internal->default(compile);test-internal->default(compile)">
 			<artifact name="spark-mllib_2.10" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 			<artifact name="spark-mllib_2.10" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 		</dependency>
-		<dependency org="org.apache.spark" name="spark-streaming_2.10" rev="1.3.0" transitive="false" conf="provided->default(compile);compile-internal->default(compile);test-internal->default(compile)">
+		<dependency org="org.apache.spark" name="spark-streaming_2.10" rev="1.3.1" transitive="false" conf="provided->default(compile);compile-internal->default(compile);test-internal->default(compile)">
 			<artifact name="spark-streaming_2.10" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 			<artifact name="spark-streaming_2.10" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 		</dependency>
-		<dependency org="org.apache.spark" name="spark-sql_2.10" rev="1.3.0" transitive="false" conf="provided->default(compile);compile-internal->default(compile);test-internal->default(compile)">
+		<dependency org="org.apache.spark" name="spark-sql_2.10" rev="1.3.1" transitive="false" conf="provided->default(compile);compile-internal->default(compile);test-internal->default(compile)">
 			<artifact name="spark-sql_2.10" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 			<artifact name="spark-sql_2.10" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 		</dependency>
-		<dependency org="org.apache.spark" name="spark-catalyst_2.10" rev="1.3.0" transitive="false" conf="provided->default(compile);compile-internal->default(compile);test-internal->default(compile)">
+		<dependency org="org.apache.spark" name="spark-catalyst_2.10" rev="1.3.1" transitive="false" conf="provided->default(compile);compile-internal->default(compile);test-internal->default(compile)">
 			<artifact name="spark-catalyst_2.10" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 			<artifact name="spark-catalyst_2.10" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 		</dependency>
@@ -811,7 +811,7 @@
 			<artifact name="jodd-core" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 			<artifact name="jodd-core" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 		</dependency>
-		<dependency org="org.apache.spark" name="spark-graphx_2.10" rev="1.3.0" transitive="false" conf="provided->default(compile);compile-internal->default(compile);test-internal->default(compile)">
+		<dependency org="org.apache.spark" name="spark-graphx_2.10" rev="1.3.1" transitive="false" conf="provided->default(compile);compile-internal->default(compile);test-internal->default(compile)">
 			<artifact name="spark-graphx_2.10" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 			<artifact name="spark-graphx_2.10" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 		</dependency>
@@ -819,11 +819,11 @@
 			<artifact name="jblas" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 			<artifact name="jblas" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 		</dependency>
-		<dependency org="org.scalanlp" name="breeze_2.10" rev="0.11.1" transitive="false" conf="provided->default(compile);compile-internal->default(compile);test-internal->default(compile)">
+		<dependency org="org.scalanlp" name="breeze_2.10" rev="0.11.2" transitive="false" conf="provided->default(compile);compile-internal->default(compile);test-internal->default(compile)">
 			<artifact name="breeze_2.10" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 			<artifact name="breeze_2.10" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 		</dependency>
-		<dependency org="org.scalanlp" name="breeze-macros_2.10" rev="0.11.1" transitive="false" conf="provided->default(compile);compile-internal->default(compile);test-internal->default(compile)">
+		<dependency org="org.scalanlp" name="breeze-macros_2.10" rev="0.11.2" transitive="false" conf="provided->default(compile);compile-internal->default(compile);test-internal->default(compile)">
 			<artifact name="breeze-macros_2.10" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 			<artifact name="breeze-macros_2.10" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 		</dependency>
