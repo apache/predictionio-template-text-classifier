@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d6d4992-d84f-4f46-8d8c-5194cf77decd" name="Default" comment="Completed 1 - 6">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/TextManipulationEngine/Unsupervised Model.scala" afterPath="$PROJECT_DIR$/src/main/scala/TextManipulationEngine/LDAModel.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tutorial and Tex Files/TextManipulationEngine.pdf" afterPath="$PROJECT_DIR$/Tutorial and Tex Files/TextManipulationEngine.pdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tutorial and Tex Files/TextManipulationEngine.synctex.gz" afterPath="$PROJECT_DIR$/Tutorial and Tex Files/TextManipulationEngine.synctex.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/TextManipulationEngine/DataModel.scala" afterPath="$PROJECT_DIR$/src/main/scala/TextManipulationEngine/DataModel.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/TextManipulationEngine/Preparator.scala" afterPath="$PROJECT_DIR$/src/main/scala/TextManipulationEngine/Preparator.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tutorial and Tex Files/TextManipulationEngine.log" afterPath="$PROJECT_DIR$/Tutorial and Tex Files/TextManipulationEngine.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tutorial and Tex Files/TextManipulationEngine.tex" afterPath="$PROJECT_DIR$/Tutorial and Tex Files/TextManipulationEngine.tex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -80,10 +77,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="NBModel.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="NBModel.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/TextManipulationEngine/NBModel.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.20432693">
               <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
@@ -132,10 +129,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Preparator.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Preparator.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/TextManipulationEngine/Preparator.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.050324675">
+            <state vertical-scroll-proportion="0.0">
               <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
               <folding />
             </state>
@@ -155,8 +152,8 @@
       <file leaf-file-name="NBAlgorithm.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/TextManipulationEngine/NBAlgorithm.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.888889">
-              <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+            <state vertical-scroll-proportion="-16.11111">
+              <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -245,10 +242,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2599" />
-    <option name="y" value="248" />
-    <option name="width" value="999" />
-    <option name="height" value="713" />
+    <option name="x" value="2889" />
+    <option name="y" value="22" />
+    <option name="width" value="888" />
+    <option name="height" value="1345" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -1141,7 +1138,7 @@
       <workItem from="1430280705711" duration="15970000" />
       <workItem from="1430341010479" duration="23432000" />
       <workItem from="1430385498205" duration="810000" />
-      <workItem from="1430386333410" duration="26992000" />
+      <workItem from="1430386333410" duration="28893000" />
     </task>
     <task id="LOCAL-00001" summary="Push project.">
       <created>1429589522078</created>
@@ -1285,10 +1282,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="189338000" />
+    <option name="totallyTimeSpent" value="191239000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2599" y="248" width="999" height="713" extended-state="0" />
+    <frame x="2889" y="22" width="888" height="1345" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1303,7 +1300,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32840723" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3063063" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3445946" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1721,22 +1718,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/TextManipulationEngine/NBModel.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/TextManipulationEngine/NBAlgorithm.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.888889">
-          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/TextManipulationEngine/Evaluation.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1781,8 +1762,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/TextManipulationEngine/Preparator.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.050324675">
+        <state vertical-scroll-proportion="0.0">
           <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/TextManipulationEngine/NBAlgorithm.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.11111">
+          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/TextManipulationEngine/NBModel.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20432693">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
