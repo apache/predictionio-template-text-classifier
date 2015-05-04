@@ -347,8 +347,20 @@ We interpret here the confidence value as the probability that a document belong
 $$
 \frac{\exp\3(\pi + \theta\bf{x}\4)}{||\exp\3(\pi + \theta\bf{x}\4)||}
 $$
-is a vector with C components that represent the posterior class probabilities given \bf{x}. We note that the classes are ordered according to how the category labels are ordered in the NaiveBayesModel class member labels. Also, we note that to train a NaiveBayesModel instance, we must also have the numeric class labels and not just the category names.
+is a vector with C components that represent the posterior class probabilities given \bf{x}. This is essentially the motivation behind defining the class NBModel, which initially uses MLLib's NaiveBayesModel in the implementation. The private methods innerProduct and getScores are implemented to do the computation above. Once we have the vector of class probabilities, we categorize the text document to the class with highest posterior probability and both the category as well as the probability of belonging to that category (i.e. our confidence in the prediction). This is implemented in the method predict.
 
-This is all implemented in the engine template class NBModel.
+\subsection*{LDA Based Classification}
+
+\subsection*{Algorithm Component}
+
+Each of our training model classes is accompanied by a corresponding algorithm component. For example, NBModel accompanies NBAlgorithm, and LDAModel, LDAAlgorithm. The implementation details are largely simplified by our Training Model abstraction, since we take care of the modeling implementation details in the model classes. Again this demonstrates how easy it is to incorporate modeling choices into the DASE architecture. 
+
+Firstly, we must again initialize a parameter class to feed in the corresponding Algorithm model parameters. For example, NBAlgorithm incorporates NBAlgorithmParams which holds the appropriate additive smoothing parameter lambda for MLLib's NaiveBayesModel. The main class of interest in this component is the class that extends P2LAlgorithm.
+%https://docs.prediction.io/api/current/#io.prediction.controller.P2LAlgorithm
+ This class must implement a method named train which will output a Training Model implementation. It must also implement a predict method that vectorizes an object and predicts using the trained model. The vectorization function is implemented by the Data Model, and the categorization (prediction) is handled mainly by the TrainingModel. Again, this demonstrates the facility with which different models can be incorporated into PredictionIO's DASE architecture.
+ 
+At this point, we turn our attention to the TextManipulationEngine object defined in the script \tt{Engine.scala}. We see here that the engine is initialized by specifying the DataSource, Preparator, and Serving classes, as well as a Map of algorithm names to Algorithm classes. This tells the engine which algorithms to run, and, in practice, you could have as many as you would like. You simply have to implement a new Training Model and Training Algorithm pair. The results can then be combined in the Serving component of the engine. 
+
+
 
 \end{document}
