@@ -16,7 +16,7 @@
   },
   "algorithms": [
     {
-      "name": "sup",
+      "name": "nb",
       "params": {
         "lambda": 0.5
       }
