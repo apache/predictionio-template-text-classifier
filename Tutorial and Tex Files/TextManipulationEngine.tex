@@ -90,14 +90,14 @@ In the real world, there are many applications that collect text as data. For ex
 
 The purpose of this tutorial is to illustrate how you can go about doing this using PredictionIO's platform. The advantages of using this platform include: a dynamic engine that responds to queries in real-time; separation of concerns,
 %http://en.wikipedia.org/wiki/Separation_of_concerns
- which offers code re-use and maintainability, and distributed computing capabilities for efficiently handling data processing and model training tasks with large data sets. In particular, we will show you how to:
+ which offers code re-use and maintainability, and distributed computing capabilities for scalability and efficiency. Moreover, it is easy to incorporate non-trivial data modeling tasks into the DASE architecture allowing Data Scientists to focus on tasks related to modeling. We will exemplify these ideas in this tutorial, and, in particular, show you how to:
 
 \begin{itemize}
 \item[$\bullet$]{import a corpus of text documents into PredictionIO's event server;}
 
 \item[$\bullet$]{read the imported event data for use in text processing;}
 
-\item[$\bullet$]{transform document text into a feature vector;}
+\item[$\bullet$]{transform document text into a feature vector (we will be modeling each document using n-grams and the tf-idf transformation);}
 
 \item[$\bullet$]{use the feature vectors to fit a classification model based on Naive Bayes (using Spark MLLib library implementation);}
 
@@ -127,12 +127,13 @@ The engine follows the DASE architecture which we briefly review here. As a user
 
 We are working with text data which means our queries, or newly observed documents, are of the form 
 $$
-\tt{\{text : String\}}.$$
+\tt{\{text : String\}}.
+$$
 In our example, a query would be an incoming news article. Once the engine is deployed it can process the query, and then return a Predicted Result of the form 
 $$
 \tt{\{category : String, confidence : Double\}}.
 $$
-Here category is the model's class assignment for this new text document (i.e. news article) and confidence is a value between 0 and 1 representing our confidence in the category prediction (0 meaning we have no confidence in our prediction). The Actual Result is of the form 
+Here category is the model's class assignment for this new text document (i.e. our best guess for this article's categorization), and confidence, a value between 0 and 1 representing our confidence in the category prediction (0 meaning we have no confidence in the prediction). The Actual Result is of the form 
 $$
 \tt{\{category : String\}}.
 $$
@@ -238,7 +239,7 @@ for more information
 
 \section*{Importing Data}
 
-In order to stick with the news article example, we will, for the purpose of this illustration, be importing two different sources of data from the Scikit learn Python library into PredictionIO's Event Serve: a corpus of text documents that are categorized into a set of topics, as well as a set of stop words. Stop words are words that we do not want to include in our corpus when modeling our text data. 
+In order to stick with the news article example, we will, for the purpose of this illustration, be importing two different sources of data from the Scikit learn Python library into PredictionIO's Event Server: a corpus of text documents that are categorized into a set of topics, as well as a set of stop words. Stop words are words that we do not want to include in our corpus when modeling our text data. 
 
 For the remainder of the tutorial, we will assume that the present working directory is the engine template root directory. The script used to import the data is \tt{import\_eventserver.py} located in the data directory. To actually import the data into our Event Server, we must first create an application which we will name MyTextApp. To do this run the shell command \tt{pio app new MyTextApp}, and take note of your access key. If you forget your access key, you can obtain it by using the command \tt{pio app list}. The following shell output shows the command needed for importing your data (first line), and the resulting output after the data has been successfully imported. Replace \tt{***} with your actual access key, and \tt{???} with the correct location of the port hosting HBase. You can usually leave out the url field as HBase will generally be hosting on port 7070.
 
@@ -257,6 +258,8 @@ Now that our data has been imported into PredictionIO's Event Server, it needs t
 The class DataSourceParams is used to specify the parameters needed to read and prepare the data for processing. This class is initialized with two parameters appName and evalK. The first parameter specifies your application name (i.e. MyTextApp), which is needed so that the DataSource component knows where to pull the event data from. The second parameter is used for model evaluation and specifies the number of folds to use in cross-validation 
 %http://en.wikipedia.org/wiki/Cross-validation_%28statistics%29
 when we estimate a model performance metric.
+
+\break
 
 Finally, we come to the DataSource class. This is initialized with its corresponding parameter class, and extends PDataSource[TD, E, Q, AR]. This extension means that it \bf{must} implement the method readTraining which returns an instance of type TD which is in this case the class TrainingData. This method completely relies on the defined \it{private} methods readEventData and readStopWords. Both of these functions read data observations as Event instances, create an RDD containing these events and finally transforms the RDD of events into an object of the appropriate type as seen below:
 
@@ -294,24 +297,42 @@ private def readEventData(sc: SparkContext) : RDD[Observation] = {
 
 Note that readEventData and readStopWords use different entity types and event names, but use the same application name. This is because we imported both our corpus and stop word set using the same access key. These field distinctions are required for distinguishing between the two data types. Also note that these methods require a SparkContext to be passed as a parameter. The method readEval also relies on readEventData and readStopWords, and its function is to prepare the different cross-validation folds needed for evaluating your model and tuning hyper parameters. 
 
-\section*{Data Model}
+\section*{Processing the Data}
 
-Our data model implementation is actually just a Scala class taking in as parameters td, nMin, nMax, where td is an object of class TrainingData. The other two parameters are the components of our n-gram window which we will define shortly. In this section, we give an overview of how we go about representing our document strings. It will be easier to explain this process with an example, so consider the document:
+This section deal with the aspect of transforming the data you read in the previous stage into something that you can actually use to train a predictive model.
+
+\subsection*{Data Model : Data Representation}
+
+For our Text Manipulation Engine, the Data Model abstraction is implemented as a Scala class taking in the parameters td, nMin, nMax, where td is an object of class TrainingData. The other two parameters are the components of our n-gram window which we will define shortly. In this section, we cover the default feature preparation procedure implemented in the engine template. It will be easier to explain this process with an example, so consider the document:
 $$
 D := \tt{"Hello, my name is Marco."}
 $$
-The first thing we need to do is break up $D$ into a list of \enquote{allowed tokens.} You can think of a token as a terminating sequence of characters that exist in our document (think of a word in a sentence). For example, the list of tokens that appear in $D$ is:
+The first thing we need to do is break up $D$ into an array \enquote{allowed tokens.} You can think of a token as a terminating sequence of characters that exist in our document (think of a word in a sentence). For example, the list of tokens that appear in $D$ is:
 $$
-\tt{Hello} \to \tt{,} \to \tt{my} \to \tt{name} \to \tt{is} \to \tt{Marco} \to \tt{.}
+\tt{val A = Array("Hello", ",", "my",  "name", "is", "Marco", ".")}
 $$
-Now, recall that when we imported our data, we also imported a set of stop words. This set of stop words contains all the words (or tokens) that we do not want to include once we tokenize our documents. Hence, we will call the tokens that appear in $D$ and are not contained in our set of stop words allowed tokens. So, if our set of stop words is $\{\tt{my}, \tt{is}\},$ then the list of allowed tokens appearing in $D$ is:
+Now, recall that when we imported our data, we also imported a set of stop words. This set of stop words contains all the words (or tokens) that we do not want to include once we tokenize our documents. Hence, we will call the tokens that appear in $D$ and are not contained in our set of stop words allowed tokens. So, if our set of stop words is $\{\tt{"my"}, \tt{"is"}\},$ then the list of allowed tokens appearing in $D$ is:
 $$
-\tt{Hello} \to \tt{,} \to \tt{name} \to \tt{Marco} \to \tt{.}
+\tt{val A = Array("Hello", ",",  "name", "Marco", ".")}
 $$
+We call any function that takes as input a text document and returns an array of allowed tokens a tokenizer. The tokenizer in our Data Model implementation is the private method tokenize. We use the SimpleTokenizer from the OpenNLP library to implement this (note that you must add the Maven dependency declaration to your \tt{build.sbt} file to incorporate this library into your engine).
 
-\section*{Preparator : Processing the Data}
+ The next step in the data representation is to take the array of allowed tokens and extract a set of n-grams and a corresponding value indicating the number of times a given n-gram appears. The set of n-grams for n equal to 1 and 2 in the running example is the set of elements of the form \tt{[A($i$)]} and \tt{[A($j$), A($j + 1$)]}, respectively. The n-gram window is an interval of integers for which we extract grams for each element. nMin and nMax are the smallest and largest integer values in the interval, respectively, for $i = 0, 1, ..., n - 1,$ and $j = 0, ..., n - 2.$ 
+
+In our implementation, the n-gram extraction and counting procedure is carried out by the private method hash, which returns a Map with keys, n-grams, and values, the number of times each n-gram is extracted from the document. We use OpenNLP's NGramModel class to extract n-grams.
+
+The next step is, once all of the observations have been hashed, to collect all n-grams and compute their corresponding t.f.-i.d.f. value. The t.f.-i.d.f. transformation is a transformation that intuitively helps to give less weight to those n-grams that appear with high frequency across all documents, and vice versa. This helps to leverage the predictive power of those words that appear rarely, but can make a big difference in the categorization of a given article. In our implementation, the private method createUniverse outputs an RDD of pairs, where an n-gram is matched with it's i.d.f. value. This RDD is collected as a HashMap (this will be used in future RDD computations so we need an object that is serializable), and we create a second hash map with n-grams associated to indices. This gives a global index to each n-gram so that each document observation is vectorized in the same manner. 
+
+The last two functions we mention are the methods you will actually use for the data transformation. The method transform takes a document and outputs a sparse vector (MLLib implementation). The transformData simply transforms the TrainingData input (a corpus of documents) into a set of vectors that can now be used for training. The method transform is used both to transform the training data and future queries. It is important to note that using all 11,314 news article observations without any pre-processing of the documents results in over 1 million unigram and bigram features, so that a sparse vector representation is necessary to save some serious computation time.
 
 
+\subsection*{Preparator : Data Processing in DASE}
+
+Recall that the Preparator stage is used for doing any prior data processing needed to fit a predictive model. In line with the separation of concerns, the Data Model implementation is built to do the heavy lifting needed for this data processing. Our Preparator can now simply implement the prepare method which outputs an object of type PreparedData, which in our case serves as a wrapper for an initialized DataModel object. Since our DataModel class requires us to specify the two n-gram window components, we must incorporate the custom class of parameters for our Preparator component, PreparatorParams. 
+
+The simplicity of this stage implementation truly exemplifies one of the benefits of using the PredictionIO platform. It minimizes the load of implementation details you, the data modeler, must sift through so that you can focus on what is important to you, training a good predictive model.
+
+\section*{Training The Model}
 
 
 

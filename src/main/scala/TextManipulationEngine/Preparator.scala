@@ -1,9 +1,8 @@
 package TextManipulationEngine
 
-import io.prediction.controller.SanityCheck
-import io.prediction.controller.{PPreparator, Params}
-import io.prediction.data.store.LEventStore
-import io.prediction.data.store.PEventStore
+
+import io.prediction.controller.PPreparator
+import io.prediction.controller.Params
 import org.apache.spark.SparkContext
 
 

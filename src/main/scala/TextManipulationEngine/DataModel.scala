@@ -59,14 +59,13 @@ class DataModel (
 
   // 3. Bigram universe extractor: RDD[bigram hashmap] => RDD[((n-gram, n-gram idf), global index)]
 
-  private def createUniverse(u: RDD[Map[String, Double]]): RDD[((String, Double), Long)] = {
+  private def createUniverse(u: RDD[Map[String, Double]]): RDD[(String, Double)] = {
     // Total number of documents (should be 11314).
     val numDocs: Double = td.data.count.toDouble
     u.flatMap(identity)
       .map(e => (e._1, 1.0))
       .reduceByKey(_ + _)
       .map(e => (e._1, log(numDocs / e._2)))
-      .zipWithIndex
   }
 
 
@@ -78,9 +77,8 @@ class DataModel (
     createUniverse(
       td.data
       .map(e => hash(tokenize(e.text)))
-    ).map(_._1)
-    .collect
-    : _*)
+    ).collect: _*
+  )
 
   // Get total number n-grams in universe (in
   // bigram case, the number of unique n-grams
