@@ -7,7 +7,7 @@
 		revision="0.1-SNAPSHOT"
 		conf="compile"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20150504154120"/>
+		date="20150504162123"/>
 	<dependencies>
 		<module organisation="org.apache.opennlp" name="opennlp-tools">
 			<revision name="1.5.3" status="release" pubdate="20130403060341" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="2">
