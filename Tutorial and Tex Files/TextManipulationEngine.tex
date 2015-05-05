@@ -155,8 +155,8 @@ To summarize: (1) we import text data to the Event Server; (2) the engine reads 
 \hspace{-1cm}
 \rected{
 \xymatrixcolsep{2pc}\xymatrix{
-\encircledblack{Data Source}\ar[r]& \encircledblack{Preparator} \ar[r] & \encircledblack{Algorithm}  \ar[r] & \encircledblack{Serving} \\
-\bf{Engine} & \encircledblack{Data Model} \ar[u] & \encircledblack{Training Model} \ar[u]&
+\encircledblack{Data Source}\ar[r]\ar[rd]& \encircledblack{Preparator} \ar[r]\ar[rd] & \encircledblack{Algorithm}  \ar[r] & \encircledblack{Serving} \\
+\bf{Engine} & \encircledblack{Data Model} \ar[u] & \encircledblack{Training Model} \ar[u]\ar[ru]&
 }}}}
 
 
@@ -337,6 +337,17 @@ The simplicity of this stage implementation truly exemplifies one of the benefit
 
 This section will guide you through the two Training Model implementations that come with this engine template. Recall that the Training Model abstraction refers to an arbitrary set Scala Class that outputs a predictive model (i.e. implements some method that can be used for prediction). The general problem this engine template is tackling is text classification, so that our Training Model abstraction domain is restricted to implementations producing classifiers. In particular, the two classification models that are implemented in this engine template are based on Multinomial Naive Bayes and Latent Dirichlet Allocation using t.f.-i.d.f. vectorized text. 
 
+\subsection*{Algorithm Component}
+
+Each of Your training model classes is accompanied by a corresponding algorithm component. For example, NBModel accompanies NBAlgorithm, and LDAModel, LDAAlgorithm. The implementation details are largely simplified by the Training Model abstraction, since you take care of the modeling implementation details in the model classes. Again this demonstrates how easy it is to incorporate modeling choices into the DASE architecture. 
+
+Firstly, we must again initialize a parameter class to feed in the corresponding Algorithm model parameters. For example, NBAlgorithm incorporates NBAlgorithmParams which holds the appropriate additive smoothing parameter lambda for MLLib's NaiveBayesModel. The main class of interest in this component is the class that extends P2LAlgorithm.
+%https://docs.prediction.io/api/current/#io.prediction.controller.P2LAlgorithm
+ This class must implement a method named train which will output a Training Model implementation. It must also implement a predict method that vectorizes an object and predicts using the trained model. The vectorization function is implemented by the Data Model, and the categorization (prediction) is handled mainly by the TrainingModel. Again, this demonstrates the facility with which different models can be incorporated into PredictionIO's DASE architecture.
+ 
+Turn your attention to the TextManipulationEngine object defined in the script \tt{Engine.scala}. We see here that the engine is initialized by specifying the DataSource, Preparator, and Serving classes, as well as a Map of algorithm names to Algorithm classes. This tells the engine which algorithms to run, and, in practice, you could have as many as you would like. You simply have to implement a new Training Model and Training Algorithm pair. 
+
+
 \subsection*{Naive Bayes Classification}
 
 We will be using the Multinomial Naive Bayes implementation found in the Spark MLLib library. However, recall that the predicted results required in the specs listed in our overview must be of the form.
@@ -351,15 +362,25 @@ is a vector with C components that represent the posterior class probabilities g
 
 \subsection*{LDA Based Classification}
 
-\subsection*{Algorithm Component}
+This section may get a bit more mathematically intensive, as we will need to do a few derivations to make the model precise. In particular, we will be using Latent Dirichlet Allocation as an unsupervised learning method 
+%link
+to first cluster the data into nClust different groups, or topics. The Naive Bayes model from the latter section will then be fit for each cluster. When we go back to make a prediction after observing a new vectorized document \bf{x}, we will first use the fitted LDA model to extract a probability distribution of the document over the topics, and then use these to classify with a mixture of the fitted Naive Bayes models.
 
-Each of our training model classes is accompanied by a corresponding algorithm component. For example, NBModel accompanies NBAlgorithm, and LDAModel, LDAAlgorithm. The implementation details are largely simplified by our Training Model abstraction, since we take care of the modeling implementation details in the model classes. Again this demonstrates how easy it is to incorporate modeling choices into the DASE architecture. 
+Latent Dirichlet Allocation is implemented in MLLib, and a trained model exists as an object of type LDAModel. This object has a method topicsMatrix which returns a CxD matrix $T$ where C is the total number of unique n-grams and D is equal to nClust, the number of topics. The columns of $T$ give inferred probability distributions of the topics over the observed bi-grams. The derivation of this model follows from similar reasoning used to derive the prediction rule presented in Naive Bayes. Letting \bf{x} denote a vectorized document, we can interpret the C-dimensional vector 
+$$
+\frac{\exp\3[\log(T)^t\bf{x}\4]}{||\exp\3[\log(T)^t\bf{x}\4]||}
+$$ 
+as the distribution over the topics of the vectorized document \bf{x}. Now, for the $i^\text{th}$ topic we will have a vector of class membership probabilities derived from the $i^\text{th}$ fitted Naive Bayes model:
+$$
+\frac{\pi_i + \theta_i\bf{x}}{||\pi_i + \theta_i\bf{x}||}.
+$$
+Letting $\bf{Z}$ to be the matrix whose $i^\text{th}$ column vector is the vector above, then it can be shown that the following vector of probabilities is a mixture distribution over the class membership probabilities obtained from the Naive Bayes models fit for each topic:
+$$
+\bf{Z}\3(\frac{\exp\3[\log(T)^t\bf{x}\4]}{||\exp\3[\log(T)^t\bf{x}\4]||}\4).
+$$
+We can now make our prediction using the prediction rule from the latter section.
 
-Firstly, we must again initialize a parameter class to feed in the corresponding Algorithm model parameters. For example, NBAlgorithm incorporates NBAlgorithmParams which holds the appropriate additive smoothing parameter lambda for MLLib's NaiveBayesModel. The main class of interest in this component is the class that extends P2LAlgorithm.
-%https://docs.prediction.io/api/current/#io.prediction.controller.P2LAlgorithm
- This class must implement a method named train which will output a Training Model implementation. It must also implement a predict method that vectorizes an object and predicts using the trained model. The vectorization function is implemented by the Data Model, and the categorization (prediction) is handled mainly by the TrainingModel. Again, this demonstrates the facility with which different models can be incorporated into PredictionIO's DASE architecture.
- 
-At this point, we turn our attention to the TextManipulationEngine object defined in the script \tt{Engine.scala}. We see here that the engine is initialized by specifying the DataSource, Preparator, and Serving classes, as well as a Map of algorithm names to Algorithm classes. This tells the engine which algorithms to run, and, in practice, you could have as many as you would like. You simply have to implement a new Training Model and Training Algorithm pair. 
+It now suffices to say how we to cluster the initial $N$ documents. Letting $\bf{X}$ be the matrix whose rows are the $N$ vectorized documents. Then the matrix $\exp\3[\bf{X} \log(T)\4],$ satisfies the property that each row vector is the (unnormalized) distribution over topics of each respective document. We can now assign topic labels to documents by assigning the column number of the entry corresponding to the document with largest value.
 
 \section*{Serving: Delivering the Final Prediction}
 
@@ -394,7 +415,7 @@ object EngineParamsList extends EngineParamsGenerator {
   )
 }
 \end{verbatim}
-Here we are only assessing the parameter values that show up in the algorithm stage. However, it is plausible that the modeler may want to assess parameter values in the Data Model stage. This can easily be done by placing the preparatory parameter choices as follows:
+Here we are only assessing the parameter values that show up in the algorithm stage. However, it is plausible that the modeler may want to assess parameter values in the Data Model stage. This can easily be done by placing the preparator parameter choices as follows:
 
 \begin{verbatim}
 object EngineParamsList extends EngineParamsGenerator {
@@ -415,6 +436,8 @@ object EngineParamsList extends EngineParamsGenerator {
   )
 }
 \end{verbatim}
+
+
 
 
 
