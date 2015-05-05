@@ -371,7 +371,54 @@ The serving component is the final stage in our engine, and in a sense the most 
  
  \section*{Evaluation}
  
- A predictive model needs to be evaluated to see how it will generalize to future observations. PredictionIO uses cross-validation to perform evaluation metric estimates needed to assess your particular model. Our
+ A predictive model needs to be evaluated to see how it will generalize to future observations. PredictionIO uses cross-validation to perform model performance metric estimates needed to assess your particular choice of model. The script \tt{Evaluation.scala} available with the engine template exemplifies what a usual evaluator setup will look like. First, you must define an appropriate metric. In the engine template, since the topic is text classification, the default metric implemented is category accuracy. 
+
+ Second you must define an evaluation object (i.e. extends the class Evaluation).
+ %https://docs.prediction.io/api/current/#io.prediction.controller.Evaluation
+Here, you must specify the actual engine and metric components that are to be used for the evaluation. In the engine template, the specified engine is the TextManipulationEngine object, and metric, Accuracy. Lastly, you must specify the parameter values that you want to test in the cross validation. You see in the following block of code:
+
+\begin{verbatim}
+object EngineParamsList extends EngineParamsGenerator {
+
+  // Set data source and preparator parameters.
+  private[this] val baseEP = EngineParams(
+    dataSourceParams = DataSourceParams(appName = "marco-MyTextApp", evalK = Some(5)),
+    preparatorParams = PreparatorParams(nMin = 1, nMax = 2)
+  )
+
+  // Set the algorithm params for which we will assess an accuracy score.
+  engineParamsList = Seq(
+    baseEP.copy(algorithmParamsList = Seq(("nb", NBAlgorithmParams(0.5)))),
+    baseEP.copy(algorithmParamsList = Seq(("nb", NBAlgorithmParams(1.5)))),
+    baseEP.copy(algorithmParamsList = Seq(("nb", NBAlgorithmParams(5))))
+  )
+}
+\end{verbatim}
+Here we are only assessing the parameter values that show up in the algorithm stage. However, it is plausible that the modeler may want to assess parameter values in the Data Model stage. This can easily be done by placing the preparatory parameter choices as follows:
+
+\begin{verbatim}
+object EngineParamsList extends EngineParamsGenerator {
+
+  // Set data source and preparator parameters.
+  private[this] val baseEP = EngineParams(
+    dataSourceParams = DataSourceParams(appName = "marco-MyTextApp", evalK = Some(5))
+  )
+
+  // Set the algorithm params for which we will assess an accuracy score.
+  engineParamsList = Seq(
+    baseEP.copy(preparatorParams = ("preparator", PreparatorParams(nMin = 1, nMax = 2)),
+      algorithmParamsList = Seq(("nb", NBAlgorithmParams(0.5)))),
+    baseEP.copy(preparatorParams = ("preparator", PreparatorParams(nMin = 2, nMax = 3)),
+      algorithmParamsList = Seq(("nb", NBAlgorithmParams(1.5)))),
+    baseEP.copy(preparatorParams = ("preparator", PreparatorParams(nMin = 1, nMax = 3)),
+      algorithmParamsList = Seq(("nb", NBAlgorithmParams(5))))
+  )
+}
+\end{verbatim}
+
+
+
+ 
 
 
 \end{document}
