@@ -80,13 +80,13 @@
   \int}
 \def\lowint{\mkern3mu\underline{\vphantom{\intop}\mkern7mu}\mkern-10mu\int}
 \begin{document}
-\title{\vspace{-1.5 cm}\bf{PredictionIO: Text Manipulation Engine}}
+\title{\vspace{-1.5 cm}\bf{PredictionIO: Text Classification Engine}}
 \author{\vspace{-2cm}}
 \date{}
 \maketitle
 
 
-In the real world, there are many applications that collect text as data. For example, suppose that you have a set of news articles that are categorized based on content, and you wish to automatically assign incoming, uncategorized articles to one of the existing categories. There are a wide array of machine learning models you can use create, or train, a predictive model to assign an incoming article, or query, to an existing category. Before you can use these techniques you must first transform the text data (in this case the set of news articles) into numeric vectors, or feature vectors, that can be used to train your model.
+In the real world, there are many applications that collect text as data. For example, suppose that you have a set of news articles that are categorized based on content, and you wish to automatically assign incoming, uncategorized articles to one of the existing categories. There are a wide array of machine learning models you can use to create, or train, a predictive model to assign an incoming article, or query, to an existing category. Before you can use these techniques you must first transform the text data (in this case the set of news articles) into numeric vectors, or feature vectors, that can be used to train your model.
 
 The purpose of this tutorial is to illustrate how you can go about doing this using PredictionIO's platform. The advantages of using this platform include: a dynamic engine that responds to queries in real-time; separation of concerns,
 %http://en.wikipedia.org/wiki/Separation_of_concerns
@@ -117,31 +117,31 @@ Before getting started, please make sure that you have the latest version of Pre
 %https://github.com/PredictionIO/PredictionIO-Python-SDK
 , and the Scikit learn library (http://scikit-learn.org/stable/) for importing a sample data set into the PredictionIO Event Server. Any Python version greater than 2.7 will work for the purposes of executing the \tt{data/import\_eventserver.py} script provided with this engine template. Moreover, we emphasize here that this is an engine template written in \it{Scala} and can be more generally thought of as an SBT project containing all the necessary components.
 
-You should also download the engine template named Modeling Text Data 
+You should also download the engine template named Text Classification Engine 
 %http://templates.prediction.io/
  that accompanies this tutorial.
 
 \section*{Engine Overview}
 
-The engine follows the DASE architecture which we briefly review here. As a user, you are tasked with collecting data for your web or application, and importing it into PredictionIO's Event Server. Once the data is in the server, it  can be read and processed by the engine via the Data Source and Preparation components, respectively. The Algorithm component uses the processed, or prepared, data to train a set of predictive models. Once we have trained these models, we are ready to deploy our engine and respond to real-time queries via the Serving component which combines the results from different fitted models. The Evaluation component is used to compute an appropriate metric to test the performance of a fitted model, as well as aid in the tuning of model hyper parameters. 
+The engine follows the DASE architecture which we briefly review here. As a user, you are tasked with collecting data for your web or application, and importing it into PredictionIO's Event Server. Once the data is in the server, it  can be read and processed by the engine via the Data Source and Preparation components, respectively. The Algorithm component uses the processed, or prepared, data to train a set of predictive models. Once you have trained these models, you are ready to deploy your engine and respond to real-time queries via the Serving component which combines the results from different fitted models. The Evaluation component is used to compute an appropriate metric to test the performance of a fitted model, as well as aid in the tuning of model hyper parameters. 
 
-We are working with text data which means our queries, or newly observed documents, are of the form 
+This engine template is meant to handle text classification which means you will be working with text data. This means that a query, or newly observed documents, will be of the form
 $$
 \tt{\{text : String\}}.
 $$
-In our example, a query would be an incoming news article. Once the engine is deployed it can process the query, and then return a Predicted Result of the form 
+In the running example, a query would be an incoming news article. Once the engine is deployed it can process the query, and then return a Predicted Result of the form 
 $$
 \tt{\{category : String, confidence : Double\}}.
 $$
-Here category is the model's class assignment for this new text document (i.e. our best guess for this article's categorization), and confidence, a value between 0 and 1 representing our confidence in the category prediction (0 meaning we have no confidence in the prediction). The Actual Result is of the form 
+Here category is the model's class assignment for this new text document (i.e. the best guess for this article's categorization), and confidence, a value between 0 and 1 representing your confidence in the category prediction (0 meaning you have no confidence in the prediction). The Actual Result is of the form 
 $$
 \tt{\{category : String\}}.
 $$
-This is used in the evaluation stage when estimating the performance of our predictive model (how well does the model predict categories). 
+This is used in the evaluation stage when estimating the performance of your predictive model (how well does the model predict categories). 
  
-In addition to the DASE components, our engine also includes the Data Model and Training Model abstractions. The Data Model refers to the implementation of modeling choices relating to feature extraction and selection. In our example, this includes the vectorization of text and any subsequent feature reduction or transformation procedures one might want to do. The Training Model abstraction refers to any set of Scala classes that take in a set of feature observations and outputs a predictive model. In our example, this includes the NBModel (Naive Bayes) and LDAModel (Latent Dirichlet Allocation) based classes which give us category classification models.
+In addition to the DASE components, this engine template also incorporates Data Model and Training Model abstractions. The Data Model refers to the implementation of modeling choices relating to feature extraction and selection. For this illustration, this includes the vectorization of text and the t.f.-i.d.f. processing. The Training Model abstraction refers to any set of Scala classes that take in a set of feature observations and outputs a predictive model. In the engine template, this includes the NBModel (Naive Bayes) and LDAModel (Latent Dirichlet Allocation) based classes which yield classification models.
 
-To summarize: (1) we import text data to the Event Server; (2) the engine reads and processes the data, and trains a predictive model; (3) once the model is trained and the engine deployed, your web application can send text queries to which the engine can respond with a predicted result in real time; (4) in the evaluation, the engine produces both predicted results and actual results for the training data and feeds them to the Evaluation component. The figure below shows a graphical representation of the engine architecture just described, as well as its interactions with your web/app and a provided Event Server:
+To summarize: (1) you import text data to the Event Server; (2) the engine reads and processes the data, and trains a predictive model; (3) once the model is trained and the engine deployed, your web application can send text queries to which the engine can respond with a predicted result in real time; (4) in the evaluation, the engine produces both predicted results and actual results for the training data and feeds them to the Evaluation component. The figure below shows a graphical representation of the engine architecture just described, as well as its interactions with your web/app and a provided Event Server:
 
 \vspace{0.05cm}
 \centerline{
@@ -171,7 +171,7 @@ This is a quick start guide in case you want to start using the engine right awa
 $ pio app new MyTextApp
 \end{verbatim}}
 
-\item[2.]{Import the tutorial data, and be sure to replace \tt{***} with the access key obtained from the latter step.
+\item[2.]{Import the tutorial data, and be sure to replace \tt{***} with the access key obtained from the latter step. If you have forgotten your access key, use the command \tt{pio app list} to retrieve it.
 \begin{verbatim}
 $ python import_eventserver.py --access_key ***
 \end{verbatim}}
@@ -231,38 +231,43 @@ Depending on your needs, in steps (5.x.) above, you can configure your Spark set
 $ pio command -- --master url --driver-memory {0}G --executor-memory {1}G 
 	--conf spark.akka.framesize={2} --total_executor_cores {3}
 \end{verbatim}
-We only list the latter commands as these are some of the more commonly modified values. See the Spark documentation
+Only the latter commands are listed as these are some of the more commonly modified values. See the Spark documentation
 %https://spark.apache.org/docs/latest/spark-standalone.html
 and the PredictionIO FAQ's 
 %https://docs.prediction.io/resources/faq/
-for more information
+for more information.
 
 
 \section*{Importing Data}
 
-In order to stick with the news article example, we will, for the purpose of this illustration, be importing two different sources of data from the Scikit learn Python library into PredictionIO's Event Server: a corpus of text documents that are categorized into a set of topics, as well as a set of stop words. Stop words are words that we do not want to include in our corpus when modeling our text data. 
+For the remainder of the tutorial, your present working directory is assumed to be the engine template root directory. For illustration purposes, the script \tt{import\_eventserver.py} (located in the data directory) is included for importing two different sources of sample data into PredictionIO's Event Server: a corpus of text documents
+%http://qwone.com/~jason/20Newsgroups/
+that are categorized into a set of topics, as well as a set of stop words. Stop words are words that you do not want to include in the corpus when modeling a set of text data. 
 
-For the remainder of the tutorial, we will assume that the present working directory is the engine template root directory. The script used to import the data is \tt{import\_eventserver.py} located in the data directory. To actually import the data into our Event Server, we must first create an application which we will name MyTextApp. To do this run the shell command \tt{pio app new MyTextApp}, and take note of your access key. If you forget your access key, you can obtain it by using the command \tt{pio app list}. The following shell output shows the command needed for importing your data (first line), and the resulting output after the data has been successfully imported. Replace \tt{***} with your actual access key, and \tt{???} with the correct location of the port hosting HBase. You can usually leave out the url field as HBase will generally be hosting on port 7070.
-
+Now, refer to the quick start guide for the commands used to import your data. Once the data has been successfully imported you should see the following output:
+\vspace{-0.5cm}
 \begin{verbatim}
-$ python data/import_eventserver.py --access_key *** --url ???
 Importing data.....
 Imported 11314 events.
 Importing stop words.....
 Imported 318 stop words.
  \end{verbatim}
+ This data import process greatly exemplifies the advantages of using PredictionIO's Event Server for data storage. It allows you to import data from different sources and store it using the same server. The event-style format
+ %https://docs.prediction.io/datacollection/eventapi/
+ allows for a standardized method of storing data which facilitates the process of reading in your data and incorporating different data sources. For example, the provided data script imports both the text observations and stop words which are going to inevitably differ in nature. In short, PredictionIO's Event Server is yet another abstraction that exacerbates your development productivity, as well as the ability to focus on the modeling stages involved in building your predictive engine.
+ 
 
 \section*{Data Source: Reading Event Data}
 
-Now that our data has been imported into PredictionIO's Event Server, it needs to be read from HBase for it to actually be used by our engine. This is precisely what the DataSource engine component is for. We first explain the classes Observation and Training Data which are defined in \tt{DataSource.scala}. Observation serves as a wrapper for storing the information about a news document needed to train a model. The class member label refers to the label of the category a document belongs to, and text, stores the actual document content. TrainingData is used to store an RDD of Observation objects and our set of stop words. 
+Now that the data has been imported into PredictionIO's Event Server, it needs to be read from storage to be used by the engine. This is precisely what the DataSource engine component is for, which is implemented in the template script \tt{DataSource.scala}. The class Observation serves as a wrapper for storing the information about a news document needed to train a model. The attribute label refers to the label of the category a document belongs to, and text, stores the actual document content as a string. The class TrainingData is used to store an RDD of Observation objects along with the set of stop words. 
 
 The class DataSourceParams is used to specify the parameters needed to read and prepare the data for processing. This class is initialized with two parameters appName and evalK. The first parameter specifies your application name (i.e. MyTextApp), which is needed so that the DataSource component knows where to pull the event data from. The second parameter is used for model evaluation and specifies the number of folds to use in cross-validation 
 %http://en.wikipedia.org/wiki/Cross-validation_%28statistics%29
-when we estimate a model performance metric.
+when estimating a model performance metric.
 
 \break
 
-Finally, we come to the DataSource class. This is initialized with its corresponding parameter class, and extends PDataSource[TD, E, Q, AR]. This extension means that it \bf{must} implement the method readTraining which returns an instance of type TD which is in this case the class TrainingData. This method completely relies on the defined \it{private} methods readEventData and readStopWords. Both of these functions read data observations as Event instances, create an RDD containing these events and finally transforms the RDD of events into an object of the appropriate type as seen below:
+The final and most important ingredient is the DataSource class. This is initialized with its corresponding parameter class, and extends PDataSource. This \bf{must} implement the method readTraining which returns an instance of type TrainingData. This method completely relies on the defined \it{private} methods readEventData and readStopWords. Both of these functions read data observations as Event instances, create an RDD containing these events and finally transforms the RDD of events into an object of the appropriate type as seen below:
 
 \begin{verbatim}
 private def readEventData(sc: SparkContext) : RDD[Observation] = {
@@ -296,42 +301,45 @@ private def readEventData(sc: SparkContext) : RDD[Observation] = {
   }
 \end{verbatim}
 
-Note that readEventData and readStopWords use different entity types and event names, but use the same application name. This is because we imported both our corpus and stop word set using the same access key. These field distinctions are required for distinguishing between the two data types. Also note that these methods require a SparkContext to be passed as a parameter. The method readEval also relies on readEventData and readStopWords, and its function is to prepare the different cross-validation folds needed for evaluating your model and tuning hyper parameters. 
+Note that readEventData and readStopWords use different entity types and event names, but use the same application name. This is because the sample import script imports two different data types, documents and stop words. These field distinctions are required for distinguishing between the two. The method readEval also relies on readEventData and readStopWords, and its function is to prepare the different cross-validation folds needed for evaluating your model and tuning hyper parameters. 
 
 \section*{Processing the Data}
 
-This section deal with the aspect of transforming the data you read in the previous stage into something that you can actually use to train a predictive model. As you will see, most of the work in the processing takes place in the Data Model stage. This decoupling allows you to focus primarily on development issues regarding your model, and also allows Data Scientists an easy way to incorporate their modeling ideas into the DASE framework. 
-
-\subsection*{Data Model : Data Representation}
-
-For our Text Manipulation Engine, the Data Model abstraction is implemented as a Scala class taking in the parameters td, nMin, nMax, where td is an object of class TrainingData. The other two parameters are the components of our n-gram window which we will define shortly. In this section, we cover the default feature preparation procedure implemented in the engine template. It will be easier to explain this process with an example, so consider the document:
-$$
-D := \tt{"Hello, my name is Marco."}
-$$
-The first thing we need to do is break up $D$ into an array \enquote{allowed tokens.} You can think of a token as a terminating sequence of characters that exist in our document (think of a word in a sentence). For example, the list of tokens that appear in $D$ is:
-$$
-\tt{val A = Array("Hello", ",", "my",  "name", "is", "Marco", ".")}
-$$
-Now, recall that when we imported our data, we also imported a set of stop words. This set of stop words contains all the words (or tokens) that we do not want to include once we tokenize our documents. Hence, we will call the tokens that appear in $D$ and are not contained in our set of stop words allowed tokens. So, if our set of stop words is $\{\tt{"my"}, \tt{"is"}\},$ then the list of allowed tokens appearing in $D$ is:
-$$
-\tt{val A = Array("Hello", ",",  "name", "Marco", ".")}
-$$
-We call any function that takes as input a text document and returns an array of allowed tokens a tokenizer. The tokenizer in our Data Model implementation is the private method tokenize. We use the SimpleTokenizer from the OpenNLP library to implement this (note that you must add the Maven dependency declaration to your \tt{build.sbt} file to incorporate this library into your engine).
-
- The next step in the data representation is to take the array of allowed tokens and extract a set of n-grams and a corresponding value indicating the number of times a given n-gram appears. The set of n-grams for n equal to 1 and 2 in the running example is the set of elements of the form \tt{[A($i$)]} and \tt{[A($j$), A($j + 1$)]}, respectively. The n-gram window is an interval of integers for which we extract grams for each element. nMin and nMax are the smallest and largest integer values in the interval, respectively, for $i = 0, 1, ..., n - 1,$ and $j = 0, ..., n - 2.$ 
-
-In our implementation, the n-gram extraction and counting procedure is carried out by the private method hash, which returns a Map with keys, n-grams, and values, the number of times each n-gram is extracted from the document. We use OpenNLP's NGramModel class to extract n-grams.
-
-The next step is, once all of the observations have been hashed, to collect all n-grams and compute their corresponding t.f.-i.d.f. value. The t.f.-i.d.f. transformation is a transformation that intuitively helps to give less weight to those n-grams that appear with high frequency across all documents, and vice versa. This helps to leverage the predictive power of those words that appear rarely, but can make a big difference in the categorization of a given article. In our implementation, the private method createUniverse outputs an RDD of pairs, where an n-gram is matched with it's i.d.f. value. This RDD is collected as a HashMap (this will be used in future RDD computations so we need an object that is serializable), and we create a second hash map with n-grams associated to indices. This gives a global index to each n-gram so that each document observation is vectorized in the same manner. 
-
-The last two functions we mention are the methods you will actually use for the data transformation. The method transform takes a document and outputs a sparse vector (MLLib implementation). The transformData simply transforms the TrainingData input (a corpus of documents) into a set of vectors that can now be used for training. The method transform is used both to transform the training data and future queries. It is important to note that using all 11,314 news article observations without any pre-processing of the documents results in over 1 million unigram and bigram features, so that a sparse vector representation is necessary to save some serious computation time.
-
+This section deal with the aspect of transforming the data you read in the previous stage into something that you can actually use to train a predictive model. As you will see, most of the work in the processing takes place in the Data Model stage. This decoupling allows you to focus primarily on development issues regarding your model, and an easy way to incorporate new modeling ideas into the DASE framework. 
 
 \subsection*{Preparator : Data Processing in DASE}
 
-Recall that the Preparator stage is used for doing any prior data processing needed to fit a predictive model. In line with the separation of concerns, the Data Model implementation is built to do the heavy lifting needed for this data processing. Our Preparator can now simply implement the prepare method which outputs an object of type PreparedData, which in our case serves as a wrapper for an initialized DataModel object. Since our DataModel class requires us to specify the two n-gram window components, we must incorporate the custom class of parameters for our Preparator component, PreparatorParams. 
+Recall that the Preparator stage is used for doing any prior data processing needed to fit a predictive model. In line with the separation of concerns, the Data Model implementation is built to do the heavy lifting needed for this data processing. The Preparator must simply implement the prepare method which outputs an object of type PreparedData, which in this case serves as a wrapper for an initialized DataModel object. The DataModel class implementation requires you to specify two n-gram window components (defined in the following section), a custom class of parameters for the Preparator component, PreparatorParams, must be incorporated. 
 
-The simplicity of this stage implementation truly exemplifies one of the benefits of using the PredictionIO platform. For developers, it is easy to incorporate different classes and tools into the DASE framework so that the process of creating an engine is greatly simplified which helps increase your productivity. For data scientists, the load of implementation details you need to worry about is minimized so that you can focus on what is important to you, training a good predictive model. 
+The simplicity of this stage implementation truly exemplifies one of the benefits of using the PredictionIO platform. For developers, it is easy to incorporate different classes and tools into the DASE framework so that the process of creating an engine is greatly simplified which helps increase your productivity. For data scientists, the load of implementation details you need to worry about is minimized so that you can focus on what is important to you: training a good predictive model. 
+
+The following section actually explains the meat of the conversion process from text documents to feature vectors.
+
+\subsection*{Data Model : Data Representation}
+
+For this Text Classification Engine, the Data Model abstraction is implemented as a Scala class taking in the parameters td, nMin, nMax, where td is an object of class TrainingData. The other two parameters are the components of the model n-gram window which will be defined shortly. This section deals with the feature preparation implemented in this template. It will be easier to explain this process with an example, so consider the document:
+$$
+D := \tt{"Hello, my name is Marco."}
+$$
+The first thing you need to do is break up $D$ into an array of \enquote{allowed tokens.} You can think of a token as a terminating sequence of characters that exist in a document (think of a word in a sentence). For example, the list of tokens that appear in $D$ is:
+$$
+\tt{val A = Array("Hello", ",", "my",  "name", "is", "Marco", ".")}
+$$
+Recall that a set of stop words was also imported in the previous sections. This set of stop words contains all the words (or tokens) that you do not want to include once documents are tokenized. Those tokens that appear in $D$ and are not contained in the set of stop words will be called allowed tokens. So, if the set of stop words is $\{\tt{"my"}, \tt{"is"}\},$ then the list of allowed tokens appearing in $D$ is:
+$$
+\tt{val A = Array("Hello", ",",  "name", "Marco", ".")}
+$$
+This functionality is implemented in the private method tokenize of the DataModel class. This method uses the SimpleTokenizer from OpenNLP's library to implement this (note that you must add the Maven dependency declaration to your \tt{build.sbt} file to incorporate this library into your engine).
+
+ The next step in the data representation is to take the array of allowed tokens and extract a set of n-grams and a corresponding value indicating the number of times a given n-gram appears. The set of n-grams for n equal to 1 and 2 in the running example is the set of elements of the form \tt{[A($i$)]} and \tt{[A($j$), A($j + 1$)]}, respectively. The n-gram window is an interval of integers for which you want to extract grams for each element. nMin and nMax are the smallest and largest integer values in the interval, respectively, for $i = 0, 1, ..., n - 1,$ and $j = 0, ..., n - 2.$ 
+
+The n-gram extraction and counting procedure is carried out by the private method hash, which, given a document, returns a Map with keys, n-grams, and values, the number of times each n-gram is extracted from the document. OpenNLP's NGramModel class is used to extract n-grams.
+
+The next step is, once all of the observations have been hashed, to collect all n-grams and compute their corresponding t.f.-i.d.f. 
+%http://en.wikipedia.org/wiki/Tf%E2%80%93idf
+value. The t.f.-i.d.f. transformation is a transformation that helps to give less weight to those n-grams that appear with high frequency across all documents, and vice versa. This helps to leverage the predictive power of those words that appear rarely, but can make a big difference in the categorization of a given article. The private method createUniverse outputs an RDD of pairs, where an n-gram is matched with it's i.d.f. value. This RDD is collected as a HashMap (this will be used in future RDD computations so that this object should be serializable), and then create a second hash map with n-grams associated to indices. This gives a global index to each n-gram and ensures that each document observation is vectorized in the same manner. 
+
+The last two functions that will be mentioned are the methods you will actually use for the data transformation. The method transform takes a document and outputs a sparse vector (MLLib implementation). The transformData simply transforms the TrainingData input (a corpus of documents) into a set of vectors that can now be used for training. The method transform is used both to transform the training data and future queries. It is important to note that using all 11,314 news article observations without any pre-processing of the documents results in over 1 million unigram and bigram features, so that a sparse vector representation is necessary to save some serious computation time.
 
 \section*{Training The Model}
 
@@ -339,26 +347,28 @@ This section will guide you through the two Training Model implementations that 
 
 \subsection*{Algorithm Component}
 
-Each of Your training model classes is accompanied by a corresponding algorithm component. For example, NBModel accompanies NBAlgorithm, and LDAModel, LDAAlgorithm. The implementation details are largely simplified by the Training Model abstraction, since you take care of the modeling implementation details in the model classes. Again this demonstrates how easy it is to incorporate modeling choices into the DASE architecture. 
+Each of your training model classes is accompanied by a corresponding algorithm component. For example, NBModel accompanies NBAlgorithm, and LDAModel, LDAAlgorithm. The implementation details are largely simplified by the Training Model abstraction, since you take care of the modeling implementation details in the model classes. Again this demonstrates how easy it is to incorporate modeling choices into the DASE architecture. 
 
-Firstly, we must again initialize a parameter class to feed in the corresponding Algorithm model parameters. For example, NBAlgorithm incorporates NBAlgorithmParams which holds the appropriate additive smoothing parameter lambda for MLLib's NaiveBayesModel. The main class of interest in this component is the class that extends P2LAlgorithm.
+Firstly, a parameter class must again be initialized to feed in the corresponding Algorithm model parameters. For example, NBAlgorithm incorporates NBAlgorithmParams which holds the appropriate additive smoothing parameter lambda for MLLib's NaiveBayesModel. The main class of interest in this component is the class that extends P2LAlgorithm.
 %https://docs.prediction.io/api/current/#io.prediction.controller.P2LAlgorithm
  This class must implement a method named train which will output a Training Model implementation. It must also implement a predict method that vectorizes an object and predicts using the trained model. The vectorization function is implemented by the Data Model, and the categorization (prediction) is handled mainly by the TrainingModel. Again, this demonstrates the facility with which different models can be incorporated into PredictionIO's DASE architecture.
  
-Turn your attention to the TextManipulationEngine object defined in the script \tt{Engine.scala}. We see here that the engine is initialized by specifying the DataSource, Preparator, and Serving classes, as well as a Map of algorithm names to Algorithm classes. This tells the engine which algorithms to run, and, in practice, you could have as many as you would like. You simply have to implement a new Training Model and Training Algorithm pair. 
+Turn your attention to the TextManipulationEngine object defined in the script \tt{Engine.scala}. You can see here that the engine is initialized by specifying the DataSource, Preparator, and Serving classes, as well as a Map of algorithm names to Algorithm classes. This tells the engine which algorithms to run. In practice, you can have as many as you would like, you simply have to implement a new Training Model and Training Algorithm pair. 
 
 
 \subsection*{Naive Bayes Classification}
 
-We will be using the Multinomial Naive Bayes implementation found in the Spark MLLib library. However, recall that the predicted results required in the specs listed in our overview must be of the form.
+This Training Model class only uses the Multinomial Naive Bayes implementation
+%https://spark.apache.org/docs/latest/mllib-naive-bayes.html
+found in the Spark MLLib library. However, recall that the predicted results required in the specifications listed in the overview are of the form:
 $$
 \tt{\{category: String, confidence: Double\}}.
 $$
-We interpret here the confidence value as the probability that a document belongs to a category given the vectorized data. Now, note that MLLib's Naive Bayes model has the class members pi ($\pi$) and theta($\theta$). $\pi$ is a vector of log prior class probabilities, and $\theta$ is a CxD matrix, where C is the number of classes and D, the number of features, giving the log probabilities that parametrize a Multinomial model. Say we are given a document and vectorize it. Letting \bf{x} denote this vectorized form, then it can be shown that the vector 
+The confidence value should really be interpreted as the probability that a document belongs to a category given its vectorized form. Note that MLLib's Naive Bayes model has the class members pi ($\pi$) and theta($\theta$). $\pi$ is a vector of log prior class probabilities, and $\theta$ is a CxD matrix, where C is the number of classes and D, the number of features, giving the log probabilities that parametrize a Multinomial model. Letting \bf{x} be a vectorized text document, then it can be shown that the vector 
 $$
 \frac{\exp\3(\pi + \theta\bf{x}\4)}{||\exp\3(\pi + \theta\bf{x}\4)||}
 $$
-is a vector with C components that represent the posterior class probabilities given \bf{x}. This is essentially the motivation behind defining the class NBModel, which initially uses MLLib's NaiveBayesModel in the implementation. The private methods innerProduct and getScores are implemented to do the computation above. Once we have the vector of class probabilities, we categorize the text document to the class with highest posterior probability and both the category as well as the probability of belonging to that category (i.e. our confidence in the prediction). This is implemented in the method predict.
+is a vector with C components that represent the posterior class membership probabilities for the document given \bf{x}. This is the motivation behind defining the class NBModel which uses Spark MLLib's NaiveBayesModel, but implements a separate prediction method. The private methods innerProduct and getScores are implemented to do the computation above. Once you have a vector of class probabilities, you can classify the text document to the category with highest posterior probability, and, finally, return both the category as well as the probability of belonging to that category (i.e. our confidence in the prediction). This is implemented in the method predict.
 
 \subsection*{LDA Based Classification}
 
@@ -384,9 +394,11 @@ It now suffices to say how we to cluster the initial $N$ documents. Letting $\bf
 
 \section*{Serving: Delivering the Final Prediction}
 
-The serving component is the final stage in our engine, and in a sense the most important. This is the final stage in which you combine the results obtained from the different models you choose to run. The Serving class extends the LServing
+The serving component is the final stage in the engine, and in a sense, the most important. This is the final stage in which you combine the results obtained from the different models you choose to run. The Serving class extends the LServing
 %https://docs.prediction.io/api/current/#io.prediction.controller.LServing
- class which must implement a method called serve. This takes a query and an associated sequence of predicted results, which contains the predicted results from the different algorithms that are implemented in your engine, and combines the results to yield a final prediction.  You could choose to slightly modify the implementation to return class probabilities coming from a mixture of model estimates for class probabilities, or any other technique you could conceive for combining your results. For example, the default engine setting has this set to yield the label from the model predicting with greater confidence.
+ class which must implement a method called serve. This takes a query and an associated sequence of predicted results, which contains the predicted results from the different algorithms that are implemented in your engine, and combines the results to yield a final prediction.  It is this final prediction that you will receive after sending a query. 
+ 
+ For example, you could choose to slightly modify the implementation to return class probabilities coming from a mixture of model estimates for class probabilities, or any other technique you could conceive for combining your results. The default engine setting has this set to yield the label from the model predicting with greater confidence.
  
  
  
@@ -397,6 +409,8 @@ The serving component is the final stage in our engine, and in a sense the most 
  Second you must define an evaluation object (i.e. extends the class Evaluation).
  %https://docs.prediction.io/api/current/#io.prediction.controller.Evaluation
 Here, you must specify the actual engine and metric components that are to be used for the evaluation. In the engine template, the specified engine is the TextManipulationEngine object, and metric, Accuracy. Lastly, you must specify the parameter values that you want to test in the cross validation. You see in the following block of code:
+
+\break
 
 \begin{verbatim}
 object EngineParamsList extends EngineParamsGenerator {
@@ -415,7 +429,7 @@ object EngineParamsList extends EngineParamsGenerator {
   )
 }
 \end{verbatim}
-Here we are only assessing the parameter values that show up in the algorithm stage. However, it is plausible that the modeler may want to assess parameter values in the Data Model stage. This can easily be done by placing the preparator parameter choices as follows:
+In the latter block of code, only the parameter values that show up in the algorithm stage are assessed. However, it is plausible that you may want to assess parameter values in the Data Model stage. This can easily be done by placing the preparator parameter choices as follows:
 
 \begin{verbatim}
 object EngineParamsList extends EngineParamsGenerator {
@@ -437,8 +451,57 @@ object EngineParamsList extends EngineParamsGenerator {
 }
 \end{verbatim}
 
+\break
 
+\section*{Engine Deployment}
 
+Once an engine is ready for deployment it can interact with your web application in real-time. This section will cover how to send and receive queries from your engine, gather more data, and re-training your model with the newly gathered data. 
+
+\subsection*{Sending Queries}
+
+Recall that one of the greatest advantages of using the PredictionIO platform is that once your engine is deployed, you can respond to queries from your web application in real-time. Recall that our queries are of the form
+$$
+\tt{\{"text" : "..."\}}.
+$$
+To actually send a query you can use our REST API by typing in the following shell command:
+
+\begin{verbatim}
+curl -H "Content-Type: application/json" -d '{ "user": "1", "num": 4 }' \
+http://localhost:8000/queries.json}
+\end{verbatim}
+
+There are a number of SDK's 
+%https://github.com/PredictionIO
+you can use to send your queries and obtain a response. Recall that our predicted response is of the form 
+$$
+\tt{\{"category" : "class", "confidence" : 1.0\}}
+$$
+which is what you should see upon inputting the latter command for querying.
+
+\subsection*{Gathering More Data and Retraining Your Model}
+
+The importing data section that is included in this tutorial uses a sample data set for illustration purposes, and uses the PredictionIO Python SDK to import the data. However, there are a variety of ways that you can import your collected data (via REST or other SDKs).
+%https://docs.prediction.io/datacollection/eventapi/
+
+As you continue to collect your data, it is quite easy to retrain your model once you actually import your data into the Event Server. You simply repeat the steps listed in the Quick Start guide. We re-list them here again:
+
+\begin{itemize}
+\item[1.]{Build your engine.
+\begin{verbatim}
+$ pio build
+\end{verbatim}}
+
+\item[2.a.]{Evaluate your training model and tune parameters.
+\begin{verbatim}
+$ pio eval
+\end{verbatim}}
+
+\item[2.b.]{Train your model and deploy.
+\begin{verbatim}
+$ pio train
+$ pio deploy
+\end{verbatim}}
+\end{itemize}
 
 
  
