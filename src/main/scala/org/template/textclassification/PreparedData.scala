@@ -21,10 +21,10 @@ import scala.math.log
 
 
 class PreparedData (
-                  val td: TrainingData,
-                  val nMin: Int,
-                  val nMax: Int
-                  ) extends Serializable {
+  val td: TrainingData,
+  val nMin: Int,
+  val nMax: Int
+) extends Serializable {
 
 
   // 1. Tokenizer: document => token list.
@@ -33,7 +33,7 @@ class PreparedData (
 
   private def tokenize (doc : String): Array[String] = {
     SimpleTokenizer.INSTANCE
-      .tokenize(doc)
+      .tokenize(doc.toLowerCase)
       .filter(e => ! td.stopWords.contains(e))
   }
 

@@ -23,7 +23,7 @@ class Preparator(pp: PreparatorParams) extends PPreparator[TrainingData, Prepare
 
   // Prepare your training data.
   def prepare(sc : SparkContext, td: TrainingData): PreparedData = {
-    new PreparedData(new PreparedData(td, pp.nMin, pp.nMax))
+    new PreparedData(td, pp.nMin, pp.nMax)
   }
 }
 

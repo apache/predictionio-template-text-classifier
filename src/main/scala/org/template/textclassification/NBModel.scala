@@ -15,7 +15,7 @@ class NBModel(
   // 1. Fit a Naive Bayes model using the prepared data.
 
   private val nb : NaiveBayesModel = NaiveBayes.train(
-    pd.dataModel.transformData, lambda)
+    pd.transformData, lambda)
 
 
 
@@ -39,7 +39,7 @@ class NBModel(
     // Returns an object of type Array[Double]
     val normalize = (u: Array[Double]) => u.map(_ / u.sum)
     // Vectorize query,
-    val x: Array[Double] = pd.dataModel.transform(doc).toArray
+    val x: Array[Double] = pd.transform(doc).toArray
 
     normalize(
       nb.pi
