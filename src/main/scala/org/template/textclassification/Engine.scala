@@ -1,4 +1,4 @@
-package TextManipulationEngine
+package org.template.textclassification
 
 import io.prediction.controller._
 

@@ -1,5 +1,4 @@
-package TextManipulationEngine
-
+package org.template.textclassification
 
 import org.apache.spark.mllib.classification.NaiveBayes
 import org.apache.spark.mllib.classification.NaiveBayesModel
@@ -7,9 +6,9 @@ import org.apache.spark.mllib.classification.NaiveBayesModel
 import scala.math.exp
 
 class NBModel(
-                       val pd: PreparedData,
-                       lambda: Double
-                       ) extends Serializable {
+  val pd: PreparedData,
+  lambda: Double
+) extends Serializable {
 
 
 

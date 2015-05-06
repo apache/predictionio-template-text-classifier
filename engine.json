@@ -4,7 +4,7 @@
   "engineFactory": "TextManipulationEngine.TextManipulationEngine",
   "datasource": {
     "params": {
-      "appName": "marco-MyTextApp",
+      "appName": "MyTextApp",
       "evalK": 5
     }
   },

@@ -1,4 +1,4 @@
-package TextManipulationEngine
+package org.template.textclassification
 
 import opennlp.tools.ngram.NGramModel
 import opennlp.tools.tokenize.SimpleTokenizer
@@ -20,7 +20,7 @@ import scala.math.log
 // respectively, of the model n-gram window.
 
 
-class DataModel (
+class PreparedData (
                   val td: TrainingData,
                   val nMin: Int,
                   val nMax: Int

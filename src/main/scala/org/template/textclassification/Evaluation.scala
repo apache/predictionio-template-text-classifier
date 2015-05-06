@@ -1,5 +1,4 @@
-package TextManipulationEngine
-
+package org.template.textclassification
 
 import io.prediction.controller._
 
@@ -37,7 +36,7 @@ object EngineParamsList extends EngineParamsGenerator {
 
   // Set data source and preparator parameters.
   private[this] val baseEP = EngineParams(
-    dataSourceParams = DataSourceParams(appName = "marco-MyTextApp", evalK = Some(5)),
+    dataSourceParams = DataSourceParams(appName = "MyTextApp", evalK = Some(5)),
     preparatorParams = PreparatorParams(nMin = 1, nMax = 2)
   )
 

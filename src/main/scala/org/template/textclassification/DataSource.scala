@@ -1,4 +1,4 @@
-package TextManipulationEngine
+package org.template.textclassification
 
 import grizzled.slf4j.Logger
 import io.prediction.controller.EmptyEvaluationInfo
