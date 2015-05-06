@@ -4,7 +4,7 @@
 		module="textmanipulationengine$sources_javadoc_2.10"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20150506144135"
+		publication="20150506152540"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>

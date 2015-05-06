@@ -1,11 +1,11 @@
-[info] Updating {file:/Users/Marco/TextManipulationEngine/project/}textmanipulationengine-build...
-[debug] :: resolving dependencies :: default#textmanipulationengine-build;0.1-SNAPSHOT
+[info] Updating {file:/Users/Marco/template-scala-parallel-textclassification/project/}template-scala-parallel-textclassification-build...
+[debug] :: resolving dependencies :: default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT
 [debug] 	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool]
 [debug] 	validate = true
 [debug] 	refresh = false
 [debug] resolving dependencies for configuration 'compile'
-[debug] == resolving dependencies for default#textmanipulationengine-build;0.1-SNAPSHOT [compile]
-[debug] == resolving dependencies default#textmanipulationengine-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.13.0 [compile->default(compile)]
+[debug] == resolving dependencies for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.13.0 [compile->default(compile)]
 [info] Resolving com.eed3si9n#sbt-assembly;0.13.0 ...
 [debug] sbt-chain: Checking cache for: dependency: com.eed3si9n#sbt-assembly;0.13.0 {compile=[default(compile)]}
 [debug] sbt-chain: module revision found in cache: com.eed3si9n#sbt-assembly;0.13.0
@@ -48,16 +48,16 @@
 [debug] == resolving dependencies org.scalactic#scalactic_2.10;2.2.1->org.scala-lang#scala-reflect;2.10.4 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scalactic#scalactic_2.10;2.2.1->org.scala-lang#scala-reflect;2.10.4 [runtime->compile]
 [debug] == resolving dependencies com.eed3si9n#sbt-assembly;0.13.0->org.scalactic#scalactic_2.10;2.2.1 [compile->master]
-[debug] == resolving dependencies default#textmanipulationengine-build;0.1-SNAPSHOT->io.prediction#pio-build;0.9.0 [compile->default(compile)]
+[debug] == resolving dependencies default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT->io.prediction#pio-build;0.9.0 [compile->default(compile)]
 [info] Resolving io.prediction#pio-build;0.9.0 ...
 [debug] sbt-chain: Checking cache for: dependency: io.prediction#pio-build;0.9.0 {compile=[default(compile)]}
 [debug] sbt-chain: module revision found in cache: io.prediction#pio-build;0.9.0
 [debug] 	typesafe-ivy-releases: revision in cache: io.prediction#pio-build;0.9.0
 [debug] 	found io.prediction#pio-build;0.9.0 in sbt-chain
 [debug] resolving dependencies for configuration 'runtime'
-[debug] == resolving dependencies for default#textmanipulationengine-build;0.1-SNAPSHOT [runtime]
-[debug] == resolving dependencies for default#textmanipulationengine-build;0.1-SNAPSHOT [compile]
-[debug] == resolving dependencies default#textmanipulationengine-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.13.0 [compile->default(compile)]
+[debug] == resolving dependencies for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT [runtime]
+[debug] == resolving dependencies for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.13.0 [compile->default(compile)]
 [debug] == resolving dependencies com.eed3si9n#sbt-assembly;0.13.0->org.scalactic#scalactic_2.10;2.2.1 [compile->default(compile)]
 [debug] == resolving dependencies com.eed3si9n#sbt-assembly;0.13.0->org.scalactic#scalactic_2.10;2.2.1 [compile->runtime]
 [debug] == resolving dependencies com.eed3si9n#sbt-assembly;0.13.0->org.scalactic#scalactic_2.10;2.2.1 [compile->compile]
@@ -74,12 +74,12 @@
 [debug] == resolving dependencies org.scala-lang#scala-reflect;2.10.4->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scala-lang#scala-reflect;2.10.4->org.scala-lang#scala-library;2.10.4 [runtime->compile]
 [debug] == resolving dependencies com.eed3si9n#sbt-assembly;0.13.0->org.scalactic#scalactic_2.10;2.2.1 [compile->master]
-[debug] == resolving dependencies default#textmanipulationengine-build;0.1-SNAPSHOT->io.prediction#pio-build;0.9.0 [compile->default(compile)]
+[debug] == resolving dependencies default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT->io.prediction#pio-build;0.9.0 [compile->default(compile)]
 [debug] resolving dependencies for configuration 'test'
-[debug] == resolving dependencies for default#textmanipulationengine-build;0.1-SNAPSHOT [test]
-[debug] == resolving dependencies for default#textmanipulationengine-build;0.1-SNAPSHOT [runtime]
-[debug] == resolving dependencies for default#textmanipulationengine-build;0.1-SNAPSHOT [compile]
-[debug] == resolving dependencies default#textmanipulationengine-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.13.0 [compile->default(compile)]
+[debug] == resolving dependencies for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT [test]
+[debug] == resolving dependencies for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT [runtime]
+[debug] == resolving dependencies for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.13.0 [compile->default(compile)]
 [debug] == resolving dependencies com.eed3si9n#sbt-assembly;0.13.0->org.scalactic#scalactic_2.10;2.2.1 [compile->default(compile)]
 [debug] == resolving dependencies com.eed3si9n#sbt-assembly;0.13.0->org.scalactic#scalactic_2.10;2.2.1 [compile->runtime]
 [debug] == resolving dependencies com.eed3si9n#sbt-assembly;0.13.0->org.scalactic#scalactic_2.10;2.2.1 [compile->compile]
@@ -96,14 +96,14 @@
 [debug] == resolving dependencies org.scala-lang#scala-reflect;2.10.4->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scala-lang#scala-reflect;2.10.4->org.scala-lang#scala-library;2.10.4 [runtime->compile]
 [debug] == resolving dependencies com.eed3si9n#sbt-assembly;0.13.0->org.scalactic#scalactic_2.10;2.2.1 [compile->master]
-[debug] == resolving dependencies default#textmanipulationengine-build;0.1-SNAPSHOT->io.prediction#pio-build;0.9.0 [compile->default(compile)]
+[debug] == resolving dependencies default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT->io.prediction#pio-build;0.9.0 [compile->default(compile)]
 [debug] resolving dependencies for configuration 'provided'
-[debug] == resolving dependencies for default#textmanipulationengine-build;0.1-SNAPSHOT [provided]
-[debug] == resolving dependencies default#textmanipulationengine-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->default(compile)]
-[debug] == resolving dependencies default#textmanipulationengine-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->runtime]
-[debug] == resolving dependencies default#textmanipulationengine-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->compile]
-[debug] == resolving dependencies default#textmanipulationengine-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->master]
-[debug] == resolving dependencies default#textmanipulationengine-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.5 [provided->default(compile)]
+[debug] == resolving dependencies for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT [provided]
+[debug] == resolving dependencies default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->default(compile)]
+[debug] == resolving dependencies default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->runtime]
+[debug] == resolving dependencies default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->compile]
+[debug] == resolving dependencies default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->master]
+[debug] == resolving dependencies default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.5 [provided->default(compile)]
 [info] Resolving org.scala-sbt#sbt;0.13.5 ...
 [debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#sbt;0.13.5 {provided=[default(compile)]}
 [debug] sbt-chain: module revision found in cache: org.scala-sbt#sbt;0.13.5
@@ -639,11 +639,11 @@
 [debug] == resolving dependencies org.scala-sbt#precompiled-2_9_3;0.13.5->org.scala-lang#scala-library;2.10.4 [compile->master]
 [debug] == resolving dependencies org.scala-sbt#precompiled-2_9_3;0.13.5->org.scala-sbt#interface;0.13.5 [compile->default(compile)]
 [debug] resolving dependencies for configuration 'optional'
-[debug] == resolving dependencies for default#textmanipulationengine-build;0.1-SNAPSHOT [optional]
+[debug] == resolving dependencies for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT [optional]
 [debug] resolving dependencies for configuration 'compile-internal'
-[debug] == resolving dependencies for default#textmanipulationengine-build;0.1-SNAPSHOT [compile-internal]
-[debug] == resolving dependencies for default#textmanipulationengine-build;0.1-SNAPSHOT [compile]
-[debug] == resolving dependencies default#textmanipulationengine-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.13.0 [compile->default(compile)]
+[debug] == resolving dependencies for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT [compile-internal]
+[debug] == resolving dependencies for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.13.0 [compile->default(compile)]
 [debug] == resolving dependencies com.eed3si9n#sbt-assembly;0.13.0->org.scalactic#scalactic_2.10;2.2.1 [compile->default(compile)]
 [debug] == resolving dependencies com.eed3si9n#sbt-assembly;0.13.0->org.scalactic#scalactic_2.10;2.2.1 [compile->runtime]
 [debug] == resolving dependencies com.eed3si9n#sbt-assembly;0.13.0->org.scalactic#scalactic_2.10;2.2.1 [compile->compile]
@@ -660,14 +660,14 @@
 [debug] == resolving dependencies org.scala-lang#scala-reflect;2.10.4->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scala-lang#scala-reflect;2.10.4->org.scala-lang#scala-library;2.10.4 [runtime->compile]
 [debug] == resolving dependencies com.eed3si9n#sbt-assembly;0.13.0->org.scalactic#scalactic_2.10;2.2.1 [compile->master]
-[debug] == resolving dependencies default#textmanipulationengine-build;0.1-SNAPSHOT->io.prediction#pio-build;0.9.0 [compile->default(compile)]
-[debug] == resolving dependencies for default#textmanipulationengine-build;0.1-SNAPSHOT [optional]
-[debug] == resolving dependencies for default#textmanipulationengine-build;0.1-SNAPSHOT [provided]
-[debug] == resolving dependencies default#textmanipulationengine-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->default(compile)]
-[debug] == resolving dependencies default#textmanipulationengine-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->runtime]
-[debug] == resolving dependencies default#textmanipulationengine-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->compile]
-[debug] == resolving dependencies default#textmanipulationengine-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->master]
-[debug] == resolving dependencies default#textmanipulationengine-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.5 [provided->default(compile)]
+[debug] == resolving dependencies default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT->io.prediction#pio-build;0.9.0 [compile->default(compile)]
+[debug] == resolving dependencies for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT [optional]
+[debug] == resolving dependencies for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT [provided]
+[debug] == resolving dependencies default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->default(compile)]
+[debug] == resolving dependencies default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->runtime]
+[debug] == resolving dependencies default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->compile]
+[debug] == resolving dependencies default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->master]
+[debug] == resolving dependencies default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.5 [provided->default(compile)]
 [debug] == resolving dependencies org.scala-sbt#sbt;0.13.5->org.scala-lang#scala-library;2.10.4 [compile->default(compile)]
 [debug] == resolving dependencies org.scala-sbt#sbt;0.13.5->org.scala-lang#scala-library;2.10.4 [compile->runtime]
 [debug] == resolving dependencies org.scala-sbt#sbt;0.13.5->org.scala-lang#scala-library;2.10.4 [compile->compile]
@@ -984,10 +984,10 @@
 [debug] == resolving dependencies org.scala-sbt#precompiled-2_9_3;0.13.5->org.scala-lang#scala-library;2.10.4 [compile->master]
 [debug] == resolving dependencies org.scala-sbt#precompiled-2_9_3;0.13.5->org.scala-sbt#interface;0.13.5 [compile->default(compile)]
 [debug] resolving dependencies for configuration 'runtime-internal'
-[debug] == resolving dependencies for default#textmanipulationengine-build;0.1-SNAPSHOT [runtime-internal]
-[debug] == resolving dependencies for default#textmanipulationengine-build;0.1-SNAPSHOT [runtime]
-[debug] == resolving dependencies for default#textmanipulationengine-build;0.1-SNAPSHOT [compile]
-[debug] == resolving dependencies default#textmanipulationengine-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.13.0 [compile->default(compile)]
+[debug] == resolving dependencies for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT [runtime-internal]
+[debug] == resolving dependencies for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT [runtime]
+[debug] == resolving dependencies for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.13.0 [compile->default(compile)]
 [debug] == resolving dependencies com.eed3si9n#sbt-assembly;0.13.0->org.scalactic#scalactic_2.10;2.2.1 [compile->default(compile)]
 [debug] == resolving dependencies com.eed3si9n#sbt-assembly;0.13.0->org.scalactic#scalactic_2.10;2.2.1 [compile->runtime]
 [debug] == resolving dependencies com.eed3si9n#sbt-assembly;0.13.0->org.scalactic#scalactic_2.10;2.2.1 [compile->compile]
@@ -1004,14 +1004,14 @@
 [debug] == resolving dependencies org.scala-lang#scala-reflect;2.10.4->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scala-lang#scala-reflect;2.10.4->org.scala-lang#scala-library;2.10.4 [runtime->compile]
 [debug] == resolving dependencies com.eed3si9n#sbt-assembly;0.13.0->org.scalactic#scalactic_2.10;2.2.1 [compile->master]
-[debug] == resolving dependencies default#textmanipulationengine-build;0.1-SNAPSHOT->io.prediction#pio-build;0.9.0 [compile->default(compile)]
-[debug] == resolving dependencies for default#textmanipulationengine-build;0.1-SNAPSHOT [optional]
+[debug] == resolving dependencies default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT->io.prediction#pio-build;0.9.0 [compile->default(compile)]
+[debug] == resolving dependencies for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT [optional]
 [debug] resolving dependencies for configuration 'test-internal'
-[debug] == resolving dependencies for default#textmanipulationengine-build;0.1-SNAPSHOT [test-internal]
-[debug] == resolving dependencies for default#textmanipulationengine-build;0.1-SNAPSHOT [test]
-[debug] == resolving dependencies for default#textmanipulationengine-build;0.1-SNAPSHOT [runtime]
-[debug] == resolving dependencies for default#textmanipulationengine-build;0.1-SNAPSHOT [compile]
-[debug] == resolving dependencies default#textmanipulationengine-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.13.0 [compile->default(compile)]
+[debug] == resolving dependencies for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT [test-internal]
+[debug] == resolving dependencies for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT [test]
+[debug] == resolving dependencies for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT [runtime]
+[debug] == resolving dependencies for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT->com.eed3si9n#sbt-assembly;0.13.0 [compile->default(compile)]
 [debug] == resolving dependencies com.eed3si9n#sbt-assembly;0.13.0->org.scalactic#scalactic_2.10;2.2.1 [compile->default(compile)]
 [debug] == resolving dependencies com.eed3si9n#sbt-assembly;0.13.0->org.scalactic#scalactic_2.10;2.2.1 [compile->runtime]
 [debug] == resolving dependencies com.eed3si9n#sbt-assembly;0.13.0->org.scalactic#scalactic_2.10;2.2.1 [compile->compile]
@@ -1028,14 +1028,14 @@
 [debug] == resolving dependencies org.scala-lang#scala-reflect;2.10.4->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scala-lang#scala-reflect;2.10.4->org.scala-lang#scala-library;2.10.4 [runtime->compile]
 [debug] == resolving dependencies com.eed3si9n#sbt-assembly;0.13.0->org.scalactic#scalactic_2.10;2.2.1 [compile->master]
-[debug] == resolving dependencies default#textmanipulationengine-build;0.1-SNAPSHOT->io.prediction#pio-build;0.9.0 [compile->default(compile)]
-[debug] == resolving dependencies for default#textmanipulationengine-build;0.1-SNAPSHOT [optional]
-[debug] == resolving dependencies for default#textmanipulationengine-build;0.1-SNAPSHOT [provided]
-[debug] == resolving dependencies default#textmanipulationengine-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->default(compile)]
-[debug] == resolving dependencies default#textmanipulationengine-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->runtime]
-[debug] == resolving dependencies default#textmanipulationengine-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->compile]
-[debug] == resolving dependencies default#textmanipulationengine-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->master]
-[debug] == resolving dependencies default#textmanipulationengine-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.5 [provided->default(compile)]
+[debug] == resolving dependencies default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT->io.prediction#pio-build;0.9.0 [compile->default(compile)]
+[debug] == resolving dependencies for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT [optional]
+[debug] == resolving dependencies for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT [provided]
+[debug] == resolving dependencies default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->default(compile)]
+[debug] == resolving dependencies default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->runtime]
+[debug] == resolving dependencies default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->compile]
+[debug] == resolving dependencies default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->master]
+[debug] == resolving dependencies default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.5 [provided->default(compile)]
 [debug] == resolving dependencies org.scala-sbt#sbt;0.13.5->org.scala-lang#scala-library;2.10.4 [compile->default(compile)]
 [debug] == resolving dependencies org.scala-sbt#sbt;0.13.5->org.scala-lang#scala-library;2.10.4 [compile->runtime]
 [debug] == resolving dependencies org.scala-sbt#sbt;0.13.5->org.scala-lang#scala-library;2.10.4 [compile->compile]
@@ -1352,18 +1352,18 @@
 [debug] == resolving dependencies org.scala-sbt#precompiled-2_9_3;0.13.5->org.scala-lang#scala-library;2.10.4 [compile->master]
 [debug] == resolving dependencies org.scala-sbt#precompiled-2_9_3;0.13.5->org.scala-sbt#interface;0.13.5 [compile->default(compile)]
 [debug] resolving dependencies for configuration 'plugin'
-[debug] == resolving dependencies for default#textmanipulationengine-build;0.1-SNAPSHOT [plugin]
+[debug] == resolving dependencies for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT [plugin]
 [debug] resolving dependencies for configuration 'sources'
-[debug] == resolving dependencies for default#textmanipulationengine-build;0.1-SNAPSHOT [sources]
+[debug] == resolving dependencies for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT [sources]
 [debug] resolving dependencies for configuration 'docs'
-[debug] == resolving dependencies for default#textmanipulationengine-build;0.1-SNAPSHOT [docs]
+[debug] == resolving dependencies for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT [docs]
 [debug] resolving dependencies for configuration 'pom'
-[debug] == resolving dependencies for default#textmanipulationengine-build;0.1-SNAPSHOT [pom]
+[debug] == resolving dependencies for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT [pom]
 [debug] resolving dependencies for configuration 'scala-tool'
-[debug] == resolving dependencies for default#textmanipulationengine-build;0.1-SNAPSHOT [scala-tool]
-[debug] == resolving dependencies default#textmanipulationengine-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->default]
-[debug] == resolving dependencies default#textmanipulationengine-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->runtime]
-[debug] == resolving dependencies default#textmanipulationengine-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->compile]
+[debug] == resolving dependencies for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT [scala-tool]
+[debug] == resolving dependencies default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->default]
+[debug] == resolving dependencies default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->runtime]
+[debug] == resolving dependencies default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->compile]
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->master(*)]
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->compile(*)]
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->default]
@@ -1381,8 +1381,8 @@
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-reflect;2.10.4 [runtime->compile]
 [debug] == resolving dependencies org.scala-lang#scala-reflect;2.10.4->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scala-lang#scala-reflect;2.10.4->org.scala-lang#scala-library;2.10.4 [runtime->compile]
-[debug] == resolving dependencies default#textmanipulationengine-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->master]
-[debug] == resolving dependencies default#textmanipulationengine-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->optional(default)]
+[debug] == resolving dependencies default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->master]
+[debug] == resolving dependencies default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->optional(default)]
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#jline;2.10.4 [optional->master(*)]
 [info] Resolving org.scala-lang#jline;2.10.4 ...
 [debug] sbt-chain: Checking cache for: dependency: org.scala-lang#jline;2.10.4 {optional=[compile(*), master(*)]}
@@ -1397,11 +1397,11 @@
 [debug] 	typesafe-ivy-releases: revision in cache: org.fusesource.jansi#jansi;1.4
 [debug] 	found org.fusesource.jansi#jansi;1.4 in sbt-chain
 [debug] == resolving dependencies org.scala-lang#jline;2.10.4->org.fusesource.jansi#jansi;1.4 [compile->compile(*)]
-[debug] == resolving dependencies default#textmanipulationengine-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->default]
-[debug] == resolving dependencies default#textmanipulationengine-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->runtime]
-[debug] == resolving dependencies default#textmanipulationengine-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->compile]
-[debug] == resolving dependencies default#textmanipulationengine-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->master]
-[debug] == resolving dependencies default#textmanipulationengine-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->optional(default)]
+[debug] == resolving dependencies default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->default]
+[debug] == resolving dependencies default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->runtime]
+[debug] == resolving dependencies default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->compile]
+[debug] == resolving dependencies default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->master]
+[debug] == resolving dependencies default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->optional(default)]
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
 [debug] 	[NOT REQUIRED] com.eed3si9n#sbt-assembly;0.13.0!sbt-assembly.jar
@@ -1455,19 +1455,19 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.5!apply-macro.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-[debug] :: resolution report :: resolve 2195ms :: artifacts dl 38ms
-[debug] 	report for default#textmanipulationengine-build;0.1-SNAPSHOT compile produced in /Users/Marco/TextManipulationEngine/project/target/resolution-cache/reports/default-textmanipulationengine-build-compile.xml
-[debug] 	report for default#textmanipulationengine-build;0.1-SNAPSHOT runtime produced in /Users/Marco/TextManipulationEngine/project/target/resolution-cache/reports/default-textmanipulationengine-build-runtime.xml
-[debug] 	report for default#textmanipulationengine-build;0.1-SNAPSHOT test produced in /Users/Marco/TextManipulationEngine/project/target/resolution-cache/reports/default-textmanipulationengine-build-test.xml
-[debug] 	report for default#textmanipulationengine-build;0.1-SNAPSHOT provided produced in /Users/Marco/TextManipulationEngine/project/target/resolution-cache/reports/default-textmanipulationengine-build-provided.xml
-[debug] 	report for default#textmanipulationengine-build;0.1-SNAPSHOT optional produced in /Users/Marco/TextManipulationEngine/project/target/resolution-cache/reports/default-textmanipulationengine-build-optional.xml
-[debug] 	report for default#textmanipulationengine-build;0.1-SNAPSHOT compile-internal produced in /Users/Marco/TextManipulationEngine/project/target/resolution-cache/reports/default-textmanipulationengine-build-compile-internal.xml
-[debug] 	report for default#textmanipulationengine-build;0.1-SNAPSHOT runtime-internal produced in /Users/Marco/TextManipulationEngine/project/target/resolution-cache/reports/default-textmanipulationengine-build-runtime-internal.xml
-[debug] 	report for default#textmanipulationengine-build;0.1-SNAPSHOT test-internal produced in /Users/Marco/TextManipulationEngine/project/target/resolution-cache/reports/default-textmanipulationengine-build-test-internal.xml
-[debug] 	report for default#textmanipulationengine-build;0.1-SNAPSHOT plugin produced in /Users/Marco/TextManipulationEngine/project/target/resolution-cache/reports/default-textmanipulationengine-build-plugin.xml
-[debug] 	report for default#textmanipulationengine-build;0.1-SNAPSHOT sources produced in /Users/Marco/TextManipulationEngine/project/target/resolution-cache/reports/default-textmanipulationengine-build-sources.xml
-[debug] 	report for default#textmanipulationengine-build;0.1-SNAPSHOT docs produced in /Users/Marco/TextManipulationEngine/project/target/resolution-cache/reports/default-textmanipulationengine-build-docs.xml
-[debug] 	report for default#textmanipulationengine-build;0.1-SNAPSHOT pom produced in /Users/Marco/TextManipulationEngine/project/target/resolution-cache/reports/default-textmanipulationengine-build-pom.xml
-[debug] 	report for default#textmanipulationengine-build;0.1-SNAPSHOT scala-tool produced in /Users/Marco/TextManipulationEngine/project/target/resolution-cache/reports/default-textmanipulationengine-build-scala-tool.xml
-[debug] 	resolve done (2195ms resolve - 38ms download)
+[debug] :: resolution report :: resolve 1307ms :: artifacts dl 31ms
+[debug] 	report for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT compile produced in /Users/Marco/template-scala-parallel-textclassification/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-compile.xml
+[debug] 	report for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT runtime produced in /Users/Marco/template-scala-parallel-textclassification/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-runtime.xml
+[debug] 	report for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT test produced in /Users/Marco/template-scala-parallel-textclassification/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-test.xml
+[debug] 	report for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT provided produced in /Users/Marco/template-scala-parallel-textclassification/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-provided.xml
+[debug] 	report for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT optional produced in /Users/Marco/template-scala-parallel-textclassification/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-optional.xml
+[debug] 	report for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT compile-internal produced in /Users/Marco/template-scala-parallel-textclassification/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-compile-internal.xml
+[debug] 	report for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT runtime-internal produced in /Users/Marco/template-scala-parallel-textclassification/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-runtime-internal.xml
+[debug] 	report for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT test-internal produced in /Users/Marco/template-scala-parallel-textclassification/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-test-internal.xml
+[debug] 	report for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT plugin produced in /Users/Marco/template-scala-parallel-textclassification/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-plugin.xml
+[debug] 	report for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT sources produced in /Users/Marco/template-scala-parallel-textclassification/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-sources.xml
+[debug] 	report for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT docs produced in /Users/Marco/template-scala-parallel-textclassification/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-docs.xml
+[debug] 	report for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT pom produced in /Users/Marco/template-scala-parallel-textclassification/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-pom.xml
+[debug] 	report for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT scala-tool produced in /Users/Marco/template-scala-parallel-textclassification/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-scala-tool.xml
+[debug] 	resolve done (1307ms resolve - 31ms download)
 [info] Done updating.
