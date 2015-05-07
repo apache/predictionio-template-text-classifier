@@ -16,7 +16,7 @@ class Query(
 // wrapper for a predicted class label and the associated
 // prediction confidence.
 class PredictedResult (
-  val label: Double,
+  val category: String,
   val confidence: Double
 ) extends Serializable
 
@@ -25,7 +25,7 @@ class PredictedResult (
 // 3. Define ActualResult class which serves as a wrapper
 // for an observation's true class label.
 class ActualResult(
-  val label: Double
+  val category: String
 ) extends Serializable
 
 

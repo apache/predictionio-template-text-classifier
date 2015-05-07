@@ -45,7 +45,8 @@ class DataSource (
       // objects.
     )(sc).map(e => Observation(
       e.properties.get[Double]("label"),
-      e.properties.get[String]("text")
+      e.properties.get[String]("text"),
+      e.properties.get[String]("category")
     )).cache
   }
 
@@ -93,7 +94,7 @@ class DataSource (
       // Prepare test data for fold.
       val test = data.filter(_._2 % dsp.evalK.get == k)
         .map(_._1)
-        .map(e => (new Query(e.text), new ActualResult(e.label)))
+        .map(e => (new Query(e.text), new ActualResult(e.category)))
 
       (train, new EmptyEvaluationInfo, test)
     }
@@ -105,7 +106,8 @@ class DataSource (
 // data's class label and document string.
 case class Observation(
   label : Double,
-  text : String
+  text : String,
+  category :String
 ) extends Serializable
 
 // 4. TrainingData class serving as a wrapper for all

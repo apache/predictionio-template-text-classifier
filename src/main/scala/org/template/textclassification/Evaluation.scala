@@ -13,7 +13,7 @@ case class Accuracy()
     query: Query,
     predicted: PredictedResult,
     actual: ActualResult
-  ) : Double = if (predicted.label == actual.label) 1.0 else 0.0
+  ) : Double = if (predicted.category == actual.category) 1.0 else 0.0
 }
 
 

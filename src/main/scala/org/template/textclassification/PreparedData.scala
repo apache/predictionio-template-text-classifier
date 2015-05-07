@@ -112,9 +112,13 @@ class PreparedData (
 
   // 6. Data Transformer: RDD[documents] => RDD[LabeledPoints]
 
-  def transformData: RDD[LabeledPoint] = {
+  def transformData: RDD[(LabeledPoint)] = {
     td.data.map(e => LabeledPoint(e.label, transform(e.text)))
   }
+
+
+  // 7. Finally extract category map, associating label to category.
+  val categoryMap = td.data.map(e => (e.label, e.category)).collectAsMap
 
 }
 
