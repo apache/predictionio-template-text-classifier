@@ -4,7 +4,9 @@ import predictionio
 import argparse
 
 
-categories = ['alt.atheism', 'soc.religion.christian', 'comp.graphics', 'sci.med']
+categories = ['rec.sport.baseball', 'talk.religion.misc', 'rec.motorcycles', 'rec.sport.hockey',
+              'comp.sys.ibm.pc.hardware', 'rec.autos', 'comp.graphics', 'talk.politics.misc',
+              'comp.os.ms-windows.misc', 'sci.med']
 
 twenty_train = fetch_20newsgroups(subset = 'train',
                                   shuffle=True,
