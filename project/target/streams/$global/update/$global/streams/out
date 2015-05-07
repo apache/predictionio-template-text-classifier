@@ -1455,7 +1455,7 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.5!apply-macro.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-[debug] :: resolution report :: resolve 1307ms :: artifacts dl 31ms
+[debug] :: resolution report :: resolve 6241ms :: artifacts dl 77ms
 [debug] 	report for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT compile produced in /Users/Marco/template-scala-parallel-textclassification/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-compile.xml
 [debug] 	report for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT runtime produced in /Users/Marco/template-scala-parallel-textclassification/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-runtime.xml
 [debug] 	report for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT test produced in /Users/Marco/template-scala-parallel-textclassification/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-test.xml
@@ -1469,5 +1469,5 @@
 [debug] 	report for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT docs produced in /Users/Marco/template-scala-parallel-textclassification/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-docs.xml
 [debug] 	report for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT pom produced in /Users/Marco/template-scala-parallel-textclassification/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-pom.xml
 [debug] 	report for default#template-scala-parallel-textclassification-build;0.1-SNAPSHOT scala-tool produced in /Users/Marco/template-scala-parallel-textclassification/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-scala-tool.xml
-[debug] 	resolve done (1307ms resolve - 31ms download)
+[debug] 	resolve done (6241ms resolve - 77ms download)
 [info] Done updating.

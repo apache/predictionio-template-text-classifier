@@ -4,7 +4,7 @@
 		module="textmanipulationengine$sbt_2.10"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20150506152539"
+		publication="20150506235922"
 	/>
 	<configurations>
 		<conf name="default" visibility="public"/>
