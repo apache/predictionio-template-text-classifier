@@ -12,7 +12,8 @@ import org.apache.spark.SparkContext
 
 case class PreparatorParams(
   nMin: Int,
-  nMax: Int
+  nMax: Int,
+  cutoff : Double
 ) extends Params
 
 
@@ -23,7 +24,7 @@ class Preparator(pp: PreparatorParams) extends PPreparator[TrainingData, Prepare
 
   // Prepare your training data.
   def prepare(sc : SparkContext, td: TrainingData): PreparedData = {
-    new PreparedData(td, pp.nMin, pp.nMax)
+    new PreparedData(td, pp.nMin, pp.nMax, pp.cutoff)
   }
 }
 

@@ -23,7 +23,8 @@ import scala.math.log
 class PreparedData (
   val td: TrainingData,
   val nMin: Int,
-  val nMax: Int
+  val nMax: Int,
+  val cutoff : Double
 ) extends Serializable {
 
 
@@ -78,7 +79,14 @@ class PreparedData (
       td.data
       .map(e => hash(tokenize(e.text)))
     ).collect: _*
+  // Cut out n-grams with inverse i.d.f. greater/less than or equal to min/max
+  // cutoff.
+  ).filter(
+    e => (1 / e._2) >= inverseIdfMin && (1 / e._2) <= inverseIdfMax
   )
+
+
+
 
   // Get total number n-grams in universe (in
   // bigram case, the number of unique n-grams

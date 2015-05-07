@@ -1,5 +1,6 @@
 from sklearn.datasets import fetch_20newsgroups
-from sklearn.feature_extraction import text 
+from sklearn.feature_extraction import text
+from string import punctuation
 import predictionio
 import argparse
 
@@ -12,7 +13,7 @@ twenty_train = fetch_20newsgroups(subset = 'train',
                                   shuffle=True,
                                   random_state=10,
                                   categories = categories)
-stop_words = text.ENGLISH_STOP_WORDS
+stop_words = text.ENGLISH_STOP_WORDS.union(frozenset(punctuation))
 
 
 def import_events(client):

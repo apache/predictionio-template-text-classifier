@@ -11,7 +11,9 @@
   "preparator": {
     "params": {
       "nMin": 1,
-      "nMax": 2
+      "nMax": 2,
+      "inverseIdfMin" : 0.1,
+      "inverseIdfMax" : 0.9
     }
   },
   "algorithms": [
