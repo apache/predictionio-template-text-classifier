@@ -12,7 +12,7 @@
     "params": {
       "nMin": 1,
       "nMax": 2,
-      "inverseIdfMin" : 0,
+      "inverseIdfMin" : 0.1,
       "inverseIdfMax" : 0.9
     }
   },
