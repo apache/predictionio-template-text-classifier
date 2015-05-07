@@ -1,5 +1,5 @@
 
-name := "TextManipulationEngine"
+name := "org.template.textclassification"
 
 organization := "io.prediction"
 
