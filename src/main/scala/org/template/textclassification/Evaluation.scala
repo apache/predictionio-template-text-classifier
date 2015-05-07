@@ -24,7 +24,7 @@ object AccuracyEvaluation extends Evaluation {
 
   // Define Engine and Metric used in Evaluation.
   engineMetric = (
-    TextManipulationEngine(),
+    TextClassificationEngine(),
     new Accuracy
   )
 }

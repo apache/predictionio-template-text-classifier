@@ -31,7 +31,7 @@ class ActualResult(
 
 
 // 4. Initialize the engine.
-object TextManipulationEngine extends EngineFactory {
+object TextClassificationEngine extends EngineFactory {
   override
   def apply() = {
     new Engine(
