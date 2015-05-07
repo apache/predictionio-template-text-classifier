@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cd7bdc0-db80-4a66-bf7b-fafdd25c8327" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/import_eventserver.py" afterPath="$PROJECT_DIR$/data/import_eventserver.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/org/template/textclassification/PreparedData.scala" afterPath="$PROJECT_DIR$/src/main/scala/org/template/textclassification/PreparedData.scala" />
     </list>
     <ignored path="TextManipulationEngine.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,21 +34,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="import_eventserver.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="import_eventserver.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/import_eventserver.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.534846">
-              <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PreparedData.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PreparedData.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/org/template/textclassification/PreparedData.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.8265802">
+              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -100,7 +100,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/scala/org/template/textclassification/DataSource.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="39" />
+              <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -152,12 +152,12 @@
         <option value="$PROJECT_DIR$/src/main/scala/org/template/textclassification/Preparator.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/org/template/textclassification/NBModel.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/org/template/textclassification/LDAModel.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/template/textclassification/PreparedData.scala" />
         <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/template.json" />
         <option value="$PROJECT_DIR$/src/main/scala/org/template/textclassification/Engine.scala" />
         <option value="$PROJECT_DIR$/engine.json" />
         <option value="$PROJECT_DIR$/data/import_eventserver.py" />
+        <option value="$PROJECT_DIR$/src/main/scala/org/template/textclassification/PreparedData.scala" />
       </list>
     </option>
   </component>
@@ -176,8 +176,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-72" />
-    <option name="y" value="50" />
+    <option name="x" value="12" />
+    <option name="y" value="22" />
     <option name="width" value="1280" />
     <option name="height" value="714" />
   </component>
@@ -853,15 +853,15 @@
       <option name="number" value="Default" />
       <updated>1430951117412</updated>
       <workItem from="1430951119557" duration="5853000" />
-      <workItem from="1430981904623" duration="4038000" />
+      <workItem from="1430981904623" duration="4669000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9891000" />
+    <option name="totallyTimeSpent" value="10522000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-72" y="50" width="1280" height="714" extended-state="0" />
+    <frame x="12" y="22" width="1280" height="714" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1027,26 +1027,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/org/template/textclassification/PreparedData.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/org/template/textclassification/Serving.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/org/template/textclassification/DataSource.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -1085,8 +1069,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/import_eventserver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.534846">
-          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/org/template/textclassification/DataSource.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/org/template/textclassification/PreparedData.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8265802">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding />
         </state>
       </provider>

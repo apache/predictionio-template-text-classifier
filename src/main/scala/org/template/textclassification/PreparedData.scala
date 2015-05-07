@@ -33,7 +33,7 @@ class PreparedData (
 
   private def tokenize (doc : String): Array[String] = {
     SimpleTokenizer.INSTANCE
-      .tokenize(doc)
+      .tokenize(doc.toLowerCase)
       .filter(e => ! td.stopWords.contains(e))
   }
 
