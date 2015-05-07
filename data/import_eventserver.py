@@ -5,14 +5,7 @@ import predictionio
 import argparse
 
 
-categories = ['rec.sport.baseball', 'talk.religion.misc', 'rec.motorcycles', 'rec.sport.hockey',
-              'comp.sys.ibm.pc.hardware', 'rec.autos', 'comp.graphics', 'talk.politics.misc',
-              'comp.os.ms-windows.misc', 'sci.med']
-
-twenty_train = fetch_20newsgroups(subset = 'train',
-                                  shuffle=True,
-                                  random_state=10,
-                                  categories = categories)
+twenty_train = fetch_20newsgroups(subset = 'train')
 stop_words = text.ENGLISH_STOP_WORDS.union(frozenset(punctuation))
 
 
