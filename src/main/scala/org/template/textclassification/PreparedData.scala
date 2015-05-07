@@ -24,7 +24,8 @@ class PreparedData (
   val td: TrainingData,
   val nMin: Int,
   val nMax: Int,
-  val cutoff : Double
+  val inverseIdfMin : Double,
+  val inverseIdfMax : Double
 ) extends Serializable {
 
 
