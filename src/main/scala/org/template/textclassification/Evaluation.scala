@@ -40,8 +40,8 @@ object EngineParamsList extends EngineParamsGenerator {
     preparatorParams = PreparatorParams(
       nMin = 1,
       nMax = 2,
-      inverseIdfMin = 0.0,
-      inverseIdfMax = 0.9
+      inverseIdfMin = 0.15,
+      inverseIdfMax = 0.85
     )
   )
 
