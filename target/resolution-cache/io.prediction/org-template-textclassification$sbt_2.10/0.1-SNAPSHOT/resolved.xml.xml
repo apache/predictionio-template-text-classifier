@@ -4,7 +4,7 @@
 		module="org-template-textclassification$sbt_2.10"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20150507012615"
+		publication="20150510185444"
 	/>
 	<configurations>
 		<conf name="default" visibility="public"/>

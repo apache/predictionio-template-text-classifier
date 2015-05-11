@@ -15,7 +15,7 @@ class Query(
 // 2. Define PredictedResult class which serves as a
 // wrapper for a predicted class label and the associated
 // prediction confidence.
-class PredictedResult (
+case class PredictedResult (
   val category: String,
   val confidence: Double
 ) extends Serializable

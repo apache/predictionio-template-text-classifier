@@ -661,9 +661,9 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-agent;0.13.5!test-agent.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.5!apply-macro.jar
-[debug] :: resolution report :: resolve 659ms :: artifacts dl 46ms
+[debug] :: resolution report :: resolve 1929ms :: artifacts dl 32ms
 [debug] 	report for io.prediction#org-template-textclassification$sbt_2.10;0.1-SNAPSHOT default produced in /Users/Marco/template-scala-parallel-textclassification/target/resolution-cache/reports/io.prediction-org-template-textclassification$sbt_2.10-default.xml
-[debug] 	resolve done (659ms resolve - 46ms download)
+[debug] 	resolve done (1929ms resolve - 32ms download)
 [debug] Using inline dependencies specified in Scala.
 [debug] :: resolving dependencies :: io.prediction#org-template-textclassification$sources_2.10;0.1-SNAPSHOT
 [debug] 	confs: [default]
@@ -1031,6 +1031,6 @@
 [debug] 	[NOT REQUIRED] com.eed3si9n#sbt-assembly;0.13.0!sbt-assembly.jar(src)
 [debug] 	[NOT REQUIRED] org.scalactic#scalactic_2.10;2.2.1!scalactic_2.10.jar(src)
 [debug] 	[NOT REQUIRED] io.prediction#pio-build;0.9.0!pio-build.jar(src)
-[debug] :: resolution report :: resolve 267ms :: artifacts dl 53ms
+[debug] :: resolution report :: resolve 323ms :: artifacts dl 51ms
 [debug] 	report for io.prediction#org-template-textclassification$sources_2.10;0.1-SNAPSHOT default produced in /Users/Marco/template-scala-parallel-textclassification/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_2.10-default.xml
-[debug] 	resolve done (267ms resolve - 53ms download)
+[debug] 	resolve done (323ms resolve - 51ms download)
