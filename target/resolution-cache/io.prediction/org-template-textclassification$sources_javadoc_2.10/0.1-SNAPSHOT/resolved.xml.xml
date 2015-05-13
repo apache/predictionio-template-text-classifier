@@ -4,7 +4,7 @@
 		module="org-template-textclassification$sources_javadoc_2.10"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20150510185447"
+		publication="20150513104408"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>

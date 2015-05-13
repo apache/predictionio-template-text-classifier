@@ -12,6 +12,7 @@ import org.apache.spark.mllib.regression.LabeledPoint
 import org.apache.spark.rdd.RDD
 
 import scala.collection.immutable.HashMap
+import scala.collection.JavaConversions._
 import scala.math._
 
 
@@ -67,9 +68,8 @@ val inverseIdfMax : Double
     val model : NGramModel = new NGramModel()
     model.add(new StringList(tokenList: _*), nMin, nMax)
 
-    val map : Map[String, Double] = model.iterator
-    .map(
-    x => (x.toString, model.getCount(x).toDouble)
+    val map : Map[String, Double] = model.iterator.map(
+      x => (x.toString, model.getCount(x).toDouble)
     ).toMap
 
     // Divide by the total number of n-grams in the document
