@@ -147,7 +147,7 @@ val inverseIdfMax : Double
   val categoryMap = td.data.map(e => (e.label, e.category)).collectAsMap
 
 
-  // 8. Finally conside
+  // 8. Finally consider the case where new document has no matching-ngrams.
   val majorityCategory = categoryMap.getOrElse(
     td.data.map(e => e.label).countByValue.maxBy(_._2)._1,
     ""
