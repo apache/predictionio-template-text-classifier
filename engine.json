@@ -9,7 +9,6 @@
     }
   },
   "preparator": {
-    "name" : "prep",
     "params": {
       "nMin": 1,
       "nMax": 2,

@@ -1,33 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2cd7bdc0-db80-4a66-bf7b-fafdd25c8327" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/org/template/textclassification/Preparator.scala" afterPath="$PROJECT_DIR$/src/main/scala/org/template/textclassification/Preparator.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sbt_2.10-default.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sbt_2.10-default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_2.10-default.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_2.10-default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-compile-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-compile-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-compile.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-compile.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-docs.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-docs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-optional.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-optional.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-plugin.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-pom.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-provided.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-provided.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-runtime-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-runtime-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-runtime.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-runtime.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-scala-tool.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-scala-tool.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-sources.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-sources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-test-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-test-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-test.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/updateSbtClassifiers/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/updateSbtClassifiers/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/io.prediction/org-template-textclassification$sbt_2.10/0.1-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/resolution-cache/io.prediction/org-template-textclassification$sbt_2.10/0.1-SNAPSHOT/resolved.xml.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/io.prediction/org-template-textclassification$sources_2.10/0.1-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/resolution-cache/io.prediction/org-template-textclassification$sources_2.10/0.1-SNAPSHOT/resolved.xml.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/io.prediction/org-template-textclassification$sources_javadoc_2.10/0.1-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/resolution-cache/io.prediction/org-template-textclassification$sources_javadoc_2.10/0.1-SNAPSHOT/resolved.xml.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/io.prediction/org-template-textclassification$sbt_2.10/0.1-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/io.prediction/org-template-textclassification$sbt_2.10/0.1-SNAPSHOT/resolved.xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/io.prediction/org-template-textclassification$sources_2.10/0.1-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/io.prediction/org-template-textclassification$sources_2.10/0.1-SNAPSHOT/resolved.xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/io.prediction/org-template-textclassification$sources_javadoc_2.10/0.1-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/io.prediction/org-template-textclassification$sources_javadoc_2.10/0.1-SNAPSHOT/resolved.xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="2cd7bdc0-db80-4a66-bf7b-fafdd25c8327" name="Default" comment="" />
     <ignored path="TextManipulationEngine.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -58,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Preparator.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Preparator.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/org/template/textclassification/Preparator.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5555556">
-              <caret line="72" column="11" selection-start-line="72" selection-start-column="11" selection-end-line="72" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="74" column="3" selection-start-line="74" selection-start-column="3" selection-end-line="74" selection-end-column="3" />
               <folding>
                 <element signature="e#41#84#0" expanded="true" />
               </folding>
@@ -94,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/scala/org/template/textclassification/Engine.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+              <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -153,11 +127,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="engine.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="engine.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/engine.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.6532663">
+              <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -182,13 +156,13 @@
         <option value="$PROJECT_DIR$/src/main/scala/org/template/textclassification/DataSource.scala" />
         <option value="$PROJECT_DIR$/data/import_eventserver.py" />
         <option value="$PROJECT_DIR$/src/main/scala/org/template/textclassification/Evaluation.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/template/textclassification/Engine.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/org/template/textclassification/PreparedData.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/org/template/textclassification/NBModel.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/org/template/textclassification/NBAlgorithm.scala" />
-        <option value="$PROJECT_DIR$/engine.json" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/scala/org/template/textclassification/Preparator.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/org/template/textclassification/Engine.scala" />
+        <option value="$PROJECT_DIR$/engine.json" />
       </list>
     </option>
   </component>
@@ -338,6 +312,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Evaluation.scala" />
+              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TextManipulationEngine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template-scala-parallel-textclassification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="textclassification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Engine.scala" />
               <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -935,12 +939,12 @@
       <workItem from="1431374621777" duration="3940000" />
       <workItem from="1431457250214" duration="392000" />
       <workItem from="1431459969427" duration="10000" />
-      <workItem from="1431538998400" duration="263000" />
+      <workItem from="1431538998400" duration="575000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37424000" />
+    <option name="totallyTimeSpent" value="37736000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2349" y="205" width="1280" height="718" extended-state="0" />
@@ -1333,26 +1337,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/org/template/textclassification/Engine.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/org/template/textclassification/NBAlgorithm.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="92" column="1" selection-start-line="92" selection-start-column="1" selection-end-line="92" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -1402,11 +1390,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/org/template/textclassification/Preparator.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5555556">
-          <caret line="72" column="11" selection-start-line="72" selection-start-column="11" selection-end-line="72" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="74" column="3" selection-start-line="74" selection-start-column="3" selection-end-line="74" selection-end-column="3" />
           <folding>
             <element signature="e#41#84#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/org/template/textclassification/Engine.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6532663">
+          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
