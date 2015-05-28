@@ -4,8 +4,6 @@
       <root url="jar://$USER_HOME$/.ivy2/cache/org.elasticsearch/elasticsearch/jars/elasticsearch-1.4.4.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES>
-      <root url="jar://$USER_HOME$/.ivy2/cache/org.elasticsearch/elasticsearch/srcs/elasticsearch-1.4.4-sources.jar!/" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>

@@ -102,7 +102,7 @@ val inverseIdfMax : Double
     // Cut out n-grams with inverse i.d.f. greater/less than or equal to min/max
     // cutoff.
   ).filter(
-  e => (1 / e._2) >= inverseIdfMin && (1 / e._2) <= inverseIdfMax
+  e => (1 / exp(e._2)) >= inverseIdfMin && (1 / exp(e._2)) <= inverseIdfMax
   )
 
 
