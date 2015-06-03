@@ -1,34 +1,36 @@
-from sklearn.datasets import fetch_20newsgroups
-from sklearn.feature_extraction import text
-from string import punctuation
 import predictionio
 import argparse
+import os
 
-
-twenty_train = fetch_20newsgroups(subset = 'train')
-stop_words = text.ENGLISH_STOP_WORDS.union(frozenset(punctuation))
+categories = os.popen('ls ./data/20_newsgroups').read().split('\n')[: -1]
 
 
 def import_events(client):
-    train = ((float(twenty_train.target[k]),
-              twenty_train.data[k],
-              twenty_train.target_names[twenty_train.target[k]])
-             for k in range(len(twenty_train.data)))
     count = 0
     print('Importing data.....')
-    for elem in train:
-        count += 1
-        client.create_event(
-            event = "documents",
-            entity_id = count,
-            entity_type = "source",
-            properties = {
-                "label": elem[0],
-                "text": elem[1],
-                "category" : elem[2]
-            })
+
+    for k in range(len(categories)):
+        cat_files = os.popen(
+            'ls ./data/20_newsgroups/' + categories[k] + '/*'
+        ).read().split('\n')[: -1]
+        for file_ in cat_files:
+            try:
+                client.create_event(
+                    event = "documents",
+                    entity_id = count,
+                    entity_type = "source",
+                    properties = {
+                        "label": k,
+                        "text": open(file_).read(),
+                        "category" : categories[k]
+                })
+                count += 1
+            except UnicodeDecodeError:
+                pass
     print("Imported {0} events.".format(count))
 
+
+stop_words = open('./data/stopwords.txt').read().split('\n')
 
 def import_stopwords(client):
     count = 0

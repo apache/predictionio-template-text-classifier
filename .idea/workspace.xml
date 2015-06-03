@@ -2,461 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e653eb3-19a8-4c0c-8cb3-c11811c4cb28" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_github_nscala_time_nscala_time_2_10_1_0_0_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_google_guava_guava_14_0_1_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__io_prediction_common_2_10_0_9_2_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__io_prediction_core_2_10_0_9_2_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__io_prediction_data_2_10_0_9_2_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__joda_time_joda_time_2_3_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_joda_joda_convert_1_6_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_mongodb_casbah_commons_2_10_2_7_2_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_mongodb_casbah_core_2_10_2_7_2_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_mongodb_casbah_gridfs_2_10_2_7_2_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_mongodb_casbah_query_2_10_2_7_2_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_mongodb_mongo_java_driver_2_12_2_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_scala_lang_scala_reflect_2_10_4_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_slf4j_slf4j_api_1_7_10_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$1ffa93a070528aed7d50$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$1ffa93a070528aed7d50.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$1ffa93a070528aed7d50.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$347cf7eb2a58f2d65b2c$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$347cf7eb2a58f2d65b2c.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$347cf7eb2a58f2d65b2c.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$d3c043e0f1e76fd63355$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$d3c043e0f1e76fd63355.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$d3c043e0f1e76fd63355.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$defdaa3192df24ed4c26$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$defdaa3192df24ed4c26.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$defdaa3192df24ed4c26.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$0ae5ddf5b8bc06037929$$anonfun$$sbtdef$1$$anonfun$apply$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$0ae5ddf5b8bc06037929$$anonfun$$sbtdef$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$0ae5ddf5b8bc06037929$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$0ae5ddf5b8bc06037929.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$0ae5ddf5b8bc06037929.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$2b6e9ed42dfb2a118ab8$$anonfun$$sbtdef$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$2b6e9ed42dfb2a118ab8$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$2b6e9ed42dfb2a118ab8.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$2b6e9ed42dfb2a118ab8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$36f5bbf9444b4fbbaed3$$anonfun$$sbtdef$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$36f5bbf9444b4fbbaed3$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$36f5bbf9444b4fbbaed3.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$36f5bbf9444b4fbbaed3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$393a7659d695185ca540$$anonfun$$sbtdef$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$393a7659d695185ca540$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$393a7659d695185ca540.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$393a7659d695185ca540.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$409f8d2b1574c71c9dcb$$anonfun$$sbtdef$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$409f8d2b1574c71c9dcb$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$409f8d2b1574c71c9dcb.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$409f8d2b1574c71c9dcb.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$449f52eed64bc8e1cc9c$$anonfun$$sbtdef$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$449f52eed64bc8e1cc9c$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$449f52eed64bc8e1cc9c.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$449f52eed64bc8e1cc9c.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$536ac94b1b9d3607cf08$$anonfun$$sbtdef$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$536ac94b1b9d3607cf08$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$536ac94b1b9d3607cf08.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$536ac94b1b9d3607cf08.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$62c2c295f61154c257a0$$anonfun$$sbtdef$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$62c2c295f61154c257a0$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$62c2c295f61154c257a0.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$62c2c295f61154c257a0.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$81b2e7c0b592d1633e2a$$anonfun$$sbtdef$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$81b2e7c0b592d1633e2a$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$81b2e7c0b592d1633e2a.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$81b2e7c0b592d1633e2a.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$8f4023227bfd73792d5e$$anonfun$$sbtdef$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$8f4023227bfd73792d5e$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$8f4023227bfd73792d5e.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$8f4023227bfd73792d5e.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$99c54baf089c8e840d5d$$anonfun$$sbtdef$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$99c54baf089c8e840d5d$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$99c54baf089c8e840d5d.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$99c54baf089c8e840d5d.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$a4cf0a42ea15cb9b9c2b$$anonfun$$sbtdef$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$a4cf0a42ea15cb9b9c2b$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$a4cf0a42ea15cb9b9c2b.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$a4cf0a42ea15cb9b9c2b.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$b158bb0eb09d10b9ed05$$anonfun$$sbtdef$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$b158bb0eb09d10b9ed05$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$b158bb0eb09d10b9ed05.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$b158bb0eb09d10b9ed05.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$badbd25b26d7fb1c1f70$$anonfun$$sbtdef$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$badbd25b26d7fb1c1f70$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$badbd25b26d7fb1c1f70.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$badbd25b26d7fb1c1f70.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$ef424c74aca6b9773cef$$anonfun$$sbtdef$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$ef424c74aca6b9773cef$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$ef424c74aca6b9773cef.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$ef424c74aca6b9773cef.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$fbb33f7bf8ec6e859ea9$$anonfun$$sbtdef$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$fbb33f7bf8ec6e859ea9$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$fbb33f7bf8ec6e859ea9.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$fbb33f7bf8ec6e859ea9.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/resolution-cache/io.prediction/org-template-textclassification$sources_2.10/0.1-SNAPSHOT/resolved.xml.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/resolution-cache/io.prediction/org-template-textclassification$sources_2.10/0.1-SNAPSHOT/resolved.xml.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_2.10-default.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.10/classes.bak/sbt1225449857675876531.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.10/classes.bak/sbt1420698426681635730.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.10/classes.bak/sbt1710556023651209708.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.10/classes.bak/sbt2080863118148847266.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.10/classes.bak/sbt2185476653743792146.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.10/classes.bak/sbt2254474268845605206.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.10/classes.bak/sbt2433308515992545093.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.10/classes.bak/sbt2478461302623470653.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.10/classes.bak/sbt2518723992309265197.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.10/classes.bak/sbt2887447535932103448.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.10/classes.bak/sbt3158054230993915804.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.10/classes.bak/sbt3194184621467357708.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.10/classes.bak/sbt3199092870203606397.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.10/classes.bak/sbt3700043624425851761.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.10/classes.bak/sbt3765174656359387174.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.10/classes.bak/sbt3937106270333484721.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.10/classes.bak/sbt4039517703291952220.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.10/classes.bak/sbt4198591360671461997.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.10/classes.bak/sbt4286353763283423244.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.10/classes.bak/sbt4534851228917236133.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.10/classes.bak/sbt4606084893824044187.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.10/classes.bak/sbt4678600171714053272.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.10/classes.bak/sbt4978048427319561657.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.10/classes.bak/sbt5086366910573967385.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.10/classes.bak/sbt5088010171728638947.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.10/classes.bak/sbt5265076659944291654.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.10/classes.bak/sbt6721170378206867451.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.10/classes.bak/sbt7028497170548895439.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.10/classes.bak/sbt7350130413879639851.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.10/classes.bak/sbt7830916758600433708.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.10/classes.bak/sbt789355058848617743.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.10/classes.bak/sbt8819826199967909228.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.10/classes.bak/sbt9189239133103092554.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/Accuracy.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/Accuracy.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/AccuracyEvaluation$.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/AccuracyEvaluation$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/AccuracyEvaluation.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/AccuracyEvaluation.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/ActualResult.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/ActualResult.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/DataSource$$anonfun$org$template$textclassification$DataSource$$readStopWords$1.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/DataSource$$anonfun$org$template$textclassification$DataSource$$readStopWords$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/DataSource$$anonfun$readEval$1$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/DataSource$$anonfun$readEval$1$$anonfun$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/DataSource$$anonfun$readEval$1$$anonfun$2.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/DataSource$$anonfun$readEval$1$$anonfun$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/DataSource$$anonfun$readEval$1$$anonfun$3.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/DataSource$$anonfun$readEval$1$$anonfun$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/DataSource$$anonfun$readEval$1$$anonfun$4.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/DataSource$$anonfun$readEval$1$$anonfun$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/DataSource$$anonfun$readEval$1$$anonfun$5.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/DataSource$$anonfun$readEval$1$$anonfun$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/DataSource$$anonfun$readEval$1.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/DataSource$$anonfun$readEval$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/DataSource$$anonfun$readEventData$1.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/DataSource$$anonfun$readEventData$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/DataSource.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/DataSource.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/EngineParamsList$.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/EngineParamsList$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/NBAlgorithm.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/NBAlgorithm.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/NBAlgorithmParams$.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/NBAlgorithmParams$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/NBAlgorithmParams.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/NBAlgorithmParams.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/NBModel$$anonfun$1$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/NBModel$$anonfun$1$$anonfun$apply$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/NBModel$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/NBModel$$anonfun$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/NBModel$$anonfun$2.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/NBModel$$anonfun$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/NBModel$$anonfun$getScores$1.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/NBModel$$anonfun$getScores$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/NBModel$$anonfun$org$template$textclassification$NBModel$$innerProduct$1.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/NBModel$$anonfun$org$template$textclassification$NBModel$$innerProduct$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/NBModel.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/NBModel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/Observation$.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/Observation$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/Observation.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/Observation.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/PredictedResult.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/PredictedResult.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/Preparator.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/Preparator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/PreparatorParams$.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/PreparatorParams$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/PreparatorParams.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/PreparatorParams.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/PreparedData$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/PreparedData$$anonfun$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/PreparedData$$anonfun$2.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/PreparedData$$anonfun$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/PreparedData$$anonfun$3.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/PreparedData$$anonfun$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/PreparedData$$anonfun$createUniverse$1.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/PreparedData$$anonfun$createUniverse$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/PreparedData$$anonfun$createUniverse$2.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/PreparedData$$anonfun$createUniverse$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/PreparedData$$anonfun$createUniverse$3.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/PreparedData$$anonfun$createUniverse$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/PreparedData$$anonfun$createUniverse$4.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/PreparedData$$anonfun$createUniverse$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/PreparedData$$anonfun$org$template$textclassification$PreparedData$$hash$1.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/PreparedData$$anonfun$org$template$textclassification$PreparedData$$hash$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/PreparedData$$anonfun$org$template$textclassification$PreparedData$$tokenize$1.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/PreparedData$$anonfun$org$template$textclassification$PreparedData$$tokenize$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/PreparedData$$anonfun$transform$1.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/PreparedData$$anonfun$transform$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/PreparedData$$anonfun$transformData$1.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/PreparedData$$anonfun$transformData$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/PreparedData.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/PreparedData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/TrainingData.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/org/template/textclassification/TrainingData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/assemblyPackageDependency/$global/streams/assembly-outputs" afterPath="$PROJECT_DIR$/target/streams/$global/assemblyPackageDependency/$global/streams/assembly-outputs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.10/input_dsp" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.10/input_dsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/inputs" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/inputs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/inputs" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/inputs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.10/inputs" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.10/inputs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/inputs" afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/inputs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/output" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/output" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/output" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/output" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.10/output" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.10/output" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/output" afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/output" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.10/output_dsp" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.10/output_dsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/org/template/textclassification/Preparator.scala" afterPath="$PROJECT_DIR$/src/main/scala/org/template/textclassification/Preparator.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__aopalliance_aopalliance_1_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__aopalliance_aopalliance_1_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_chuusai_shapeless_2_10_1_2_4_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_chuusai_shapeless_2_10_1_2_4_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_clearspring_analytics_stream_2_7_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_clearspring_analytics_stream_2_7_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_esotericsoftware_kryo_kryo_2_24_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_esotericsoftware_kryo_kryo_2_24_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_esotericsoftware_minlog_minlog_1_2_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_esotericsoftware_minlog_minlog_1_2_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_fasterxml_jackson_core_jackson_annotations_2_4_4_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_fasterxml_jackson_core_jackson_annotations_2_4_4_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_fasterxml_jackson_core_jackson_core_2_4_4_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_fasterxml_jackson_core_jackson_core_2_4_4_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_fasterxml_jackson_core_jackson_databind_2_4_4_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_fasterxml_jackson_core_jackson_databind_2_4_4_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_fasterxml_jackson_module_jackson_module_scala_2_10_2_4_4_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_fasterxml_jackson_module_jackson_module_scala_2_10_2_4_4_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_github_fommil_netlib_core_1_1_2_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_github_fommil_netlib_core_1_1_2_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_github_rwl_jtransforms_2_4_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_github_rwl_jtransforms_2_4_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_github_scopt_scopt_2_10_3_2_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_github_scopt_scopt_2_10_3_2_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_github_stephenc_findbugs_findbugs_annotations_1_3_9_1_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_github_stephenc_findbugs_findbugs_annotations_1_3_9_1_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_github_stephenc_high_scale_lib_high_scale_lib_1_1_1_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_github_stephenc_high_scale_lib_high_scale_lib_1_1_1_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_google_code_gson_gson_2_2_4_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_google_code_gson_gson_2_2_4_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_google_inject_guice_3_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_google_inject_guice_3_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_google_protobuf_protobuf_java_2_5_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_google_protobuf_protobuf_java_2_5_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_jamesmurty_utils_java_xmlbuilder_0_4_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_jamesmurty_utils_java_xmlbuilder_0_4_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_jcraft_jsch_0_1_42_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_jcraft_jsch_0_1_42_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_ning_compress_lzf_1_0_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_ning_compress_lzf_1_0_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_spatial4j_spatial4j_0_4_1_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_spatial4j_spatial4j_0_4_1_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_sun_jersey_contribs_jersey_guice_1_9_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_sun_jersey_contribs_jersey_guice_1_9_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_sun_jersey_jersey_core_1_9_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_sun_jersey_jersey_core_1_9_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_sun_jersey_jersey_json_1_9_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_sun_jersey_jersey_json_1_9_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_sun_jersey_jersey_server_1_9_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_sun_jersey_jersey_server_1_9_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_sun_jersey_jersey_test_framework_jersey_test_framework_grizzly2_1_9_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_sun_jersey_jersey_test_framework_jersey_test_framework_grizzly2_1_9_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_sun_xml_bind_jaxb_impl_2_2_3_1_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_sun_xml_bind_jaxb_impl_2_2_3_1_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_thoughtworks_paranamer_paranamer_2_6_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_thoughtworks_paranamer_paranamer_2_6_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_twitter_bijection_core_2_10_0_7_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_twitter_bijection_core_2_10_0_7_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_twitter_chill_2_10_0_5_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_twitter_chill_2_10_0_5_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_twitter_chill_bijection_2_10_0_5_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_twitter_chill_bijection_2_10_0_5_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_twitter_chill_java_0_5_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_twitter_chill_java_0_5_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_twitter_parquet_column_1_6_0rc3_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_twitter_parquet_column_1_6_0rc3_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_twitter_parquet_common_1_6_0rc3_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_twitter_parquet_common_1_6_0rc3_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_twitter_parquet_encoding_1_6_0rc3_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_twitter_parquet_encoding_1_6_0rc3_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_twitter_parquet_format_2_2_0_rc1_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_twitter_parquet_format_2_2_0_rc1_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_twitter_parquet_generator_1_6_0rc3_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_twitter_parquet_generator_1_6_0rc3_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_twitter_parquet_hadoop_1_6_0rc3_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_twitter_parquet_hadoop_1_6_0rc3_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_twitter_parquet_jackson_1_6_0rc3_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_twitter_parquet_jackson_1_6_0rc3_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_config_1_2_1_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_config_1_2_1_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_play_twirl_api_2_10_1_0_3_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_play_twirl_api_2_10_1_0_3_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_yammer_metrics_metrics_core_2_2_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_yammer_metrics_metrics_core_2_2_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__commons_beanutils_commons_beanutils_1_7_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__commons_beanutils_commons_beanutils_1_7_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__commons_cli_commons_cli_1_2_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__commons_cli_commons_cli_1_2_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__commons_codec_commons_codec_1_9_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__commons_codec_commons_codec_1_9_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__commons_collections_commons_collections_3_2_1_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__commons_collections_commons_collections_3_2_1_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__commons_configuration_commons_configuration_1_6_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__commons_configuration_commons_configuration_1_6_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__commons_digester_commons_digester_1_8_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__commons_digester_commons_digester_1_8_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__commons_el_commons_el_1_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__commons_el_commons_el_1_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__commons_httpclient_commons_httpclient_3_1_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__commons_httpclient_commons_httpclient_3_1_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__commons_io_commons_io_2_4_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__commons_io_commons_io_2_4_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__commons_lang_commons_lang_2_6_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__commons_lang_commons_lang_2_6_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__commons_logging_commons_logging_1_1_3_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__commons_logging_commons_logging_1_1_3_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__commons_net_commons_net_3_1_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__commons_net_commons_net_3_1_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__de_javakaffee_kryo_serializers_0_28_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__de_javakaffee_kryo_serializers_0_28_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__io_dropwizard_metrics_metrics_core_3_1_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__io_dropwizard_metrics_metrics_core_3_1_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__io_dropwizard_metrics_metrics_graphite_3_1_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__io_dropwizard_metrics_metrics_graphite_3_1_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__io_dropwizard_metrics_metrics_json_3_1_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__io_dropwizard_metrics_metrics_json_3_1_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__io_dropwizard_metrics_metrics_jvm_3_1_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__io_dropwizard_metrics_metrics_jvm_3_1_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__io_netty_netty_3_8_0_Final_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__io_netty_netty_3_8_0_Final_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__io_netty_netty_all_4_0_23_Final_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__io_netty_netty_all_4_0_23_Final_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__io_spray_spray_can_2_10_1_3_2_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__io_spray_spray_can_2_10_1_3_2_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__io_spray_spray_http_2_10_1_3_2_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__io_spray_spray_http_2_10_1_3_2_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__io_spray_spray_httpx_2_10_1_3_2_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__io_spray_spray_httpx_2_10_1_3_2_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__io_spray_spray_io_2_10_1_3_2_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__io_spray_spray_io_2_10_1_3_2_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__io_spray_spray_routing_2_10_1_3_2_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__io_spray_spray_routing_2_10_1_3_2_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__io_spray_spray_util_2_10_1_3_2_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__io_spray_spray_util_2_10_1_3_2_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__javax_activation_activation_1_1_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__javax_activation_activation_1_1_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__javax_inject_javax_inject_1_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__javax_inject_javax_inject_1_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__javax_servlet_jsp_jsp_api_2_1_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__javax_servlet_jsp_jsp_api_2_1_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__javax_xml_bind_jaxb_api_2_2_2_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__javax_xml_bind_jaxb_api_2_2_2_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__javax_xml_stream_stax_api_1_0_2_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__javax_xml_stream_stax_api_1_0_2_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__jline_jline_0_9_94_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__jline_jline_0_9_94_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__junit_junit_4_11_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__junit_junit_4_11_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__log4j_log4j_1_2_17_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__log4j_log4j_1_2_17_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__net_java_dev_jets3t_jets3t_0_9_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__net_java_dev_jets3t_jets3t_0_9_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__net_jodah_typetools_0_3_1_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__net_jodah_typetools_0_3_1_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__net_jpountz_lz4_lz4_1_2_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__net_jpountz_lz4_lz4_1_2_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__net_sf_jwordnet_jwnl_1_3_3_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__net_sf_jwordnet_jwnl_1_3_3_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__net_sf_opencsv_opencsv_2_3_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__net_sf_opencsv_opencsv_2_3_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__net_sf_py4j_py4j_0_8_2_1_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__net_sf_py4j_py4j_0_8_2_1_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__net_sourceforge_f2j_arpack_combined_all_0_1_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__net_sourceforge_f2j_arpack_combined_all_0_1_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_antlr_antlr_runtime_3_5_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_antlr_antlr_runtime_3_5_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_avro_avro_1_7_4_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_avro_avro_1_7_4_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_commons_commons_compress_1_4_1_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_commons_commons_compress_1_4_1_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_commons_commons_lang3_3_3_2_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_commons_commons_lang3_3_3_2_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_commons_commons_math3_3_1_1_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_commons_commons_math3_3_1_1_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_commons_commons_math_2_1_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_commons_commons_math_2_1_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_curator_curator_client_2_4_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_curator_curator_client_2_4_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_curator_curator_framework_2_4_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_curator_curator_framework_2_4_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_curator_curator_recipes_2_4_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_curator_curator_recipes_2_4_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_directory_api_api_asn1_api_1_0_0_M20_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_directory_api_api_asn1_api_1_0_0_M20_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_directory_api_api_util_1_0_0_M20_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_directory_api_api_util_1_0_0_M20_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_directory_server_apacheds_i18n_2_0_0_M15_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_directory_server_apacheds_i18n_2_0_0_M15_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_directory_server_apacheds_kerberos_codec_2_0_0_M15_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_directory_server_apacheds_kerberos_codec_2_0_0_M15_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_annotations_2_5_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_annotations_2_5_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_auth_2_5_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_auth_2_5_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_client_2_2_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_client_2_2_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_common_2_5_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_common_2_5_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_hdfs_2_2_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_hdfs_2_2_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_mapreduce_client_app_2_2_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_mapreduce_client_app_2_2_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_mapreduce_client_common_2_2_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_mapreduce_client_common_2_2_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_mapreduce_client_core_2_2_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_mapreduce_client_core_2_2_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_mapreduce_client_jobclient_2_2_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_mapreduce_client_jobclient_2_2_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_mapreduce_client_shuffle_2_2_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_mapreduce_client_shuffle_2_2_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_yarn_api_2_2_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_yarn_api_2_2_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_yarn_client_2_2_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_yarn_client_2_2_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_yarn_common_2_2_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_yarn_common_2_2_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_yarn_server_common_2_2_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hadoop_hadoop_yarn_server_common_2_2_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hbase_hbase_client_0_98_5_hadoop2_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hbase_hbase_client_0_98_5_hadoop2_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hbase_hbase_common_0_98_5_hadoop2_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hbase_hbase_common_0_98_5_hadoop2_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hbase_hbase_prefix_tree_0_98_5_hadoop2_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hbase_hbase_prefix_tree_0_98_5_hadoop2_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hbase_hbase_protocol_0_98_5_hadoop2_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hbase_hbase_protocol_0_98_5_hadoop2_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hbase_hbase_server_0_98_5_hadoop2_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_hbase_hbase_server_0_98_5_hadoop2_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_httpcomponents_httpclient_4_2_5_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_httpcomponents_httpclient_4_2_5_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_httpcomponents_httpcore_4_2_4_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_httpcomponents_httpcore_4_2_4_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_ivy_ivy_2_4_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_ivy_ivy_2_4_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_lucene_lucene_analyzers_common_4_10_3_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_lucene_lucene_analyzers_common_4_10_3_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_lucene_lucene_core_4_10_3_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_lucene_lucene_core_4_10_3_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_lucene_lucene_grouping_4_10_3_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_lucene_lucene_grouping_4_10_3_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_lucene_lucene_highlighter_4_10_3_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_lucene_lucene_highlighter_4_10_3_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_lucene_lucene_join_4_10_3_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_lucene_lucene_join_4_10_3_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_lucene_lucene_memory_4_10_3_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_lucene_lucene_memory_4_10_3_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_lucene_lucene_misc_4_10_3_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_lucene_lucene_misc_4_10_3_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_lucene_lucene_queries_4_10_3_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_lucene_lucene_queries_4_10_3_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_lucene_lucene_queryparser_4_10_3_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_lucene_lucene_queryparser_4_10_3_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_lucene_lucene_sandbox_4_10_3_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_lucene_lucene_sandbox_4_10_3_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_lucene_lucene_spatial_4_10_3_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_lucene_lucene_spatial_4_10_3_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_lucene_lucene_suggest_4_10_3_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_lucene_lucene_suggest_4_10_3_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_opennlp_opennlp_maxent_3_0_3_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_opennlp_opennlp_maxent_3_0_3_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_opennlp_opennlp_tools_1_5_3_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_opennlp_opennlp_tools_1_5_3_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_spark_spark_catalyst_2_10_1_3_1_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_spark_spark_catalyst_2_10_1_3_1_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_spark_spark_core_2_10_1_3_1_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_spark_spark_core_2_10_1_3_1_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_spark_spark_graphx_2_10_1_3_1_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_spark_spark_graphx_2_10_1_3_1_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_spark_spark_mllib_2_10_1_3_1_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_spark_spark_mllib_2_10_1_3_1_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_spark_spark_network_common_2_10_1_3_1_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_spark_spark_network_common_2_10_1_3_1_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_spark_spark_network_shuffle_2_10_1_3_1_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_spark_spark_network_shuffle_2_10_1_3_1_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_spark_spark_sql_2_10_1_3_1_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_spark_spark_sql_2_10_1_3_1_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_spark_spark_streaming_2_10_1_3_1_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_spark_spark_streaming_2_10_1_3_1_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_zookeeper_zookeeper_3_4_6_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_zookeeper_zookeeper_3_4_6_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_clapper_grizzled_slf4j_2_10_1_0_2_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_clapper_grizzled_slf4j_2_10_1_0_2_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_cloudera_htrace_htrace_core_2_04_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_cloudera_htrace_htrace_core_2_04_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_codehaus_jackson_jackson_core_asl_1_9_13_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_codehaus_jackson_jackson_core_asl_1_9_13_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_codehaus_jackson_jackson_jaxrs_1_8_8_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_codehaus_jackson_jackson_jaxrs_1_8_8_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_codehaus_jackson_jackson_mapper_asl_1_9_13_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_codehaus_jackson_jackson_mapper_asl_1_9_13_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_codehaus_jackson_jackson_xc_1_8_3_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_codehaus_jackson_jackson_xc_1_8_3_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_codehaus_jettison_jettison_1_1_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_codehaus_jettison_jettison_1_1_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_eclipse_jetty_orbit_javax_servlet_3_0_0_v201112011016_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_eclipse_jetty_orbit_javax_servlet_3_0_0_v201112011016_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_elasticsearch_elasticsearch_1_4_4_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_elasticsearch_elasticsearch_1_4_4_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_hamcrest_hamcrest_core_1_3_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_hamcrest_hamcrest_core_1_3_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_jamon_jamon_runtime_2_3_1_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_jamon_jamon_runtime_2_3_1_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_jblas_jblas_1_2_3_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_jblas_jblas_1_2_3_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_jodd_jodd_core_3_6_3_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_jodd_jodd_core_3_6_3_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_json4s_json4s_ast_2_10_3_2_10_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_json4s_json4s_ast_2_10_3_2_10_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_json4s_json4s_core_2_10_3_2_10_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_json4s_json4s_core_2_10_3_2_10_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_json4s_json4s_ext_2_10_3_2_10_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_json4s_json4s_ext_2_10_3_2_10_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_json4s_json4s_jackson_2_10_3_2_10_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_json4s_json4s_jackson_2_10_3_2_10_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_json4s_json4s_native_2_10_3_2_10_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_json4s_json4s_native_2_10_3_2_10_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_jvnet_mimepull_mimepull_1_9_4_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_jvnet_mimepull_mimepull_1_9_4_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_mortbay_jetty_jetty_6_1_26_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_mortbay_jetty_jetty_6_1_26_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_mortbay_jetty_jetty_sslengine_6_1_26_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_mortbay_jetty_jetty_sslengine_6_1_26_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_mortbay_jetty_jetty_util_6_1_26_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_mortbay_jetty_jetty_util_6_1_26_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_objenesis_objenesis_2_1_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_objenesis_objenesis_2_1_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_ow2_asm_asm_4_1_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_ow2_asm_asm_4_1_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_ow2_asm_asm_commons_4_1_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_ow2_asm_asm_commons_4_1_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_parboiled_parboiled_core_1_1_6_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_parboiled_parboiled_core_1_1_6_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_parboiled_parboiled_scala_2_10_1_1_6_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_parboiled_parboiled_scala_2_10_1_1_6_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_roaringbitmap_RoaringBitmap_0_4_5_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_roaringbitmap_RoaringBitmap_0_4_5_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_scala_lang_scala_compiler_2_10_4_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_scala_lang_scala_compiler_2_10_4_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_scala_lang_scala_library_2_10_4_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_scala_lang_scala_library_2_10_4_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_scala_lang_scalap_2_10_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_scala_lang_scalap_2_10_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_scalaj_scalaj_http_2_10_1_1_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_scalaj_scalaj_http_2_10_1_1_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_scalamacros_quasiquotes_2_10_2_0_1_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_scalamacros_quasiquotes_2_10_2_0_1_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_scalanlp_breeze_2_10_0_11_2_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_scalanlp_breeze_2_10_0_11_2_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_scalanlp_breeze_macros_2_10_0_11_2_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_scalanlp_breeze_macros_2_10_0_11_2_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_slf4j_jcl_over_slf4j_1_7_10_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_slf4j_jcl_over_slf4j_1_7_10_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_slf4j_jul_to_slf4j_1_7_10_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_slf4j_jul_to_slf4j_1_7_10_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_slf4j_slf4j_log4j12_1_7_10_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_slf4j_slf4j_log4j12_1_7_10_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_sonatype_sisu_inject_cglib_2_2_1_v20090111_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_sonatype_sisu_inject_cglib_2_2_1_v20090111_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_spark_project_akka_akka_actor_2_10_2_3_4_spark_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_spark_project_akka_akka_actor_2_10_2_3_4_spark_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_spark_project_akka_akka_remote_2_10_2_3_4_spark_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_spark_project_akka_akka_remote_2_10_2_3_4_spark_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_spark_project_akka_akka_slf4j_2_10_2_3_4_spark_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_spark_project_akka_akka_slf4j_2_10_2_3_4_spark_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_spark_project_protobuf_protobuf_java_2_5_0_spark_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_spark_project_protobuf_protobuf_java_2_5_0_spark_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_spark_project_pyrolite_2_0_1_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_spark_project_pyrolite_2_0_1_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_spark_project_spark_unused_1_0_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_spark_project_spark_unused_1_0_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_spire_math_spire_2_10_0_7_4_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_spire_math_spire_2_10_0_7_4_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_spire_math_spire_macros_2_10_0_7_4_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_spire_math_spire_macros_2_10_0_7_4_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_tachyonproject_tachyon_0_5_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_tachyonproject_tachyon_0_5_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_tachyonproject_tachyon_client_0_5_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_tachyonproject_tachyon_client_0_5_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_tukaani_xz_1_0_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_tukaani_xz_1_0_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_uncommons_maths_uncommons_maths_1_2_2a_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_uncommons_maths_uncommons_maths_1_2_2a_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_xerial_snappy_snappy_java_1_1_1_7_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_xerial_snappy_snappy_java_1_1_1_7_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__oro_oro_2_0_8_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__oro_oro_2_0_8_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-compile-internal.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-compile-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-compile.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-compile.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-docs.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-docs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-optional.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-optional.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-plugin.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-pom.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-provided.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-provided.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-runtime-internal.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-runtime-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-runtime.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-runtime.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-scala-tool.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-scala-tool.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-sources.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-sources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-test-internal.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-test-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-test.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-template-scala-parallel-textclassification-build-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/compile/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/compile/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/dependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/exportedProducts/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/exportedProducts/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/managedClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/runtime/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/runtime/dependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/runtime/exportedProducts/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/runtime/exportedProducts/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/runtime/fullClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/runtime/fullClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/runtime/internalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/runtime/internalDependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/test/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/test/dependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/test/exportedProducts/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/test/exportedProducts/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/test/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/test/externalDependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/test/fullClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/test/fullClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/test/internalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/test/internalDependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/test/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/test/managedClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.10" afterPath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.10" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sbt_2.10-default.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sbt_2.10-default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-compile-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-compile-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-compile.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-compile.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-docs.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-docs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-optional.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-optional.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-plugin.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-pom.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-provided.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-provided.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-runtime-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-runtime-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-runtime.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-runtime.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-scala-tool.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-scala-tool.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-sources.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-sources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-test-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-test-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-test.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification$sources_javadoc_2.10-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification_2.10-compile-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification_2.10-compile-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification_2.10-compile.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification_2.10-compile.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification_2.10-docs.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification_2.10-docs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification_2.10-optional.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification_2.10-optional.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification_2.10-plugin.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification_2.10-plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification_2.10-pom.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification_2.10-pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification_2.10-provided.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification_2.10-provided.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification_2.10-runtime-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification_2.10-runtime-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification_2.10-runtime.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification_2.10-runtime.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification_2.10-scala-tool.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification_2.10-scala-tool.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification_2.10-sources.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification_2.10-sources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification_2.10-test-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification_2.10-test-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification_2.10-test.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/io.prediction-org-template-textclassification_2.10-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manifest.json" afterPath="$PROJECT_DIR$/manifest.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/assemblyPackageDependency/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/assemblyPackageDependency/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/updateSbtClassifiers/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/updateSbtClassifiers/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/compile/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/compile/compile/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/out" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/import_eventserver.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pio.log" afterPath="$PROJECT_DIR$/pio.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pio.sbt" afterPath="$PROJECT_DIR$/pio.sbt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/default/template-scala-parallel-textclassification-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/project/target/resolution-cache/default/template-scala-parallel-textclassification-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/io.prediction/org-template-textclassification$sbt_2.10/0.1-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/resolution-cache/io.prediction/org-template-textclassification$sbt_2.10/0.1-SNAPSHOT/resolved.xml.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/io.prediction/org-template-textclassification$sources_javadoc_2.10/0.1-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/resolution-cache/io.prediction/org-template-textclassification$sources_javadoc_2.10/0.1-SNAPSHOT/resolved.xml.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/io.prediction/org-template-textclassification_2.10/0.1-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/resolution-cache/io.prediction/org-template-textclassification_2.10/0.1-SNAPSHOT/resolved.xml.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/default/template-scala-parallel-textclassification-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/default/template-scala-parallel-textclassification-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/io.prediction/org-template-textclassification$sbt_2.10/0.1-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/io.prediction/org-template-textclassification$sbt_2.10/0.1-SNAPSHOT/resolved.xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/io.prediction/org-template-textclassification$sources_javadoc_2.10/0.1-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/io.prediction/org-template-textclassification$sources_javadoc_2.10/0.1-SNAPSHOT/resolved.xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/io.prediction/org-template-textclassification_2.10/0.1-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/io.prediction/org-template-textclassification_2.10/0.1-SNAPSHOT/resolved.xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sbt.xml" afterPath="$PROJECT_DIR$/.idea/sbt.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/template-scala-parallel-textclassification-build.iml" afterPath="$PROJECT_DIR$/.idea/modules/template-scala-parallel-textclassification-build.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/template-scala-parallel-textclassification.iml" afterPath="$PROJECT_DIR$/.idea/modules/template-scala-parallel-textclassification.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="template-scala-parallel-textclassification.iws" />
@@ -489,12 +36,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Preparator.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Preparator.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/org/template/textclassification/Preparator.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="104" column="58" selection-start-line="104" selection-start-column="58" selection-end-line="104" selection-end-column="58" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="import_eventserver.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data/import_eventserver.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.31034482">
+              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="14" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -513,6 +72,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/scala/org/template/textclassification/Preparator.scala" />
+        <option value="$PROJECT_DIR$/data/import_eventserver2.py" />
       </list>
     </option>
   </component>
@@ -552,7 +112,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -607,29 +166,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="textclassification" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Preparator.scala" />
-              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -642,6 +186,47 @@
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -666,6 +251,120 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="template-scala-parallel-textclassification" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <module name="" />
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="depsClasspath" value="false" />
+      <setting name="passParentEnv" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -687,12 +386,104 @@
       <patterns />
       <method />
     </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="template-scala-parallel-textclassification" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="template-scala-parallel-textclassification" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="template-scala-parallel-textclassification" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="scalaCoverage" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="scalaCoverage" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -721,6 +512,147 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="executeSpecs" factoryName="Gauge Execution">
+      <setting name="environment" value="" />
+      <setting name="specsToExecute" value="" />
+      <setting name="tags" value="" />
+      <setting name="parallelNodes" value="" />
+      <setting name="execInParallel" value="false" />
+      <setting name="programParameters" value="" />
+      <setting name="workingDirectory" value="" />
+      <envMap />
+      <setting name="rowsRange" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="template-scala-parallel-textclassification" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="template-scala-parallel-textclassification" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="template-scala-parallel-textclassification" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="template-scala-parallel-textclassification" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="template-scala-parallel-textclassification" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="scalaCoverage" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
       <method />
     </configuration>
   </component>
@@ -784,11 +716,12 @@
       <workItem from="1432799295285" duration="262000" />
       <workItem from="1432839346552" duration="591000" />
       <workItem from="1432850592455" duration="15000" />
+      <workItem from="1433363085661" duration="2469000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="868000" />
+    <option name="totallyTimeSpent" value="3337000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="62" width="1262" height="677" extended-state="0" />
@@ -800,11 +733,12 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24960381" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24960381" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -813,7 +747,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -849,6 +782,14 @@
     <entry file="file://$PROJECT_DIR$/src/main/scala/org/template/textclassification/Preparator.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/org/template/textclassification/Preparator.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="104" column="58" selection-start-line="104" selection-start-column="58" selection-end-line="104" selection-end-column="58" />
           <folding />
         </state>
@@ -859,6 +800,16 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="104" column="58" selection-start-line="104" selection-start-column="58" selection-end-line="104" selection-end-column="58" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/import_eventserver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31034482">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="14" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
