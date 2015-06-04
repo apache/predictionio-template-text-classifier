@@ -27,6 +27,8 @@ def import_events(client):
                 count += 1
             except UnicodeDecodeError:
                 pass
+            except predictionio.NotCreatedError:
+                pass
     print("Imported {0} events.".format(count))
 
 
