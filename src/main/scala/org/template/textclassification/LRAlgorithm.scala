@@ -55,7 +55,7 @@ class LRModel (
   )
 
   private val lr = new LogisticRegression()
-    .setMaxIter(10000)
+    .setMaxIter(15)
     .setThreshold(0.5)
     .setRegParam(regParam)
 
