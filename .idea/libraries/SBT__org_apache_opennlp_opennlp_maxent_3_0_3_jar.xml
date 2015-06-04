@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="SBT: org.apache.opennlp:opennlp-maxent:3.0.3:jar">
-    <CLASSES>
-      <root url="jar://$USER_HOME$/.ivy2/cache/org.apache.opennlp/opennlp-maxent/bundles/opennlp-maxent-3.0.3.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
