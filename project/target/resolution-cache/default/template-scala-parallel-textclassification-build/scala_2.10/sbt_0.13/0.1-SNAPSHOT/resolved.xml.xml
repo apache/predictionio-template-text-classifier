@@ -4,7 +4,7 @@
 		module="template-scala-parallel-textclassification-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20150528004722"
+		publication="20150604150212"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>

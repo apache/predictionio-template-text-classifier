@@ -5,14 +5,14 @@
   "datasource": {
     "params": {
       "appName": "MyTextApp",
-      "evalK": 5
+      "evalK": 3
     }
   },
   "preparator": {
     "params": {
       "nMin": 1,
       "nMax": 2,
-      "inverseIdfMin" : 0.15,
+      "inverseIdfMin" : 0,
       "inverseIdfMax" : 0.85
     }
   },
@@ -20,7 +20,13 @@
     {
       "name": "nb",
       "params": {
-        "lambda": 0.5
+        "lambda": 0.25
+      }
+    },
+    {
+      "name": "lr",
+      "params": {
+        "regParam": 0.5
       }
     }
   ]

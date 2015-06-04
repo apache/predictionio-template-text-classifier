@@ -1,0 +1,17 @@
+2015-06-04 14:48:45,441 INFO  io.prediction.tools.console.App$ [main] -                 Name |   ID |                                                       Access Key | Allowed Event(s)
+2015-06-04 14:48:45,456 INFO  io.prediction.tools.console.App$ [main] -            MyTextApp |   21 | erIe31WK20AnVQL3uX7D6IBvNe1S8Rj2DFRcGGvnnSdvcjTgJyO8ydufR3bmtiNv | 
+2015-06-04 14:48:45,459 INFO  io.prediction.tools.console.App$ [main] -             SpamDemo |   13 | DfRBr0T06yA4yX2B1zdI2QwqQL6zCeHp68FeRUgzQPramaQAcLfo4VAHGcKL8kc7 | 
+2015-06-04 14:48:45,461 INFO  io.prediction.tools.console.App$ [main] -                 test |   14 | BcOjSYQIMZr58BzkBjBsrpepz89F9ct9Nra1WgxDgbu2jt3YZXee4HKo5sAsUCoH | 
+2015-06-04 14:48:45,462 INFO  io.prediction.tools.console.App$ [main] - Finished listing 3 app(s).
+2015-06-04 14:49:06,103 INFO  io.prediction.tools.console.App$ [main] - Data of the following app (default channel only) will be deleted. Are you sure?
+2015-06-04 14:49:06,105 INFO  io.prediction.tools.console.App$ [main] -     App Name: MyTextApp
+2015-06-04 14:49:06,105 INFO  io.prediction.tools.console.App$ [main] -       App ID: 21
+2015-06-04 14:49:06,106 INFO  io.prediction.tools.console.App$ [main] -  Description: None
+2015-06-04 14:49:17,752 INFO  io.prediction.tools.console.App$ [main] - Removed Event Store for this app ID: 21
+2015-06-04 14:49:17,767 INFO  io.prediction.tools.console.App$ [main] - Initialized Event Store for this app ID: 21.
+2015-06-04 14:49:17,769 INFO  io.prediction.tools.console.App$ [main] - Done.
+2015-06-04 14:49:35,521 INFO  io.prediction.tools.Runner$ [main] - Submission command: /usr/local/Cellar/apache-spark/1.3.1_1/bin/spark-submit --class io.prediction.tools.imprt.FileToEvents --files file:/Users/Marco/PredictionIO/PredictionIO-0.9.4-SNAPSHOT/conf/log4j.properties --driver-class-path /Users/Marco/PredictionIO/PredictionIO-0.9.4-SNAPSHOT/conf file:/Users/Marco/PredictionIO/PredictionIO-0.9.4-SNAPSHOT/lib/pio-assembly-0.9.4-SNAPSHOT.jar --appid 21 --input file:/Users/Marco/template-scala-parallel-textclassification/data/spamData/emails.json --env PIO_ENV_LOADED=1,PIO_STORAGE_REPOSITORIES_METADATA_NAME=pio_meta,PIO_FS_BASEDIR=/Users/Marco/.pio_store,PIO_HOME=/Users/Marco/PredictionIO/PredictionIO-0.9.4-SNAPSHOT,PIO_FS_ENGINESDIR=/Users/Marco/.pio_store/engines,PIO_STORAGE_SOURCES_PGSQL_URL=jdbc:postgresql://localhost/pio,PIO_STORAGE_REPOSITORIES_METADATA_SOURCE=PGSQL,PIO_STORAGE_REPOSITORIES_MODELDATA_SOURCE=PGSQL,PIO_STORAGE_REPOSITORIES_EVENTDATA_NAME=pio_event,PIO_STORAGE_SOURCES_PGSQL_PASSWORD=pio,PIO_STORAGE_SOURCES_PGSQL_TYPE=jdbc,PIO_FS_TMPDIR=/Users/Marco/.pio_store/tmp,PIO_STORAGE_SOURCES_PGSQL_USERNAME=pio,PIO_STORAGE_REPOSITORIES_MODELDATA_NAME=pio_model,PIO_STORAGE_REPOSITORIES_EVENTDATA_SOURCE=PGSQL,PIO_CONF_DIR=/Users/Marco/PredictionIO/PredictionIO-0.9.4-SNAPSHOT/conf
+2015-06-04 14:49:38,542 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-2] - Starting remoting
+2015-06-04 14:49:38,712 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-2] - Remoting started; listening on addresses :[akka.tcp://sparkDriver@10.0.0.30:49507]
+2015-06-04 14:49:44,148 INFO  io.prediction.tools.imprt.FileToEvents$ [main] - Events are imported.
+2015-06-04 14:49:44,149 INFO  io.prediction.tools.imprt.FileToEvents$ [main] - Done.

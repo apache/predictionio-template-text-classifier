@@ -44,7 +44,7 @@ lambda: Double
   // 1. Fit a Naive Bayes model using the prepared data.
 
   private val nb : NaiveBayesModel = NaiveBayes.train(
-    pd.transformData, lambda)
+    pd.transformedData, lambda)
 
 
 

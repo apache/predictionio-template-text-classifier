@@ -38,7 +38,8 @@ object TextClassificationEngine extends EngineFactory {
       classOf[DataSource],
       classOf[Preparator],
       Map(
-        "nb" -> classOf[NBAlgorithm]
+        "nb" -> classOf[NBAlgorithm],
+        "lr" -> classOf[LRAlgorithm]
       ), classOf[Serving]
     )
   }

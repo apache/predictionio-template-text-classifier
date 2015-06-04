@@ -36,19 +36,20 @@ object EngineParamsList extends EngineParamsGenerator {
 
   // Set data source and preparator parameters.
   private[this] val baseEP = EngineParams(
-    dataSourceParams = DataSourceParams(appName = "MyTextApp", evalK = Some(5)),
+    dataSourceParams = DataSourceParams(appName = "MyTextApp", evalK = Some(3)),
     preparatorParams = PreparatorParams(
       nMin = 1,
       nMax = 2,
-      inverseIdfMin = 0.15,
+      inverseIdfMin = 0,
       inverseIdfMax = 0.85
     )
   )
 
   // Set the algorithm params for which we will assess an accuracy score.
   engineParamsList = Seq(
-    baseEP.copy(algorithmParamsList = Seq(("nb", NBAlgorithmParams(0.5)))),
-    baseEP.copy(algorithmParamsList = Seq(("nb", NBAlgorithmParams(1.5)))),
-    baseEP.copy(algorithmParamsList = Seq(("nb", NBAlgorithmParams(5))))
+    //baseEP.copy(algorithmParamsList = Seq(("nb", NBAlgorithmParams(0.2)))),
+    //baseEP.copy(algorithmParamsList = Seq(("nb", NBAlgorithmParams(0.5)))),
+    baseEP.copy(algorithmParamsList = Seq(("lr", LRAlgorithmParams(0.5)))),
+    baseEP.copy(algorithmParamsList = Seq(("lr", LRAlgorithmParams(1.0))))
   )
 }

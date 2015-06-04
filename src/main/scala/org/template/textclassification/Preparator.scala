@@ -1,7 +1,6 @@
 package org.template.textclassification
 
-import io.prediction.controller.PPreparator
-import io.prediction.controller.Params
+import io.prediction.controller.{SanityCheck, PPreparator, Params}
 import opennlp.tools.ngram.NGramModel
 import opennlp.tools.tokenize.SimpleTokenizer
 import opennlp.tools.util.StringList
@@ -138,7 +137,7 @@ val inverseIdfMax : Double
 
   // 6. Data Transformer: RDD[documents] => RDD[LabeledPoints]
 
-  def transformData: RDD[(LabeledPoint)] = {
+  val transformedData: RDD[(LabeledPoint)] = {
     td.data.map(e => LabeledPoint(e.label, transform(e.text)))
   }
 

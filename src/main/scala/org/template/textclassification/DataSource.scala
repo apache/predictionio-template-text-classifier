@@ -1,9 +1,7 @@
 package org.template.textclassification
 
 import grizzled.slf4j.Logger
-import io.prediction.controller.EmptyEvaluationInfo
-import io.prediction.controller.PDataSource
-import io.prediction.controller.Params
+import io.prediction.controller.{SanityCheck, EmptyEvaluationInfo, PDataSource, Params}
 import io.prediction.data.store.PEventStore
 import org.apache.spark.SparkContext
 import org.apache.spark.rdd.RDD
@@ -38,16 +36,19 @@ class DataSource (
     //Get RDD of Events.
     PEventStore.find(
       appName = dsp.appName,
-      entityType = Some("source"), // specify data entity type
-      eventNames = Some(List("documents")) // specify data event name
+      entityType = Some("content"), // specify data entity type
+      eventNames = Some(List("e-mail")) // specify data event name
 
       // Convert collected RDD of events to and RDD of Observation
       // objects.
-    )(sc).map(e => Observation(
-      e.properties.get[Double]("label"),
-      e.properties.get[String]("text"),
-      e.properties.get[String]("category")
-    )).cache
+    )(sc).map(e => {
+      val label : String = e.properties.get[String]("label")
+      Observation(
+        if (label == "important") 1.0 else 0.0,
+        e.properties.get[String]("text"),
+        label
+      )
+    }).cache
   }
 
   // Helper function used to store stop words from
@@ -115,4 +116,27 @@ case class Observation(
 class TrainingData(
   val data : RDD[Observation],
   val stopWords : Set[String]
-) extends Serializable
+) extends Serializable with SanityCheck {
+
+  // Make sure your data is being fed in correctly!!
+
+  def sanityCheck {
+    try {
+      val obs : Array[Double] = data.takeSample(false, 5).map(_.label)
+
+      println()
+      (0 until 5).foreach(
+        k => println("Observation " + (k + 1) +" label: " + obs(k))
+      )
+      println()
+    } catch {
+      case (e : ArrayIndexOutOfBoundsException) => {
+        println()
+        println("Data set is empty, make sure event fields match imported data.")
+        println()
+      }
+    }
+
+  }
+
+}
