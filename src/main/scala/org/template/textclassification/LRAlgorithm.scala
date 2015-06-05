@@ -40,52 +40,59 @@ class LRModel (
   regParam : Double
 ) extends Serializable {
 
+  // 1. Import SQLContext for creating DataFrame.
   private val sql : SQLContext = new SQLContext(sc)
   import sql.implicits._
 
-  private val binaryDFs : Seq[(Double, DataFrame)]= pd.categoryMap.keys.toSeq.map(
-    lab => {
-      val labData = pd.transformedData.map(e => LabeledPoint(
-        if (e.label == lab) 1.0 else 0.0,
-        e.features
-      ))
+  // 2. Initialize logistic regression model with regularization parameter.
+  private val lr = new LogisticRegression()
+  .setMaxIter(100)
+  .setThreshold(0.5)
+  .setRegParam(regParam)
 
-      (lab, labData.toDF)
+
+  // 3. Create a logistic regression model for each class.
+  private val lrModels : Seq[(Double, Array[Double], Double)]= pd.categoryMap.keys.toSeq.map(
+    lab => {
+      val fit = lr.fit(pd.transformedData.map(e => LabeledPoint(
+        if (e.label == lab) 1.0 else 0.0, // Change labels to binary labels.
+        e.features // Keep features.
+      )).toDF)
+
+      // Return (label, feature coefficients, and intercept term.
+      (lab, fit.weights.toArray, fit.intercept)
+
     }
   )
 
-  private val lr = new LogisticRegression()
-    .setMaxIter(15)
-    .setThreshold(0.5)
-    .setRegParam(regParam)
-
-  private val lrModels : Seq[(Double, Array[Double], Double)] = binaryDFs.map(
-      e => {
-        val fit = lr.fit(e._2)
-        (e._1, fit.weights.toArray, fit.intercept)
-      }
-  )
-
-  private val normalize = (u: Array[Double]) => u.map(_ / u.sum)
-
+  // 4. Enable vector inner product for prediction.
   private def innerProduct (x : Array[Double], y : Array[Double]) : Double = {
     require(x.length == y.length)
 
     x.zip(y).map(e => e._1 * e._2).sum
   }
 
+  // 5. Define prediction rule.
   def predict(text : String): PredictedResult = {
     val x : Array[Double] = pd.transform(text).toArray
+
+    // Logistic Regression binary formula for positive probability.
+    // According to MLLib documentation, class labeled 0 is used as pivot.
+    // Thus, we are using:
+    // log(p1/p0) = log(p1/(1 - p1)) = b0 + xTb =: z
+    // p1 = exp(z) * (1 - p1)
+    // p1 * (1 + exp(z)) = exp(z)
+    // p1 = exp(z)/(1 + exp(z))
 
     val pred = lrModels.map(
       e => {
         val z = exp(innerProduct(e._2, x) + e._3)
-
-        (e._1, 1 / (1 + z))
+        (e._1, z / (1 + z))
       }
     ).maxBy(_._2)
 
     PredictedResult(pd.categoryMap(pred._1), pred._2)
   }
 }
+
 
