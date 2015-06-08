@@ -1,9 +1,12 @@
 package org.template.textclassification
 
-import io.prediction.controller.{P2LAlgorithm, Params}
+import io.prediction.controller.P2LAlgorithm
+import io.prediction.controller.Params
 import org.apache.spark.SparkContext
 import org.apache.spark.mllib.classification.NaiveBayes
 import org.apache.spark.mllib.classification.NaiveBayesModel
+import org.apache.spark.mllib.linalg.Vector
+import com.github.fommil.netlib.F2jBLAS
 
 import scala.math._
 
@@ -48,14 +51,15 @@ lambda: Double
 
 
 
-  // 2. Set up framework for performing the required Matrix
-  // Multiplication for the prediction rule explained in the
-  // tutorial.
+  // 2. Set up linear algebra framework.
 
-  private def innerProduct (x : Array[Double], y : Array[Double]) : Double = {
-    require(x.length == y.length)
+  val f2jBLAS = new F2jBLAS
 
-    x.zip(y).map(e => e._1 * e._2).sum
+  val normalize = (u: Array[Double]) => {
+    val uArray = u.toArray
+    val uSum = uArray.sum
+
+    uArray.map(e => e / uSum)
   }
 
 
@@ -66,15 +70,15 @@ lambda: Double
   private def getScores(doc: String): Array[Double] = {
     // Helper function used to normalize probability scores.
     // Returns an object of type Array[Double]
-    val normalize = (u: Array[Double]) => u.map(_ / u.sum)
+
     // Vectorize query,
-    val x: Array[Double] = pd.transform(doc).toArray
+    val x: Vector = pd.transform(doc)
 
     normalize(
       nb.pi
       .zip(nb.theta)
       .map(
-      e => exp(innerProduct(e._2, x) + e._1))
+      e => exp(f2jBLAS.ddot(x.size, e._2.toArray, 1, x.toArray, 1) + e._1))
     )
   }
 

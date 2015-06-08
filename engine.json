@@ -18,9 +18,9 @@
   },
   "algorithms": [
     {
-      "name": "lr",
+      "name": "nb",
       "params": {
-        "regParam": 0.5
+        "lambda": 0.25
       }
     }
   ]

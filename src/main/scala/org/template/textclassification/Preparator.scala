@@ -1,6 +1,8 @@
 package org.template.textclassification
 
-import io.prediction.controller.{SanityCheck, PPreparator, Params}
+
+import io.prediction.controller.PPreparator
+import io.prediction.controller.Params
 import opennlp.tools.ngram.NGramModel
 import opennlp.tools.tokenize.SimpleTokenizer
 import opennlp.tools.util.StringList
@@ -61,30 +63,41 @@ val inverseIdfMax : Double
 
   // 2. Hasher: Array[tokens] => Map(n-gram -> n-gram document tf).
 
-  private def hash (tokenList : Array[String]): Map[String, Double] = {
+  private def hash (tokenList : Array[String]): HashMap[String, Double] = {
     // Initialize an NGramModel from OpenNLP tools library,
     // and add the list of allowable tokens to the n-gram model.
     val model : NGramModel = new NGramModel()
     model.add(new StringList(tokenList: _*), nMin, nMax)
 
-    val map : Map[String, Double] = model.iterator.map(
-      x => (x.toString, model.getCount(x).toDouble)
-    ).toMap
+    val map : HashMap[String, Double] = HashMap(
+      model.iterator.map(
+        x => (x.toString, model.getCount(x).toDouble)
+      ).toSeq : _*
+    )
+
+    val mapSum = map.values.sum
 
     // Divide by the total number of n-grams in the document
     // to obtain n-gram frequency.
-    map.mapValues(e => e / map.values.sum)
+    map.map(e => (e._1, e._2 / mapSum))
+
   }
 
 
-  // 3. Bigram universe extractor: RDD[bigram hashmap] => RDD[((n-gram, n-gram idf), global index)]
+  // 3. Bigram universe extractor: RDD[bigram hashmap] => RDD[(n-gram, n-gram idf)]
 
-  private def createUniverse(u: RDD[Map[String, Double]]): RDD[(String, Double)] = {
+  private def createUniverse(u: RDD[HashMap[String, Double]]): RDD[(String, Double)] = {
     // Total number of documents (should be 11314).
     val numDocs: Double = td.data.count.toDouble
-    u.flatMap(identity)
-    .map(e => (e._1, 1.0))
+    u.flatMap(e => e.map(f => (f._1, 1.0)))
     .reduceByKey(_ + _)
+    .filter(e => {
+      val docFreq = e._2 / numDocs
+
+      // Cut out n-grams with inverse i.d.f. greater/less than or equal to min/max
+      // cutoff.
+      docFreq >= inverseIdfMin && docFreq <= inverseIdfMax
+    })
     .map(e => (e._1, log(numDocs / e._2)))
   }
 
@@ -98,10 +111,6 @@ val inverseIdfMax : Double
       td.data
       .map(e => hash(tokenize(e.text)))
     ).collect: _*
-    // Cut out n-grams with inverse i.d.f. greater/less than or equal to min/max
-    // cutoff.
-  ).filter(
-  e => (1 / exp(e._2)) >= inverseIdfMin && (1 / exp(e._2)) <= inverseIdfMax
   )
 
 

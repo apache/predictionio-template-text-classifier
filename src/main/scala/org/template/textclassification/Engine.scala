@@ -22,6 +22,8 @@ case class PredictedResult (
 
 
 
+
+
 // 3. Define ActualResult class which serves as a wrapper
 // for an observation's true class label.
 class ActualResult(
@@ -44,3 +46,4 @@ object TextClassificationEngine extends EngineFactory {
     )
   }
 }
+

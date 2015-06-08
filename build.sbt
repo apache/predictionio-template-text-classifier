@@ -8,5 +8,6 @@ libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-core" % "1.3.1" % "provided",
   "org.apache.spark" %% "spark-mllib" % "1.3.1" % "provided",
   "org.xerial.snappy" % "snappy-java" % "1.1.1.7",
-  "org.apache.opennlp" % "opennlp-tools" % "1.5.3"
+  "org.apache.opennlp" % "opennlp-tools" % "1.5.3",
+  "com.github.fommil.netlib" % "core" % "1.1.2"
 )

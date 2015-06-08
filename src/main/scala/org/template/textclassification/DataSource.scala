@@ -1,7 +1,10 @@
 package org.template.textclassification
 
 import grizzled.slf4j.Logger
-import io.prediction.controller.{SanityCheck, EmptyEvaluationInfo, PDataSource, Params}
+import io.prediction.controller.EmptyEvaluationInfo
+import io.prediction.controller.Params
+import io.prediction.controller.PDataSource
+import io.prediction.controller.SanityCheck
 import io.prediction.data.store.PEventStore
 import org.apache.spark.SparkContext
 import org.apache.spark.rdd.RDD
@@ -44,7 +47,7 @@ class DataSource (
     )(sc).map(e => {
       val label : String = e.properties.get[String]("label")
       Observation(
-        if (label == "important") 1.0 else 0.0,
+        if (label == "spam") 1.0 else 0.0,
         e.properties.get[String]("text"),
         label
       )
@@ -82,7 +85,6 @@ class DataSource (
     // Zip your RDD of events read from the server with indices
     // for the purposes of creating our folds.
     val data = readEventData(sc).zipWithIndex()
-
     // Create cross validation folds by partitioning indices
     // based on their index value modulo the number of folds.
     (0 until dsp.evalK.get).map { k =>
@@ -118,7 +120,7 @@ class TrainingData(
   val stopWords : Set[String]
 ) extends Serializable with SanityCheck {
 
-  // Make sure your data is being fed in correctly!!
+  // Sanity check to make sure your data is being fed in correctly.
 
   def sanityCheck {
     try {
