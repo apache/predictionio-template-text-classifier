@@ -2,8 +2,10 @@ package org.template.textclassification
 
 import io.prediction.controller.Params
 import io.prediction.controller.P2LAlgorithm
+import io.prediction.workflow.FakeRun
 import org.apache.spark.SparkContext
 import org.apache.spark.ml.classification.LogisticRegression
+import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.DataFrame
 import org.apache.spark.sql.functions
 import org.apache.spark.sql.SQLContext
@@ -50,28 +52,31 @@ class LRModel (
   .setThreshold(0.5)
   .setRegParam(regParam)
 
-  private val data : DataFrame = pd.transformedData.toDF
   private val labels : Seq[Double] = pd.categoryMap.keys.toSeq
 
-
   private case class LREstimate (
-    coefficients : Array[Double],
-    intercept : Double
+  coefficients : Array[Double],
+  intercept : Double
   ) extends Serializable
 
+  private val data = labels.foldLeft(pd.transformedData.toDF)( //transform to Spark DataFrame
 
+    // Add the different binary columns for each label.
+    (data : DataFrame, label : Double) => {
+      // function: multiclass labels --> binary labels
+      val f : UserDefinedFunction = functions.udf((e : Double) => if (e == label) 1.0 else 0.0)
+
+      data.withColumn(label.toInt.toString, f(data("label")))
+    }
+  )
 
   // 3. Create a logistic regression model for each class.
   private val lrModels : Seq[(Double, LREstimate)] = labels.map(
     label => {
-      val f : UserDefinedFunction = functions.udf((e : Double) => if (e == label) 1.0 else 0.0)
+      val lab = label.toInt.toString
 
-
-      val fit = lr.setLabelCol("new label").fit(
-        data.withColumn(
-          "new label",
-          f(data("label"))
-        )
+      val fit = lr.setLabelCol(lab).fit(
+        data.select(lab, "features")
       )
 
       // Return (label, feature coefficients, and intercept term.
