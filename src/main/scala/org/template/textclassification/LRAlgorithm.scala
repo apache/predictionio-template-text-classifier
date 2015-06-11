@@ -86,10 +86,9 @@ class LRModel (
   )
 
   // 4. Enable vector inner product for prediction.
-  private val f2jBLAS = new F2jBLAS
 
   private def innerProduct (x : Array[Double], y : Array[Double]) : Double = {
-    f2jBLAS.ddot(x.size, x, 1, y, 1)
+    x.zip(y).map(e => e._1 * e._2).sum
   }
 
   // 5. Define prediction rule.

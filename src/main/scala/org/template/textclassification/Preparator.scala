@@ -50,6 +50,7 @@ val inverseIdfMin : Double,
 val inverseIdfMax : Double
 ) extends Serializable {
 
+
   // 1. Tokenizer: document => token list.
   // Takes an individual document and converts it to
   // a list of allowable tokens.

@@ -53,13 +53,14 @@ lambda: Double
 
   // 2. Set up linear algebra framework.
 
-  val f2jBLAS = new F2jBLAS
+  private def innerProduct (x : Array[Double], y : Array[Double]) : Double = {
+    x.zip(y).map(e => e._1 * e._2).sum
+  }
 
   val normalize = (u: Array[Double]) => {
-    val uArray = u.toArray
-    val uSum = uArray.sum
+    val uSum = u.sum
 
-    uArray.map(e => e / uSum)
+    u.map(e => e / uSum)
   }
 
 
@@ -78,7 +79,7 @@ lambda: Double
       nb.pi
       .zip(nb.theta)
       .map(
-      e => exp(f2jBLAS.ddot(x.size, e._2.toArray, 1, x.toArray, 1) + e._1))
+      e => exp(innerProduct(e._2, x.toArray) + e._1))
     )
   }
 
