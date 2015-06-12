@@ -14,7 +14,7 @@ import scala.math._
 // using a Naive Bayes classifier, which gives us only one
 // hyperparameter in this stage.
 
-case class NBAlgorithmParams(
+case class  NBAlgorithmParams(
   lambda: Double
 ) extends Params
 
