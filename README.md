@@ -4,6 +4,10 @@ Look at the following [tutorial](https://docs.prediction.io/demo/textclassificat
 
 # Release Information
 
+## Version 2.2
+
+Modified PreparedData to use MLLib hashing and tf-idf implementations.
+
 ## Version 2.1
 
 Fixed dot product implementation in the predict methods to work with batch predict method for evaluation.

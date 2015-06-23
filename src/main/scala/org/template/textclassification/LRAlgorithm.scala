@@ -93,8 +93,7 @@ class LRModel (
 
   // 5. Define prediction rule.
   def predict(text : String): PredictedResult = {
-    try {
-      val x : Array[Double] = pd.transform(text).toArray
+    val x : Array[Double] = pd.transform(text).toArray
 
     // Logistic Regression binary formula for positive probability.
     // According to MLLib documentation, class labeled 0 is used as pivot.
@@ -103,17 +102,14 @@ class LRModel (
     // p1 = exp(z) * (1 - p1)
     // p1 * (1 + exp(z)) = exp(z)
     // p1 = exp(z)/(1 + exp(z))
-      val pred = lrModels.map(
-        e => {
-          val z = exp(innerProduct(e._2.coefficients, x) + e._2.intercept)
-            (e._1, z / (1 + z))
-        }
-      ).maxBy(_._2)
+    val pred = lrModels.map(
+      e => {
+        val z = exp(innerProduct(e._2.coefficients, x) + e._2.intercept)
+        (e._1, z / (1 + z))
+      }
+    ).maxBy(_._2)
 
-      PredictedResult(pd.categoryMap(pred._1), pred._2)
-    } catch {
-      case e : IllegalArgumentException => PredictedResult(pd.majorityCategory, 0)
-    }
+    PredictedResult(pd.categoryMap(pred._1), pred._2)
   }
 }
 

@@ -4,16 +4,12 @@
   "engineFactory": "org.template.textclassification.TextClassificationEngine",
   "datasource": {
     "params": {
-      "appName": "MyTextApp",
-      "evalK": 3
+      "appName": "MyTextApp"
     }
   },
   "preparator": {
     "params": {
-      "nMin": 1,
-      "nMax": 3,
-      "inverseIdfMin" : 0,
-      "inverseIdfMax" : 0.85
+      "nGram": 2
     }
   },
   "algorithms": [
@@ -21,12 +17,6 @@
       "name": "nb",
       "params": {
         "lambda": 0.25
-      }
-    },
-    {
-      "name": "lr",
-      "params": {
-        "lambda": 1.25
       }
     }
   ]

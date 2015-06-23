@@ -87,12 +87,8 @@ lambda: Double
   // the prediction rule given in tutorial.
 
   def predict(doc : String) : PredictedResult = {
-    try {
-      val x: Array[Double] = getScores(doc)
-      val y: (Double, Double) = (nb.labels zip x).maxBy(_._2)
-      new PredictedResult(pd.categoryMap.getOrElse(y._1, ""), y._2)
-    } catch {
-      case e : IllegalArgumentException => PredictedResult(pd.majorityCategory, 0)
-    }
+    val x: Array[Double] = getScores(doc)
+    val y: (Double, Double) = (nb.labels zip x).maxBy(_._2)
+    new PredictedResult(pd.categoryMap.getOrElse(y._1, ""), y._2)
   }
 }
