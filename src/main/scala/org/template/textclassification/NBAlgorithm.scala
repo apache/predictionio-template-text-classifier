@@ -65,6 +65,8 @@ lambda: Double
 
 
 
+  private val scoreArray = nb.pi.zip(nb.theta)
+
   // 3. Given a document string, return a vector of corresponding
   // class membership probabilities.
 
@@ -75,12 +77,7 @@ lambda: Double
     // Vectorize query,
     val x: Vector = pd.transform(doc)
 
-    normalize(
-      nb.pi
-      .zip(nb.theta)
-      .map(
-      e => exp(innerProduct(e._2, x.toArray) + e._1))
-    )
+    normalize(scoreArray.map(e => exp(innerProduct(e._2, x.toArray) + e._1)))
   }
 
   // 4. Implement predict method for our model using

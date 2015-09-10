@@ -20,7 +20,8 @@ import scala.math._
 // components.
 
 case class PreparatorParams(
-  nGram : Int
+  nGram : Int,
+  numFeatures: Int = 15000
 ) extends Params
 
 
@@ -31,22 +32,23 @@ class Preparator(pp: PreparatorParams) extends PPreparator[TrainingData, Prepare
 
   // Prepare your training data.
   def prepare(sc : SparkContext, td: TrainingData): PreparedData = {
-    new PreparedData(td, pp.nGram)
+    new PreparedData(td, pp.nGram, pp.numFeatures)
   }
 }
 
 //------PreparedData------------------------
 
 class PreparedData (
-val td : TrainingData,
-val nGram : Int
+  val td : TrainingData,
+  val nGram : Int,
+  val numFeatures: Int
 ) extends Serializable {
 
 
 
   // 1. Hashing function: Text -> term frequency vector.
 
-  private val hasher = new HashingTF()
+  private val hasher = new HashingTF(numFeatures = numFeatures)
 
   private def hashTF (text : String) : Vector = {
     val newList : Array[String] = text.split(" ")
