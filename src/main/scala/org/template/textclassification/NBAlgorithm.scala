@@ -77,7 +77,10 @@ lambda: Double
     // Vectorize query,
     val x: Vector = pd.transform(doc)
 
-    normalize(scoreArray.map(e => exp(innerProduct(e._2, x.toArray) + e._1)))
+    val z = scoreArray
+      .map(e => innerProduct(e._2, x.toArray) + e._1)
+
+    normalize((0 until z.size).map(k => exp(z(k) - z.max)).toArray)
   }
 
   // 4. Implement predict method for our model using
