@@ -47,7 +47,7 @@ lambda: Double
   // 1. Fit a Naive Bayes model using the prepared data.
 
   private val nb : NaiveBayesModel = NaiveBayes.train(
-    pd.transformedData, lambda)
+    pd.transformedData.map(x=>x.point), lambda)
 
 
 
@@ -75,7 +75,7 @@ lambda: Double
     // Returns an object of type Array[Double]
 
     // Vectorize query,
-    val x: Vector = pd.transform(doc)
+    val x: Vector = pd.transform(doc).vector
 
     val z = scoreArray
       .map(e => innerProduct(e._2, x.toArray) + e._1)
