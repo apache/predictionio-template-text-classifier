@@ -9,15 +9,22 @@
   },
   "preparator": {
     "params": {
-      "nGram": 2,
-      "numFeatures": 15000
+      "nGram": 1,
+      "numFeatures": 500,
+      "SPPMI": false
     }
   },
   "algorithms": [
     {
-      "name": "nb",
+      "name": "lr",
       "params": {
-        "lambda": 0.25
+         "maxIter": 1,
+        "regParam": 0.00000005,
+        "stepSize": 5.0,
+        "bitPrecision": 22,
+        "modelName": "model.vw",
+        "namespace": "n",
+        "ngram": 1 
       }
     }
   ]

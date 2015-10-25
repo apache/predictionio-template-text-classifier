@@ -40,8 +40,10 @@ object TextClassificationEngine extends EngineFactory {
       classOf[DataSource],
       classOf[Preparator],
       Map(
+        "VWlogisticSGD" -> classOf[VowpalLogisticRegressionWithSGDAlgorithm],
         "nb" -> classOf[NBAlgorithm],
-        "lr" -> classOf[LRAlgorithm]
+        "lr" -> classOf[LRAlgorithm],
+        "bid-lr" -> classOf[BIDMachLRAlgorithm]
       ), classOf[Serving]
     )
   }

@@ -17,9 +17,9 @@ import org.apache.spark.rdd.RDD
 // cross validation.
 
 case class DataSourceParams(
-  appName: String,
-  evalK: Option[Int]
-) extends Params
+                             appName: String,
+                             evalK: Option[Int]
+                             ) extends Params
 
 
 
@@ -28,8 +28,8 @@ case class DataSourceParams(
 // readEval method.
 
 class DataSource (
-  val dsp : DataSourceParams
-) extends PDataSource[TrainingData, EmptyEvaluationInfo, Query, ActualResult] {
+                   val dsp : DataSourceParams
+                   ) extends PDataSource[TrainingData, EmptyEvaluationInfo, Query, ActualResult] {
 
   @transient lazy val logger = Logger[this.type]
 
@@ -39,15 +39,15 @@ class DataSource (
     //Get RDD of Events.
     PEventStore.find(
       appName = dsp.appName,
-      entityType = Some("content"), // specify data entity type
-      eventNames = Some(List("e-mail")) // specify data event name
+      entityType = Some("user"), // specify data entity type
+      eventNames = Some(List("$set")) // specify data event name
 
       // Convert collected RDD of events to and RDD of Observation
       // objects.
     )(sc).map(e => {
       val label : String = e.properties.get[String]("label")
       Observation(
-        if (label == "spam") 1.0 else 0.0,
+        if (label == "1") 1.0 else 0.0,
         e.properties.get[String]("text"),
         label
       )
@@ -62,7 +62,7 @@ class DataSource (
       entityType = Some("resource"),
       eventNames = Some(List("stopwords"))
 
-    //Convert collected RDD of strings to a string set.
+      //Convert collected RDD of strings to a string set.
     )(sc)
       .map(e => e.properties.get[String]("word"))
       .collect
@@ -92,7 +92,7 @@ class DataSource (
       val train = new TrainingData(
         data.filter(_._2 % dsp.evalK.get != k).map(_._1),
         readStopWords
-        ((sc)))
+          ((sc)))
 
       // Prepare test data for fold.
       val test = data.filter(_._2 % dsp.evalK.get == k)
@@ -108,17 +108,17 @@ class DataSource (
 // 3. Observation class serving as a wrapper for both our
 // data's class label and document string.
 case class Observation(
-  label : Double,
-  text : String,
-  category :String
-) extends Serializable
+                        label : Double,
+                        text : String,
+                        category :String
+                        ) extends Serializable
 
 // 4. TrainingData class serving as a wrapper for all
 // read in from the Event Server.
 class TrainingData(
-  val data : RDD[Observation],
-  val stopWords : Set[String]
-) extends Serializable with SanityCheck {
+                    val data : RDD[Observation],
+                    val stopWords : Set[String]
+                    ) extends Serializable with SanityCheck {
 
   // Sanity check to make sure your data is being fed in correctly.
 
