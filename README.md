@@ -1,8 +1,14 @@
-# TextManipulationEngine
+# Text Classification Engine
 
 Look at the following [tutorial](https://docs.prediction.io/demo/textclassification/) for a Quick Start guide and implementation details.
 
 # Release Information
+
+## Version 3.1
+
+Fix DataSource to read "content", "e-mail", and use label "spam" for tutorial data.
+Fix engine.json for default algorithm setting.
+
 
 ## Version 2.2
 
@@ -20,7 +26,6 @@ Included three different data sets: e-mail spam, 20 newsgroups, and the rotten t
 
 Fixed import script bug occuring with Python 2.
 
-## Version 1.1 Changes 
+## Version 1.1 Changes
 
 Changed data import Python script to pull straight from the [20 newsgroups](http://qwone.com/~jason/20Newsgroups/) page.
-
