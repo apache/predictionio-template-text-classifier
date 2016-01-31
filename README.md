@@ -4,6 +4,11 @@ Look at the following [tutorial](https://docs.prediction.io/demo/textclassificat
 
 # Release Information
 
+## Version 4.0
+
+Re-structure and design preparator and algo. less memory usage and run time is faster.
+Move BIDMach, VW & SPPMI algo changes to `bidmach` branch temporarily.
+
 ## Version 3.1
 
 Fix DataSource to read "content", "e-mail", and use label "spam" for tutorial data.
