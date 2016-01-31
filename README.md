@@ -4,6 +4,8 @@ Look at the following [tutorial](https://docs.prediction.io/demo/textclassificat
 
 # Release Information
 
+branch from master tepmorarily until code cleanup
+
 ## Version 3.1
 
 Fix DataSource to read "content", "e-mail", and use label "spam" for tutorial data.
