@@ -1,12 +1,10 @@
 name := "org.template.textclassification"
 
-organization := "io.prediction"
+organization := "org.apache.predictionio"
 
 scalaVersion := "2.10.5"
 
-organization := "io.prediction"
-
 libraryDependencies ++= Seq(
-  "io.prediction"    %% "core"     % pioVersion.value % "provided",
-  "org.apache.spark" %% "spark-core"    % "1.4.1" % "provided",
-  "org.apache.spark" %% "spark-mllib"   % "1.4.1" % "provided")
+  "org.apache.predictionio" %% "apache-predictionio-core" % "0.10.0-incubating" % "provided",
+  "org.apache.spark"        %% "spark-core"               % "1.4.1" % "provided",
+  "org.apache.spark"        %% "spark-mllib"              % "1.4.1" % "provided")
