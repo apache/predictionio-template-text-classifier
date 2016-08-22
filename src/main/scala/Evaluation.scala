@@ -1,10 +1,10 @@
 package org.template.textclassification
 
-import io.prediction.controller.AverageMetric
-import io.prediction.controller.Evaluation
-import io.prediction.controller.EmptyEvaluationInfo
-import io.prediction.controller.EngineParamsGenerator
-import io.prediction.controller.EngineParams
+import org.apache.predictionio.controller.AverageMetric
+import org.apache.predictionio.controller.Evaluation
+import org.apache.predictionio.controller.EmptyEvaluationInfo
+import org.apache.predictionio.controller.EngineParamsGenerator
+import org.apache.predictionio.controller.EngineParams
 
 /** Create an accuracy metric for evaluating our supervised learning model. */
 case class Accuracy()

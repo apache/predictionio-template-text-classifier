@@ -1,7 +1,7 @@
 package org.template.textclassification
 
-import io.prediction.controller.IEngineFactory
-import io.prediction.controller.Engine
+import org.apache.predictionio.controller.IEngineFactory
+import org.apache.predictionio.controller.Engine
 
 /** Define Query class which serves as a wrapper for
   * new text data.

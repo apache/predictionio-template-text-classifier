@@ -1,12 +1,12 @@
 package org.template.textclassification
 
-import io.prediction.controller.PDataSource
-import io.prediction.controller.EmptyEvaluationInfo
-import io.prediction.controller.EmptyActualResult
-import io.prediction.controller.Params
-import io.prediction.controller.SanityCheck
-import io.prediction.data.storage.Event
-import io.prediction.data.store.PEventStore
+import org.apache.predictionio.controller.PDataSource
+import org.apache.predictionio.controller.EmptyEvaluationInfo
+import org.apache.predictionio.controller.EmptyActualResult
+import org.apache.predictionio.controller.Params
+import org.apache.predictionio.controller.SanityCheck
+import org.apache.predictionio.data.storage.Event
+import org.apache.predictionio.data.store.PEventStore
 
 import org.apache.spark.SparkContext
 import org.apache.spark.SparkContext._
