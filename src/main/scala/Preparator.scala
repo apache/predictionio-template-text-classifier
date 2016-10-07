@@ -1,7 +1,7 @@
 package org.template.textclassification
 
-import io.prediction.controller.PPreparator
-import io.prediction.controller.Params
+import org.apache.predictionio.controller.PPreparator
+import org.apache.predictionio.controller.Params
 
 import org.apache.spark.SparkContext
 import org.apache.spark.SparkContext._
