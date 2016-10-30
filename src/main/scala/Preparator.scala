@@ -11,6 +11,14 @@ import org.apache.spark.mllib.linalg.Vectors
 import org.apache.spark.mllib.regression.LabeledPoint
 import org.apache.spark.rdd.RDD
 
+import org.apache.lucene.analysis.standard.StandardAnalyzer
+import org.apache.lucene.analysis.tokenattributes.CharTermAttribute
+import org.apache.lucene.util.Version
+
+import java.io.StringReader
+
+import scala.collection.mutable
+
 /** Define Preparator parameters. Recall that for our data
   * representation we are only required to input the n-gram window
   * components.
@@ -62,9 +70,28 @@ class TFHasher(
 
   private val hasher = new HashingTF(numFeatures = numFeatures)
 
+/** Use Lucene StandardAnalyzer to tokenize text **/
+ def tokenize(content: String): Seq[String] = {
+    val tReader = new StringReader(content)
+    val analyzer = new StandardAnalyzer(Version.LATEST)
+    val tStream = analyzer.tokenStream("contents", tReader)
+    val term = tStream.addAttribute(classOf[CharTermAttribute])
+    tStream.reset()
+
+    val result = mutable.ArrayBuffer.empty[String]
+    while (tStream.incrementToken()) {
+      val termValue = term.toString
+      
+        result += term.toString
+      
+    }
+    result
+}
+
+
   /** Hashing function: Text -> term frequency vector. */
   def hashTF(text: String): Vector = {
-    val newList : Array[String] = text.split(" ")
+    val newList : Array[String] = tokenize(text)
     .sliding(nGram)
     .map(_.mkString)
     .toArray
