@@ -4,6 +4,11 @@ Look at the following [tutorial](https://docs.prediction.io/demo/textclassificat
 
 # Release Information
 
+## Version 5.0 **First Apache Version**
+
+- Major changes to namespace to reflect donation to the Apache Software Foundation.
+- Build changes to support modified Apache build mechanism
+
 ## Version 4.0
 
 Re-structure and design preparator and algo. less memory usage and run time is faster.
