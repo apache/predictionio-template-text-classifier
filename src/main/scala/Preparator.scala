@@ -26,7 +26,7 @@ class Preparator(pp: PreparatorParams)
 
   def prepare(sc: SparkContext, td: TrainingData): PreparedData = {
 
-    val tfHasher = new TFHasher(pp.numFeatures, pp.nGram)
+    val tfHasher = new TFHasher(pp.numFeatures, pp.nGram, td.stopWords)
 
     // Convert trainingdata's observation text into TF vector
     // and then fit a IDF model
@@ -57,7 +57,8 @@ class Preparator(pp: PreparatorParams)
 
 class TFHasher(
   val numFeatures: Int,
-  val nGram: Int
+  val nGram: Int,
+  val stopWords:Set[String]
 ) extends Serializable {
 
   private val hasher = new HashingTF(numFeatures = numFeatures)
@@ -65,6 +66,7 @@ class TFHasher(
   /** Hashing function: Text -> term frequency vector. */
   def hashTF(text: String): Vector = {
     val newList : Array[String] = text.split(" ")
+    .filterNot(stopWords.contains(_))
     .sliding(nGram)
     .map(_.mkString)
     .toArray
