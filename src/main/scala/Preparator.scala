@@ -1,4 +1,4 @@
-package org.template.textclassification
+package org.example.textclassification
 
 import org.apache.predictionio.controller.PPreparator
 import org.apache.predictionio.controller.Params
@@ -13,7 +13,6 @@ import org.apache.spark.rdd.RDD
 
 import org.apache.lucene.analysis.standard.StandardAnalyzer
 import org.apache.lucene.analysis.tokenattributes.CharTermAttribute
-import org.apache.lucene.util.Version
 
 import java.io.StringReader
 
@@ -74,7 +73,7 @@ class TFHasher(
 /** Use Lucene StandardAnalyzer to tokenize text **/
  def tokenize(content: String): Seq[String] = {
     val tReader = new StringReader(content)
-    val analyzer = new StandardAnalyzer(Version.LATEST)
+    val analyzer = new StandardAnalyzer()
     val tStream = analyzer.tokenStream("contents", tReader)
     val term = tStream.addAttribute(classOf[CharTermAttribute])
     tStream.reset()

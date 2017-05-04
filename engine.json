@@ -1,7 +1,7 @@
 {
   "id": "default",
   "description": "Default settings",
-  "engineFactory": "org.template.textclassification.TextClassificationEngine",
+  "engineFactory": "org.example.textclassification.TextClassificationEngine",
   "datasource": {
     "params": {
       "appName": "MyTextApp"

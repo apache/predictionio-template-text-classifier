@@ -1,4 +1,4 @@
-package org.template.textclassification
+package org.example.textclassification
 
 import org.apache.predictionio.controller.IEngineFactory
 import org.apache.predictionio.controller.Engine

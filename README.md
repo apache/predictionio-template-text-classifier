@@ -1,8 +1,17 @@
 # Text Classification Engine
 
-Look at the following [tutorial](https://docs.prediction.io/demo/textclassification/) for a Quick Start guide and implementation details.
+Look at the following
+[tutorial](http://predictionio.incubator.apache.org/demo/textclassification/)
+for a Quick Start guide and implementation details.
 
 # Release Information
+
+## Version 6.0
+
+- Use Apache Lucene as tokenizer
+- Add stopwords filter
+- Rename Scala package name
+- Update SBT version
 
 ## Version 5.0 **First Apache Version**
 
