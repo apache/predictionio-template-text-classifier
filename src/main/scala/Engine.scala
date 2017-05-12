@@ -1,6 +1,6 @@
 package org.example.textclassification
 
-import org.apache.predictionio.controller.IEngineFactory
+import org.apache.predictionio.controller.EngineFactory
 import org.apache.predictionio.controller.Engine
 
 /** Define Query class which serves as a wrapper for
@@ -22,7 +22,7 @@ case class PredictedResult(
 case class ActualResult(category: String) extends Serializable
 
 /** Define Engine */
-object TextClassificationEngine extends IEngineFactory {
+object TextClassificationEngine extends EngineFactory {
   def apply() = {
     new Engine(
       classOf[DataSource],
