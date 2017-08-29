@@ -95,7 +95,7 @@ class DataSource (
       // Prepare test data for fold.
       val test = data.filter(_._2 % dsp.evalK.get == k)
         .map(_._1)
-        .map(e => (new Query(e.text), new ActualResult(e.category)))
+        .map(e => (Query(e.text), ActualResult(e.category)))
 
       (train, new EmptyEvaluationInfo, test)
     }
@@ -110,7 +110,7 @@ case class Observation(
   label: Double,
   text: String,
   category: String
-) extends Serializable
+)
 
 /** TrainingData class serving as a wrapper for all
   * read in from the Event Server.

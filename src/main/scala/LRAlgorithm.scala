@@ -74,7 +74,7 @@ class LRAlgorithm(val ap: LRAlgorithmParams)
 case class LREstimate (
   coefficients : Array[Double],
   intercept : Double
-) extends Serializable
+)
 
 class LRModel(
   val tfIdf: TFIDFModel,

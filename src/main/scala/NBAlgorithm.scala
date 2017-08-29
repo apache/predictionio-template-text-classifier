@@ -77,6 +77,6 @@ class NBModel(
   def predict(doc : String) : PredictedResult = {
     val x: Array[Double] = getScores(doc)
     val y: (Double, Double) = (nb.labels zip x).maxBy(_._2)
-    new PredictedResult(categoryMap.getOrElse(y._1, ""), y._2)
+    PredictedResult(categoryMap.getOrElse(y._1, ""), y._2)
   }
 }
