@@ -4,13 +4,11 @@ import org.apache.predictionio.controller.P2LAlgorithm
 import org.apache.predictionio.controller.Params
 
 import org.apache.spark.SparkContext
-import org.apache.spark.SparkContext._
-import org.apache.spark.rdd.RDD
 import org.apache.spark.ml.classification.LogisticRegression
 import org.apache.spark.sql.DataFrame
 import org.apache.spark.sql.functions
 import org.apache.spark.sql.SQLContext
-import org.apache.spark.sql.UserDefinedFunction
+import org.apache.spark.sql.expressions.UserDefinedFunction
 
 import grizzled.slf4j.Logger
 
@@ -54,7 +52,7 @@ class LRAlgorithm(val ap: LRAlgorithmParams)
         )
 
         // Return (label, feature coefficients, and intercept term.
-        (label, LREstimate(fit.weights.toArray, fit.intercept))
+        (label, LREstimate(fit.coefficients.toArray, fit.intercept))
 
       }
     )
