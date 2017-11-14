@@ -2,17 +2,14 @@ package org.example.textclassification
 
 import org.apache.predictionio.controller.P2LAlgorithm
 import org.apache.predictionio.controller.Params
-
 import org.apache.spark.SparkContext
-import org.apache.spark.SparkContext._
-import org.apache.spark.rdd.RDD
 import org.apache.spark.ml.classification.LogisticRegression
 import org.apache.spark.sql.DataFrame
 import org.apache.spark.sql.functions
 import org.apache.spark.sql.SQLContext
-import org.apache.spark.sql.UserDefinedFunction
-
+import org.apache.spark.sql.expressions.UserDefinedFunction
 import grizzled.slf4j.Logger
+import org.apache.spark.mllib.regression.LabeledPoint
 
 case class LRAlgorithmParams(regParam: Double) extends Params
 
@@ -34,7 +31,10 @@ class LRAlgorithm(val ap: LRAlgorithmParams)
 
     val labels: Seq[Double] = pd.categoryMap.keys.toSeq
 
-    val data = labels.foldLeft(pd.transformedData.toDF)( //transform to Spark DataFrame
+    val data = labels.foldLeft(pd.transformedData.map { case LabeledPoint(label, feature) =>
+      // Convert old LabeledPoint to ML's LabeledPoint
+      new org.apache.spark.ml.feature.LabeledPoint(label, feature.asML)
+    }.toDF)( //transform to Spark DataFrame
       // Add the different binary columns for each label.
       (data: DataFrame, label: Double) => {
         // function: multiclass labels --> binary labels
@@ -54,7 +54,7 @@ class LRAlgorithm(val ap: LRAlgorithmParams)
         )
 
         // Return (label, feature coefficients, and intercept term.
-        (label, LREstimate(fit.weights.toArray, fit.intercept))
+        (label, LREstimate(fit.coefficients.toArray, fit.intercept))
 
       }
     )
