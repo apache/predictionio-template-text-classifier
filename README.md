@@ -1,7 +1,7 @@
 # Text Classification Engine
 
 Look at the following
-[tutorial](http://predictionio.incubator.apache.org/demo/textclassification/)
+[tutorial](https://predictionio.apache.org/demo/textclassification/)
 for a Quick Start guide and implementation details.
 
 # Release Information
