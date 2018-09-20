@@ -1,10 +1,16 @@
 # Text Classification Engine
 
 Look at the following
-[tutorial](http://predictionio.incubator.apache.org/demo/textclassification/)
+[tutorial](https://predictionio.apache.org/demo/textclassification/)
 for a Quick Start guide and implementation details.
 
 # Release Information
+
+### v0.13.0
+
+- Update for Apache PredictionIO 0.13.0
+- Fix warnings and use of case class
+- Python3 support in helper scripts
 
 ## Version 6.0
 

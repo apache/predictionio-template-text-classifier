@@ -1,9 +1,14 @@
-.idea
 .DS_Store
-target/
-project/project/
-project/target/
 manifest.json
-best.json
+target/
 pio.log
-pio.sbt
+/pio.sbt
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# IntelliJ
+*.iml
+.idea/
