@@ -21,6 +21,7 @@ class NBAlgorithm(
 ) extends P2LAlgorithm[PreparedData, NBModel, Query, PredictedResult] {
 
   /** Train your model. */
+  override
   def train(sc: SparkContext, pd: PreparedData): NBModel = {
     // Fit a Naive Bayes model using the prepared data.
     val nb: NaiveBayesModel = NaiveBayes.train(pd.transformedData, ap.lambda)
@@ -32,6 +33,7 @@ class NBAlgorithm(
   }
 
   /** Prediction method for trained model. */
+  override
   def predict(model: NBModel, query: Query): PredictedResult = {
     model.predict(query.text)
   }

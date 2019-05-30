@@ -4,10 +4,8 @@ import org.apache.predictionio.controller.PPreparator
 import org.apache.predictionio.controller.Params
 
 import org.apache.spark.SparkContext
-import org.apache.spark.SparkContext._
 import org.apache.spark.mllib.feature.{IDF, IDFModel, HashingTF}
 import org.apache.spark.mllib.linalg.Vector
-import org.apache.spark.mllib.linalg.Vectors
 import org.apache.spark.mllib.regression.LabeledPoint
 import org.apache.spark.rdd.RDD
 
@@ -31,6 +29,7 @@ case class PreparatorParams(
 class Preparator(pp: PreparatorParams)
   extends PPreparator[TrainingData, PreparedData] {
 
+  override
   def prepare(sc: SparkContext, td: TrainingData): PreparedData = {
 
     val tfHasher = new TFHasher(pp.numFeatures, pp.nGram, td.stopWords)
@@ -106,7 +105,7 @@ class TFIDFModel(
   val idf: IDFModel
 ) extends Serializable {
 
-  /** trasform text to tf-idf vector. */
+  /** transform text to tf-idf vector. */
   def transform(text: String): Vector = {
     // Map(n-gram -> document tf)
     idf.transform(hasher.hashTF(text))

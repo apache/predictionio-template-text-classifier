@@ -118,6 +118,7 @@ class TrainingData(
 ) extends Serializable with SanityCheck {
 
   /** Sanity check to make sure your data is being fed in correctly. */
+  override
   def sanityCheck(): Unit = {
     try {
       val obs : Array[Double] = data.takeSample(false, 5).map(_.label)

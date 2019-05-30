@@ -18,6 +18,7 @@ class LRAlgorithm(val ap: LRAlgorithmParams)
 
   @transient lazy val logger = Logger[this.type]
 
+  override
   def train(sc: SparkContext, pd: PreparedData): LRModel = {
 
     // Import SQLContext for creating DataFrame.
@@ -66,6 +67,7 @@ class LRAlgorithm(val ap: LRAlgorithmParams)
     )
   }
 
+  override
   def predict(model: LRModel, query: Query): PredictedResult = {
     model.predict(query.text)
   }
