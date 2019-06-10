@@ -11,6 +11,7 @@ case class Accuracy()
   extends AverageMetric[EmptyEvaluationInfo, Query, PredictedResult, ActualResult] {
 
   /** Method for calculating prediction accuracy. */
+  override
   def calculate(
     query: Query,
     predicted: PredictedResult,
