@@ -6,6 +6,12 @@ for a Quick Start guide and implementation details.
 
 # Release Information
 
+### v0.13.0
+
+- Update for Apache PredictionIO 0.13.0
+- Fix warnings and use of case class
+- Python3 support in helper scripts
+
 ## Version 6.0
 
 - Use Apache Lucene as tokenizer
